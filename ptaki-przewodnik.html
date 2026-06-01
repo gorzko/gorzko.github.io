@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ptaki wokół nas – Kos</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream:      #f7f3ee;
+  --cream-dark: #ede8e0;
+  --ink:        #1c2319;
+  --ink-mid:    #3d4a35;
+  --muted:      #9e9180;
+  --muted-lt:   #c8bfb0;
+  --border:     #ddd5c8;
+  --w: 480px;
+
+  --g-bg:  rgba(22,38,16,0.82);
+  --g-txt: #b8d4a0;
+  --g-dot: #5ca832;
+  --b-bg:  rgba(12,28,58,0.82);
+  --b-txt: #a0c4f0;
+  --b-dot: #4a90d9;
+  --o-bg:  rgba(50,20,4,0.82);
+  --o-txt: #f0c090;
+  --o-dot: #e07830;
+}
+
+html { background: #181a1c; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #181a1c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 52px 20px 72px;
+  gap: 0;
+}
+
+/* ════════════════════════════
+   CARD SHELL
+════════════════════════════ */
+.card {
+  width: var(--w);
+  background: var(--cream);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 28px 72px rgba(0,0,0,0.55);
+  position: relative;
+}
+
+/* ── photo ── */
+.photo-wrap {
+  width: 100%;
+  height: 236px;
+  position: relative;
+  overflow: hidden;
+  background: #2a3226;
+}
+.photo-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+}
+/* SVG placeholder shown while image loads or on error */
+.photo-wrap img[src=""],.photo-wrap img:not([src]) {
+  visibility: hidden;
+}
+.photo-fade {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, var(--cream));
+  pointer-events: none;
+}
+.photo-credit {
+  position: absolute; bottom: 9px; right: 11px;
+  font-size: 9px; color: rgba(255,255,255,0.52);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+
+/* ── category tags – top-left strip ── */
+.cat-strip {
+  position: absolute; top: 13px; left: 13px;
+  display: flex; flex-direction: column; gap: 5px;
+  z-index: 10;
+}
+.cat-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 10px; border-radius: 30px;
+  font-size: 9.5px; font-weight: 500; letter-spacing: 0.13em;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px) saturate(1.3);
+}
+.cat-tag.g  { background: var(--g-bg);  color: var(--g-txt); }
+.cat-tag.b  { background: var(--b-bg);  color: var(--b-txt); }
+.cat-tag.o  { background: var(--o-bg);  color: var(--o-txt); }
+.cat-dot { width: 5.5px; height: 5.5px; border-radius: 50%; flex-shrink: 0; }
+.cat-tag.g .cat-dot { background: var(--g-dot); }
+.cat-tag.b .cat-dot { background: var(--b-dot); }
+.cat-tag.o .cat-dot { background: var(--o-dot); }
+/* rank inside tag */
+.cat-rank {
+  margin-left: 2px; opacity: 0.75;
+  font-size: 8.5px; font-weight: 400; letter-spacing: 0;
+}
+
+/* ════════════════════════════
+   BODY
+════════════════════════════ */
+.body { padding: 16px 20px 20px; }
+
+.name-pl {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px; font-weight: 700;
+  color: var(--ink); line-height: 1.0;
+  letter-spacing: -0.015em;
+}
+.name-lat {
+  font-family: 'Playfair Display', serif;
+  font-style: italic; font-size: 13px;
+  color: var(--muted); margin-top: 2px; margin-bottom: 13px;
+}
+
+/* stats */
+.stats { display: flex; gap: 6px; margin-bottom: 10px; }
+.stat {
+  flex: 1; padding: 8px 10px;
+  background: var(--cream-dark); border-radius: 9px;
+}
+.stat-l {
+  font-size: 8.5px; font-weight: 500;
+  letter-spacing: 0.13em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 3px;
+}
+.stat-v { font-size: 13px; font-weight: 500; color: var(--ink-mid); line-height: 1.2; }
+.stat-v small { font-size: 10px; font-weight: 400; color: var(--muted); }
+
+/* red book badge */
+.rbadge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 10px; border-radius: 6px;
+  font-size: 10.5px; font-weight: 500; margin-bottom: 10px;
+  background: #dff0d4; border: 1px solid #a8cc8c; color: #2e5c18;
+}
+.rbadge-dot { width: 7px; height: 7px; border-radius: 50%; background: #5ca832; }
+
+/* divider */
+.rule { height: 1px; background: linear-gradient(to right, var(--border), transparent); margin: 10px 0; }
+
+/* section label */
+.slbl {
+  font-size: 8.5px; font-weight: 500;
+  letter-spacing: 0.17em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 7px;
+}
+
+/* id pills */
+.pills { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
+.pill {
+  display: flex; align-items: center; gap: 5px;
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 20px; padding: 4px 10px;
+  font-size: 11px; color: var(--ink-mid);
+}
+
+/* ── YouTube embed ── */
+.yt-wrap {
+  border-radius: 11px;
+  overflow: hidden;
+  position: relative;
+  /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
+  height: 0;
+  background: #0f0f0f;
+}
+.yt-wrap iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+
+/* footer */
+.cfoot {
+  margin-top: 12px; padding-top: 11px;
+  border-top: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.csrc { font-size: 9.5px; color: var(--muted-lt); }
+.csrc em { font-family: 'Playfair Display', serif; font-style: italic; color: #7a8c6e; }
+.cnum { font-size: 10.5px; color: var(--muted-lt); font-weight: 300; }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <!-- ── photo ── -->
+  <div class="photo-wrap">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Turdus-merula-002.jpg/960px-Turdus-merula-002.jpg"
+      alt="Kos (Turdus merula) – samiec"
+      onerror="this.style.visibility='hidden'"
+    >
+    <div class="photo-fade"></div>
+    <div class="photo-credit">© MPF / Wikimedia CC BY-SA 3.0</div>
+  </div>
+
+  <!-- ── category tags ── -->
+  <div class="cat-strip">
+    <div class="cat-tag g">
+      <div class="cat-dot"></div>Ogród
+    </div>
+    <div class="cat-tag b">
+      <div class="cat-dot"></div>Najliczniejsze<span class="cat-rank">#3</span>
+    </div>
+    <div class="cat-tag o">
+      <div class="cat-dot"></div>Najpowszechniejsze<span class="cat-rank">#3</span>
+    </div>
+  </div>
+
+  <!-- ── body ── -->
+  <div class="body">
+
+    <div class="name-pl">Kos</div>
+    <div class="name-lat">Turdus merula</div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-l">Liczebność</div>
+        <div class="stat-v">5–6 mln <small>par lęg.</small></div>
+      </div>
+      <div class="stat">
+        <div class="stat-l">Trend</div>
+        <div class="stat-v">→ <small>stabilny</small></div>
+      </div>
+      <div class="stat">
+        <div class="stat-l">Migracje</div>
+        <div class="stat-v">Osiadły <small>/ koczuje</small></div>
+      </div>
+    </div>
+
+    <div class="rbadge">
+      <div class="rbadge-dot"></div>
+      Czerwona Księga: LC – gatunek najmniejszej troski
+    </div>
+
+    <div class="rule"></div>
+
+    <div class="slbl">🔍 Jak rozpoznać</div>
+    <div class="pills">
+      <div class="pill">🖤 Samiec: całkowicie czarny</div>
+      <div class="pill">🟡 Żółty dziób i obrączka oka</div>
+      <div class="pill">🟤 Samica: brunatna, pstra</div>
+      <div class="pill">🎵 Melodyjny, głośny śpiew</div>
+      <div class="pill">📏 24–27 cm</div>
+      <div class="pill">🌳 Ogrody, parki, lasy liściaste</div>
+    </div>
+
+    <div class="rule"></div>
+
+    <div class="slbl">🎬 Leśny Budzik – Kos</div>
+    <div class="yt-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/4axfqloLdn4"
+        title="Leśny Budzik – Kos"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="cfoot">
+      <div class="csrc">Źródło: <em>ptaki.info · MPPL 2025 · Wikimedia CC</em></div>
+      <div class="cnum">Kos · 11 / 33</div>
+    </div>
+
+  </div><!-- /body -->
+</div><!-- /card -->
+
+</body>
+</html>
