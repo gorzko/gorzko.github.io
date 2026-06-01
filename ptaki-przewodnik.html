@@ -9,27 +9,24 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --cream:      #f7f3ee;
-  --cream-dark: #ede8e0;
-  --ink:        #1c2319;
-  --ink-mid:    #3d4a35;
-  --muted:      #9e9180;
-  --muted-lt:   #c8bfb0;
-  --border:     #ddd5c8;
-  --w: 480px;
+  --cream:     #f7f3ee;
+  --cream-dk:  #ede8e0;
+  --ink:       #1c2319;
+  --ink-m:     #3d4a35;
+  --muted:     #9e9180;
+  --muted-lt:  #c8bfb0;
+  --border:    #ddd5c8;
 
-  --g-bg:  rgba(22,38,16,0.82);
-  --g-txt: #b8d4a0;
-  --g-dot: #5ca832;
-  --b-bg:  rgba(12,28,58,0.82);
-  --b-txt: #a0c4f0;
-  --b-dot: #4a90d9;
-  --o-bg:  rgba(50,20,4,0.82);
-  --o-txt: #f0c090;
-  --o-dot: #e07830;
+  --g-bg:  rgba(22,38,16,0.82); --g-tx: #b8d4a0; --g-dot: #5ca832;
+  --b-bg:  rgba(12,28,58,0.82); --b-tx: #a0c4f0; --b-dot: #4a90d9;
+  --o-bg:  rgba(50,20,4,0.82);  --o-tx: #f0c090; --o-dot: #e07830;
+
+  /* card width: fluid on mobile, capped on desktop */
+  --w: min(480px, 100%);
 }
 
 html { background: #181a1c; }
+
 body {
   font-family: 'DM Sans', sans-serif;
   background: #181a1c;
@@ -37,17 +34,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 52px 20px 72px;
-  gap: 0;
+  /* comfortable padding: 24px on mobile, 52px on desktop */
+  padding: clamp(24px, 5vw, 52px) clamp(12px, 4vw, 20px) clamp(40px, 8vw, 72px);
 }
 
-/* ════════════════════════════
-   CARD SHELL
-════════════════════════════ */
+/* ══════════════════════════════
+   CARD
+══════════════════════════════ */
 .card {
   width: var(--w);
   background: var(--cream);
-  border-radius: 20px;
+  border-radius: clamp(12px, 3vw, 20px);
   overflow: hidden;
   box-shadow: 0 28px 72px rgba(0,0,0,0.55);
   position: relative;
@@ -56,7 +53,8 @@ body {
 /* ── photo ── */
 .photo-wrap {
   width: 100%;
-  height: 236px;
+  /* scale height proportionally: 220px at 320px wide, 236px at 480px wide */
+  height: clamp(200px, 48vw, 236px);
   position: relative;
   overflow: hidden;
   background: #2a3226;
@@ -65,10 +63,6 @@ body {
   width: 100%; height: 100%;
   object-fit: cover; display: block;
 }
-/* SVG placeholder shown while image loads or on error */
-.photo-wrap img[src=""],.photo-wrap img:not([src]) {
-  visibility: hidden;
-}
 .photo-fade {
   position: absolute; bottom: 0; left: 0; right: 0;
   height: 80px;
@@ -76,155 +70,208 @@ body {
   pointer-events: none;
 }
 .photo-credit {
-  position: absolute; bottom: 9px; right: 11px;
-  font-size: 9px; color: rgba(255,255,255,0.52);
+  position: absolute; bottom: 9px; right: 10px;
+  font-size: clamp(8px, 1.8vw, 9px);
+  color: rgba(255,255,255,0.55);
   text-shadow: 0 1px 4px rgba(0,0,0,0.6);
 }
 
-/* ── category tags – top-left strip ── */
+/* ── category tags: bottom strip ── */
 .cat-strip {
-  position: absolute; top: 13px; left: 13px;
-  display: flex; flex-direction: column; gap: 5px;
+  position: absolute;
+  /* sit just above the fade, so they peek over the gradient */
+  bottom: 10px;
+  left: 0; right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 0 12px;
   z-index: 10;
+  /* push credit text up so they don't overlap */
 }
 .cat-tag {
-  display: inline-flex; align-items: center; gap: 6px;
-  padding: 4px 10px; border-radius: 30px;
-  font-size: 9.5px; font-weight: 500; letter-spacing: 0.13em;
-  text-transform: uppercase;
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 4px 9px;
+  border-radius: 30px;
+  font-size: clamp(8.5px, 1.9vw, 9.5px);
+  font-weight: 500; letter-spacing: 0.12em;
+  text-transform: uppercase; white-space: nowrap;
   backdrop-filter: blur(10px) saturate(1.3);
 }
-.cat-tag.g  { background: var(--g-bg);  color: var(--g-txt); }
-.cat-tag.b  { background: var(--b-bg);  color: var(--b-txt); }
-.cat-tag.o  { background: var(--o-bg);  color: var(--o-txt); }
-.cat-dot { width: 5.5px; height: 5.5px; border-radius: 50%; flex-shrink: 0; }
+.cat-tag.g { background: var(--g-bg); color: var(--g-tx); }
+.cat-tag.b { background: var(--b-bg); color: var(--b-tx); }
+.cat-tag.o { background: var(--o-bg); color: var(--o-tx); }
+.cat-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
 .cat-tag.g .cat-dot { background: var(--g-dot); }
 .cat-tag.b .cat-dot { background: var(--b-dot); }
 .cat-tag.o .cat-dot { background: var(--o-dot); }
-/* rank inside tag */
 .cat-rank {
-  margin-left: 2px; opacity: 0.75;
-  font-size: 8.5px; font-weight: 400; letter-spacing: 0;
+  opacity: .68; font-size: 8px;
+  font-weight: 400; letter-spacing: 0; margin-left: 1px;
 }
 
-/* ════════════════════════════
-   BODY
-════════════════════════════ */
-.body { padding: 16px 20px 20px; }
+/* ── body ── */
+.body {
+  padding: clamp(12px, 3vw, 16px) clamp(14px, 4vw, 20px) clamp(16px, 4vw, 20px);
+}
 
 .name-pl {
   font-family: 'Playfair Display', serif;
-  font-size: 32px; font-weight: 700;
-  color: var(--ink); line-height: 1.0;
-  letter-spacing: -0.015em;
+  font-size: clamp(26px, 6.5vw, 32px);
+  font-weight: 700; color: var(--ink);
+  line-height: 1.0; letter-spacing: -0.015em;
 }
 .name-lat {
   font-family: 'Playfair Display', serif;
-  font-style: italic; font-size: 13px;
-  color: var(--muted); margin-top: 2px; margin-bottom: 13px;
+  font-style: italic;
+  font-size: clamp(11px, 2.7vw, 13px);
+  color: var(--muted); margin-top: 2px; margin-bottom: clamp(10px, 2.5vw, 13px);
 }
 
 /* stats */
-.stats { display: flex; gap: 6px; margin-bottom: 10px; }
+.stats {
+  display: flex; gap: clamp(4px, 1.2vw, 6px);
+  margin-bottom: clamp(8px, 2vw, 10px);
+}
 .stat {
-  flex: 1; padding: 8px 10px;
-  background: var(--cream-dark); border-radius: 9px;
+  flex: 1; padding: clamp(6px, 1.5vw, 8px) clamp(8px, 2vw, 10px);
+  background: var(--cream-dk); border-radius: 9px;
+  /* prevent overflow on very small screens */
+  min-width: 0;
 }
 .stat-l {
-  font-size: 8.5px; font-weight: 500;
-  letter-spacing: 0.13em; text-transform: uppercase;
-  color: var(--muted); margin-bottom: 3px;
+  font-size: clamp(7px, 1.7vw, 8.5px);
+  font-weight: 500; letter-spacing: .11em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 3px;
 }
-.stat-v { font-size: 13px; font-weight: 500; color: var(--ink-mid); line-height: 1.2; }
-.stat-v small { font-size: 10px; font-weight: 400; color: var(--muted); }
+.stat-v {
+  font-size: clamp(11px, 2.7vw, 13px);
+  font-weight: 500; color: var(--ink-m); line-height: 1.2;
+}
+.stat-v small {
+  font-size: clamp(9px, 2.2vw, 10px);
+  font-weight: 400; color: var(--muted);
+}
 
 /* red book badge */
 .rbadge {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 4px 10px; border-radius: 6px;
-  font-size: 10.5px; font-weight: 500; margin-bottom: 10px;
+  font-size: clamp(9.5px, 2.4vw, 10.5px);
+  font-weight: 500; margin-bottom: clamp(8px, 2vw, 10px);
   background: #dff0d4; border: 1px solid #a8cc8c; color: #2e5c18;
+  /* wrap gracefully on narrow screens */
+  flex-wrap: wrap;
 }
-.rbadge-dot { width: 7px; height: 7px; border-radius: 50%; background: #5ca832; }
+.rbadge-dot { width: 7px; height: 7px; border-radius: 50%; background: #5ca832; flex-shrink: 0; }
 
 /* divider */
-.rule { height: 1px; background: linear-gradient(to right, var(--border), transparent); margin: 10px 0; }
+.rule {
+  height: 1px;
+  background: linear-gradient(to right, var(--border), transparent);
+  margin: clamp(8px, 2vw, 10px) 0;
+}
 
 /* section label */
 .slbl {
-  font-size: 8.5px; font-weight: 500;
-  letter-spacing: 0.17em; text-transform: uppercase;
-  color: var(--muted); margin-bottom: 7px;
+  font-size: clamp(7.5px, 1.9vw, 8.5px);
+  font-weight: 500; letter-spacing: .17em;
+  text-transform: uppercase; color: var(--muted);
+  margin-bottom: clamp(5px, 1.5vw, 7px);
 }
 
-/* id pills */
-.pills { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
+/* pills */
+.pills {
+  display: flex; flex-wrap: wrap;
+  gap: clamp(4px, 1vw, 5px);
+  margin-bottom: clamp(8px, 2vw, 10px);
+}
 .pill {
-  display: flex; align-items: center; gap: 5px;
+  display: flex; align-items: center; gap: 4px;
   background: #fff; border: 1px solid var(--border);
-  border-radius: 20px; padding: 4px 10px;
-  font-size: 11px; color: var(--ink-mid);
+  border-radius: 20px;
+  padding: clamp(3px, .8vw, 4px) clamp(8px, 2vw, 10px);
+  font-size: clamp(10px, 2.4vw, 11px);
+  color: var(--ink-m);
 }
 
-/* ── YouTube embed ── */
-.yt-wrap {
-  border-radius: 11px;
-  overflow: hidden;
-  position: relative;
-  /* 16:9 aspect ratio */
-  padding-bottom: 56.25%;
-  height: 0;
-  background: #0f0f0f;
+/* ── YouTube player ── */
+.yt-player {
+  position: relative; border-radius: 11px; overflow: hidden;
+  background: #0f0f0f; cursor: pointer; aspect-ratio: 16/9;
 }
-.yt-wrap iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  border: 0;
+.yt-player img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: opacity 0.2s;
+}
+.yt-player:hover img { opacity: 0.85; }
+.yt-overlay {
+  position: absolute; inset: 0; background: rgba(0,0,0,0.28);
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 8px;
+}
+.yt-btn {
+  width: clamp(44px, 11vw, 56px); height: clamp(44px, 11vw, 56px);
+  border-radius: 50%;
+  background: rgba(255,255,255,0.92);
+  display: flex; align-items: center; justify-content: center;
+  transition: transform 0.18s, background 0.18s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+.yt-player:hover .yt-btn { transform: scale(1.1); background: #fff; }
+.yt-btn svg { margin-left: 4px; }
+.yt-label {
+  font-size: clamp(8.5px, 2.1vw, 10px);
+  font-weight: 500; letter-spacing: 0.14em;
+  text-transform: uppercase; color: rgba(255,255,255,0.75);
+}
+.yt-player iframe {
+  position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
 }
 
 /* footer */
 .cfoot {
-  margin-top: 12px; padding-top: 11px;
+  margin-top: clamp(10px, 2.5vw, 12px);
+  padding-top: clamp(10px, 2.5vw, 11px);
   border-top: 1px solid var(--border);
   display: flex; align-items: center; justify-content: space-between;
+  gap: 8px;
 }
-.csrc { font-size: 9.5px; color: var(--muted-lt); }
-.csrc em { font-family: 'Playfair Display', serif; font-style: italic; color: #7a8c6e; }
-.cnum { font-size: 10.5px; color: var(--muted-lt); font-weight: 300; }
+.csrc {
+  font-size: clamp(8.5px, 2.1vw, 9.5px);
+  color: var(--muted-lt);
+}
+.csrc em {
+  font-family: 'Playfair Display', serif;
+  font-style: italic; color: #7a8c6e;
+}
+.cnum {
+  font-size: clamp(9px, 2.3vw, 10.5px);
+  color: var(--muted-lt); font-weight: 300; white-space: nowrap;
+}
 </style>
 </head>
 <body>
 
 <div class="card">
 
-  <!-- ── photo ── -->
   <div class="photo-wrap">
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Turdus_merula_-_Common_blackbird_-_Karatavuk_11.jpg/960px-Turdus_merula_-_Common_blackbird_-_Karatavuk_11.jpg"
       alt="Kos (Turdus merula) – samiec"
-      onerror="this.style.visibility='hidden'"
     >
     <div class="photo-fade"></div>
-    <div class="photo-credit">© MPF / Wikimedia CC BY-SA 3.0</div>
-  </div>
+    <div class="photo-credit">© Zcebeci / Wikimedia CC BY-SA 4.0</div>
 
-  <!-- ── category tags ── -->
-  <div class="cat-strip">
-    <div class="cat-tag g">
-      <div class="cat-dot"></div>Ogród
-    </div>
-    <div class="cat-tag b">
-      <div class="cat-dot"></div>Najliczniejsze<span class="cat-rank">#3</span>
-    </div>
-    <div class="cat-tag o">
-      <div class="cat-dot"></div>Najpowszechniejsze<span class="cat-rank">#3</span>
+    <!-- tags along the bottom edge of the photo -->
+    <div class="cat-strip">
+      <div class="cat-tag g"><div class="cat-dot"></div>Ogród</div>
+      <div class="cat-tag b"><div class="cat-dot"></div>Najliczniejsze<span class="cat-rank"> #3</span></div>
+      <div class="cat-tag o"><div class="cat-dot"></div>Najpowszechniejsze<span class="cat-rank"> #3</span></div>
     </div>
   </div>
 
-  <!-- ── body ── -->
   <div class="body">
-
     <div class="name-pl">Kos</div>
     <div class="name-lat">Turdus merula</div>
 
@@ -257,28 +304,30 @@ body {
       <div class="pill">🟤 Samica: brunatna, pstra</div>
       <div class="pill">🎵 Melodyjny, głośny śpiew</div>
       <div class="pill">📏 24–27 cm</div>
-      <div class="pill">🌳 Ogrody, parki, lasy liściaste</div>
+      <div class="pill">🌳 Ogrody, parki, lasy</div>
     </div>
 
     <div class="rule"></div>
 
     <div class="slbl">🎬 Leśny Budzik – Kos</div>
-    <div class="yt-wrap">
-      <iframe
-        src="https://www.youtube.com/embed/4axfqloLdn4"
-        title="Leśny Budzik – Kos"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+    <div class="yt-player" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/4axfqloLdn4?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' referrerpolicy=\'strict-origin-when-cross-origin\' allowfullscreen></iframe>'">
+      <img src="https://img.youtube.com/vi/4axfqloLdn4/hqdefault.jpg" alt="Leśny Budzik – Kos">
+      <div class="yt-overlay">
+        <div class="yt-btn">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <path d="M7 4.5L18 11L7 17.5V4.5Z" fill="#1c2319"/>
+          </svg>
+        </div>
+        <div class="yt-label">Leśny Budzik · Echa Leśne</div>
+      </div>
     </div>
 
     <div class="cfoot">
       <div class="csrc">Źródło: <em>ptaki.info · MPPL 2025 · Wikimedia CC</em></div>
       <div class="cnum">Kos · 11 / 33</div>
     </div>
+  </div>
 
-  </div><!-- /body -->
-</div><!-- /card -->
-
+</div>
 </body>
 </html>
