@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let observer;
 
   // --- Ładowanie danych z JSON ---
-  fetch('ptaki-przewodnik/data/ptaki.json')
+  fetch('data/ptaki.json')
     .then(response => {
       if (!response.ok) {
         throw new Error('Nie udało się załadować danych o ptakach.');
