@@ -1,67 +1,134 @@
+/* ============================================
+   Przewodnik Ptaków Polski - Style
+   ============================================ */
+
 /* --- Reset i bazowe style --- */
-* {
+*, *::before, *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 :root {
-  --color-primary: #2c3e50;
-  --color-secondary: #34495e;
-  --color-accent: #3498db;
-  --color-light: #ecf0f1;
-  --color-white: #ffffff;
-  --color-black: #000000;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Lato', Arial, sans-serif;
+  /* Kolory */
+  --cream:     #f7f3ee;
+  --cream-dk:  #ede8e0;
+  --ink:       #1c2319;
+  --ink-m:     #3d4a35;
+  --muted:     #9e9180;
+  --muted-lt:  #c8bfb0;
+  --border:    #ddd5c8;
+
+  /* Kolory kategorii */
+  --g-bg:  rgba(22,38,16,0.82);
+  --g-tx:  #b8d4a0;
+  --g-dot: #5ca832;
+
+  --b-bg:  rgba(12,28,58,0.82);
+  --b-tx:  #a0c4f0;
+  --b-dot: #4a90d9;
+
+  --o-bg:  rgba(50,20,4,0.82);
+  --o-tx:  #f0c090;
+  --o-dot: #e07830;
+
+  /* Szerokość karty */
+  --card-width: min(480px, 100%);
+  
+  /* Czcionki */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'DM Sans', sans-serif;
+}
+
+/* --- Tło strony --- */
+html {
+  background: #181a1c;
 }
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-light);
-  color: var(--color-primary);
-  line-height: 1.6;
+  background: #181a1c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(24px, 5vw, 52px) clamp(12px, 4vw, 20px) clamp(40px, 8vw, 72px);
+  color: var(--ink);
 }
 
+/* --- Nagłówek --- */
 header {
   text-align: center;
-  padding: 2rem 1rem;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  color: var(--color-white);
   margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1200px;
 }
 
 header h1 {
   font-family: var(--font-serif);
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 700;
+  color: var(--cream);
   margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
 header p {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  color: var(--muted-lt);
   opacity: 0.9;
+}
+
+/* --- Stopka strony --- */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  color: var(--muted-lt);
+  font-size: 0.9rem;
+  width: 100%;
+  max-width: 1200px;
 }
 
 /* --- Kontener kart --- */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 2rem;
+  gap: clamp(16px, 4vw, 24px);
   justify-content: center;
+  width: 100%;
 }
 
-/* --- Karta ptaka --- */
+/* --- Indykator ładowania --- */
+.loading-indicator {
+  text-align: center;
+  padding: 2rem;
+  grid-column: 1 / -1;
+  color: var(--muted);
+}
+
+.loading-indicator p {
+  font-size: 1.1rem;
+}
+
+/* ============================================
+   KARTA PTAKA
+   ============================================ */
+
+/* --- Karta --- */
 .bird-card {
-  background: var(--color-white);
-  border-radius: 12px;
+  width: var(--card-width);
+  background: var(--cream);
+  border-radius: clamp(12px, 3vw, 20px);
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 28px 72px rgba(0,0,0,0.55);
+  position: relative;
   opacity: 0;
   transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .bird-card.visible {
@@ -70,21 +137,23 @@ header p {
 }
 
 .bird-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 32px 80px rgba(0,0,0,0.6);
 }
 
 /* --- Zdjęcie ptaka --- */
 .photo-wrap {
+  width: 100%;
+  height: clamp(200px, 48vw, 236px);
   position: relative;
-  height: 250px;
   overflow: hidden;
+  background: #2a3226;
 }
 
 .photo-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.3s ease;
 }
 
@@ -92,221 +161,377 @@ header p {
   transform: scale(1.05);
 }
 
-.photo-wrap::after {
-  content: '';
+/* Gradient fade u dołu zdjęcia */
+.photo-fade {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 50%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, var(--cream));
+  pointer-events: none;
 }
 
-/* --- Tagi kategorii --- */
-.category-tags {
+/* Autor zdjęcia */
+.photo-credit {
+  position: absolute;
+  bottom: 9px;
+  right: 10px;
+  font-size: clamp(8px, 1.8vw, 9px);
+  color: rgba(255,255,255,0.55);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  z-index: 5;
+}
+
+/* --- Tagi kategorii (wzdłuż dolnej krawędzi zdjęcia) --- */
+.cat-strip {
   position: absolute;
   bottom: 10px;
   left: 0;
   right: 0;
   display: flex;
-  justify-content: center;
-  gap: 8px;
-  padding: 8px;
-  z-index: 1;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 0 12px;
+  z-index: 10;
 }
 
-.category-tags .tag {
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--color-white);
+.cat-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 9px;
+  border-radius: 30px;
+  font-size: clamp(8.5px, 1.9vw, 9.5px);
+  font-weight: 500;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  white-space: nowrap;
+  backdrop-filter: blur(10px) saturate(1.3);
 }
 
-.category-tags .tag.ogród {
-  background-color: #4CAF50;
+.cat-tag.g {
+  background: var(--g-bg);
+  color: var(--g-tx);
 }
 
-.category-tags .tag.najliczniejsze {
-  background-color: #2196F3;
+.cat-tag.b {
+  background: var(--b-bg);
+  color: var(--b-tx);
 }
 
-.category-tags .tag.najpowszechniejsze {
-  background-color: #FF9800;
+.cat-tag.o {
+  background: var(--o-bg);
+  color: var(--o-tx);
+}
+
+.cat-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.cat-tag.g .cat-dot {
+  background: var(--g-dot);
+}
+
+.cat-tag.b .cat-dot {
+  background: var(--b-dot);
+}
+
+.cat-tag.o .cat-dot {
+  background: var(--o-dot);
+}
+
+.cat-rank {
+  opacity: .68;
+  font-size: 8px;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-left: 1px;
 }
 
 /* --- Treść karty --- */
-.bird-card-content {
-  padding: 1.5rem;
+.body {
+  padding: clamp(12px, 3vw, 16px) clamp(14px, 4vw, 20px) clamp(16px, 4vw, 20px);
 }
 
-.bird-card h2 {
+/* Nazwa polska */
+.name-pl {
   font-family: var(--font-serif);
-  font-size: 1.75rem;
-  margin-bottom: 0.5rem;
-  color: var(--color-primary);
+  font-size: clamp(26px, 6.5vw, 32px);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.0;
+  letter-spacing: -0.015em;
 }
 
-.bird-card h2 em {
-  font-family: var(--font-sans);
+/* Nazwa łacińska */
+.name-lat {
+  font-family: var(--font-serif);
   font-style: italic;
-  color: var(--color-secondary);
-  font-size: 1rem;
+  font-size: clamp(11px, 2.7vw, 13px);
+  color: var(--muted);
+  margin-top: 2px;
+  margin-bottom: clamp(10px, 2.5vw, 13px);
 }
 
 /* --- Statystyki --- */
 .stats {
   display: flex;
-  justify-content: space-between;
-  margin: 1rem 0;
-  padding: 0.75rem;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 8px;
+  gap: clamp(4px, 1.2vw, 6px);
+  margin-bottom: clamp(8px, 2vw, 10px);
 }
 
 .stat {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
+  flex: 1;
+  padding: clamp(6px, 1.5vw, 8px) clamp(8px, 2vw, 10px);
+  background: var(--cream-dk);
+  border-radius: 9px;
+  min-width: 0;
 }
 
-.stat span:first-child {
-  font-size: 1.2rem;
+.stat-l {
+  font-size: clamp(7px, 1.7vw, 8.5px);
+  font-weight: 500;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 3px;
+}
+
+.stat-v {
+  font-size: clamp(11px, 2.7vw, 13px);
+  font-weight: 500;
+  color: var(--ink-m);
+  line-height: 1.2;
+}
+
+.stat-v small {
+  font-size: clamp(9px, 2.2vw, 10px);
+  font-weight: 400;
+  color: var(--muted);
 }
 
 /* --- Badge statusu Czerwonej Księgi --- */
-.red-book-badge {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--color-white);
-  margin-bottom: 1rem;
+.rbadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: clamp(9.5px, 2.4vw, 10.5px);
+  font-weight: 500;
+  margin-bottom: clamp(8px, 2vw, 10px);
+  flex-wrap: wrap;
 }
 
-.red-book-badge.LC {
-  background-color: #4CAF50;
+.rbadge.LC {
+  background: #dff0d4;
+  border: 1px solid #a8cc8c;
+  color: #2e5c18;
 }
 
-.red-book-badge.NT {
-  background-color: #FFC107;
-  color: var(--color-black);
+.rbadge.NT {
+  background: #fff3d4;
+  border: 1px solid #e0b840;
+  color: #8b6b18;
 }
 
-.red-book-badge.VU {
-  background-color: #FF5722;
+.rbadge.VU {
+  background: #ffe0d4;
+  border: 1px solid #d88c40;
+  color: #8b4513;
 }
 
-.red-book-badge.EN {
-  background-color: #F44336;
+.rbadge.EN {
+  background: #ffd4d4;
+  border: 1px solid #d85050;
+  color: #8b0000;
 }
 
-/* --- Cechy rozpoznawcze --- */
-.features {
-  margin: 1rem 0;
+.rbadge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #5ca832;
+  flex-shrink: 0;
+}
+
+.rbadge.NT .rbadge-dot {
+  background: #e0b840;
+}
+
+.rbadge.VU .rbadge-dot {
+  background: #d88c40;
+}
+
+.rbadge.EN .rbadge-dot {
+  background: #d85050;
+}
+
+/* --- Linia rozdzielająca --- */
+.rule {
+  height: 1px;
+  background: linear-gradient(to right, var(--border), transparent);
+  margin: clamp(8px, 2vw, 10px) 0;
+}
+
+/* --- Etykieta sekcji --- */
+.slbl {
+  font-size: clamp(7.5px, 1.9vw, 8.5px);
+  font-weight: 500;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: clamp(5px, 1.5vw, 7px);
+}
+
+/* --- Pigułki cech --- */
+.pills {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  flex-wrap: wrap;
+  gap: clamp(4px, 1vw, 5px);
+  margin-bottom: clamp(8px, 2vw, 10px);
 }
 
-.features span {
+.pill {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 6px;
+  gap: 4px;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: clamp(3px, .8vw, 4px) clamp(8px, 2vw, 10px);
+  font-size: clamp(10px, 2.4vw, 11px);
+  color: var(--ink-m);
 }
 
-.features span::before {
+.pill::before {
   content: "✔";
-  color: #4CAF50;
+  color: #5ca832;
   font-weight: bold;
 }
 
-/* --- Blok wideo --- */
-.video-block {
-  margin: 1rem 0;
+/* --- Blok wideo YouTube --- */
+.yt-player {
   position: relative;
-  border-radius: 8px;
+  border-radius: 11px;
   overflow: hidden;
+  background: #0f0f0f;
   cursor: pointer;
-}
-
-.video-block a {
-  display: block;
-  position: relative;
-}
-
-.video-block img {
-  width: 100%;
-  height: auto;
   aspect-ratio: 16/9;
-  object-fit: cover;
+  margin-bottom: clamp(8px, 2vw, 10px);
 }
 
-.video-block .play-button {
+.yt-player img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.2s;
+}
+
+.yt-player:hover img {
+  opacity: 0.85;
+}
+
+.yt-overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  inset: 0;
+  background: rgba(0,0,0,0.28);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  gap: 8px;
 }
 
-.video-block:hover .play-button {
-  background-color: rgba(255, 255, 255, 1);
-  transform: translate(-50%, -50%) scale(1.1);
+.yt-btn {
+  width: clamp(44px, 11vw, 56px);
+  height: clamp(44px, 11vw, 56px);
+  border-radius: 50%;
+  background: rgba(255,255,255,0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.18s, background 0.18s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.yt-player:hover .yt-btn {
+  transform: scale(1.1);
+  background: #fff;
+}
+
+.yt-btn svg {
+  margin-left: 4px;
+}
+
+.yt-label {
+  font-size: clamp(8.5px, 2.1vw, 10px);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+}
+
+.yt-player iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* --- Stopka karty --- */
-.bird-card footer {
-  font-size: 0.8rem;
-  color: var(--color-secondary);
-  text-align: right;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: 1rem;
+.cfoot {
+  margin-top: clamp(10px, 2.5vw, 12px);
+  padding-top: clamp(10px, 2.5vw, 11px);
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
 
-/* --- Indykator ładowania --- */
-.loading-indicator {
-  text-align: center;
-  padding: 2rem;
-  grid-column: 1 / -1;
+.csrc {
+  font-size: clamp(8.5px, 2.1vw, 9.5px);
+  color: var(--muted-lt);
 }
 
-.loading-indicator p {
-  font-size: 1.1rem;
-  color: var(--color-secondary);
+.csrc em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: #7a8c6e;
 }
 
-/* --- Responsywność --- */
+.cnum {
+  font-size: clamp(9px, 2.3vw, 10.5px);
+  color: var(--muted-lt);
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+/* ============================================
+   RESPONSYWNOŚĆ
+   ============================================ */
+
 @media (max-width: 1024px) {
   .container {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   }
 }
 
 @media (max-width: 768px) {
   .container {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
+    gap: 16px;
   }
-
+  
   header h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -314,21 +539,21 @@ header p {
   .container {
     grid-template-columns: 1fr;
   }
-
+  
   .bird-card {
     max-width: 100%;
   }
-
+  
   .photo-wrap {
     height: 200px;
   }
-
-  .bird-card h2 {
-    font-size: 1.5rem;
-  }
-
+  
   .stats {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 8px;
+  }
+  
+  .stat {
+    padding: 8px 10px;
   }
 }

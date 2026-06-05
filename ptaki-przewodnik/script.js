@@ -1,4 +1,7 @@
-// --- Zmienne globalne ---
+// ============================================
+// Przewodnik Ptaków Polski - Skrypt
+// ============================================
+
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById('birds-container');
   const loadingIndicator = document.getElementById('loading-indicator');
@@ -33,6 +36,90 @@ document.addEventListener('DOMContentLoaded', () => {
     renderBirds(visibleBirds);
   }
 
+  // --- Mapowanie kategorii na klasy kolorów ---
+  function getCategoryClass(category) {
+    const categoryMap = {
+      'Ogród': 'g',
+      'Najliczniejsze': 'b',
+      'Najpowszechniejsze': 'o'
+    };
+    return categoryMap[category] || 'g';
+  }
+
+  // --- Mapowanie statusu Czerwonej Księgi na tekst ---
+  function getStatusText(status) {
+    const statusTexts = {
+      'LC': 'gatunek najmniejszej troski',
+      'NT': 'bliski zagrożenia',
+      'VU': 'narażony',
+      'EN': 'zagrożony'
+    };
+    return statusTexts[status] || 'nieznany';
+  }
+
+  // --- Generowanie HTML dla tagów kategorii ---
+  function generateCategoryTags(kategorie) {
+    return kategorie.map((k, index) => {
+      const categoryClass = getCategoryClass(k);
+      const rank = index + 1;
+      return `
+        <div class="cat-tag ${categoryClass}">
+          <div class="cat-dot"></div>
+          ${k}${k.includes('Naj') ? ` <span class="cat-rank">#${rank}</span>` : ''}
+        </div>
+      `;
+    }).join('');
+  }
+
+  // --- Generowanie HTML dla statystyk ---
+  function generateStats(ptak) {
+    return `
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-l">Liczebność</div>
+          <div class="stat-v">${ptak.liczebnosc}<small>par lęg.</small></div>
+        </div>
+        <div class="stat">
+          <div class="stat-l">Trend</div>
+          <div class="stat-v">${ptak.trend} <small>${ptak.trend === '↑' ? 'wzrostowy' : ptak.trend === '↓' ? 'spadkowy' : 'stabilny'}</small></div>
+        </div>
+        <div class="stat">
+          <div class="stat-l">Migracje</div>
+          <div class="stat-v">${ptak.migracja} <small>/ ${ptak.migracja === 'Osiadły' ? 'całorocznie' : 'sezonowo'}</small></div>
+        </div>
+      </div>
+    `;
+  }
+
+  // --- Generowanie HTML dla cech ---
+  function generateFeatures(cechy) {
+    return cechy.map(c => `<div class="pill">${c}</div>`).join('');
+  }
+
+  // --- Generowanie HTML dla bloku wideo ---
+  function generateVideoBlock(ptak) {
+    if (!ptak.film) return '';
+    
+    const videoId = ptak.film.id;
+    const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+    const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    
+    return `
+      <div class="slbl">🎬 ${ptak.film.tytul}</div>
+      <div class="yt-player" onclick="this.innerHTML='<iframe src=\"${embedUrl}\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>'">
+        <img src="${thumbnailUrl}" alt="${ptak.film.tytul}" loading="lazy">
+        <div class="yt-overlay">
+          <div class="yt-btn">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <path d="M7 4.5L18 11L7 17.5V4.5Z" fill="#1c2319"/>
+            </svg>
+          </div>
+          <div class="yt-label">Leśny Budzik · Echa Leśne</div>
+        </div>
+      </div>
+    `;
+  }
+
   // --- Renderowanie kart ---
   function renderBirds(birdsToRender) {
     birdsToRender.forEach((ptak, index) => {
@@ -40,72 +127,56 @@ document.addEventListener('DOMContentLoaded', () => {
       card.className = 'bird-card';
       card.dataset.id = ptak.id;
 
-      // --- Kolory statusu Czerwonej Księgi ---
-      const statusColors = {
-        "LC": "#4CAF50",
-        "NT": "#FFC107",
-        "VU": "#FF5722",
-        "EN": "#F44336"
-      };
-
-      const statusTexts = {
-        "LC": "Najmniejszej troski",
-        "NT": "Bliski zagrożenia",
-        "VU": "Narażony",
-        "EN": "Zagrożony"
-      };
-
-      const statusColor = statusColors[ptak.statusCzerwonejKsiazki] || "#4CAF50";
-      const statusText = statusTexts[ptak.statusCzerwonejKsiazki] || "Nieznany";
-
-      // --- Generowanie HTML karty ---
+      // Generowanie HTML karty
       card.innerHTML = `
         <div class="photo-wrap">
           <img 
             src="${ptak.zdjecie}" 
-            alt="${ptak.nazwa}" 
+            alt="${ptak.nazwa} (${ptak.nazwaLacinska}) – ${ptak.migracja === 'Osiadły' ? 'samiec' : 'ptak'}"
             onerror="this.src='https://via.placeholder.com/400x300?text=${encodeURIComponent(ptak.nazwa)}'"
             loading="lazy"
           >
-          <div class="category-tags">
-            ${ptak.kategorie.map(k => {
-              const categoryClass = k.toLowerCase().replace(/\s+/g, '-');
-              return `<span class="tag ${categoryClass}">${k}</span>`;
-            }).join('')}
+          <div class="photo-fade"></div>
+          <div class="photo-credit">© Wikimedia Commons</div>
+          
+          <!-- Tagi kategorii wzdłuż dolnej krawędzi zdjęcia -->
+          <div class="cat-strip">
+            ${generateCategoryTags(ptak.kategorie)}
           </div>
         </div>
-        <div class="bird-card-content">
-          <h2>${ptak.nazwa} <em>${ptak.nazwaLacinska}</em></h2>
-          <div class="stats">
-            <div class="stat"><span>📊</span> ${ptak.liczebnosc}</div>
-            <div class="stat"><span>📈</span> ${ptak.trend}</div>
-            <div class="stat"><span>🏡</span> ${ptak.migracja}</div>
+        
+        <div class="body">
+          <div class="name-pl">${ptak.nazwa}</div>
+          <div class="name-lat">${ptak.nazwaLacinska}</div>
+
+          ${generateStats(ptak)}
+
+          <div class="rbadge ${ptak.statusCzerwonejKsiazki}">
+            <div class="rbadge-dot"></div>
+            Czerwona Księga: ${ptak.statusCzerwonejKsiazki} – ${getStatusText(ptak.statusCzerwonejKsiazki)}
           </div>
-          <div class="red-book-badge" style="background-color: ${statusColor};">
-            ${ptak.statusCzerwonejKsiazki} – ${statusText}
+
+          <div class="rule"></div>
+
+          <div class="slbl">🔍 Jak rozpoznać</div>
+          <div class="pills">
+            ${generateFeatures(ptak.cechy)}
           </div>
-          <div class="features">
-            ${ptak.cechy.map(c => `<span>${c}</span>`).join('')}
+
+          <div class="rule"></div>
+
+          ${generateVideoBlock(ptak)}
+
+          <div class="cfoot">
+            <div class="csrc">Źródło: <em>${ptak.zrodla.join(' · ')}</em></div>
+            <div class="cnum">${ptak.nazwa} · ${ptak.id} / ${allBirds.length}</div>
           </div>
-          ${ptak.film ? `
-            <div class="video-block">
-              <a href="https://www.youtube.com/watch?v=${ptak.film.id}" target="_blank" rel="noopener noreferrer">
-                <img 
-                  src="https://img.youtube.com/vi/${ptak.film.id}/hqdefault.jpg" 
-                  alt="${ptak.film.tytul}"
-                  loading="lazy"
-                >
-                <div class="play-button">▶️</div>
-              </a>
-            </div>
-          ` : ''}
-          <footer>Karta ${ptak.id}/${allBirds.length} | Źródła: ${ptak.zrodla.join(', ')}</footer>
         </div>
       `;
 
       container.appendChild(card);
 
-      // --- Animacja pojawiania się kart ---
+      // Animacja pojawiania się kart
       setTimeout(() => {
         card.classList.add('visible');
       }, index * 100);
@@ -163,4 +234,12 @@ document.addEventListener('DOMContentLoaded', () => {
       e.target.src = `https://via.placeholder.com/400x300?text=${encodeURIComponent(e.target.alt)}`;
     }
   }, true);
+
+  // --- Funkcja do obsługi kliknięcia na kartę wideo ---
+  document.addEventListener('click', (e) => {
+    const ytPlayer = e.target.closest('.yt-player');
+    if (ytPlayer && !ytPlayer.querySelector('iframe')) {
+      // Kliknięto na player, który nie ma jeszcze iframe - nie rób nic, bo onclick w HTMLu to obsłuży
+    }
+  });
 });
