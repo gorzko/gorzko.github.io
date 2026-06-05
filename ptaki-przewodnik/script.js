@@ -100,24 +100,38 @@ document.addEventListener('DOMContentLoaded', () => {
   function generateVideoBlock(ptak) {
     if (!ptak.film) return '';
     
+    const platform = ptak.film.platforma || 'youtube';
     const videoId = ptak.film.id;
-    const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-    const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
     
-    return `
-      <div class="slbl">🎬 ${ptak.film.tytul}</div>
-      <div class="yt-player" onclick="this.innerHTML='<iframe src=\"${embedUrl}\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>'">
-        <img src="${thumbnailUrl}" alt="${ptak.film.tytul}" loading="lazy">
-        <div class="yt-overlay">
-          <div class="yt-btn">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-              <path d="M7 4.5L18 11L7 17.5V4.5Z" fill="#1c2319"/>
-            </svg>
-          </div>
-          <div class="yt-label">Leśny Budzik · Echa Leśne</div>
+    if (platform === 'facebook') {
+      // Facebook Embedded Video Player
+      const fbEmbedUrl = `https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F${videoId}%2F&show_text=0&width=560&height=315`;
+      return `
+        <div class="slbl">🎬 ${ptak.film.tytul}</div>
+        <div class="fb-player">
+          <iframe src="${fbEmbedUrl}" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
         </div>
-      </div>
-    `;
+      `;
+    } else {
+      // YouTube (default)
+      const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+      const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+      
+      return `
+        <div class="slbl">🎬 ${ptak.film.tytul}</div>
+        <div class="yt-player" onclick="this.innerHTML='<iframe src=\"${embedUrl}\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>'">
+          <img src="${thumbnailUrl}" alt="${ptak.film.tytul}" loading="lazy">
+          <div class="yt-overlay">
+            <div class="yt-btn">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path d="M7 4.5L18 11L7 17.5V4.5Z" fill="#1c2319"/>
+              </svg>
+            </div>
+            <div class="yt-label">Leśny Budzik · Echa Leśne</div>
+          </div>
+        </div>
+      `;
+    }
   }
 
   // --- Renderowanie kart ---
