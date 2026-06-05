@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ptaki wokół nas – Łozówka</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --cream: #f7f3ee; --cream-dk: #ede8e0;
+  --ink: #1c2319; --ink-m: #3d4a35;
+  --muted: #9e9180; --muted-lt: #c8bfb0; --border: #ddd5c8;
+  --w: min(480px, 100%);
+  --g-bg: rgba(22,38,16,0.82); --g-tx: #b8d4a0; --g-dot: #5ca832;
+}
+html { background: #181a1c; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #181a1c;
+  min-height: 100vh;
+  display: flex; flex-direction: column; align-items: center;
+  padding: clamp(24px,5vw,52px) clamp(12px,4vw,20px) clamp(40px,8vw,72px);
+}
+.card {
+  width: var(--w); background: var(--cream);
+  border-radius: clamp(12px,3vw,20px); overflow: hidden;
+  box-shadow: 0 28px 72px rgba(0,0,0,0.55); position: relative;
+}
+.photo-wrap {
+  width: 100%; height: clamp(200px,48vw,236px);
+  position: relative; overflow: hidden; background: #2a3226;
+}
+.photo-wrap img { width:100%; height:100%; object-fit:cover; display:block; }
+.photo-fade {
+  position:absolute; bottom:0; left:0; right:0; height:80px;
+  background:linear-gradient(to bottom,transparent,var(--cream)); pointer-events:none;
+}
+.photo-credit {
+  position:absolute; bottom:9px; right:10px;
+  font-size:clamp(8px,1.8vw,9px); color:rgba(255,255,255,0.55);
+  text-shadow:0 1px 4px rgba(0,0,0,0.6);
+}
+.cat-strip {
+  position:absolute; bottom:10px; left:0; right:0;
+  display:flex; flex-wrap:wrap; gap:5px; padding:0 12px; z-index:10;
+}
+.cat-tag {
+  display:inline-flex; align-items:center; gap:5px;
+  padding:4px 9px; border-radius:30px;
+  font-size:clamp(8.5px,1.9vw,9.5px); font-weight:500; letter-spacing:0.12em;
+  text-transform:uppercase; white-space:nowrap;
+  backdrop-filter:blur(10px) saturate(1.3);
+}
+.cat-tag.g { background:var(--g-bg); color:var(--g-tx); }
+.cat-dot { width:5px; height:5px; border-radius:50%; flex-shrink:0; }
+.cat-tag.g .cat-dot { background:var(--g-dot); }
+.body { padding:clamp(12px,3vw,16px) clamp(14px,4vw,20px) clamp(16px,4vw,20px); }
+.name-pl {
+  font-family:'Playfair Display',serif; font-size:clamp(26px,6.5vw,32px);
+  font-weight:700; color:var(--ink); line-height:1.0; letter-spacing:-0.015em;
+}
+.name-lat {
+  font-family:'Playfair Display',serif; font-style:italic;
+  font-size:clamp(11px,2.7vw,13px); color:var(--muted);
+  margin-top:2px; margin-bottom:clamp(10px,2.5vw,13px);
+}
+.stats { display:flex; gap:clamp(4px,1.2vw,6px); margin-bottom:clamp(8px,2vw,10px); }
+.stat { flex:1; padding:clamp(6px,1.5vw,8px) clamp(8px,2vw,10px); background:var(--cream-dk); border-radius:9px; min-width:0; }
+.stat-l { font-size:clamp(7px,1.7vw,8.5px); font-weight:500; letter-spacing:.11em; text-transform:uppercase; color:var(--muted); margin-bottom:3px; }
+.stat-v { font-size:clamp(11px,2.7vw,13px); font-weight:500; color:var(--ink-m); line-height:1.2; }
+.stat-v small { font-size:clamp(9px,2.2vw,10px); font-weight:400; color:var(--muted); }
+.rbadge {
+  display:inline-flex; align-items:center; gap:6px; flex-wrap:wrap;
+  padding:4px 10px; border-radius:6px; font-size:clamp(9.5px,2.4vw,10.5px);
+  font-weight:500; margin-bottom:clamp(8px,2vw,10px);
+  background:#dff0d4; border:1px solid #a8cc8c; color:#2e5c18;
+}
+.rbadge-dot { width:7px; height:7px; border-radius:50%; background:#5ca832; flex-shrink:0; }
+.rule { height:1px; background:linear-gradient(to right,var(--border),transparent); margin:clamp(8px,2vw,10px) 0; }
+.slbl { font-size:clamp(7.5px,1.9vw,8.5px); font-weight:500; letter-spacing:.17em; text-transform:uppercase; color:var(--muted); margin-bottom:clamp(5px,1.5vw,7px); }
+.pills { display:flex; flex-wrap:wrap; gap:clamp(4px,1vw,5px); margin-bottom:clamp(8px,2vw,10px); }
+.pill {
+  display:flex; align-items:center; gap:4px; background:#fff;
+  border:1px solid var(--border); border-radius:20px;
+  padding:clamp(3px,.8vw,4px) clamp(8px,2vw,10px);
+  font-size:clamp(10px,2.4vw,11px); color:var(--ink-m);
+}
+.yt-player {
+  position:relative; border-radius:11px; overflow:hidden;
+  background:#0f0f0f; cursor:pointer; aspect-ratio:16/9;
+}
+.yt-player img { width:100%; height:100%; object-fit:cover; display:block; transition:opacity 0.2s; }
+.yt-player:hover img { opacity:0.85; }
+.yt-overlay {
+  position:absolute; inset:0; background:rgba(0,0,0,0.28);
+  display:flex; align-items:center; justify-content:center; flex-direction:column; gap:8px;
+}
+.yt-btn {
+  width:clamp(44px,11vw,56px); height:clamp(44px,11vw,56px); border-radius:50%;
+  background:rgba(255,255,255,0.92); display:flex; align-items:center; justify-content:center;
+  transition:transform 0.18s,background 0.18s; box-shadow:0 4px 20px rgba(0,0,0,0.4);
+}
+.yt-player:hover .yt-btn { transform:scale(1.1); background:#fff; }
+.yt-btn svg { margin-left:4px; }
+.yt-label { font-size:clamp(8.5px,2.1vw,10px); font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.75); }
+.yt-player iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.cfoot {
+  margin-top:clamp(10px,2.5vw,12px); padding-top:clamp(10px,2.5vw,11px);
+  border-top:1px solid var(--border);
+  display:flex; align-items:center; justify-content:space-between; gap:8px;
+}
+.csrc { font-size:clamp(8.5px,2.1vw,9.5px); color:var(--muted-lt); }
+.csrc em { font-family:'Playfair Display',serif; font-style:italic; color:#7a8c6e; }
+.cnum { font-size:clamp(9px,2.3vw,10.5px); color:var(--muted-lt); font-weight:300; white-space:nowrap; }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="photo-wrap">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Acrocephalus_palustris_Irpin6.JPG/960px-Acrocephalus_palustris_Irpin6.JPG"
+      alt="Łozówka (Acrocephalus palustris)"
+    >
+    <div class="photo-fade"></div>
+    <div class="photo-credit">© Аимаина хикари / Wikimedia CC0</div>
+    <div class="cat-strip">
+      <div class="cat-tag g"><div class="cat-dot"></div>Ogród</div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="name-pl">Łozówka</div>
+    <div class="name-lat">Acrocephalus palustris</div>
+    <div class="stats">
+      <div class="stat"><div class="stat-l">Liczebność</div><div class="stat-v">1–2 mln <small>par lęg.</small></div></div>
+      <div class="stat"><div class="stat-l">Trend</div><div class="stat-v">→ <small>stabilny</small></div></div>
+      <div class="stat"><div class="stat-l">Migracje</div><div class="stat-v">Wędrowny <small>(Afryka)</small></div></div>
+    </div>
+    <div class="rbadge"><div class="rbadge-dot"></div>Czerwona Księga: LC – gatunek najmniejszej troski</div>
+    <div class="rule"></div>
+    <div class="slbl">🔍 Jak rozpoznać</div>
+    <div class="pills">
+      <div class="pill">🟤 Brązowy wierzch, kremowy spód</div>
+      <div class="pill">🎵 Nieustanny śpiew z imitacjami</div>
+      <div class="pill">🦜 Naśladuje inne ptaki i dźwięki</div>
+      <div class="pill">📏 13 cm</div>
+      <div class="pill">🌿 Zarośla wierzbowe, ogrody, łąki</div>
+    </div>
+    <div class="rule"></div>
+    <div class="slbl">🎬 Leśny Budzik – Łozówka</div>
+    <div class="yt-player" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/wE2IG6Zll_k?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' referrerpolicy=\'strict-origin-when-cross-origin\' allowfullscreen></iframe>'">
+      <img src="https://img.youtube.com/vi/wE2IG6Zll_k/hqdefault.jpg" alt="Leśny Budzik – Łozówka">
+      <div class="yt-overlay">
+        <div class="yt-btn"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M7 4.5L18 11L7 17.5V4.5Z" fill="#1c2319"/></svg></div>
+        <div class="yt-label">Leśny Budzik · Echa Leśne</div>
+      </div>
+    </div>
+    <div class="cfoot">
+      <div class="csrc">Źródło: <em>ptaki.info · MPPL 2025 · Wikimedia CC</em></div>
+      <div class="cnum">Łozówka · 4 / 33</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
