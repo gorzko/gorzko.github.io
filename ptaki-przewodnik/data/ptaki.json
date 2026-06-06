@@ -42,6 +42,26 @@
     },
     {
       "id": 3,
+      "nazwa": "Gil",
+      "nazwaLacinska": "Pyrrhula pyrrhula",
+      "kategorie": ["Najliczniejsze", "Najpowszechniejsze"],
+      "zdjecie": "img/Pyrrhula_pyrrhula.jpg",
+      "liczebnosc": "800–1200 tys. par",
+      "trend": "→",
+      "migracja": "Osiadły",
+      "statusCzerwonejKsiazki": "LC",
+      "cechy": [
+        "Samiec: różowa pierś, szare plecy, czarna głowa",
+        "Samica: brązowa, mniej kontrastowa"
+      ],
+      "film": {
+        "id": "GIL789",
+        "tytul": "Leśny Budzik – Gil"
+      },
+      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+    },
+    {
+      "id": 4,
       "nazwa": "Grzywacz",
       "nazwaLacinska": "Columba palumbus",
       "kategorie": ["Najliczniejsze", "Najpowszechniejsze"],
@@ -61,7 +81,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 4,
+      "id": 5,
       "nazwa": "Jerzyk",
       "nazwaLacinska": "Apus apus",
       "kategorie": ["Ogród"],
@@ -81,7 +101,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 5,
+      "id": 6,
       "nazwa": "Kapturka",
       "nazwaLacinska": "Sylvia atricapilla",
       "kategorie": ["Ogród", "Najliczniejsze", "Najpowszechniejsze"],
@@ -101,7 +121,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 6,
+      "id": 7,
       "nazwa": "Kawka",
       "nazwaLacinska": "Corvus monedula",
       "kategorie": ["Ogród"],
@@ -121,7 +141,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 7,
+      "id": 8,
       "nazwa": "Kos",
       "nazwaLacinska": "Turdus merula",
       "kategorie": ["Ogród", "Najliczniejsze", "Najpowszechniejsze"],
@@ -141,7 +161,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 8,
+      "id": 9,
       "nazwa": "Kukułka",
       "nazwaLacinska": "Cuculus canorus",
       "kategorie": ["Ogród"],
@@ -161,7 +181,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 9,
+      "id": 10,
       "nazwa": "Łozówka",
       "nazwaLacinska": "Acrocephalus palustris",
       "kategorie": ["Ogród"],
@@ -181,7 +201,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 10,
+      "id": 11,
       "nazwa": "Modraszka",
       "nazwaLacinska": "Cyanistes caeruleus",
       "kategorie": ["Najliczniejsze", "Najpowszechniejsze"],
@@ -201,7 +221,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 11,
+      "id": 12,
       "nazwa": "Piegża",
       "nazwaLacinska": "Sylvia curruca",
       "kategorie": ["Ogród"],
@@ -221,7 +241,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 12,
+      "id": 13,
       "nazwa": "Rudzik",
       "nazwaLacinska": "Erithacus rubecula",
       "kategorie": ["Najliczniejsze", "Najpowszechniejsze"],
@@ -241,7 +261,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 13,
+      "id": 14,
       "nazwa": "Sierpówka",
       "nazwaLacinska": "Apus melba",
       "kategorie": ["Ogród"],
@@ -261,7 +281,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 14,
+      "id": 15,
       "nazwa": "Sójka",
       "nazwaLacinska": "Garrulus glandarius",
       "kategorie": ["Ogród"],
@@ -281,7 +301,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 15,
+      "id": 16,
       "nazwa": "Sroka",
       "nazwaLacinska": "Pica pica",
       "kategorie": ["Ogród", "Najpowszechniejsze"],
@@ -301,7 +321,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 16,
+      "id": 17,
       "nazwa": "Skowronek",
       "nazwaLacinska": "Alauda arvensis",
       "kategorie": ["Najliczniejsze"],
@@ -321,7 +341,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 17,
+      "id": 18,
       "nazwa": "Szpak",
       "nazwaLacinska": "Sturnus vulgaris",
       "kategorie": ["Ogród", "Najliczniejsze", "Najpowszechniejsze"],
@@ -341,7 +361,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 18,
+      "id": 19,
       "nazwa": "Śpiewak",
       "nazwaLacinska": "Phylloscopus collybita",
       "kategorie": ["Ogród"],
@@ -361,7 +381,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 19,
+      "id": 20,
       "nazwa": "Trznadel",
       "nazwaLacinska": "Emberiza citrinella",
       "kategorie": ["Najliczniejsze"],
@@ -381,7 +401,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 20,
+      "id": 21,
       "nazwa": "Wróbel",
       "nazwaLacinska": "Passer domesticus",
       "kategorie": ["Najliczniejsze"],
@@ -401,7 +421,7 @@
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
     {
-      "id": 21,
+      "id": 22,
       "nazwa": "Zięba",
       "nazwaLacinska": "Fringilla coelebs",
       "kategorie": ["Najliczniejsze", "Najpowszechniejsze"],
