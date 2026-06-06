@@ -280,11 +280,16 @@
 
 ---
 
-## 🔗 Powiązane Issue
+## 🔗 Powiązane
 
 Wszystkie issue są powiązane z **Issue #4** (Backlog: Non-critical improvements from PR #2 review), który zawiera sugestie z przeglądu kodu.
+
+## 📤 Pull Request
+
+- **Draft PR:** [#14 - 🎯 Rozwiązanie wszystkich 13 issue](https://github.com/gorzko/gorzko.github.io/pull/14)
+- **Branch:** `vibe/rozwiazanie-wszystkich-issue-6f81db`
 
 ---
 
 **Ostatnia aktualizacja:** 2026-06-06  
-**Wersja:** 1.0
+**Wersja:** 1.1
