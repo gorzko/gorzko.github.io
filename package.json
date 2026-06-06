@@ -1,0 +1,20 @@
+{
+  "name": "przewodnik-ptakow-polski",
+  "version": "1.0.0",
+  "description": "Przewodnik Ptaków Polski - interaktywny przewodnik ptaków lęgowych w Polsce",
+  "scripts": {
+    "test": "node tests/ptaki.test.js",
+    "test:watch": "nodemon --watch tests --watch ptaki-przewodnik/data --ext js,json --exec \"npm test\""
+  },
+  "keywords": [
+    "ptaki",
+    "przewodnik",
+    "polska",
+    "ornitologia"
+  ],
+  "author": "gorzko",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

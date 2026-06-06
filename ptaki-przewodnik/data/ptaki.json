@@ -57,8 +57,9 @@
         "Samica: brązowa, mniej kontrastowa"
       ],
       "film": {
-        "id": "GIL789",
-        "tytul": "Leśny Budzik – Gil"
+        "id": "6Jz5X1Q1Z1o",
+        "tytul": "Leśny Budzik – Gil",
+        "platforma": "youtube"
       },
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
@@ -98,9 +99,9 @@
         "Głośne krzyki w locie"
       ],
       "film": {
-        "id": "1B9o4Ym7JQ",
+        "id": "1B9o4Ym7JQ0",
         "tytul": "Leśny Budzik – Jerzyk",
-        "platforma": "facebook"
+        "platforma": "youtube"
       },
       "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
     },
