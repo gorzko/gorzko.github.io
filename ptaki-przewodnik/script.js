@@ -88,16 +88,27 @@ document.addEventListener('DOMContentLoaded', () => {
             ${ptak.cechy.map(c => `<span>${c}</span>`).join('')}
           </div>
           ${ptak.film ? `
-            <div class="video-block">
-              <a href="https://www.youtube.com/watch?v=${ptak.film.id}" target="_blank" rel="noopener noreferrer">
-                <img 
-                  src="https://img.youtube.com/vi/${ptak.film.id}/hqdefault.jpg" 
-                  alt="${ptak.film.tytul}"
+            ${ptak.film.platforma === 'facebook' ? `
+              <div class="fb-player">
+                <iframe 
+                  src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=${ptak.film.id}"
+                  allowfullscreen="true"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                   loading="lazy"
-                >
-                <div class="play-button">▶️</div>
-              </a>
-            </div>
+                ></iframe>
+              </div>
+            ` : `
+              <div class="video-block">
+                <a href="https://www.youtube.com/watch?v=${ptak.film.id}" target="_blank" rel="noopener noreferrer" aria-label="Obejrzyj film o ${ptak.nazwa} na YouTube">
+                  <img 
+                    src="https://img.youtube.com/vi/${ptak.film.id}/hqdefault.jpg" 
+                    alt="${ptak.film.tytul}"
+                    loading="lazy"
+                  >
+                  <div class="play-button" aria-label="Odtwórz">▶️</div>
+                </a>
+              </div>
+            `}
           ` : ''}
           <footer>Karta ${ptak.id}/${allBirds.length} | Źródła: ${ptak.zrodla.join(', ')}</footer>
         </div>

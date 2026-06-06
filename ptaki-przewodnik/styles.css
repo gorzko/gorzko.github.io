@@ -270,6 +270,21 @@ header p {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
+/* --- Facebook Player --- */
+.fb-player {
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.fb-player iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border: none;
+}
+
 /* --- Stopka karty --- */
 .bird-card footer {
   font-size: 0.8rem;
