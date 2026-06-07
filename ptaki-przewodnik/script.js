@@ -1,392 +1,195 @@
 // ============================================
-// Przewodnik Ptaków Polski - Skrypt
+// Ptasiarski Przewodnik Marka – Tryb Książki
 // ============================================
 
 document.addEventListener('DOMContentLoaded', () => {
-  const container = document.getElementById('birds-container');
-  const loadingIndicator = document.getElementById('loading-indicator');
-  const searchInput = document.getElementById('search-input');
-  const searchClear = document.getElementById('search-clear');
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const resultsInfo = document.getElementById('results-info');
-  
+
+  // ── Elementy DOM ──────────────────────────
+  const bookEl          = document.getElementById('book');
+  const bookCardsEl     = document.getElementById('book-cards');
+  const loadingText     = document.createElement('p');
+  const navPrev         = document.getElementById('nav-prev');
+  const navNext         = document.getElementById('nav-next');
+  const navCounter      = document.getElementById('nav-counter');
+  const navSearch       = document.getElementById('nav-search');
+  const searchOverlay   = document.getElementById('search-overlay');
+  const searchClose     = document.getElementById('search-overlay-close');
+  const searchInput     = document.getElementById('search-input');
+  const searchClear     = document.getElementById('search-clear');
+  const filterButtons   = document.querySelectorAll('.filter-btn');
+  const resultsInfo     = document.getElementById('results-info');
+  const heroCta         = document.getElementById('hero-cta-btn');
+  const heroScroll      = document.getElementById('hero-scroll-btn');
+
   let allBirds = [];
-  let visibleBirds = [];
-  let observer;
   let currentSearchTerm = '';
   let currentCategoryFilter = 'all';
 
-  // --- Ładowanie danych z JSON ---
+  // ── Inicjalizacja reveal-animacji ────────
+  initRevealAnimations();
+
+  // ── Przesuń do następnej strony z okładki ─
+  if (heroCta) {
+    heroCta.addEventListener('click', () => navigator.goTo(1));
+  }
+  if (heroScroll) {
+    heroScroll.addEventListener('click', () => navigator.goTo(1));
+  }
+
+  // ── Ładowanie danych ──────────────────────
   fetch('data/ptaki.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Nie udało się załadować danych o ptakach.');
-      }
-      return response.json();
+    .then(res => {
+      if (!res.ok) throw new Error('Błąd ładowania danych');
+      return res.json();
     })
     .then(data => {
       allBirds = data.ptaki.sort((a, b) => a.nazwa.localeCompare(b.nazwa, 'pl'));
-      initLazyLoading();
-      setupIntersectionObserver();
+      renderBookPages(allBirds);
+      navigator.refresh();
       setupSearchAndFilters();
-      loadingIndicator.style.display = 'none';
     })
-    .catch(error => {
-      console.error('Błąd ładowania danych:', error);
-      loadingIndicator.innerHTML = '<p style="color: red;">Nie udało się załadować danych. Spróbuj odświeżyć stronę.</p>';
+    .catch(err => {
+      console.error(err);
+      bookCardsEl.innerHTML = '<section class="page page--guide" style="display:flex;align-items:center;justify-content:center;"><p style="color:var(--muted-lt);">Nie udało się załadować danych. Spróbuj odświeżyć stronę.</p></section>';
+      navigator.refresh();
     });
 
-  // --- Funkcja do filtrowania ptaków ---
-  function filterBirds() {
-    const searchTerm = currentSearchTerm.toLowerCase();
-    const category = currentCategoryFilter;
-    
-    return allBirds.filter(ptak => {
-      // Filtrowanie po wyszukiwarce
-      const matchesSearch = !searchTerm || 
-        ptak.nazwa.toLowerCase().includes(searchTerm) ||
-        ptak.nazwaLacinska.toLowerCase().includes(searchTerm);
-      
-      // Filtrowanie po kategorii
-      const matchesCategory = category === 'all' || 
-        ptak.kategorie.includes(category);
-      
-      return matchesSearch && matchesCategory;
-    });
-  }
+  // ═══════════════════════════════════════════
+  // NAWIGATOR KSIĄŻKI
+  // ═══════════════════════════════════════════
 
-  // --- Funkcja do aktualizacji wyników wyszukiwania ---
-  function updateSearchResults() {
-    const filteredBirds = filterBirds();
-    const resultsCount = filteredBirds.length;
-    
-    // Aktualizuj informację o wynikach
-    if (resultsCount === 0) {
-      resultsInfo.textContent = 'Nie znaleziono żadnych ptaków.';
-    } else if (currentSearchTerm || currentCategoryFilter !== 'all') {
-      resultsInfo.textContent = `Znaleziono ${resultsCount} ${resultsCount === 1 ? 'ptaka' : resultsCount < 5 ? 'ptaki' : 'ptaków'}.`;
-    } else {
-      resultsInfo.textContent = '';
-    }
-    
-    // Wyczyść kontener i zresetuj lazy loading
-    container.innerHTML = '';
-    visibleBirds = [];
-    
-    // Jeśli są wyniki, załadowanie pierwszych 6
-    if (filteredBirds.length > 0) {
-      const initialLoadCount = Math.min(6, filteredBirds.length);
-      visibleBirds = filteredBirds.slice(0, initialLoadCount);
-      renderBirds(visibleBirds);
-      
-      // Zaktualizuj obserwator
-      if (observer) {
-        observer.disconnect();
-      }
-      setupIntersectionObserver(filteredBirds);
-    }
-    
-    return filteredBirds;
-  }
+  const navigator = {
+    pages: [],
+    currentIdx: 0,
+    io: null,
+    touchStartY: 0,
+    touchStartX: 0,
 
-  // --- Funkcja do ustawienia wyszukiwarki i filtrów ---
-  function setupSearchAndFilters() {
-    // Wyszukiwanie
-    searchInput.addEventListener('input', (e) => {
-      currentSearchTerm = e.target.value;
-      updateSearchResults();
-      
-      // Pokaż/ukryj przycisk wyczyszczenia
-      searchClear.style.display = currentSearchTerm ? 'block' : 'none';
-    });
-    
-    // Wyczyszczenie wyszukiwania
-    searchClear.addEventListener('click', () => {
-      searchInput.value = '';
-      currentSearchTerm = '';
-      searchClear.style.display = 'none';
-      updateSearchResults();
-      searchInput.focus();
-    });
-    
-    // Filtry kategorii
-    filterButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        // Usunąć aktywną klasę z wszystkich przycisków
-        filterButtons.forEach(b => {
-          b.classList.remove('active');
-          b.setAttribute('aria-pressed', 'false');
-        });
-        
-        // Ustaw aktywną klasę na kliknięty przycisk
-        btn.classList.add('active');
-        btn.setAttribute('aria-pressed', 'true');
-        
-        currentCategoryFilter = btn.dataset.category;
-        updateSearchResults();
+    init() {
+      this.io = new IntersectionObserver(
+        (entries) => {
+          let maxRatio = 0;
+          let bestIdx = this.currentIdx;
+          entries.forEach(entry => {
+            if (entry.intersectionRatio > maxRatio) {
+              maxRatio = entry.intersectionRatio;
+              bestIdx = this.pages.indexOf(entry.target);
+            }
+          });
+          if (maxRatio > 0.5 && bestIdx !== -1) {
+            this.currentIdx = bestIdx;
+            this.updateUI();
+          }
+        },
+        { root: bookEl, threshold: [0, 0.5, 1.0] }
+      );
+
+      // Klawiatura
+      document.addEventListener('keydown', (e) => {
+        if (searchOverlay && !searchOverlay.hidden) return;
+        if (e.key === 'ArrowDown' || e.key === 'PageDown') { e.preventDefault(); this.next(); }
+        if (e.key === 'ArrowUp'   || e.key === 'PageUp'  ) { e.preventDefault(); this.prev(); }
       });
-    });
-    
-    // Obsługa klawiatury dla przycisków filtrów
-    filterButtons.forEach(btn => {
-      btn.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          btn.click();
+
+      // Dotyk / swipe
+      bookEl.addEventListener('touchstart', (e) => {
+        this.touchStartY = e.touches[0].clientY;
+        this.touchStartX = e.touches[0].clientX;
+      }, { passive: true });
+      bookEl.addEventListener('touchend', (e) => {
+        const dy = this.touchStartY - e.changedTouches[0].clientY;
+        const dx = Math.abs(this.touchStartX - e.changedTouches[0].clientX);
+        if (Math.abs(dy) > 60 && Math.abs(dy) > dx) {
+          dy > 0 ? this.next() : this.prev();
         }
-      });
-    });
-  }
+      }, { passive: true });
 
-  // --- Inicjalizacja lazy loading ---
-  function initLazyLoading() {
-    // Pierwotne wyświetlenie pierwszych 6 kart
-    const initialLoadCount = 6;
-    visibleBirds = allBirds.slice(0, initialLoadCount);
-    renderBirds(visibleBirds);
-  }
+      // Przyciski
+      navPrev.addEventListener('click', () => this.prev());
+      navNext.addEventListener('click', () => this.next());
+    },
 
-  // --- Mapowanie kategorii na klasy kolorów ---
-  function getCategoryClass(category) {
-    const categoryMap = {
-      'Ogród': 'g',
-      'Najliczniejsze': 'b',
-      'Najpowszechniejsze': 'o'
-    };
-    return categoryMap[category] || 'g';
-  }
-
-  // --- Mapowanie statusu Czerwonej Księgi na tekst ---
-  function getStatusText(status) {
-    const statusTexts = {
-      'LC': 'gatunek najmniejszej troski',
-      'NT': 'bliski zagrożenia',
-      'VU': 'narażony',
-      'EN': 'zagrożony'
-    };
-    return statusTexts[status] || 'nieznany';
-  }
-
-  // --- Funkcja do optymalizacji URL obrazu ---
-  function getOptimizedImageUrl(url, size = '600px') {
-    // Jeśli to lokalny obraz, zwróć bez zmian
-    if (!url.includes('upload.wikimedia.org')) {
-      return url;
-    }
-    
-    // Zamień 800px na żądany rozmiar
-    return url.replace(/\/\d+px-/g, `/${size}-`);
-  }
-
-  // --- Funkcja do generowania srcset ---
-  function getImageSrcset(url) {
-    if (!url.includes('upload.wikimedia.org')) {
-      return '';
-    }
-    
-    const baseUrl = url.replace(/\/\d+px-/g, '/');
-    const sizes = ['400px', '600px', '800px'];
-    
-    return sizes.map(size => {
-      const optimizedUrl = baseUrl.replace('.jpg', `/${size}-${url.split('/').pop()}`);
-      return `${optimizedUrl} ${size}`;
-    }).join(', ');
-  }
-
-  // --- Generowanie HTML dla tagów kategorii ---
-  function generateCategoryTags(kategorie) {
-    return kategorie.map((k, index) => {
-      const categoryClass = getCategoryClass(k);
-      const rank = index + 1;
-      return `
-        <div class="cat-tag ${categoryClass}" role="button" tabindex="0" aria-label="Kategoria: ${k}">
-          <div class="cat-dot"></div>
-          ${k}${k.includes('Naj') ? ` <span class="cat-rank">#${rank}</span>` : ''}
-        </div>
-      `;
-    }).join('');
-  }
-
-  // --- Generowanie HTML dla statystyk ---
-  function generateStats(ptak) {
-    const trendText = ptak.trend === '↑' ? 'wzrostowy' : ptak.trend === '↓' ? 'spadkowy' : 'stabilny';
-    const migrationText = ptak.migracja === 'Osiadły' ? 'całorocznie' : 'sezonowo';
-    
-    return `
-      <div class="stats" role="list" aria-label="Statystyki ptaka">
-        <div class="stat" role="listitem" aria-label="Liczebność: ${ptak.liczebnosc} par lęgowych">
-          <div class="stat-l" id="stat-liczebnosc">Liczebność</div>
-          <div class="stat-v" aria-labelledby="stat-liczebnosc">${ptak.liczebnosc}<small>par lęg.</small></div>
-        </div>
-        <div class="stat" role="listitem" aria-label="Trend populacji: ${trendText}">
-          <div class="stat-l" id="stat-trend">Trend</div>
-          <div class="stat-v" aria-labelledby="stat-trend">${ptak.trend} <small>${trendText}</small></div>
-        </div>
-        <div class="stat" role="listitem" aria-label="Migracje: ${ptak.migracja}, ${migrationText}">
-          <div class="stat-l" id="stat-migracje">Migracje</div>
-          <div class="stat-v" aria-labelledby="stat-migracje">${ptak.migracja} <small>/ ${migrationText}</small></div>
-        </div>
-      </div>
-    `;
-  }
-
-  // --- Mapowanie słów kluczowych na emoji ---
-  function getEmojiForFeature(feature) {
-    const emojiMap = {
-      'czarny': '⚫',
-      'czarna': '⚫',
-      'brunatna': '🟤',
-      'brunatny': '🟤',
-      'brązowa': '🟤',
-      'brązowe': '🟤',
-      'brązowy': '🟤',
-      'szary': '⚪',
-      'szara': '⚪',
-      'szare': '⚪',
-      'biały': '⚪',
-      'biała': '⚪',
-      'białe': '⚪',
-      'żółty': '🟡',
-      'żółta': '🟡',
-      'żółte': '🟡',
-      'żółtym': '🟡',
-      'czerwony': '🔴',
-      'czerwona': '🔴',
-      'czerwone': '🔴',
-      'niebieski': '🔵',
-      'niebieska': '🔵',
-      'niebieskie': '🔵',
-      'zielony': '🟢',
-      'zielona': '🟢',
-      'zielone': '🟢',
-      'różowy': '💗',
-      'różowa': '💗',
-      'pomarańczowy': '🟠',
-      'pomarańczowa': '🟠',
-      'pomarańczowe': '🟠',
-      'długi': '➡️',
-      'długa': '➡️',
-      'długie': '➡️',
-      'długiogon': '➡️',
-      'krótki': '⬅️',
-      'mały': '🔽',
-      'mała': '🔽',
-      'duży': '🔼',
-      'duża': '🔼',
-      'jaskrawo': '✨',
-      'jaskrawy': '✨',
-      'jaskrawa': '✨',
-      'charakterystyczne': '🎭',
-      'charakterystyczny': '🎭',
-      'głośne': '🔊',
-      'głośny': '🔊',
-      'cichy': '🔇',
-      'maskująca': '🎨',
-      'maskujące': '🎨',
-      'kontrastowa': '🎨',
-      'kontrastowy': '🎨',
-      'pręgi': '📏',
-      'pręgami': '📏',
-      'plamy': '⚫',
-      'plamami': '⚫',
-      'pasem': '📏',
-      'czapeczka': '🎩',
-      'dziób': '🦜',
-      'skrzydła': '🪶',
-      'ogon': '🐍',
-      'głowa': '👤',
-      'pierś': '👕',
-      'plecy': '👔',
-      'szyja': '👔',
-      'oczy': '👀',
-      'upierzenie': '🪶'
-    };
-
-    // Szukaj dopasowania w tekście cechy
-    for (const [keyword, emoji] of Object.entries(emojiMap)) {
-      if (feature.toLowerCase().includes(keyword)) {
-        return emoji;
+    refresh() {
+      if (this.io) {
+        this.pages.forEach(p => this.io.unobserve(p));
       }
+      this.pages = Array.from(document.querySelectorAll('.page:not([style*="display: none"])'));
+      this.pages.forEach(p => {
+        if (this.io) this.io.observe(p);
+      });
+      // Zresetuj idx jeśli wychodzi poza zakres
+      if (this.currentIdx >= this.pages.length) {
+        this.currentIdx = Math.max(0, this.pages.length - 1);
+      }
+      this.updateUI();
+    },
+
+    goTo(idx) {
+      if (idx < 0 || idx >= this.pages.length) return;
+      this.pages[idx].scrollIntoView({ behavior: 'smooth', block: 'start' });
+      this.currentIdx = idx;
+      this.updateUI();
+    },
+
+    next() {
+      const page = this.pages[this.currentIdx];
+      if (page && page.scrollTop + page.clientHeight < page.scrollHeight - 8) {
+        page.scrollBy({ top: page.clientHeight * 0.85, behavior: 'smooth' });
+      } else {
+        this.goTo(this.currentIdx + 1);
+      }
+    },
+
+    prev() {
+      const page = this.pages[this.currentIdx];
+      if (page && page.scrollTop > 8) {
+        page.scrollBy({ top: -page.clientHeight * 0.85, behavior: 'smooth' });
+      } else {
+        this.goTo(this.currentIdx - 1);
+      }
+    },
+
+    updateUI() {
+      const total = this.pages.length;
+      navCounter.textContent = `${this.currentIdx + 1} / ${total}`;
+      navPrev.disabled = this.currentIdx === 0;
+      navNext.disabled = this.currentIdx === total - 1;
     }
-    return '✔';
-  }
+  };
 
-  // --- Generowanie HTML dla cech ---
-  function generateFeatures(cechy) {
-    return cechy.map(c => {
-      const emoji = getEmojiForFeature(c);
-      return `<div class="pill" role="button" tabindex="0" aria-label="Cechy: ${c}"><span class="pill-emoji">${emoji}</span> ${c}</div>`;
-    }).join('');
-  }
+  navigator.init();
 
-  // --- Generowanie HTML dla bloku wideo ---
-  function generateVideoBlock(ptak) {
-    if (!ptak.film) return '';
-    
-    const platform = ptak.film.platforma || 'youtube';
-    const videoId = ptak.film.id;
-    
-    if (platform === 'facebook') {
-      // Facebook Embedded Video Player
-      const fbEmbedUrl = `https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F${videoId}%2F&show_text=0&width=560&height=315`;
-      return `
-        <div class="slbl">🎬 ${ptak.film.tytul}</div>
-        <div class="fb-player">
-          <iframe src="${fbEmbedUrl}" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-        </div>
-      `;
-    } else {
-      // YouTube (default)
-      const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-      const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-      
-      return `
-        <div class="slbl">🎬 ${ptak.film.tytul}</div>
-        <div class="yt-player" onclick="this.innerHTML='<iframe src=\"${embedUrl}\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>'">
-          <img src="${thumbnailUrl}" alt="${ptak.film.tytul}" loading="lazy">
-          <div class="yt-overlay">
-            <div class="yt-btn">
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path d="M7 4.5L18 11L7 17.5V4.5Z" fill="#1c2319"/>
-              </svg>
-            </div>
-            <div class="yt-label">Leśny Budzik · Echa Leśne</div>
-          </div>
-        </div>
-      `;
-    }
-  }
+  // ═══════════════════════════════════════════
+  // RENDEROWANIE KART JAKO STRON
+  // ═══════════════════════════════════════════
 
-  // --- Renderowanie kart ---
-  function renderBirds(birdsToRender) {
-    birdsToRender.forEach((ptak, index) => {
+  function renderBookPages(birds) {
+    bookCardsEl.innerHTML = '';
+    birds.forEach((ptak, idx) => {
+      const section = document.createElement('section');
+      section.className = 'page page--card';
+      section.dataset.birdId = ptak.id;
+      section.setAttribute('aria-label', `Karta ${idx + 1}: ${ptak.nazwa}`);
+
       const card = document.createElement('article');
       card.className = 'bird-card';
-      card.dataset.id = ptak.id;
-      card.setAttribute('role', 'article');
-      card.setAttribute('tabindex', '0');
-      card.setAttribute('aria-label', `Karta ptaka: ${ptak.nazwa}, ${ptak.nazwaLacinska}`);
+      card.setAttribute('aria-label', `${ptak.nazwa} (${ptak.nazwaLacinska})`);
 
-      // Generowanie HTML karty
       card.innerHTML = `
         <div class="photo-wrap">
-          <img 
-            src="${getOptimizedImageUrl(ptak.zdjecie, '600px')}" 
+          <img
+            src="${getOptimizedImageUrl(ptak.zdjecie, '600px')}"
             srcset="${getImageSrcset(ptak.zdjecie)}"
-            sizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 800px"
-            alt="${ptak.nazwa} (${ptak.nazwaLacinska}) – ${ptak.migracja === 'Osiadły' ? 'samiec' : 'ptak'}"
-            onerror="this.src='https://via.placeholder.com/400x300?text=${encodeURIComponent(ptak.nazwa)}'"
+            sizes="(max-width: 600px) 100vw, 45vw"
+            alt="${ptak.nazwa} (${ptak.nazwaLacinska})"
             loading="lazy"
+            onerror="this.removeAttribute('onerror');this.src='https://placehold.co/600x400/2a3226/b8d4a0?text=${encodeURIComponent(ptak.nazwa)}';"
           >
           <div class="photo-fade"></div>
           <div class="photo-credit">© Wikimedia Commons</div>
-          
-          <!-- Tagi kategorii wzdłuż dolnej krawędzi zdjęcia -->
-          <div class="cat-strip">
-            ${generateCategoryTags(ptak.kategorie)}
-          </div>
+          <div class="cat-strip">${generateCategoryTags(ptak.kategorie)}</div>
         </div>
-        
+
         <div class="body">
           <div class="name-pl">${ptak.nazwa}</div>
           <div class="name-lat">${ptak.nazwaLacinska}</div>
@@ -401,9 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="rule"></div>
 
           <div class="slbl">🔍 Jak rozpoznać</div>
-          <div class="pills">
-            ${generateFeatures(ptak.cechy)}
-          </div>
+          <div class="pills">${generateFeatures(ptak.cechy)}</div>
 
           <div class="rule"></div>
 
@@ -413,64 +214,265 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       `;
 
-      container.appendChild(card);
-
-      // Animacja pojawiania się kart
-      setTimeout(() => {
-        card.classList.add('visible');
-      }, index * 100);
+      section.appendChild(card);
+      bookCardsEl.appendChild(section);
     });
   }
 
-  // --- Intersection Observer do lazy loading ---
-  function setupIntersectionObserver(filteredBirds = allBirds) {
-    const options = {
-      root: null,
-      rootMargin: '200px',
-      threshold: 0.1
-    };
+  // ═══════════════════════════════════════════
+  // WYSZUKIWANIE I FILTRY
+  // ═══════════════════════════════════════════
 
-    observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const lastVisibleCard = entry.target;
-          const lastVisibleId = parseInt(lastVisibleCard.dataset.id);
-          const lastVisibleIndex = filteredBirds.findIndex(b => b.id === lastVisibleId);
+  function setupSearchAndFilters() {
+    searchInput.addEventListener('input', (e) => {
+      currentSearchTerm = e.target.value;
+      searchClear.style.display = currentSearchTerm ? 'block' : 'none';
+      applyFilter();
+    });
 
-          // Ładuj kolejne 6 kart, jeśli nie wszystkie są już załadowane
-          if (lastVisibleIndex + 1 < filteredBirds.length) {
-            const nextBirds = filteredBirds.slice(
-              visibleBirds.length,
-              visibleBirds.length + 6
-            );
-            visibleBirds = [...visibleBirds, ...nextBirds];
-            renderBirds(nextBirds);
-          }
+    searchClear.addEventListener('click', () => {
+      searchInput.value = '';
+      currentSearchTerm = '';
+      searchClear.style.display = 'none';
+      applyFilter();
+      searchInput.focus();
+    });
 
-          // Odłącz obserwator, jeśli wszystkie karty są załadowane
-          if (visibleBirds.length >= filteredBirds.length) {
-            observer.disconnect();
-          }
-        }
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
+        currentCategoryFilter = btn.dataset.category;
+        applyFilter();
       });
-    }, options);
+      btn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
+      });
+    });
 
-    // Obserwuj ostatnią kartę w kontenerze
-    const observeLastCard = () => {
-      const cards = container.querySelectorAll('.bird-card');
-      if (cards.length > 0) {
-        observer.observe(cards[cards.length - 1]);
-      }
-    };
-
-    // Poczekaj chwilę, aby upewnić się, że karty są renderowane
-    setTimeout(observeLastCard, 500);
+    // Otwieranie/zamykanie overlaya
+    navSearch.addEventListener('click', openSearchOverlay);
+    searchClose.addEventListener('click', closeSearchOverlay);
+    searchOverlay.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeSearchOverlay();
+    });
   }
 
-  // --- Funkcja do obsługi błędów ładowania zdjęć ---
+  function openSearchOverlay() {
+    searchOverlay.hidden = false;
+    navSearch.setAttribute('aria-expanded', 'true');
+    searchInput.focus();
+  }
+
+  function closeSearchOverlay() {
+    searchOverlay.hidden = true;
+    navSearch.setAttribute('aria-expanded', 'false');
+    navSearch.focus();
+  }
+
+  function filterBirds() {
+    const term = currentSearchTerm.toLowerCase();
+    const cat  = currentCategoryFilter;
+    return allBirds.filter(p => {
+      const matchSearch = !term ||
+        p.nazwa.toLowerCase().includes(term) ||
+        p.nazwaLacinska.toLowerCase().includes(term);
+      const matchCat = cat === 'all' || p.kategorie.includes(cat);
+      return matchSearch && matchCat;
+    });
+  }
+
+  function applyFilter() {
+    const matched = filterBirds();
+    const matchedIds = new Set(matched.map(b => b.id));
+
+    // Pokaż/ukryj strony kart
+    document.querySelectorAll('.page--card').forEach(section => {
+      const id = parseInt(section.dataset.birdId);
+      const visible = matchedIds.has(id);
+      section.style.display = visible ? '' : 'none';
+    });
+
+    // Aktualizuj wyniki
+    const total = matched.length;
+    if (currentSearchTerm || currentCategoryFilter !== 'all') {
+      resultsInfo.textContent = total === 0
+        ? 'Nie znaleziono żadnych ptaków.'
+        : `Znaleziono ${total} ${total === 1 ? 'ptaka' : total < 5 ? 'ptaki' : 'ptaków'}.`;
+    } else {
+      resultsInfo.textContent = '';
+    }
+
+    navigator.refresh();
+
+    // Skocz do pierwszej pasującej karty
+    const firstCard = document.querySelector('.page--card:not([style*="display: none"])');
+    if (firstCard) {
+      setTimeout(() => firstCard.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+    }
+  }
+
+  // ═══════════════════════════════════════════
+  // POMOCNICZE FUNKCJE RENDEROWANIA KART
+  // ═══════════════════════════════════════════
+
+  function getCategoryClass(category) {
+    return { 'Ogród': 'g', 'Najliczniejsze': 'b', 'Najpowszechniejsze': 'o' }[category] || 'g';
+  }
+
+  function getStatusText(status) {
+    return {
+      'LC': 'gatunek najmniejszej troski',
+      'NT': 'bliski zagrożenia',
+      'VU': 'narażony',
+      'EN': 'zagrożony'
+    }[status] || 'nieznany';
+  }
+
+  function getOptimizedImageUrl(url, size = '600px') {
+    if (!url.includes('upload.wikimedia.org')) return url;
+    return url.replace(/\/\d+px-/g, `/${size}-`);
+  }
+
+  function getImageSrcset(url) {
+    if (!url.includes('upload.wikimedia.org')) return '';
+    const sizes = ['400px', '600px', '800px'];
+    const baseUrl = url.replace(/\/\d+px-/g, '/');
+    return sizes.map(size => {
+      const sized = baseUrl.replace('.jpg', `/${size}-${url.split('/').pop()}`);
+      return `${sized} ${size}`;
+    }).join(', ');
+  }
+
+  function generateCategoryTags(kategorie) {
+    return kategorie.map((k, i) => {
+      const cls = getCategoryClass(k);
+      return `<div class="cat-tag ${cls}" role="button" tabindex="0" aria-label="Kategoria: ${k}">
+        <div class="cat-dot"></div>
+        ${k}${k.includes('Naj') ? ` <span class="cat-rank">#${i + 1}</span>` : ''}
+      </div>`;
+    }).join('');
+  }
+
+  function generateStats(ptak) {
+    const trendText = ptak.trend === '↑' ? 'wzrostowy' : ptak.trend === '↓' ? 'spadkowy' : 'stabilny';
+    const migText   = ptak.migracja === 'Osiadły' ? 'całorocznie' : 'sezonowo';
+    return `
+      <div class="stats" role="list" aria-label="Statystyki">
+        <div class="stat" role="listitem">
+          <div class="stat-l">Liczebność</div>
+          <div class="stat-v">${ptak.liczebnosc}<small>par lęg.</small></div>
+        </div>
+        <div class="stat" role="listitem">
+          <div class="stat-l">Trend</div>
+          <div class="stat-v">${ptak.trend} <small>${trendText}</small></div>
+        </div>
+        <div class="stat" role="listitem">
+          <div class="stat-l">Migracje</div>
+          <div class="stat-v">${ptak.migracja} <small>/ ${migText}</small></div>
+        </div>
+      </div>`;
+  }
+
+  function getEmojiForFeature(feature) {
+    const map = {
+      'czarny':'⚫','czarna':'⚫','brunatna':'🟤','brunatny':'🟤','brązowa':'🟤','brązowe':'🟤','brązowy':'🟤',
+      'szary':'⚪','szara':'⚪','szare':'⚪','biały':'⚪','biała':'⚪','białe':'⚪',
+      'żółty':'🟡','żółta':'🟡','żółte':'🟡','żółtym':'🟡',
+      'czerwony':'🔴','czerwona':'🔴','czerwone':'🔴',
+      'niebieski':'🔵','niebieska':'🔵','niebieskie':'🔵',
+      'zielony':'🟢','zielona':'🟢','zielone':'🟢',
+      'różowy':'💗','różowa':'💗',
+      'pomarańczowy':'🟠','pomarańczowa':'🟠','pomarańczowe':'🟠',
+      'długi':'➡️','długa':'➡️','długie':'➡️',
+      'mały':'🔽','mała':'🔽','duży':'🔼','duża':'🔼',
+      'jaskrawo':'✨','jaskrawy':'✨','jaskrawa':'✨',
+      'głośne':'🔊','głośny':'🔊','cichy':'🔇',
+      'maskująca':'🎨','maskujące':'🎨','kontrastowa':'🎨','kontrastowy':'🎨',
+      'pręgi':'📏','pręgami':'📏','plamy':'⚫','plamami':'⚫','pasem':'📏',
+      'czapeczka':'🎩','dziób':'🦜','skrzydła':'🪶','ogon':'🐍',
+      'głowa':'👤','pierś':'👕','plecy':'👔','szyja':'👔','oczy':'👀','upierzenie':'🪶'
+    };
+    const f = feature.toLowerCase();
+    for (const [kw, em] of Object.entries(map)) {
+      if (f.includes(kw)) return em;
+    }
+    return '✔';
+  }
+
+  function generateFeatures(cechy) {
+    return cechy.map(c =>
+      `<div class="pill" role="button" tabindex="0" aria-label="${c}">
+         <span class="pill-emoji">${getEmojiForFeature(c)}</span> ${c}
+       </div>`
+    ).join('');
+  }
+
+  function generateVideoBlock(ptak) {
+    if (!ptak.film) return '';
+    const { platforma = 'youtube', id: videoId, tytul } = ptak.film;
+
+    if (platforma === 'facebook') {
+      const fbUrl = `https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F${videoId}%2F&show_text=0&width=560&height=315`;
+      return `
+        <div class="slbl">🎬 ${tytul}</div>
+        <div class="fb-player">
+          <iframe src="${fbUrl}" width="560" height="315" style="border:none;overflow:hidden"
+            scrolling="no" frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>`;
+    }
+
+    // YouTube (domyślny)
+    const thumb = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+    const embed = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    return `
+      <div class="slbl">🎬 ${tytul}</div>
+      <div class="yt-player"
+           onclick="this.innerHTML='<iframe src=\\'${embed}\\' frameborder=\\'0\\' allow=\\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\\' allowfullscreen></iframe>'">
+        <img src="${thumb}" alt="${tytul}" loading="lazy">
+        <div class="yt-overlay">
+          <div class="yt-btn">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <path d="M7 4.5L18 11L7 17.5V4.5Z" fill="#1c2319"/>
+            </svg>
+          </div>
+          <div class="yt-label">Leśny Budzik · Echa Leśne</div>
+        </div>
+      </div>`;
+  }
+
+  // ═══════════════════════════════════════════
+  // REVEAL ANIMATIONS (przeniesione z hero.html)
+  // ═══════════════════════════════════════════
+
+  function initRevealAnimations() {
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealIO = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add('visible'), 60);
+            revealIO.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px', root: bookEl }
+    );
+    revealEls.forEach(el => revealIO.observe(el));
+  }
+
+  // ── Obsługa błędów obrazów ─────────────────
   window.addEventListener('error', (e) => {
-    if (e.target.tagName === 'IMG') {
-      e.target.src = `https://via.placeholder.com/400x300?text=${encodeURIComponent(e.target.alt)}`;
+    if (e.target.tagName === 'IMG' && !e.target.dataset.errHandled) {
+      e.target.dataset.errHandled = '1';
+      e.target.src = `https://placehold.co/600x400/2a3226/b8d4a0?text=${encodeURIComponent(e.target.alt || 'Brak zdjęcia')}`;
     }
   }, true);
+
 });
