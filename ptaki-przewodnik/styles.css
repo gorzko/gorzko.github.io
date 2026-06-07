@@ -96,7 +96,7 @@ button {
   --forest:  #2a3d24;
   --leaf:    #5ca832;
   --leaf-lt: #8dcf5a;
-  --page-bg: #181a1c;
+  --page-bg: #1d1a16;
 
   --font-serif: 'Playfair Display', serif;
   --font-sans:  'DM Sans', sans-serif;
@@ -365,9 +365,9 @@ body {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 50% 0%,   rgba(42,61,36,0.55) 0%, transparent 70%),
-    radial-gradient(ellipse 60% 40% at 20% 100%,  rgba(28,50,22,0.40) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 50% at 80% 80%,   rgba(92,168,50,0.08) 0%, transparent 55%),
+    radial-gradient(ellipse 80% 60% at 50% 0%,   rgba(50,42,28,0.55) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 40% at 20% 100%,  rgba(40,55,30,0.40) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 80% 80%,   rgba(92,168,50,0.07) 0%, transparent 55%),
     var(--page-bg);
   z-index: 0;
 }
@@ -1200,40 +1200,62 @@ body {
 ───────────────────────────────────────── */
 
 @media print {
+  /* Reset całego mechanizmu scroll-snap */
+  html, body {
+    overflow: visible !important;
+    height: auto !important;
+  }
   .book {
-    overflow: visible;
-    height: auto;
-    scroll-snap-type: none;
+    overflow: visible !important;
+    height: auto !important;
+    scroll-snap-type: none !important;
+    scroll-behavior: auto !important;
   }
   .page {
-    height: auto;
-    min-height: unset;
-    scroll-snap-align: none;
-    overflow: visible;
+    height: auto !important;
+    min-height: unset !important;
+    scroll-snap-align: none !important;
+    overflow: visible !important;
   }
-  .guide, .sources-page {
+
+  /* Ukryj okładkę, karty gatunków i ostatnią kartę przy druku instrukcji */
+  .page--cover,
+  .page--card,
+  .page--sources {
+    display: none !important;
+  }
+  .page--guide {
+    display: block !important;
+  }
+
+  .guide {
     padding-top: 24px;
     padding-bottom: 24px;
+    max-width: 100%;
   }
+
+  /* Chroni całe sekcje przed podziałem */
   .guide-header,
   .step,
-  .tip-box,
-  .source-card {
+  .tip-box {
     break-inside: avoid;
     page-break-inside: avoid;
+  }
+
+  /* Mapa karty gatunkowej – cały blok jako nierozłączna całość */
+  .card-anatomy-wrap {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
   }
   .card-anatomy {
     break-inside: avoid;
     page-break-inside: avoid;
   }
-  /* Cały blok mapy karty (zdjęcie + callout-y) */
-  .reveal:has(.card-anatomy) {
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
+
+  /* Ukryj elementy UI */
   .book-nav,
   .search-overlay,
   .hero-scroll {
-    display: none;
+    display: none !important;
   }
 }

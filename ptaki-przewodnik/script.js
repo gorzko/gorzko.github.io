@@ -33,6 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
     heroScroll.addEventListener('click', () => navigator.goTo(1));
   }
 
+  // ── Wyszukiwarka – overlay (niezależne od danych) ─
+  navSearch.addEventListener('click', openSearchOverlay);
+  searchClose.addEventListener('click', closeSearchOverlay);
+  searchOverlay.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeSearchOverlay();
+  });
+
   // ── Ładowanie danych ──────────────────────
   fetch('data/ptaki.json')
     .then(res => {
@@ -243,12 +250,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Otwieranie/zamykanie overlaya
-    navSearch.addEventListener('click', openSearchOverlay);
-    searchClose.addEventListener('click', closeSearchOverlay);
-    searchOverlay.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeSearchOverlay();
-    });
   }
 
   function openSearchOverlay() {
