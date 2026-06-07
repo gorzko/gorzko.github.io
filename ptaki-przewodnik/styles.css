@@ -155,65 +155,35 @@ body {
 .book-nav {
   position: fixed;
   right: 14px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 14px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 6px;
   z-index: 100;
-  background: rgba(24,26,28,0.78);
-  backdrop-filter: blur(10px) saturate(1.4);
-  border-radius: 40px;
-  padding: 10px 6px;
-  border: 1px solid rgba(255,255,255,0.10);
-  box-shadow: 0 4px 24px rgba(0,0,0,0.45);
 }
 
 .book-nav-btn {
-  width: 34px;
-  height: 34px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  background: none;
-  border: none;
+  background: rgba(24,26,28,0.78);
+  backdrop-filter: blur(10px) saturate(1.4);
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.35);
   color: var(--cream);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.65;
+  opacity: 0.75;
   transition: opacity 0.2s, background 0.2s;
-  flex-shrink: 0;
 }
 .book-nav-btn:hover {
   opacity: 1;
-  background: rgba(255,255,255,0.10);
-}
-.book-nav-btn:disabled {
-  opacity: 0.20;
-  cursor: not-allowed;
+  background: rgba(36,38,40,0.92);
 }
 .book-nav-btn:focus-visible {
   outline: 2px solid var(--leaf);
   outline-offset: 2px;
-}
-
-.book-nav-counter {
-  font-size: 9.5px;
-  font-family: var(--font-sans);
-  font-weight: 400;
-  color: var(--muted-lt);
-  letter-spacing: 0.04em;
-  text-align: center;
-  min-width: 28px;
-  line-height: 1.2;
-}
-
-.book-nav-search {
-  margin-top: 4px;
-  border-top: 1px solid rgba(255,255,255,0.10);
-  padding-top: 4px;
-  /* wchodzi do flex kolumny automatycznie */
 }
 
 /* ─────────────────────────────────────────
@@ -319,20 +289,49 @@ body {
   align-self: center;
 }
 
+.filter-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
 .filter-btn {
-  padding: 6px 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
   font-family: var(--font-sans);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   border: 1.5px solid rgba(255,255,255,0.15);
-  border-radius: 20px;
+  border-radius: 30px;
   background: rgba(255,255,255,0.05);
   color: var(--muted-lt);
   cursor: pointer;
   transition: all 0.2s;
 }
-.filter-btn:hover { border-color: var(--leaf); color: var(--cream); }
-.filter-btn.active { border-color: var(--leaf); background: rgba(92,168,50,0.15); color: var(--leaf-lt); }
+.filter-btn[data-category="all"]:hover { border-color: var(--leaf); color: var(--cream); }
+.filter-btn[data-category="all"].active { border-color: var(--leaf); background: rgba(92,168,50,0.15); color: var(--leaf-lt); }
+
+.filter-btn[data-category="Ogród"] { background: var(--g-bg); color: var(--g-tx); border-color: rgba(92,168,50,0.25); }
+.filter-btn[data-category="Ogród"] .filter-dot { background: var(--g-dot); }
+.filter-btn[data-category="Ogród"]:hover,
+.filter-btn[data-category="Ogród"].active { border-color: var(--g-dot); }
+
+.filter-btn[data-category="Najliczniejsze"] { background: var(--b-bg); color: var(--b-tx); border-color: rgba(74,144,217,0.25); }
+.filter-btn[data-category="Najliczniejsze"] .filter-dot { background: var(--b-dot); }
+.filter-btn[data-category="Najliczniejsze"]:hover,
+.filter-btn[data-category="Najliczniejsze"].active { border-color: var(--b-dot); }
+
+.filter-btn[data-category="Najpowszechniejsze"] { background: var(--o-bg); color: var(--o-tx); border-color: rgba(224,120,48,0.25); }
+.filter-btn[data-category="Najpowszechniejsze"] .filter-dot { background: var(--o-dot); }
+.filter-btn[data-category="Najpowszechniejsze"]:hover,
+.filter-btn[data-category="Najpowszechniejsze"].active { border-color: var(--o-dot); }
+
 .filter-btn:focus-visible { outline: 2px solid var(--leaf); outline-offset: 2px; }
 
 .results-info {
@@ -374,13 +373,7 @@ body {
 }
 
 .hero-grid {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-  background-size: 48px 48px;
-  z-index: 0;
+  display: none;
 }
 
 .hero-orb {
@@ -394,13 +387,13 @@ body {
   width: clamp(300px,50vw,560px);
   height: clamp(300px,50vw,560px);
   top: -15%; left: -10%;
-  background: radial-gradient(circle, rgba(42,61,36,0.55) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(42,61,36,0.40) 0%, transparent 70%);
 }
 .hero-orb-2 {
   width: clamp(200px,35vw,400px);
   height: clamp(200px,35vw,400px);
   bottom: 5%; right: -8%;
-  background: radial-gradient(circle, rgba(92,168,50,0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(92,168,50,0.08) 0%, transparent 70%);
 }
 
 .hero-inner {
@@ -419,18 +412,13 @@ body {
   width: clamp(64px,12vw,88px);
   height: clamp(64px,12vw,88px);
   border-radius: 50%;
-  border: 1.5px solid rgba(141,207,90,0.35);
+  border: 1.5px solid rgba(141,207,90,0.25);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: clamp(18px,4vw,28px);
-  background: rgba(42,61,36,0.40);
-  box-shadow: 0 0 0 6px rgba(92,168,50,0.07), 0 0 0 14px rgba(92,168,50,0.04);
-  animation: emblem-pulse 4s ease-in-out infinite;
-}
-@keyframes emblem-pulse {
-  0%,100% { box-shadow: 0 0 0 6px rgba(92,168,50,0.07), 0 0 0 14px rgba(92,168,50,0.04); }
-  50%      { box-shadow: 0 0 0 10px rgba(92,168,50,0.12), 0 0 0 22px rgba(92,168,50,0.05); }
+  background: rgba(42,61,36,0.35);
+  box-shadow: 0 0 0 8px rgba(92,168,50,0.06);
 }
 .hero-emblem svg { opacity: 0.85; }
 
@@ -1188,4 +1176,64 @@ body {
   .step-num { width: 32px; height: 32px; font-size: 13px; }
   .guide-footer { flex-direction: column; align-items: flex-start; }
   .sources { grid-template-columns: 1fr 1fr; }
+}
+
+/* ─────────────────────────────────────────
+   STRONA ŹRÓDEŁ (ostatnia karta)
+───────────────────────────────────────── */
+
+.page--sources {
+  background: var(--page-bg);
+}
+
+.sources-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(48px,10vw,96px) clamp(20px,6vw,48px) clamp(40px,8vw,72px);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* ─────────────────────────────────────────
+   DRUK – łamanie stron w instrukcji
+───────────────────────────────────────── */
+
+@media print {
+  .book {
+    overflow: visible;
+    height: auto;
+    scroll-snap-type: none;
+  }
+  .page {
+    height: auto;
+    min-height: unset;
+    scroll-snap-align: none;
+    overflow: visible;
+  }
+  .guide, .sources-page {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .guide-header,
+  .step,
+  .tip-box,
+  .source-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .card-anatomy {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  /* Cały blok mapy karty (zdjęcie + callout-y) */
+  .reveal:has(.card-anatomy) {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .book-nav,
+  .search-overlay,
+  .hero-scroll {
+    display: none;
+  }
 }

@@ -21,7 +21,6 @@
   <section class="page page--cover" id="page-cover" aria-label="Okładka przewodnika">
     <div class="hero" id="top">
       <div class="hero-bg"></div>
-      <div class="hero-grid"></div>
       <div class="hero-orb hero-orb-1"></div>
       <div class="hero-orb hero-orb-2"></div>
 
@@ -40,14 +39,14 @@
         <div class="hero-rule"></div>
 
         <p class="hero-lead">
-          Kompaktowy, estetyczny zbiór <strong>33 kart gatunkowych</strong> oparty na danych
-          <strong>MPPL 2025</strong>. Każda karta to zdjęcie, statystyki, cechy rozpoznawcze
+          Kompaktowy, estetyczny zbiór <strong>33 kart gatunkowych</strong> —
+          każda to zdjęcie, statystyki populacji, cechy rozpoznawcze
           i krótki film z serii <strong>Leśny Budzik</strong>.
         </p>
 
         <div class="hero-count">
           <div class="hero-count-dot"></div>
-          33 gatunki · 3 kategorie · dane MPPL 2025
+          33 gatunki · 3 kategorie
         </div>
 
         <button class="hero-cta" id="hero-cta-btn" aria-label="Przejdź do instrukcji">
@@ -97,9 +96,9 @@
             <p class="step-desc">
               Na zdjęciu każdej karty znajdziesz kolorowe etykiety wskazujące, do której grupy należy ptak.<br><br>
               <span class="inline-tag g"><span class="inline-dot"></span>Ogród</span>
-              &nbsp;— gatunki regularnie widywane w ogrodach i parkach miejskich (13 gatunków).<br><br>
+              &nbsp;— gatunki obserwowane w ogrodzie Marka (13 gatunków).<br><br>
               <span class="inline-tag b"><span class="inline-dot"></span>Najliczniejsze</span>
-              &nbsp;— Top&nbsp;10 par lęgowych wg. MPPL&nbsp;2025.<br><br>
+              &nbsp;— Top&nbsp;10 par lęgowych wg. Monitoringu Pospolitych Ptaków Lęgowych (MPPL) 2025.<br><br>
               <span class="inline-tag o"><span class="inline-dot"></span>Najpowszechniejsze</span>
               &nbsp;— Top&nbsp;10 gatunków stwierdzonych na największej liczbie powierzchni próbnych.<br><br>
               Jeden ptak może należeć do <strong>kilku kategorii</strong>.
@@ -112,7 +111,7 @@
           <div class="step-body">
             <h3 class="step-title">Odczytaj statystyki populacji</h3>
             <p class="step-desc">
-              Trzy pola poniżej nazwy pokazują kluczowe dane z <strong>MPPL&nbsp;2025</strong>:<br><br>
+              Trzy pola poniżej nazwy pokazują kluczowe dane z <strong>Monitoringu Pospolitych Ptaków Lęgowych (MPPL)&nbsp;2025</strong>:<br><br>
               <strong>Liczebność</strong> – szacowana liczba par lęgowych w Polsce.<br>
               <strong>Trend</strong> – kierunek zmian: ↑ wzrost, → stabilny, ↓ spadek.<br>
               <strong>Migracje</strong> – czy ptak zostaje na zimę, czy odlatuje.
@@ -221,7 +220,7 @@
           </div>
           <div class="callout callout-left c-stats" style="top:202px;">
             <div class="callout-line" style="height:18px; margin-top:4px;"></div>
-            <div class="callout-box"><b>Statystyki MPPL 2025</b><span>Liczebność · Trend · Migracje</span></div>
+            <div class="callout-box"><b>Statystyki populacji</b><span>Liczebność · Trend · Migracje (MPPL 2025)</span></div>
           </div>
           <div class="callout callout-right c-badge" style="top:243px;">
             <div class="callout-line" style="height:14px; margin-top:4px;"></div>
@@ -255,33 +254,6 @@
         </p>
       </div>
 
-      <!-- Źródła -->
-      <div class="reveal">
-        <p class="guide-eyebrow" style="margin-bottom: 16px;">Źródła danych</p>
-        <div class="sources">
-          <div class="source-card">
-            <div class="source-icon">📊</div>
-            <div class="source-name">MPPL 2025</div>
-            <div class="source-desc">Monitoring Pospolitych Ptaków Lęgowych – dane o liczebności i trendach.</div>
-          </div>
-          <div class="source-card">
-            <div class="source-icon">📕</div>
-            <div class="source-name">Czerwona Księga</div>
-            <div class="source-desc">Czerwona Księga Ptaków Polski (Wilk i in. 2020) – kategorie zagrożenia.</div>
-          </div>
-          <div class="source-card">
-            <div class="source-icon">🎬</div>
-            <div class="source-name">Leśny Budzik</div>
-            <div class="source-desc">Seria filmów kanału <em>Echa Leśne</em> na YouTube.</div>
-          </div>
-          <div class="source-card">
-            <div class="source-icon">📷</div>
-            <div class="source-name">Wikimedia Commons</div>
-            <div class="source-desc">Zdjęcia na wolnych licencjach: CC BY-SA, CC BY, CC0.</div>
-          </div>
-        </div>
-      </div>
-
       <div class="guide-footer reveal">
         <div class="guide-footer-left">
           <strong>Ptasiarski Przewodnik Marka</strong> — wersja 2025
@@ -296,6 +268,56 @@
   <!-- ── Strony 3..N: Karty gatunków (wstrzykiwane przez script.js) ── -->
   <div id="book-cards"></div>
 
+  <!-- ── Ostatnia strona: Źródła ── -->
+  <section class="page page--sources" id="page-sources" aria-label="Źródła danych">
+    <div class="sources-page">
+
+      <div class="guide-header">
+        <div class="guide-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 4h12v12H4z" stroke="#5ca832" stroke-width="1.4" stroke-linejoin="round" fill="none"/>
+            <path d="M7 8h6M7 11h4" stroke="#5ca832" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="guide-header-text">
+          <p class="guide-eyebrow">Skąd pochodzą dane</p>
+          <h2 class="guide-h2">Źródła</h2>
+        </div>
+      </div>
+
+      <div class="sources">
+        <div class="source-card">
+          <div class="source-icon">📊</div>
+          <div class="source-name">MPPL 2025</div>
+          <div class="source-desc">Monitoring Pospolitych Ptaków Lęgowych – dane o liczebności i trendach.</div>
+        </div>
+        <div class="source-card">
+          <div class="source-icon">📕</div>
+          <div class="source-name">Czerwona Księga</div>
+          <div class="source-desc">Czerwona Księga Ptaków Polski (Wilk i in. 2020) – kategorie zagrożenia.</div>
+        </div>
+        <div class="source-card">
+          <div class="source-icon">🎬</div>
+          <div class="source-name">Leśny Budzik</div>
+          <div class="source-desc">Seria filmów kanału <em>Echa Leśne</em> na YouTube.</div>
+        </div>
+        <div class="source-card">
+          <div class="source-icon">📷</div>
+          <div class="source-name">Wikimedia Commons</div>
+          <div class="source-desc">Zdjęcia na wolnych licencjach: CC BY-SA, CC BY, CC0.</div>
+        </div>
+      </div>
+
+      <div class="guide-footer">
+        <div class="guide-footer-left">
+          <strong>Ptasiarski Przewodnik Marka</strong> — wersja 2025
+        </div>
+        <div class="guide-footer-right">Dane: MPPL 2025 · GIOŚ · BirdLife International</div>
+      </div>
+
+    </div>
+  </section>
+
 </div><!-- /book -->
 
 
@@ -303,21 +325,7 @@
      NAWIGACJA (stała nakładka)
 ══════════════════════════════════════ -->
 <nav class="book-nav" aria-label="Nawigacja po przewodniku">
-  <button class="book-nav-btn" id="nav-prev" aria-label="Poprzednia strona" disabled>
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-      <path d="M9 14V4M5 8l4-4 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </button>
-
-  <span class="book-nav-counter" id="nav-counter" aria-live="polite">1 / 2</span>
-
-  <button class="book-nav-btn" id="nav-next" aria-label="Następna strona">
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-      <path d="M9 4v10M5 10l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </button>
-
-  <button class="book-nav-btn book-nav-search" id="nav-search" aria-label="Szukaj gatunku" aria-expanded="false">
+  <button class="book-nav-btn" id="nav-search" aria-label="Szukaj gatunku" aria-expanded="false">
     <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
       <circle cx="7.5" cy="7.5" r="5" stroke="currentColor" stroke-width="1.7"/>
       <path d="M11.5 11.5L15 15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
@@ -348,9 +356,9 @@
     <div class="filter-container">
       <span class="filter-label">Filtruj:</span>
       <button class="filter-btn active" data-category="all" aria-pressed="true">Wszystkie</button>
-      <button class="filter-btn" data-category="Ogród" aria-pressed="false">Ogród</button>
-      <button class="filter-btn" data-category="Najliczniejsze" aria-pressed="false">Najliczniejsze</button>
-      <button class="filter-btn" data-category="Najpowszechniejsze" aria-pressed="false">Najpowszechniejsze</button>
+      <button class="filter-btn" data-category="Ogród" aria-pressed="false"><span class="filter-dot"></span>Ogród</button>
+      <button class="filter-btn" data-category="Najliczniejsze" aria-pressed="false"><span class="filter-dot"></span>Najliczniejsze</button>
+      <button class="filter-btn" data-category="Najpowszechniejsze" aria-pressed="false"><span class="filter-dot"></span>Najpowszechniejsze</button>
     </div>
 
     <div class="results-info" id="results-info" aria-live="polite"></div>

@@ -8,9 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const bookEl          = document.getElementById('book');
   const bookCardsEl     = document.getElementById('book-cards');
   const loadingText     = document.createElement('p');
-  const navPrev         = document.getElementById('nav-prev');
-  const navNext         = document.getElementById('nav-next');
-  const navCounter      = document.getElementById('nav-counter');
   const navSearch       = document.getElementById('nav-search');
   const searchOverlay   = document.getElementById('search-overlay');
   const searchClose     = document.getElementById('search-overlay-close');
@@ -104,9 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }, { passive: true });
 
-      // Przyciski
-      navPrev.addEventListener('click', () => this.prev());
-      navNext.addEventListener('click', () => this.next());
     },
 
     refresh() {
@@ -149,12 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     },
 
-    updateUI() {
-      const total = this.pages.length;
-      navCounter.textContent = `${this.currentIdx + 1} / ${total}`;
-      navPrev.disabled = this.currentIdx === 0;
-      navNext.disabled = this.currentIdx === total - 1;
-    }
+    updateUI() {}
   };
 
   navigator.init();
