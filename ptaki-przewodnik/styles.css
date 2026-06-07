@@ -1,4 +1,91 @@
+   Przewodnik Ptaków Polski - Style
+   ============================================ */
+
+/* --- Reset i bazowe style --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+=======
 /* ============================================
+   Przewodnik Ptaków Polski - Style
+   ============================================ */
+
+/* --- Polyfille i Fallbacki dla starszych przeglądarek --- */
+
+/* Fallback dla clamp() - użyj statycznych wartości dla starszych przeglądarek */
+@supports not (width: clamp(1px, 1vw, 100px)) {
+  :root {
+    --clamp-24-52: 52px;
+    --clamp-12-20: 20px;
+    --clamp-40-72: 72px;
+    --clamp-2-2.5: 2.5rem;
+    --clamp-1-1.1: 1.1rem;
+    --clamp-16-24: 24px;
+    --clamp-12-16: 16px;
+    --clamp-14-20: 20px;
+    --clamp-200-236: 236px;
+    --clamp-8-9: 9px;
+    --clamp-8.5-9.5: 9.5px;
+    --clamp-26-32: 32px;
+    --clamp-11-13: 13px;
+    --clamp-10-13: 13px;
+    --clamp-4-6: 6px;
+    --clamp-8-10: 10px;
+    --clamp-6-8: 8px;
+    --clamp-7-8.5: 8.5px;
+    --clamp-11-13-stat: 13px;
+    --clamp-9-10: 10px;
+    --clamp-9.5-10.5: 10.5px;
+    --clamp-12-14: 14px;
+    --clamp-10-10.5: 10.5px;
+  }
+}
+
+/* Fallback dla aspect-ratio */
+@supports not (aspect-ratio: 16/9) {
+  .yt-player,
+  .fb-player {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 aspect ratio = 9/16 * 100% */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .yt-player iframe,
+  .fb-player iframe,
+  .yt-player img,
+  .yt-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .photo-wrap {
+    position: relative;
+    overflow: hidden;
+    background: #2a3226;
+  }
+  
+  .photo-wrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* --- Reset i bazowe style --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}============================================
    Przewodnik Ptaków Polski - Style
    ============================================ */
 
@@ -79,6 +166,136 @@ header p {
   opacity: 0.9;
 }
 
+/* --- Wyszukiwarka i filtry --- */
+.search-container {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+#search-input {
+  width: 100%;
+  padding: clamp(10px, 2.5vw, 14px) clamp(16px, 4vw, 20px);
+  padding-right: clamp(40px, 10vw, 48px);
+  font-family: var(--font-sans);
+  font-size: clamp(14px, 3.5vw, 16px);
+  border: 2px solid var(--border);
+  border-radius: clamp(8px, 2vw, 12px);
+  background: var(--cream);
+  color: var(--ink);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: var(--ink);
+  box-shadow: 0 0 0 3px rgba(28, 35, 25, 0.15);
+}
+
+#search-input::placeholder {
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+.search-clear {
+  position: absolute;
+  right: clamp(8px, 2vw, 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: clamp(16px, 4vw, 20px);
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0;
+  width: clamp(24px, 6vw, 32px);
+  height: clamp(24px, 6vw, 32px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.search-clear:hover,
+.search-clear:focus {
+  color: var(--ink);
+  background: rgba(28, 35, 25, 0.1);
+}
+
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(8px, 2vw, 12px);
+  margin-bottom: 1rem;
+}
+
+.filter-label {
+  font-size: clamp(12px, 3vw, 14px);
+  color: var(--muted-lt);
+  align-self: center;
+  padding-top: 2px;
+}
+
+.filter-btn {
+  padding: clamp(6px, 1.5vw, 10px) clamp(12px, 3vw, 16px);
+  font-family: var(--font-sans);
+  font-size: clamp(12px, 3vw, 14px);
+  font-weight: 500;
+  border: 2px solid var(--border);
+  border-radius: clamp(6px, 1.5vw, 8px);
+  background: var(--cream);
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  border-color: var(--ink);
+  background: var(--cream-dk);
+}
+
+.filter-btn.active {
+  border-color: var(--ink);
+  background: var(--cream-dk);
+  color: var(--ink);
+}
+
+.filter-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(28, 35, 25, 0.15);
+}
+
+.results-info {
+  font-size: clamp(12px, 3vw, 14px);
+  color: var(--muted-lt);
+  text-align: center;
+  margin-top: 0.5rem;
+  min-height: 1.2em;
+}
+
+/* Klasa dla ukrywania elementów wizualnie */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* --- Stopka strony --- */
 footer {
   text-align: center;
@@ -138,6 +355,12 @@ footer {
 
 .bird-card:hover {
   box-shadow: 0 32px 80px rgba(0,0,0,0.6);
+}
+
+.bird-card:focus {
+  outline: 3px solid var(--ink);
+  outline-offset: 4px;
+  border-radius: clamp(12px, 3vw, 20px);
 }
 
 /* --- Zdjęcie ptaka --- */
@@ -208,6 +431,13 @@ footer {
   text-transform: uppercase;
   white-space: nowrap;
   backdrop-filter: blur(10px) saturate(1.3);
+  transition: transform 0.2s ease;
+}
+
+.cat-tag:focus {
+  outline: 2px solid var(--cream);
+  outline-offset: 2px;
+  transform: scale(1.05);
 }
 
 .cat-tag.g {
@@ -280,16 +510,17 @@ footer {
 /* --- Statystyki --- */
 .stats {
   display: flex;
+  flex-wrap: nowrap;
   gap: clamp(4px, 1.2vw, 6px);
   margin-bottom: clamp(8px, 2vw, 10px);
 }
 
 .stat {
   flex: 1;
+  min-width: 0;
   padding: clamp(6px, 1.5vw, 8px) clamp(8px, 2vw, 10px);
   background: var(--cream-dk);
   border-radius: 9px;
-  min-width: 0;
 }
 
 .stat-l {
@@ -406,12 +637,18 @@ footer {
   padding: clamp(3px, .8vw, 4px) clamp(8px, 2vw, 10px);
   font-size: clamp(10px, 2.4vw, 11px);
   color: var(--ink-m);
+  transition: transform 0.2s ease;
 }
 
-.pill::before {
-  content: "✔";
-  color: #5ca832;
-  font-weight: bold;
+.pill:focus {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+  transform: scale(1.02);
+}
+
+.pill-emoji {
+  font-size: clamp(12px, 3vw, 14px);
+  line-height: 1;
 }
 
 /* --- Blok wideo YouTube --- */
@@ -423,6 +660,26 @@ footer {
   cursor: pointer;
   aspect-ratio: 16/9;
   margin-bottom: clamp(8px, 2vw, 10px);
+}
+
+.yt-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.yt-link:focus {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
+  border-radius: 11px;
+}
+
+.yt-player:focus-within {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
+  border-radius: 11px;
 }
 
 .yt-player img {
