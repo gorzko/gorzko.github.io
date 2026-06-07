@@ -3,56 +3,361 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Przewodnik Ptaków Polski</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <title>Ptasiarski Przewodnik Marka</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <!-- Facebook SDK for embedded video player -->
+  <!-- Facebook SDK -->
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v18.0" nonce="vQx5m4j7"></script>
 </head>
 <body>
-  <header>
-    <h1>Przewodnik Ptaków Polski</h1>
-    <p>Poznaj gatunki ptaków lęgowych w Polsce</p>
-    
-    <!-- Wyszukiwarka i filtry -->
-    <div class="search-container" id="search-container">
-      <div class="search-box">
-        <label for="search-input" class="visually-hidden">Wyszukaj ptaka</label>
-        <input 
-          type="text" 
-          id="search-input" 
-          placeholder="Wyszukaj ptaka po nazwie polskiej lub łacińskiej..."
-          aria-label="Wyszukaj ptaka po nazwie polskiej lub łacińskiej"
-        >
-        <button id="search-clear" class="search-clear" aria-label="Wyczyść wyszukiwanie">✕</button>
+
+<!-- ══════════════════════════════════════
+     KSIĄŻKA – KONTENER SCROLL-SNAP
+══════════════════════════════════════ -->
+<div class="book" id="book">
+
+  <!-- ── Strona 1: Okładka ── -->
+  <section class="page page--cover" id="page-cover" aria-label="Okładka przewodnika">
+    <div class="hero" id="top">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+
+      <div class="hero-inner">
+        <div class="hero-emblem" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 16C14.5 14 9 13.5 4 15.5C8 13 13 12 18 14.5C23 12 28 13 32 15.5C27 13.5 21.5 14 18 16Z" fill="#5ca832" opacity="0.9"/>
+            <path d="M18 16C16 18 15 21 15.5 24C15.5 24 17 22 18 21C19 22 20.5 24 20.5 24C21 21 20 18 18 16Z" fill="#5ca832" opacity="0.7"/>
+            <circle cx="18" cy="22" r="1.2" fill="#8dcf5a" opacity="0.5"/>
+          </svg>
+        </div>
+
+        <p class="hero-series">Przewodnik ornitologiczny</p>
+        <h1 class="hero-title">Ptasiarski<br>Przewodnik Marka</h1>
+        <p class="hero-subtitle">Ptaki lęgowe w Polsce</p>
+        <div class="hero-rule"></div>
+
+        <p class="hero-lead">
+          Kompaktowy, estetyczny zbiór <strong>33 kart gatunkowych</strong> oparty na danych
+          <strong>MPPL 2025</strong>. Każda karta to zdjęcie, statystyki, cechy rozpoznawcze
+          i krótki film z serii <strong>Leśny Budzik</strong>.
+        </p>
+
+        <div class="hero-count">
+          <div class="hero-count-dot"></div>
+          33 gatunki · 3 kategorie · dane MPPL 2025
+        </div>
+
+        <button class="hero-cta" id="hero-cta-btn" aria-label="Przejdź do instrukcji">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M8 3v10M4 10l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Jak korzystać z przewodnika
+        </button>
+
+        <div class="hero-tags" aria-label="Kategorie przewodnika">
+          <div class="h-tag g"><div class="h-tag-dot"></div>Ogród</div>
+          <div class="h-tag b"><div class="h-tag-dot"></div>Najliczniejsze</div>
+          <div class="h-tag o"><div class="h-tag-dot"></div>Najpowszechniejsze</div>
+        </div>
       </div>
-      
-      <div class="filter-container">
-        <span class="filter-label">Filtruj po kategorii:</span>
-        <button class="filter-btn active" data-category="all" aria-pressed="true">Wszystkie</button>
-        <button class="filter-btn" data-category="Ogród" aria-pressed="false">Ogród</button>
-        <button class="filter-btn" data-category="Najliczniejsze" aria-pressed="false">Najliczniejsze</button>
-        <button class="filter-btn" data-category="Najpowszechniejsze" aria-pressed="false">Najpowszechniejsze</button>
+
+      <button class="hero-scroll" id="hero-scroll-btn" aria-label="Przewiń do następnej strony">
+        <span class="hero-scroll-label">dalej</span>
+        <div class="hero-scroll-line"></div>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- ── Strona 2: Instrukcja ── -->
+  <section class="page page--guide" id="page-guide" aria-label="Instrukcja korzystania z przewodnika">
+    <div class="guide" id="instrukcja">
+
+      <div class="guide-header reveal">
+        <div class="guide-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10 2L12.5 7.5H18L13.5 11L15.5 17L10 13.5L4.5 17L6.5 11L2 7.5H7.5L10 2Z" stroke="#5ca832" stroke-width="1.4" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+        <div class="guide-header-text">
+          <p class="guide-eyebrow">Jak czytać przewodnik</p>
+          <h2 class="guide-h2">Instrukcja użycia kart</h2>
+        </div>
       </div>
-      
-      <div class="results-info" id="results-info" aria-live="polite"></div>
-    </div>
-  </header>
 
-  <main>
-    <div class="container" id="birds-container" role="region" aria-live="polite" aria-label="Lista kart ptaków">
-      <!-- Karty będą tutaj dynamicznie dodawane -->
-    </div>
-    <div class="loading-indicator" id="loading-indicator" role="status" aria-live="polite">
-      <p>Ładowanie kart...</p>
-    </div>
-  </main>
+      <div class="steps">
 
-  <footer>
-    <p>Źródła: MPPL 2025, Czerwona Księga Ptaków Polski, Leśny Budzik (YouTube)</p>
-  </footer>
+        <div class="step reveal">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h3 class="step-title">Rozpoznaj kategorię gatunku</h3>
+            <p class="step-desc">
+              Na zdjęciu każdej karty znajdziesz kolorowe etykiety wskazujące, do której grupy należy ptak.<br><br>
+              <span class="inline-tag g"><span class="inline-dot"></span>Ogród</span>
+              &nbsp;— gatunki regularnie widywane w ogrodach i parkach miejskich (13 gatunków).<br><br>
+              <span class="inline-tag b"><span class="inline-dot"></span>Najliczniejsze</span>
+              &nbsp;— Top&nbsp;10 par lęgowych wg. MPPL&nbsp;2025.<br><br>
+              <span class="inline-tag o"><span class="inline-dot"></span>Najpowszechniejsze</span>
+              &nbsp;— Top&nbsp;10 gatunków stwierdzonych na największej liczbie powierzchni próbnych.<br><br>
+              Jeden ptak może należeć do <strong>kilku kategorii</strong>.
+            </p>
+          </div>
+        </div>
 
-  <script src="script.js"></script>
+        <div class="step reveal">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h3 class="step-title">Odczytaj statystyki populacji</h3>
+            <p class="step-desc">
+              Trzy pola poniżej nazwy pokazują kluczowe dane z <strong>MPPL&nbsp;2025</strong>:<br><br>
+              <strong>Liczebność</strong> – szacowana liczba par lęgowych w Polsce.<br>
+              <strong>Trend</strong> – kierunek zmian: ↑ wzrost, → stabilny, ↓ spadek.<br>
+              <strong>Migracje</strong> – czy ptak zostaje na zimę, czy odlatuje.
+            </p>
+          </div>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h3 class="step-title">Sprawdź status ochronny</h3>
+            <p class="step-desc">
+              Kolorowa ramka to status wg <strong>Czerwonej Księgi Ptaków Polski</strong>:<br><br>
+              <strong style="color:#5ca832">LC</strong> — brak zagrożenia &nbsp;·&nbsp;
+              <strong style="color:#e0b840">NT</strong> — bliski zagrożenia &nbsp;·&nbsp;
+              <strong style="color:#d88c40">VU</strong> — narażony &nbsp;·&nbsp;
+              <strong style="color:#d85050">EN</strong> — zagrożony.
+            </p>
+          </div>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h3 class="step-title">Naucz się rozpoznawać ptaka</h3>
+            <p class="step-desc">
+              Pigułki <em>"Jak rozpoznać"</em> zawierają najważniejsze cechy identyfikacyjne:
+              ubarwienie, głos, zachowanie i siedlisko.
+            </p>
+          </div>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <h3 class="step-title">Obejrzyj ptak w akcji – Leśny Budzik</h3>
+            <p class="step-desc">
+              Kliknij miniaturę wideo, by uruchomić krótki film z serii <strong>Leśny Budzik</strong>
+              (kanał <em>Echa Leśne</em> na YouTube).
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mapa karty -->
+      <div class="reveal" style="margin-bottom: clamp(36px,7vw,56px);">
+        <p class="guide-eyebrow" style="margin-bottom: 20px;">Mapa karty gatunkowej</p>
+        <div style="position:relative; padding: 0 clamp(0px,2vw,160px);">
+          <div class="card-anatomy">
+            <div class="ca-photo">
+              <div class="ca-photo-noise"></div>
+              <div class="ca-photo-label">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                  <rect x="2" y="6" width="24" height="17" rx="3" stroke="#b8d4a0" stroke-width="1.4"/>
+                  <circle cx="14" cy="14" r="4" stroke="#b8d4a0" stroke-width="1.4"/>
+                  <path d="M9 6V4.5A1.5 1.5 0 0 1 10.5 3h7A1.5 1.5 0 0 1 19 4.5V6" stroke="#b8d4a0" stroke-width="1.2"/>
+                </svg>
+                <span>Zdjęcie ptaka</span>
+              </div>
+              <div class="ca-tags">
+                <div class="inline-tag g" style="font-size:8px;padding:2px 7px;"><span class="inline-dot"></span>Ogród</div>
+                <div class="inline-tag b" style="font-size:8px;padding:2px 7px;"><span class="inline-dot"></span>Najliczniejsze</div>
+              </div>
+              <div class="ca-fade"></div>
+            </div>
+            <div class="ca-body">
+              <div class="ca-name">Nazwa polska</div>
+              <div class="ca-lat">Nazwa łacińska</div>
+              <div class="ca-stats">
+                <div class="ca-stat"><div class="ca-stat-l">Liczebność</div><div class="ca-stat-v">3–5 mln par</div></div>
+                <div class="ca-stat"><div class="ca-stat-l">Trend</div><div class="ca-stat-v">→ stabilny</div></div>
+                <div class="ca-stat"><div class="ca-stat-l">Migracje</div><div class="ca-stat-v">Osiadły</div></div>
+              </div>
+              <div class="ca-badge"><div class="ca-badge-dot"></div>Czerwona Księga: LC</div>
+              <div class="ca-rule"></div>
+              <div class="ca-pills">
+                <div class="ca-pill">🔍 Cecha 1</div>
+                <div class="ca-pill">🎵 Cecha 2</div>
+                <div class="ca-pill">📏 Cecha 3</div>
+              </div>
+              <div class="ca-yt">
+                <div class="ca-yt-btn">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="#1c2319"><path d="M3 2l7 4-7 4V2Z"/></svg>
+                </div>
+                <span class="ca-yt-label">Leśny Budzik · film z YouTube</span>
+              </div>
+              <div class="ca-foot">
+                <span class="ca-foot-src">MPPL 2025</span>
+                <span class="ca-foot-num">Gatunek · 1 / 33</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout callout-right c-photo" style="top:18px;">
+            <div class="callout-line" style="height:28px; margin-top:6px;"></div>
+            <div class="callout-box"><b>Zdjęcie</b><span>Wikimedia Commons CC</span></div>
+          </div>
+          <div class="callout callout-left c-tags" style="top:74px;">
+            <div class="callout-line" style="height:22px; margin-top:6px;"></div>
+            <div class="callout-box"><b>Kategorie</b><span>Ogród / Najliczniejsze /<br>Najpowszechniejsze</span></div>
+          </div>
+          <div class="callout callout-right c-name" style="top:156px;">
+            <div class="callout-line" style="height:18px; margin-top:4px;"></div>
+            <div class="callout-box"><b>Nazwa PL + łacińska</b><span>Playfair Display, serif</span></div>
+          </div>
+          <div class="callout callout-left c-stats" style="top:202px;">
+            <div class="callout-line" style="height:18px; margin-top:4px;"></div>
+            <div class="callout-box"><b>Statystyki MPPL 2025</b><span>Liczebność · Trend · Migracje</span></div>
+          </div>
+          <div class="callout callout-right c-badge" style="top:243px;">
+            <div class="callout-line" style="height:14px; margin-top:4px;"></div>
+            <div class="callout-box"><b>Status ochronny</b><span>Czerwona Księga PL / IUCN</span></div>
+          </div>
+          <div class="callout callout-left c-pills" style="top:286px;">
+            <div class="callout-line" style="height:14px; margin-top:4px;"></div>
+            <div class="callout-box"><b>Cechy rozpoznawcze</b><span>Wygląd, głos, siedlisko</span></div>
+          </div>
+          <div class="callout callout-right c-video" style="top:346px;">
+            <div class="callout-line" style="height:14px; margin-top:4px;"></div>
+            <div class="callout-box"><b>Film Leśny Budzik</b><span>Kliknij, by odtworzyć</span></div>
+          </div>
+          <div class="callout callout-left c-foot" style="bottom:10px;">
+            <div class="callout-line" style="height:14px; margin-top:4px;"></div>
+            <div class="callout-box"><b>Źródła i numer karty</b><span>1 / 33</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wskazówka -->
+      <div class="tip-box reveal">
+        <div class="tip-icon">💡</div>
+        <p class="tip-text">
+          <strong>Porada:</strong> Jeżeli na karcie ptak ma kilka etykiet, np.
+          <span class="inline-tag g" style="font-size:9px;padding:1px 6px;"><span class="inline-dot"></span>Ogród</span>
+          i
+          <span class="inline-tag b" style="font-size:9px;padding:1px 6px;"><span class="inline-dot"></span>Najliczniejsze</span>,
+          oznacza to, że jest zarówno częstym gościem ogrodów, jak i jednym z najliczniej lęgujących gatunków w kraju.
+          Karty są ułożone <strong>alfabetycznie</strong>.
+        </p>
+      </div>
+
+      <!-- Źródła -->
+      <div class="reveal">
+        <p class="guide-eyebrow" style="margin-bottom: 16px;">Źródła danych</p>
+        <div class="sources">
+          <div class="source-card">
+            <div class="source-icon">📊</div>
+            <div class="source-name">MPPL 2025</div>
+            <div class="source-desc">Monitoring Pospolitych Ptaków Lęgowych – dane o liczebności i trendach.</div>
+          </div>
+          <div class="source-card">
+            <div class="source-icon">📕</div>
+            <div class="source-name">Czerwona Księga</div>
+            <div class="source-desc">Czerwona Księga Ptaków Polski (Wilk i in. 2020) – kategorie zagrożenia.</div>
+          </div>
+          <div class="source-card">
+            <div class="source-icon">🎬</div>
+            <div class="source-name">Leśny Budzik</div>
+            <div class="source-desc">Seria filmów kanału <em>Echa Leśne</em> na YouTube.</div>
+          </div>
+          <div class="source-card">
+            <div class="source-icon">📷</div>
+            <div class="source-name">Wikimedia Commons</div>
+            <div class="source-desc">Zdjęcia na wolnych licencjach: CC BY-SA, CC BY, CC0.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-footer reveal">
+        <div class="guide-footer-left">
+          <strong>Ptasiarski Przewodnik Marka</strong> — wersja 2025
+        </div>
+        <div class="guide-footer-right">Dane: MPPL 2025 · GIOŚ · BirdLife International</div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── Strony 3..N: Karty gatunków (wstrzykiwane przez script.js) ── -->
+  <div id="book-cards"></div>
+
+</div><!-- /book -->
+
+
+<!-- ══════════════════════════════════════
+     NAWIGACJA (stała nakładka)
+══════════════════════════════════════ -->
+<nav class="book-nav" aria-label="Nawigacja po przewodniku">
+  <button class="book-nav-btn" id="nav-prev" aria-label="Poprzednia strona" disabled>
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+      <path d="M9 14V4M5 8l4-4 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <span class="book-nav-counter" id="nav-counter" aria-live="polite">1 / 2</span>
+
+  <button class="book-nav-btn" id="nav-next" aria-label="Następna strona">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+      <path d="M9 4v10M5 10l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <button class="book-nav-btn book-nav-search" id="nav-search" aria-label="Szukaj gatunku" aria-expanded="false">
+    <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+      <circle cx="7.5" cy="7.5" r="5" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M11.5 11.5L15 15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </svg>
+  </button>
+</nav>
+
+
+<!-- ══════════════════════════════════════
+     OVERLAY WYSZUKIWANIA
+══════════════════════════════════════ -->
+<div class="search-overlay" id="search-overlay" hidden role="dialog" aria-modal="true" aria-label="Wyszukaj gatunek">
+  <button class="search-overlay-close" id="search-overlay-close" aria-label="Zamknij wyszukiwanie">✕</button>
+
+  <div class="search-container">
+    <div class="search-box">
+      <label for="search-input" class="visually-hidden">Wyszukaj ptaka</label>
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Wyszukaj ptaka po nazwie polskiej lub łacińskiej…"
+        aria-label="Wyszukaj ptaka po nazwie polskiej lub łacińskiej"
+        autocomplete="off"
+      >
+      <button id="search-clear" class="search-clear" aria-label="Wyczyść wyszukiwanie">✕</button>
+    </div>
+
+    <div class="filter-container">
+      <span class="filter-label">Filtruj:</span>
+      <button class="filter-btn active" data-category="all" aria-pressed="true">Wszystkie</button>
+      <button class="filter-btn" data-category="Ogród" aria-pressed="false">Ogród</button>
+      <button class="filter-btn" data-category="Najliczniejsze" aria-pressed="false">Najliczniejsze</button>
+      <button class="filter-btn" data-category="Najpowszechniejsze" aria-pressed="false">Najpowszechniejsze</button>
+    </div>
+
+    <div class="results-info" id="results-info" aria-live="polite"></div>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
 </body>
 </html>
