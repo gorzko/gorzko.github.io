@@ -65,6 +65,20 @@
   padding: 0;
 }
 
+/* --- Button reset (usuwa domyślny wygląd przeglądarki) --- */
+button {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: inherit;
+}
+
 /* --- Tokeny CSS --- */
 :root {
   --cream:    #f7f3ee;
@@ -91,6 +105,7 @@
 /* --- Bazowe html/body w trybie książki --- */
 html, body {
   height: 100%;
+  height: 100dvh;
   overflow: hidden;
 }
 
@@ -115,6 +130,7 @@ body {
 ───────────────────────────────────────── */
 
 .book {
+  height: 100vh;   /* fallback dla starszych przeglądarek */
   height: 100dvh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -122,7 +138,10 @@ body {
 }
 
 .page {
+  height: 100vh;   /* fallback */
   height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   scroll-snap-align: start;
   overflow-y: auto;
   overscroll-behavior: contain;
