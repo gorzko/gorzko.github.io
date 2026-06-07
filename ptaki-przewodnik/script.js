@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (platform === 'facebook') {
       // Facebook Embedded Video Player
-      const fbEmbedUrl = `https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F${videoId}%2F&show_text=0&width=560&height=315`;
+      const fbEmbedUrl = `https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F${videoId}%2F&show_text=0&width=560&height=315`;
       return `
         <div class="slbl">🎬 ${ptak.film.tytul}</div>
         <div class="fb-player">
@@ -338,23 +338,20 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       // YouTube (default)
       const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-      const watchUrl = `https://www.youtube.com/watch?v=${videoId}`;
       const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
       
       return `
         <div class="slbl">🎬 ${ptak.film.tytul}</div>
-        <div class="yt-player" data-video-id="${videoId}" role="button" tabindex="0" aria-label="Odtwórz film: ${ptak.film.tytul}">
-          <a href="${watchUrl}" target="_blank" rel="noopener noreferrer" class="yt-link">
-            <img src="${thumbnailUrl}" alt="${ptak.film.tytul}" loading="lazy">
-            <div class="yt-overlay">
-              <div class="yt-btn">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                  <path d="M7 4.5L18 11L7 17.5V4.5Z" fill="#1c2319"/>
-                </svg>
-              </div>
-              <div class="yt-label">Leśny Budzik · Echa Leśne</div>
+        <div class="yt-player" onclick="this.innerHTML='<iframe src=\"${embedUrl}\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>'">
+          <img src="${thumbnailUrl}" alt="${ptak.film.tytul}" loading="lazy">
+          <div class="yt-overlay">
+            <div class="yt-btn">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path d="M7 4.5L18 11L7 17.5V4.5Z" fill="#1c2319"/>
+              </svg>
             </div>
-          </a>
+            <div class="yt-label">Leśny Budzik · Echa Leśne</div>
+          </div>
         </div>
       `;
     }
