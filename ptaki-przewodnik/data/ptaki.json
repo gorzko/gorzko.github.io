@@ -4,8 +4,10 @@
       "id": 1,
       "nazwa": "Bażant",
       "nazwaLacinska": "Phasianus colchicus",
-      "kategorie": ["Ogród"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Phasianus_colchicus_male_2009_1.jpg/800px-Phasianus_colchicus_male_2009_1.jpg",
+      "kategorie": [
+        "Ogród"
+      ],
+      "zdjecie": "img/Phasianus_colchicus.jpg",
       "liczebnosc": "100–200 tys. par",
       "trend": "↓",
       "migracja": "Osiadły",
@@ -19,14 +21,20 @@
         "tytul": "Leśny Budzik – Bażant",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 2,
       "nazwa": "Bogatka",
       "nazwaLacinska": "Parus major",
-      "kategorie": ["Najliczniejsze", "Najpowszechniejsze"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Parus_major_-_Britain_and_Ireland.jpg/800px-Parus_major_-_Britain_and_Ireland.jpg",
+      "kategorie": [
+        "Najliczniejsze",
+        "Najpowszechniejsze"
+      ],
+      "zdjecie": "img/Parus_major.jpg",
       "liczebnosc": "3–4 mln par",
       "trend": "→",
       "migracja": "Osiadły",
@@ -40,13 +48,19 @@
         "tytul": "Leśny Budzik – Bogatka",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 3,
       "nazwa": "Gil",
       "nazwaLacinska": "Pyrrhula pyrrhula",
-      "kategorie": ["Najliczniejsze", "Najpowszechniejsze"],
+      "kategorie": [
+        "Najliczniejsze",
+        "Najpowszechniejsze"
+      ],
       "zdjecie": "img/Pyrrhula_pyrrhula.jpg",
       "liczebnosc": "800–1200 tys. par",
       "trend": "→",
@@ -61,14 +75,20 @@
         "tytul": "Leśny Budzik – Gil",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 4,
       "nazwa": "Grzywacz",
       "nazwaLacinska": "Columba palumbus",
-      "kategorie": ["Najliczniejsze", "Najpowszechniejsze"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Columba_palumbus_-_British_Wildlife_Centre%2C_Surrey%2C_England_-_male-8.jpg/800px-Columba_palumbus_-_British_Wildlife_Centre%2C_Surrey%2C_England_-_male-8.jpg",
+      "kategorie": [
+        "Najliczniejsze",
+        "Najpowszechniejsze"
+      ],
+      "zdjecie": "img/Columba_palumbus.jpg",
       "liczebnosc": "1.5–2 mln par",
       "trend": "→",
       "migracja": "Osiadły",
@@ -82,14 +102,19 @@
         "tytul": "Leśny Budzik – Grzywacz",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 5,
       "nazwa": "Jerzyk",
       "nazwaLacinska": "Apus apus",
-      "kategorie": ["Ogród"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Apus_apus_1_%28Martin_Mecnarowski%29.jpg/800px-Apus_apus_1_%28Martin_Mecnarowski%29.jpg",
+      "kategorie": [
+        "Ogród"
+      ],
+      "zdjecie": "img/Apus_apus.jpg",
       "liczebnosc": "100–200 tys. par",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -103,14 +128,21 @@
         "tytul": "Leśny Budzik – Jerzyk",
         "platforma": "facebook"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 6,
       "nazwa": "Kapturka",
       "nazwaLacinska": "Sylvia atricapilla",
-      "kategorie": ["Ogród", "Najliczniejsze", "Najpowszechniejsze"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Sylvia_atricapilla_2_%28Piotr_Kuczynski%29.jpg/800px-Sylvia_atricapilla_2_%28Piotr_Kuczynski%29.jpg",
+      "kategorie": [
+        "Ogród",
+        "Najliczniejsze",
+        "Najpowszechniejsze"
+      ],
+      "zdjecie": "img/Sylvia_atricapilla.jpg",
       "liczebnosc": "2–3 mln par",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -124,14 +156,19 @@
         "tytul": "Leśny Budzik – Kapturka",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 7,
       "nazwa": "Kawka",
       "nazwaLacinska": "Corvus monedula",
-      "kategorie": ["Ogród"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Corvus_monedula_-_Jackdaw%2C_Portesham%2C_Dorset%2C_England_-_male-4.jpg/800px-Corvus_monedula_-_Jackdaw%2C_Portesham%2C_Dorset%2C_England_-_male-4.jpg",
+      "kategorie": [
+        "Ogród"
+      ],
+      "zdjecie": "img/Corvus_monedula.jpg",
       "liczebnosc": "100–200 tys. par",
       "trend": "↑",
       "migracja": "Osiadły",
@@ -145,14 +182,21 @@
         "tytul": "Leśny Budzik – Kawka",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 8,
       "nazwa": "Kos",
       "nazwaLacinska": "Turdus merula",
-      "kategorie": ["Ogród", "Najliczniejsze", "Najpowszechniejsze"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Turdus_merula_-_Common_blackbird_-_Karatavuk_11.jpg/960px-Turdus_merula_-_Common_blackbird_-_Karatavuk_11.jpg",
+      "kategorie": [
+        "Ogród",
+        "Najliczniejsze",
+        "Najpowszechniejsze"
+      ],
+      "zdjecie": "img/Turdus_merula.jpg",
       "liczebnosc": "5–6 mln par",
       "trend": "→",
       "migracja": "Osiadły",
@@ -166,14 +210,19 @@
         "tytul": "Leśny Budzik – Kos",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 9,
       "nazwa": "Kukułka",
       "nazwaLacinska": "Cuculus canorus",
-      "kategorie": ["Ogród"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cuculus_canorus_1_%28Martin_Mecnarowski%29.jpg/800px-Cuculus_canorus_1_%28Martin_Mecnarowski%29.jpg",
+      "kategorie": [
+        "Ogród"
+      ],
+      "zdjecie": "img/Cuculus_canorus.jpg",
       "liczebnosc": "100–200 tys. par",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -187,14 +236,19 @@
         "tytul": "Leśny Budzik – Kukułka",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 10,
       "nazwa": "Łozówka",
       "nazwaLacinska": "Acrocephalus palustris",
-      "kategorie": ["Ogród"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Acrocephalus_palustris_1_%28Jarek_Mysiak%29.jpg/800px-Acrocephalus_palustris_1_%28Jarek_Mysiak%29.jpg",
+      "kategorie": [
+        "Ogród"
+      ],
+      "zdjecie": "img/Acrocephalus_palustris.jpg",
       "liczebnosc": "50–100 tys. par",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -208,14 +262,20 @@
         "tytul": "Leśny Budzik – Łozówka",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 11,
       "nazwa": "Modraszka",
       "nazwaLacinska": "Cyanistes caeruleus",
-      "kategorie": ["Najliczniejsze", "Najpowszechniejsze"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Cyanistes_caeruleus_-_British_Wildlife_Centre%2C_Surrey%2C_England_-_male-4.jpg/800px-Cyanistes_caeruleus_-_British_Wildlife_Centre%2C_Surrey%2C_England_-_male-4.jpg",
+      "kategorie": [
+        "Najliczniejsze",
+        "Najpowszechniejsze"
+      ],
+      "zdjecie": "img/Cyanistes_caeruleus.jpg",
       "liczebnosc": "1–2 mln par",
       "trend": "→",
       "migracja": "Osiadły",
@@ -229,14 +289,19 @@
         "tytul": "Leśny Budzik – Modraszka",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 12,
       "nazwa": "Piegża",
       "nazwaLacinska": "Sylvia curruca",
-      "kategorie": ["Ogród"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sylvia_curruca_1_%28Martin_Mecnarowski%29.jpg/800px-Sylvia_curruca_1_%28Martin_Mecnarowski%29.jpg",
+      "kategorie": [
+        "Ogród"
+      ],
+      "zdjecie": "img/Sylvia_curruca.jpg",
       "liczebnosc": "500–800 tys. par",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -250,14 +315,20 @@
         "tytul": "Leśny Budzik – Piegża",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 13,
       "nazwa": "Rudzik",
       "nazwaLacinska": "Erithacus rubecula",
-      "kategorie": ["Najliczniejsze", "Najpowszechniejsze"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Erithacus_rubecula_-_British_Wildlife_Centre%2C_Surrey%2C_England_-_male-4.jpg/800px-Erithacus_rubecula_-_British_Wildlife_Centre%2C_Surrey%2C_England_-_male-4.jpg",
+      "kategorie": [
+        "Najliczniejsze",
+        "Najpowszechniejsze"
+      ],
+      "zdjecie": "img/Erithacus_rubecula.jpg",
       "liczebnosc": "2–3 mln par",
       "trend": "→",
       "migracja": "Osiadły",
@@ -271,35 +342,19 @@
         "tytul": "Leśny Budzik – Rudzik",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
-    },
-    {
-      "id": 14,
-      "nazwa": "Sierpówka",
-      "nazwaLacinska": "Apus melba",
-      "kategorie": ["Ogród"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Apus_melba_1_%28Jarek_Mysiak%29.jpg/800px-Apus_melba_1_%28Jarek_Mysiak%29.jpg",
-      "liczebnosc": "10–20 tys. par",
-      "trend": "→",
-      "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "LC",
-      "cechy": [
-        "Ciemne upierzenie z białym gardłem",
-        "Długi, sierpowaty ogon"
-      ],
-      "film": {
-        "id": "0IwaZl1zCOs",
-        "tytul": "Leśny Budzik – Sierpówka",
-        "platforma": "youtube"
-      },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 15,
       "nazwa": "Sójka",
       "nazwaLacinska": "Garrulus glandarius",
-      "kategorie": ["Ogród"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Garrulus_glandarius_1_%28Martin_Mecnarowski%29.jpg/800px-Garrulus_glandarius_1_%28Martin_Mecnarowski%29.jpg",
+      "kategorie": [
+        "Ogród"
+      ],
+      "zdjecie": "img/Garrulus_glandarius.jpg",
       "liczebnosc": "200–300 tys. par",
       "trend": "→",
       "migracja": "Osiadły",
@@ -313,14 +368,20 @@
         "tytul": "Leśny Budzik – Sójka",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 16,
       "nazwa": "Sroka",
       "nazwaLacinska": "Pica pica",
-      "kategorie": ["Ogród", "Najpowszechniejsze"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Pica_pica_-_British_Wildlife_Centre%2C_Surrey%2C_England_-_2.jpg/800px-Pica_pica_-_British_Wildlife_Centre%2C_Surrey%2C_England_-_2.jpg",
+      "kategorie": [
+        "Ogród",
+        "Najpowszechniejsze"
+      ],
+      "zdjecie": "img/Pica_pica.jpg",
       "liczebnosc": "500–700 tys. par",
       "trend": "→",
       "migracja": "Osiadły",
@@ -334,14 +395,19 @@
         "tytul": "Leśny Budzik – Sroka",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 17,
       "nazwa": "Skowronek",
       "nazwaLacinska": "Alauda arvensis",
-      "kategorie": ["Najliczniejsze"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Alauda_arvensis_1_%28Martin_Mecnarowski%29.jpg/800px-Alauda_arvensis_1_%28Martin_Mecnarowski%29.jpg",
+      "kategorie": [
+        "Najliczniejsze"
+      ],
+      "zdjecie": "img/Alauda_arvensis.jpg",
       "liczebnosc": "2–3 mln par",
       "trend": "↓",
       "migracja": "Osiadły",
@@ -355,14 +421,21 @@
         "tytul": "Leśny Budzik – Skowronek",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 18,
       "nazwa": "Szpak",
       "nazwaLacinska": "Sturnus vulgaris",
-      "kategorie": ["Ogród", "Najliczniejsze", "Najpowszechniejsze"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Sturnus_vulgaris_-_British_Wildlife_Centre%2C_Surrey%2C_England_-_male-4.jpg/800px-Sturnus_vulgaris_-_British_Wildlife_Centre%2C_Surrey%2C_England_-_male-4.jpg",
+      "kategorie": [
+        "Ogród",
+        "Najliczniejsze",
+        "Najpowszechniejsze"
+      ],
+      "zdjecie": "img/Sturnus_vulgaris.jpg",
       "liczebnosc": "3–4 mln par",
       "trend": "↓",
       "migracja": "Osiadły",
@@ -376,14 +449,19 @@
         "tytul": "Leśny Budzik – Szpak",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 19,
       "nazwa": "Śpiewak",
       "nazwaLacinska": "Phylloscopus collybita",
-      "kategorie": ["Ogród"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Phylloscopus_collybita_1_%28Martin_Mecnarowski%29.jpg/800px-Phylloscopus_collybita_1_%28Martin_Mecnarowski%29.jpg",
+      "kategorie": [
+        "Ogród"
+      ],
+      "zdjecie": "img/Phylloscopus_collybita.jpg",
       "liczebnosc": "1–2 mln par",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -397,14 +475,19 @@
         "tytul": "Leśny Budzik – Śpiewak",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 20,
       "nazwa": "Trznadel",
       "nazwaLacinska": "Emberiza citrinella",
-      "kategorie": ["Najliczniejsze"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Emberiza_citrinella_1_%28Martin_Mecnarowski%29.jpg/800px-Emberiza_citrinella_1_%28Martin_Mecnarowski%29.jpg",
+      "kategorie": [
+        "Najliczniejsze"
+      ],
+      "zdjecie": "img/Emberiza_citrinella.jpg",
       "liczebnosc": "1–2 mln par",
       "trend": "↓",
       "migracja": "Osiadły",
@@ -418,14 +501,19 @@
         "tytul": "Leśny Budzik – Trznadel",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 21,
       "nazwa": "Wróbel",
       "nazwaLacinska": "Passer domesticus",
-      "kategorie": ["Najliczniejsze"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Passer_domesticus_-_British_Wildlife_Centre%2C_Surrey%2C_England_-_male-4.jpg/800px-Passer_domesticus_-_British_Wildlife_Centre%2C_Surrey%2C_England_-_male-4.jpg",
+      "kategorie": [
+        "Najliczniejsze"
+      ],
+      "zdjecie": "img/Passer_domesticus.jpg",
       "liczebnosc": "5–7 mln par",
       "trend": "↓",
       "migracja": "Osiadły",
@@ -439,14 +527,20 @@
         "tytul": "Leśny Budzik – Wróbel",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     },
     {
       "id": 22,
       "nazwa": "Zięba",
       "nazwaLacinska": "Fringilla coelebs",
-      "kategorie": ["Najliczniejsze", "Najpowszechniejsze"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Fringilla_coelebs_1_%28Martin_Mecnarowski%29.jpg/800px-Fringilla_coelebs_1_%28Martin_Mecnarowski%29.jpg",
+      "kategorie": [
+        "Najliczniejsze",
+        "Najpowszechniejsze"
+      ],
+      "zdjecie": "img/Fringilla_coelebs.jpg",
       "liczebnosc": "3–4 mln par",
       "trend": "→",
       "migracja": "Osiadły",
@@ -460,7 +554,10 @@
         "tytul": "Leśny Budzik – Zięba",
         "platforma": "youtube"
       },
-      "zrodla": ["MPPL 2025", "Czerwona Księga Ptaków Polski"]
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
     }
   ]
 }
