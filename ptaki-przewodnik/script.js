@@ -39,6 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
   searchOverlay.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeSearchOverlay();
   });
+  searchOverlay.addEventListener('click', (e) => {
+    if (e.target === searchOverlay) closeSearchOverlay();
+  });
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') closeSearchOverlay();
+  });
 
   // ── Ładowanie danych ──────────────────────
   fetch('data/ptaki.json')
@@ -244,6 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.setAttribute('aria-pressed', 'true');
         currentCategoryFilter = btn.dataset.category;
         applyFilter();
+        closeSearchOverlay();
       });
       btn.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
