@@ -1231,6 +1231,26 @@ body {
    RESPONSYWNOŚĆ GUIDE
 ───────────────────────────────────────── */
 
+/* Skalowanie mapy karty na desktopie */
+@media (min-width: 1024px) {
+  .page--guide-anatomy { overflow: visible; }
+  .page--guide-anatomy .card-anatomy {
+    transform: scale(1.25);
+    transform-origin: top center;
+  }
+}
+@media (min-width: 1440px) {
+  .page--guide-anatomy .card-anatomy { transform: scale(1.55); }
+}
+@media (min-width: 1920px) {
+  .page--guide-anatomy .card-anatomy { transform: scale(1.85); }
+}
+
+/* Scrollowanie kółkiem: wyłącz wewnętrzny scroll body na desktopie */
+@media (min-width: 900px) {
+  .page--card .body { overflow-y: clip; }
+}
+
 @media (max-width: 720px) {
   .callout { display: none; }
   .card-anatomy { max-width: 100%; }

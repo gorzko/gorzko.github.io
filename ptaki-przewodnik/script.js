@@ -42,9 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
   searchOverlay.addEventListener('click', (e) => {
     if (e.target === searchOverlay) closeSearchOverlay();
   });
-  searchInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') closeSearchOverlay();
-  });
 
   // ── Ładowanie danych ──────────────────────
   fetch('data/ptaki.json')
@@ -240,6 +237,13 @@ document.addEventListener('DOMContentLoaded', () => {
       searchInput.focus();
     });
 
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        closeSearchOverlay();
+      }
+    });
+
     filterButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         filterButtons.forEach(b => {
@@ -260,6 +264,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function openSearchOverlay() {
+    searchInput.value = '';
+    currentSearchTerm = '';
+    currentCategoryFilter = 'all';
+    filterButtons.forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-pressed', 'false');
+    });
+    searchClear.style.display = 'none';
+    resultsInfo.textContent = '';
+    applyFilter();
     searchOverlay.hidden = false;
     navSearch.setAttribute('aria-expanded', 'true');
     searchInput.focus();
