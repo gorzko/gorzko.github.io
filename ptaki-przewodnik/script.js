@@ -8,9 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const bookEl          = document.getElementById('book');
   const bookCardsEl     = document.getElementById('book-cards');
   const loadingText     = document.createElement('p');
-  const navPrev         = document.getElementById('nav-prev');
-  const navNext         = document.getElementById('nav-next');
-  const navCounter      = document.getElementById('nav-counter');
   const navSearch       = document.getElementById('nav-search');
   const searchOverlay   = document.getElementById('search-overlay');
   const searchClose     = document.getElementById('search-overlay-close');
@@ -35,6 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
   if (heroScroll) {
     heroScroll.addEventListener('click', () => navigator.goTo(1));
   }
+
+  // ── Wyszukiwarka – overlay (niezależne od danych) ─
+  navSearch.addEventListener('click', openSearchOverlay);
+  searchClose.addEventListener('click', closeSearchOverlay);
+  searchOverlay.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeSearchOverlay();
+  });
+  searchOverlay.addEventListener('click', (e) => {
+    if (e.target === searchOverlay) closeSearchOverlay();
+  });
 
   // ── Ładowanie danych ──────────────────────
   fetch('data/ptaki.json')
@@ -104,9 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }, { passive: true });
 
-      // Przyciski
-      navPrev.addEventListener('click', () => this.prev());
-      navNext.addEventListener('click', () => this.next());
     },
 
     refresh() {
@@ -149,12 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     },
 
-    updateUI() {
-      const total = this.pages.length;
-      navCounter.textContent = `${this.currentIdx + 1} / ${total}`;
-      navPrev.disabled = this.currentIdx === 0;
-      navNext.disabled = this.currentIdx === total - 1;
-    }
+    updateUI() {}
   };
 
   navigator.init();
@@ -238,6 +237,13 @@ document.addEventListener('DOMContentLoaded', () => {
       searchInput.focus();
     });
 
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        closeSearchOverlay();
+      }
+    });
+
     filterButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         filterButtons.forEach(b => {
@@ -248,21 +254,26 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.setAttribute('aria-pressed', 'true');
         currentCategoryFilter = btn.dataset.category;
         applyFilter();
+        closeSearchOverlay();
       });
       btn.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
       });
     });
 
-    // Otwieranie/zamykanie overlaya
-    navSearch.addEventListener('click', openSearchOverlay);
-    searchClose.addEventListener('click', closeSearchOverlay);
-    searchOverlay.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeSearchOverlay();
-    });
   }
 
   function openSearchOverlay() {
+    searchInput.value = '';
+    currentSearchTerm = '';
+    currentCategoryFilter = 'all';
+    filterButtons.forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-pressed', 'false');
+    });
+    searchClear.style.display = 'none';
+    resultsInfo.textContent = '';
+    applyFilter();
     searchOverlay.hidden = false;
     navSearch.setAttribute('aria-expanded', 'true');
     searchInput.focus();
@@ -417,14 +428,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const { platforma = 'youtube', id: videoId, tytul } = ptak.film;
 
     if (platforma === 'facebook') {
-      const fbUrl = `https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F${videoId}%2F&show_text=0&width=560&height=315`;
+      const fbVideoUrl = `https://www.facebook.com/watch?v=${videoId}`;
+      const fbUrl = `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(fbVideoUrl)}&show_text=false&width=560`;
       return `
         <div class="slbl">🎬 ${tytul}</div>
         <div class="fb-player">
-          <iframe src="${fbUrl}" width="560" height="315" style="border:none;overflow:hidden"
+          <iframe src="${fbUrl}"
+            style="border:none;overflow:hidden"
             scrolling="no" frameborder="0"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          </iframe>
         </div>`;
     }
 
