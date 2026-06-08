@@ -428,14 +428,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const { platforma = 'youtube', id: videoId, tytul } = ptak.film;
 
     if (platforma === 'facebook') {
-      const fbUrl = `https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F${videoId}%2F&show_text=0&width=560&height=315`;
+      const fbVideoUrl = `https://www.facebook.com/watch?v=${videoId}`;
+      const fbUrl = `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(fbVideoUrl)}&show_text=false&width=560`;
       return `
         <div class="slbl">🎬 ${tytul}</div>
         <div class="fb-player">
-          <iframe src="${fbUrl}" width="560" height="315" style="border:none;overflow:hidden"
+          <iframe src="${fbUrl}"
+            style="border:none;overflow:hidden"
             scrolling="no" frameborder="0"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          </iframe>
         </div>`;
     }
 

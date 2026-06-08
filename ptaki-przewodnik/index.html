@@ -6,11 +6,11 @@
   <title>Ptasiarski Przewodnik Marka</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <!-- Facebook SDK -->
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v18.0" nonce="vQx5m4j7"></script>
 </head>
 <body>
+<!-- Facebook SDK – musi być pierwszym elementem <body> wg dokumentacji Meta -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v18.0"></script>
 
 <!-- ══════════════════════════════════════
      KSIĄŻKA – KONTENER SCROLL-SNAP
