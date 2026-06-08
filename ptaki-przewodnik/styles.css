@@ -869,7 +869,6 @@ body {
 .c-badge  { top: 242px; }
 .c-pills  { top: 282px; }
 .c-video  { top: 340px; }
-.c-foot   { bottom: 10px; }
 
 /* Wskazówka */
 .tip-box {
@@ -1234,16 +1233,16 @@ body {
 /* Skalowanie mapy karty na desktopie */
 @media (min-width: 1024px) {
   .page--guide-anatomy { overflow: visible; }
-  .page--guide-anatomy .card-anatomy {
-    transform: scale(1.25);
+  .page--guide-anatomy .card-anatomy-wrap {
+    transform: scale(1.2);
     transform-origin: top center;
   }
 }
 @media (min-width: 1440px) {
-  .page--guide-anatomy .card-anatomy { transform: scale(1.55); }
+  .page--guide-anatomy .card-anatomy-wrap { transform: scale(1.45); }
 }
 @media (min-width: 1920px) {
-  .page--guide-anatomy .card-anatomy { transform: scale(1.85); }
+  .page--guide-anatomy .card-anatomy-wrap { transform: scale(1.7); }
 }
 
 /* Scrollowanie kółkiem: wyłącz wewnętrzny scroll body na desktopie */
