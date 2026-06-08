@@ -13,8 +13,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Samiec: jaskrawo ubarwiony z długim ogonem",
-        "Samica: brązowa, maskująca"
+        "🖤 Samiec: jaskrawo ubarwiony, rudoczerwona głowa z zieloną obwódką",
+        "🟡 Biała plama na policzkach i metaliczne kolczyki na nogach",
+        "📏 53–89 cm (w tym ogon 30–50 cm), masa 0,5–1,5 kg",
+        "🌾 Tereny rolnicze z zaroślami, lasy liściaste z gęstym podszyciem",
+        "🥚 Gniazdo na ziemi, ukryte w roślinności, 7–16 jaj",
+        "🐛 Wszystkożerny: owady, nasiona, owoce, jagody",
+        "🔊 Głośne odgłosy: 'kurrr-kurrr' lub metaliczne 'kien-kien'"
       ],
       "film": {
         "id": "8Z32v2fzmDA",
@@ -40,8 +45,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Czarna głowa z białymi policzkami",
-        "Żółty brzuch z czarnym pasem"
+        "🖤 Czarna głowa z białymi policzkami i czarną pręgą przez oko",
+        "🟡 Żółty brzuch z czarnym paskiem",
+        "📏 11–12,5 cm, rozpiętość skrzydeł 17–20 cm",
+        "🌳 Lasy liściaste i mieszane, parki, ogrody, sady",
+        "🐛 Owadożerna: mszyce, gąsienice, chrząszcze, pająki",
+        "🎵 Śpiew: szybka seria 'hui-hui-hui' lub 'cui-cui-cui'",
+        "🏠 Gniazduje w dziuplach i budkach lęgowych, 8–13 jaj"
       ],
       "film": {
         "id": "Ne3BLHIUSbU",
@@ -67,8 +77,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Samiec: różowa pierś, szare plecy, czarna głowa",
-        "Samica: brązowa, mniej kontrastowa"
+        "🟠 Samiec: różowa pierś, szare plecy, czarna głowa",
+        "🟤 Samica: brązowa z delikatnym czubkiem, mniej kontrastowa",
+        "📏 14–16 cm, rozpiętość skrzydeł 21–25 cm",
+        "🌿 Gęste wilgotne lasy liściaste, zarośla w dolinach rzecznych",
+        "🌰 Roślinożerny: nasiona traw, pędy, pąki wierzb i topól",
+        "🎵 Ciche, miękkie 'dū-dū-dū' przypominające gołębia",
+        "🕊️ Płochliwy, trudny do obserwacji, porusza się skokami"
       ],
       "film": {
         "id": "ltzhV-j86DU",
@@ -94,8 +109,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Duży gołąb z szarym upierzeniem",
-        "Biała plama na szyi"
+        "🟤 Szarobrązowy z białym paskiem nad okiem",
+        "✨ Biała plama na szyi ('lusterko')",
+        "📏 14–15 cm, rozpiętość skrzydeł 23–27 cm",
+        "🌲 Stare lasy iglaste i mieszane z martwymi drzewami",
+        "🐛 Owadożerny: chrząszcze, mrówki, gąsienice, pająki",
+        "🎵 Śpiew: szybka seria 'sri-sri-sri' zakończona tremą",
+        "🏠 Gniazduje w dziuplach, 5–7 białych jaj"
       ],
       "film": {
         "id": "1b0KD40bmQ4",
@@ -120,8 +140,13 @@
       "migracja": "Wędrowny",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Ciemne upierzenie, długi ogon w kształcie sierpa",
-        "Głośne krzyki w locie"
+        "✈️ Całe życie w powietrzu – ląduje tylko do gniazdowania",
+        "🖤 Ciemnobrunatne upierzenie z jaśniejszym gardłem",
+        "🪁 Długi, widlasty ogon i sierpowate skrzydła",
+        "📏 16–17 cm, rozpiętość skrzydeł 40–44 cm",
+        "🏙️ Gniazduje w koloniach na budynkach, mostach, wieżach",
+        "🐛 Żywi się wyłącznie owadami łowionymi w locie",
+        "🔊 Przenikliwy gwizd 'srrrii' powtarzany w locie"
       ],
       "film": {
         "id": "1B9o4Ym7JQ",
@@ -148,8 +173,13 @@
       "migracja": "Wędrowny",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Samiec: czarna czapeczka",
-        "Samica: brązowa czapeczka"
+        "🖤 Samiec: czarna 'czapeczka' na głowie",
+        "🟤 Samica: brązowa czapeczka, szarobrązowe upierzenie",
+        "📏 11–12 cm, rozpiętość skrzydeł 17–20 cm",
+        "🌳 Lasy liściaste i mieszane, parki, ogrody z gęstym podszyciem",
+        "🐛 Owadożerna: mszyce, gąsienice, chrząszcze, pająki",
+        "🎵 Śpiew: miękka seria 'hiu-hiu-hiu' zakończona tremą",
+        "✈️ Wędrowny: odlatuje na zimowiska do południa Europy"
       ],
       "film": {
         "id": "Tm0PV1vBmRg",
@@ -174,8 +204,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Czarne upierzenie z szarym karkiem",
-        "Czerwone oczy"
+        "🖤 Całkowicie czarne upierzenie z metalicznym poświtem",
+        "👁️‍🗨 Czerwone oczy i szary dziób",
+        "📏 37–44 cm, rozpiętość skrzydeł 64–73 cm",
+        "🏙️ Tereny miejskie i wiejskie, gniazduje w koloniach na drzewach i budynkach",
+        "🍖 Wszystkożerny: owady, nasiona, owoce, padlina, odpadki",
+        "🧠 Inteligentna – używa narzędzi, otwiera pojemniki",
+        "🔊 Głośne, chrapliwe 'kaaa-kaaa' w koloniach"
       ],
       "film": {
         "id": "Gv7W1jS7V9I",
@@ -202,8 +237,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Samiec: czarny z żółtym dziobem",
-        "Samica: brunatna"
+        "🖤 Samiec: całkowicie czarny z metalicznym poświtem",
+        "🟡 Żółty dziób i obrączka oka",
+        "🟤 Samica: brunatna z ciemnymi pręgami, spód jaśniejszy",
+        "📏 24–27 cm, rozpiętość skrzydeł 34–40 cm",
+        "🎵 Melodyjny, głośny śpiew o świcie i wieczorem",
+        "🌳 Ogrody, parki, lasy liściaste z gęstym podszyciem",
+        "🐛🍇 Wszystkożerny: owady, dżdżownice, owoce, nasiona"
       ],
       "film": {
         "id": "4axfqloLdn4",
@@ -228,8 +268,13 @@
       "migracja": "Wędrowny",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Szare upierzenie, długi ogon",
-        "Charakterystyczne kukułanie"
+        "🟤 Samiec: szare upierzenie z ciemnymi paskami na spodzie",
+        "🟤 Samica: brązowe upierzenie z rdzawymi pręgami",
+        "📏 32–37 cm, rozpiętość skrzydeł 55–65 cm",
+        "🪁 Długi ogon z białymi plamami",
+        "🥚 Pasożyt lęgowy – podrzuca jaja do gniazd innych ptaków",
+        "🔊 Charakterystyczne 'kuku-kuku-kuku' samca, chichoczący odgłos samicy",
+        "✈️ Wędrowna – zimuje w Afryce (Kongo, Tanzania)"
       ],
       "film": {
         "id": "pMcPWmyfZeQ",
@@ -254,8 +299,13 @@
       "migracja": "Wędrowny",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Brązowe upierzenie z ciemnymi pręgami",
-        "Długi, zaostrzony dziób"
+        "🟤 Brązowy wierzch, kremowy spód z ciemnymi pręgami",
+        "📏 13–15 cm, rozpiętość skrzydeł 19–24 cm",
+        "🌿 Zarośla wierzbowe, ogrody, wilgotne łąki, brzegi lasów",
+        "🦜 Doskonałe naśladowanie dźwięków środowiska",
+        "🎵 Nieustanny śpiew z imitacjami innych ptaków",
+        "🪱 Owadożerna: muchy, komary, chrząszcze, gąsienice",
+        "✈️ Wędrowna – zimuje w południowo-zachodniej Europie i Afryce"
       ],
       "film": {
         "id": "wE2IG6Zll_k",
@@ -281,8 +331,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Niebieska czapeczka i skrzydła",
-        "Żółty brzuch"
+        "🔵 Niebieska czapeczka i skrzydła z czarnymi paskami",
+        "🟡 Żółty brzuch, policzki białe z niebieską obwódką",
+        "📏 10–12 cm, rozpiętość skrzydeł 15–18 cm",
+        "🌳 Lasy liściaste i mieszane, parki, ogrody, sady",
+        "🐛 Owadożerna: mszyce, gąsienice, pająki, nasiona",
+        "🎵 Pieśń: cienka, świstowa 'siu-siu-siu' zakończona tremą",
+        "🏠 Gniazduje w dziuplach drzew i budkach lęgowych"
       ],
       "film": {
         "id": "5WOPT40Bh3M",
@@ -307,8 +362,13 @@
       "migracja": "Wędrowny",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Samiec: szare upierzenie z ciemną maską",
-        "Samica: brązowa"
+        "🖤 Samiec: szare upierzenie z ciemną maską na głowie",
+        "🟤 Samica: brązowa, mniej kontrastowa",
+        "📏 12–13,5 cm, rozpiętość skrzydeł 17–20 cm",
+        "🌿 Zarośla, zakrzewienia, brzegi lasów, wilgotne łąki",
+        "🎵 Śpiew: głośna, melodyjna 'zja-zja-zja-zju' o zmierzchu i świcie",
+        "🐛 Owadożerna: muchy, komary, chrząszcze, gąsienice",
+        "✈️ Wędrowna – zimuje w południowo-zachodniej Europie i Afryce"
       ],
       "film": {
         "id": "pqYIPxUsdjE",
@@ -334,12 +394,46 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Pomarańczowa pierś",
-        "Szare plecy"
+        "🟠 Pomarańczowoczerwona pierś, gardło i twarz",
+        "🟤 Szare plecy, wierzch głowy i skrzydła",
+        "📏 12,5–14 cm, rozpiętość skrzydeł 20–22 cm",
+        "🌳 Lasy liściaste i mieszane, parki, ogrody, sady",
+        "🐛 Owadożerny: chrząszcze, gąsienice, muchy, mrówki, pająki",
+        "🎵 Śpiew: miękka, melodyjna 'tiu-tiu-tiu' przez cały dzień",
+        "🌅 Aktywny także w pochmurne dni i przy sztucznym oświetleniu"
       ],
       "film": {
         "id": "rszYm1T7XKA",
         "tytul": "Leśny Budzik – Rudzik",
+        "platforma": "youtube"
+      },
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
+    },
+    {
+      "id": 14,
+      "nazwa": "Sierpówka",
+      "nazwaLacinska": "Streptopelia decaocto",
+      "kategorie": ["Ogród"],
+      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Streptopelia_decaocto_%28Marek_Szczepanek%29.jpg/800px-Streptopelia_decaocto_%28Marek_Szczepanek%29.jpg",
+      "liczebnosc": "400–600 tys. par",
+      "trend": "↑",
+      "migracja": "Osiadły",
+      "statusCzerwonejKsiazki": "LC",
+      "cechy": [
+        "🤍 Jasnoszarobrązowe upierzenie z różowawym odcieniem na piersi",
+        "🖤 Czarna półobroża na tylnej stronie szyi (cecha charakterystyczna)",
+        "📏 31–33 cm, rozpiętość skrzydeł 47–55 cm",
+        "🏘️ Osady ludzkie: ogrody, parki, wsie, tereny rolnicze",
+        "🌾 Głównie ziarnożerna: zboża, nasiona, owoce",
+        "🎵 Głos: monotonne, powtarzane 'kru-kru-kru' i urywane 'ku'",
+        "🔄 Ekspansywny gatunek – skolonizował Europę Zachodnią w XX w."
+      ],
+      "film": {
+        "id": "0IwaZl1zCOs",
+        "tytul": "Leśny Budzik – Sierpówka",
         "platforma": "youtube"
       },
       "zrodla": [
@@ -360,8 +454,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Niebieskie skrzydła z czarnymi pręgami",
-        "Charakterystyczne wołanie"
+        "🔵 Niebieskie skrzydła z czarnymi pręgami i białe 'lusterko'",
+        "🖤 Czarno-biała głowa i rdzawobrązowy grzbiet",
+        "📏 32–35 cm, rozpiętość skrzydeł 52–58 cm",
+        "🌳 Lasy liściaste i mieszane, zwłaszcza dębowe i bukowe",
+        "🌰 Wszystkożerna: żołędzie, orzechy, nasiona, owady, jaja innych ptaków",
+        "🎵 Głośne, chrapliwe 'rraa-rraa' i naśladownictwo głosów innych ptaków",
+        "🧠 Inteligentna – chowa żołędzie w ziemi na później"
       ],
       "film": {
         "id": "hUaj5JVOyYA",
@@ -387,8 +486,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Czarno-białe upierzenie",
-        "Długi ogon"
+        "⚫⚪ Czarno-białe upierzenie z metalicznym zielono-niebieskim poświtem",
+        "🪁 Długi ogon (20–30 cm) z zielonkawym poświtem",
+        "📏 40–51 cm (w tym ogon), rozpiętość skrzydeł 52–62 cm",
+        "🏞️ Tereny otwarte z drzewami: łąki, pastwiska, pola, osiedla",
+        "🍖 Wszystkożerna: małe kręgowce, owady, nasiona, owoce, padlina",
+        "🧠 Inteligentna – rozpoznaje odbicie w lustrze, złodziejka błyskotek",
+        "🔊 Hałaśliwe 'czak-czak-czak' i naśladownictwo dźwięków"
       ],
       "film": {
         "id": "p-RksHJNrh0",
@@ -413,8 +517,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Brązowe upierzenie z ciemnymi plamami",
-        "Śpiew w locie"
+        "🟤 Brązowoszare upierzenie z ciemnymi plamami i podkowiastym pasem na piersiach",
+        "✈️ Charakterystyczny śpiew w locie – wznosi się pionowo do 200 m",
+        "📏 18–19 cm, rozpiętość skrzydeł 30–36 cm",
+        "🌾 Tereny otwarte: łąki, pastwiska, pola, wrzosowiska, dachy budynków",
+        "🌰 Nasionożerny: nasiona traw, chwastów, zbóż, owady",
+        "🎵 Pieśń: głośna, melodyjna 'trli-trli-trli-trlu' w locie i z ziemi",
+        "🏡 Gniazduje w zagłębieniach terenu lub na dachach budynków"
       ],
       "film": {
         "id": "qeW87UpsF-U",
@@ -441,8 +550,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Czarne upierzenie z metalicznym połyskiem",
-        "Żółty dziób (sezonowo)"
+        "✨ Czarne upierzenie z metalicznym fioletowo-niebiesko-zielonym poświtem",
+        "🟡 Żółty dziób u samicy (sezonowo), czarny u samca",
+        "📏 19–21 cm, rozpiętość skrzydeł 31–44 cm",
+        "🏙️ Tereny miejskie i wiejskie, gniazduje w koloniach na budynkach",
+        "🍖 Wszystkożerny: owady, nasiona, owoce, padlina, odpadki",
+        "🎵 Różnorodne odgłosy z naśladownictwami (głosy ptaków, mowa ludzka)",
+        "🧠 Bardzo towarzyski – tworzy wielkie stada zimą"
       ],
       "film": {
         "id": "VE8wQDiOsyI",
@@ -467,8 +581,13 @@
       "migracja": "Wędrowny",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Zielonkawe upierzenie",
-        "Cienki, ostry dziób"
+        "🟢 Zielonkawe upierzenie, samiec z żółtawo-pomarańczowymi partiami",
+        "🟤 Samica: szarobiały spód z ciemnymi pręgami na piersiach",
+        "📏 14–16 cm, rozpiętość skrzydeł 23–26 cm",
+        "🌿 Ogrody, parki, sady, zarośla, brzegi lasów",
+        "🐛 Owadożerny: chrząszcze, gąsienice, muchy, mrówki, pająki",
+        "🎵 Głośny, złożony śpiew 'fiju-fiju-fiju-tix-tix' przez cały dzień",
+        "🌅 Śpiewa także nocą przy sztucznym oświetleniu"
       ],
       "film": {
         "id": "D2oPyYU1YhA",
@@ -493,8 +612,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Samiec: żółta głowa i pierś",
-        "Brązowe skrzydła"
+        "🟡 Samiec: żółta głowa, kark i pierś z rdzawoczerwoną plamą",
+        "🟤 Samica i młodociane: brązowe, maskujące z ciemnymi pręgami",
+        "📏 16–18 cm, rozpiętość skrzydeł 26–30 cm",
+        "🌾 Pola uprawne, ugory, łąki, pastwiska, przydroża",
+        "🌰 Nasionożerny: nasiona traw, chwastów, zbóż, owady (dla piskląt)",
+        "🎵 Śpiew: prosta, charakterystyczna 'zja-zja-zja-zju' jak piła mechaniczna",
+        "✈️ Osiadły – ptaki z północy zimują w południowo-zachodniej Europie"
       ],
       "film": {
         "id": "yrRbOqQe6ck",
@@ -519,8 +643,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Samiec: szara czapeczka, czarna plama na gardle",
-        "Samica: brązowa, mniej kontrastowa"
+        "🖤 Samiec: szara czapeczka i czarna plama na gardle ('krawat')",
+        "🟤 Samica: brązowoszara, bez czarnej plamy, mniej kontrastowa",
+        "📏 14–15 cm, rozpiętość skrzydeł 21–25 cm",
+        "🏙️ Silnie związany z człowiekiem: dachy, budynki, place, zagrody",
+        "🍞 Wszystkożerny: nasiona zbóż, chwastów, owady, okruchy chleba",
+        "🏠 Gniazduje w szczelinach budynków, dziuplach, gniazdach innych ptaków",
+        "🔊 Hałaśliwe 'ćwir-ćwir-ćwir' i powtarzane 'czilp-czilp-czilp'"
       ],
       "film": {
         "id": "h5lXjewgezw",
@@ -546,8 +675,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "Samiec: niebiesko-szara głowa, pomarańczowa pierś",
-        "Samica: brązowa, mniej kontrastowa"
+        "🔵 Samiec: niebieskoszara głowa i kark, pomarańczoworóżowa pierś",
+        "🟠 Samiec: rdzawobrązowy grzbiet z charakterystycznymi paskami",
+        "🟤 Samica: brązowoszara z zielonkawymi i żółtymi akcentami na skrzydłach",
+        "📏 14–16 cm, rozpiętość skrzydeł 24–28 cm",
+        "🌳 Lasy liściaste i mieszane z brzozą i olchą, parki, ogrody",
+        "🌰 Nasionożerny: nasiona brzozy, olchy, topoli, wierzby, owady",
+        "🎵 Śpiew: gwizdające 'fiu-fiu-fiu' przypominające dźwięk piły"
       ],
       "film": {
         "id": "m7bLEac0Zf0",
