@@ -93,6 +93,7 @@ button {
   --b-bg:  rgba(12,28,58,0.82);  --b-tx: #a0c4f0; --b-dot: #4a90d9;
   --o-bg:  rgba(50,20,4,0.82);   --o-tx: #f0c090; --o-dot: #e07830;
   --i-bg:  rgba(40,40,40,0.82);  --i-tx: #c8c8c8; --i-dot: #888888;
+  --p-bg:  rgba(0,36,36,0.82);   --p-tx: #90d4c8; --p-dot: #28a898;
 
   --forest:  #2a3d24;
   --leaf:    #5ca832;
@@ -336,6 +337,10 @@ body {
 .filter-btn[data-category="inne"] .filter-dot { background: var(--i-dot); }
 .filter-btn[data-category="inne"]:hover,
 .filter-btn[data-category="inne"].active { border-color: var(--i-dot); }
+.filter-btn[data-category="Podkarpacie"] { background: var(--p-bg); color: var(--p-tx); border-color: rgba(40,168,152,0.25); }
+.filter-btn[data-category="Podkarpacie"] .filter-dot { background: var(--p-dot); }
+.filter-btn[data-category="Podkarpacie"]:hover,
+.filter-btn[data-category="Podkarpacie"].active { border-color: var(--p-dot); }
 
 .filter-btn:focus-visible { outline: 2px solid var(--leaf); outline-offset: 2px; }
 
@@ -1062,11 +1067,13 @@ body {
 .cat-tag.b { background: var(--b-bg); color: var(--b-tx); }
 .cat-tag.o { background: var(--o-bg); color: var(--o-tx); }
 .cat-tag.i { background: var(--i-bg); color: var(--i-tx); }
+.cat-tag.p { background: var(--p-bg); color: var(--p-tx); }
 .cat-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
 .cat-tag.g .cat-dot { background: var(--g-dot); }
 .cat-tag.b .cat-dot { background: var(--b-dot); }
 .cat-tag.o .cat-dot { background: var(--o-dot); }
 .cat-tag.i .cat-dot { background: var(--i-dot); }
+.cat-tag.p .cat-dot { background: var(--p-dot); }
 .cat-rank { opacity: .68; font-size: 8px; font-weight: 400; letter-spacing: 0; margin-left: 1px; }
 
 .name-pl {
