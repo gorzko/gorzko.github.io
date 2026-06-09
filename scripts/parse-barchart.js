@@ -249,24 +249,30 @@ const allResults = dataPK.map(s => {
 });
 
 // ── RANKING A: Gatunki wyróżniające się w Podkarpaciu na tle Polski ──────────
-// (higher iconic_score AND seasonality = disproportionately characteristic)
-const THRESHOLD_PEAK_A    = 0.06;  // min 6% list w PK w szczycie
-const THRESHOLD_ICONIC    = 1.20;  // 20% częstszy niż w Polsce ogółem
-const THRESHOLD_SEZON     = 4.0;   // lub wyraźnie sezonowy
+// Próg: iconic_score ∈ [1.5, 7.0] — dolny eliminuje przypadkowe, górny eliminuje
+// rarytasy statystyczne (małe próby w PL dają sztucznie wielki iconic_score).
+// Minimalne peak_PK 8% — gatunek musi być realnie widoczny w terenie.
+const THRESHOLD_PEAK_A    = 0.08;  // min 8% list w PK w szczycie
+const THRESHOLD_ICONIC_LO = 1.50;  // co najmniej 50% częstszy niż w Polsce
+const THRESHOLD_ICONIC_HI = 7.00;  // cap: powyżej to zwykle rarytas/mała próba PL
 
 const rankingA = allResults
-  .filter(r => r.peak >= THRESHOLD_PEAK_A && (r.iconic_score >= THRESHOLD_ICONIC || r.seasonality >= THRESHOLD_SEZON))
-  .sort((a, b) => b.combined - a.combined)
+  .filter(r =>
+    r.peak >= THRESHOLD_PEAK_A &&
+    r.iconic_score >= THRESHOLD_ICONIC_LO &&
+    r.iconic_score <= THRESHOLD_ICONIC_HI
+  )
+  .sort((a, b) => b.iconic_score - a.iconic_score)
   .slice(0, 35);
 
-// ── RANKING B: Gatunki po prostu liczne w Podkarpaciu (i w Polsce) ───────────
-// sortowane wyłącznie wg peak_PK — niezależnie od iconic_score
+// ── RANKING B: Gatunki po prostu liczne w Podkarpaciu ────────────────────────
+// Top 10 wg absolutnej częstości — niezależnie od porównania z PL ogółem
 const THRESHOLD_PEAK_B = 0.15; // min 15% list w PK w szczycie
 
 const rankingB = allResults
   .filter(r => r.peak >= THRESHOLD_PEAK_B)
   .sort((a, b) => b.peak - a.peak)
-  .slice(0, 35);
+  .slice(0, 10);
 
 // ── Drukujemy wyniki ──────────────────────────────────────────────────────────
 printTable(rankingA,
