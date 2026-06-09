@@ -178,7 +178,15 @@ function calcStats(freqs) {
   const peakWeek = freqs.indexOf(peak) + 1;
   const peakMonth = Math.ceil(peakWeek / 4);
   const months = ['', 'Sty', 'Lut', 'Mar', 'Kwi', 'Maj', 'Cze', 'Lip', 'Sie', 'Wrz', 'Paź', 'Lis', 'Gru'];
-  return { peak, mean, seasonality, peakMonth: months[Math.min(peakMonth, 12)] || '?' };
+  const presentWeeks = freqs.filter(v => v > 0).length;
+  // Miesiące "aktywne": te, w których średnia z 4 tygodni > 30% peak (dla filtrowania wg miesiąca)
+  const activeMonths = [];
+  for (let m = 0; m < 12; m++) {
+    const weekSlice = freqs.slice(m * 4, m * 4 + 4);
+    const monthMean = weekSlice.reduce((a, b) => a + b, 0) / 4;
+    if (monthMean >= peak * 0.30) activeMonths.push(m + 1);
+  }
+  return { peak, mean, seasonality, peakMonth: months[Math.min(peakMonth, 12)] || '?', presentWeeks, activeMonths };
 }
 
 function printTable(rows, title) {
@@ -249,21 +257,22 @@ const allResults = dataPK.map(s => {
 });
 
 // ── RANKING A: Gatunki wyróżniające się w Podkarpaciu na tle Polski ──────────
-// Próg: iconic_score ∈ [1.5, 7.0] — dolny eliminuje przypadkowe, górny eliminuje
-// rarytasy statystyczne (małe próby w PL dają sztucznie wielki iconic_score).
-// Minimalne peak_PK 8% — gatunek musi być realnie widoczny w terenie.
-const THRESHOLD_PEAK_A    = 0.08;  // min 8% list w PK w szczycie
-const THRESHOLD_ICONIC_LO = 1.50;  // co najmniej 50% częstszy niż w Polsce
-const THRESHOLD_ICONIC_HI = 7.00;  // cap: powyżej to zwykle rarytas/mała próba PL
+// Filtry:
+//   peak_PK ≥ 8%      — gatunek realnie widoczny (wyklucza jednorazowe rarytasy)
+//   presentWeeks ≥ 8  — obecny przez co najmniej 8 tygodni (nie tylko incydentalny)
+//   iconic_score ≥ 1.5 — co najmniej 50% częstszy niż w Polsce ogółem
+const THRESHOLD_PEAK_A      = 0.08;  // min 8% list w PK w szczycie
+const THRESHOLD_ICONIC_LO   = 1.50;
+const THRESHOLD_PRESENT_WKS = 8;     // min 8 tygodni z nonzero frequency
 
 const rankingA = allResults
   .filter(r =>
     r.peak >= THRESHOLD_PEAK_A &&
-    r.iconic_score >= THRESHOLD_ICONIC_LO &&
-    r.iconic_score <= THRESHOLD_ICONIC_HI
+    r.presentWeeks >= THRESHOLD_PRESENT_WKS &&
+    r.iconic_score >= THRESHOLD_ICONIC_LO
   )
   .sort((a, b) => b.iconic_score - a.iconic_score)
-  .slice(0, 35);
+  .slice(0, 40);
 
 // ── RANKING B: Gatunki po prostu liczne w Podkarpaciu ────────────────────────
 // Top 10 wg absolutnej częstości — niezależnie od porównania z PL ogółem
@@ -300,6 +309,8 @@ const jsonOut = {
     iconic_score: r.iconic_score === 99 ? null : +r.iconic_score.toFixed(2),
     seasonality: +r.seasonality.toFixed(1),
     peak_month: r.peakMonth,
+    present_weeks: r.presentWeeks,
+    active_months: r.activeMonths,
   })),
   rankingB_common: rankingB.map(r => ({
     name_en: r.name, name_pl: r.polishName,
@@ -307,6 +318,8 @@ const jsonOut = {
     iconic_score: r.iconic_score === 99 ? null : +r.iconic_score.toFixed(2),
     seasonality: +r.seasonality.toFixed(1),
     peak_month: r.peakMonth,
+    present_weeks: r.presentWeeks,
+    active_months: r.activeMonths,
   })),
 };
 

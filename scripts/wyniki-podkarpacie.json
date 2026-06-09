@@ -7,7 +7,17 @@
       "peak_pk_pct": 8.2,
       "iconic_score": 6.6,
       "seasonality": 2.7,
-      "peak_month": "Maj"
+      "peak_month": "Maj",
+      "present_weeks": 39,
+      "active_months": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ]
     },
     {
       "name_en": "Red-necked Grebe",
@@ -15,7 +25,11 @@
       "peak_pk_pct": 12.5,
       "iconic_score": 4.76,
       "seasonality": 9.7,
-      "peak_month": "Lis"
+      "peak_month": "Lis",
+      "present_weeks": 32,
+      "active_months": [
+        11
+      ]
     },
     {
       "name_en": "Red-throated Pipit",
@@ -23,7 +37,12 @@
       "peak_pk_pct": 15,
       "iconic_score": 4.45,
       "seasonality": 11.4,
-      "peak_month": "Wrz"
+      "peak_month": "Wrz",
+      "present_weeks": 13,
+      "active_months": [
+        9,
+        10
+      ]
     },
     {
       "name_en": "Gray Wagtail",
@@ -31,7 +50,14 @@
       "peak_pk_pct": 22.7,
       "iconic_score": 4.05,
       "seasonality": 4.2,
-      "peak_month": "Wrz"
+      "peak_month": "Wrz",
+      "present_weeks": 36,
+      "active_months": [
+        6,
+        7,
+        8,
+        9
+      ]
     },
     {
       "name_en": "Lesser Spotted Eagle",
@@ -39,7 +65,15 @@
       "peak_pk_pct": 20.8,
       "iconic_score": 3.87,
       "seasonality": 4.4,
-      "peak_month": "Wrz"
+      "peak_month": "Wrz",
+      "present_weeks": 24,
+      "active_months": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
     },
     {
       "name_en": "Bohemian Waxwing",
@@ -47,7 +81,12 @@
       "peak_pk_pct": 10.3,
       "iconic_score": 3.72,
       "seasonality": 8.3,
-      "peak_month": "Gru"
+      "peak_month": "Gru",
+      "present_weeks": 20,
+      "active_months": [
+        1,
+        12
+      ]
     },
     {
       "name_en": "Gray-headed Woodpecker",
@@ -55,7 +94,19 @@
       "peak_pk_pct": 11,
       "iconic_score": 3.51,
       "seasonality": 2.4,
-      "peak_month": "Mar"
+      "peak_month": "Mar",
+      "present_weeks": 47,
+      "active_months": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        12
+      ]
     },
     {
       "name_en": "European Bee-eater",
@@ -63,7 +114,14 @@
       "peak_pk_pct": 9.6,
       "iconic_score": 3.43,
       "seasonality": 4.3,
-      "peak_month": "Cze"
+      "peak_month": "Cze",
+      "present_weeks": 21,
+      "active_months": [
+        5,
+        6,
+        7,
+        8
+      ]
     },
     {
       "name_en": "Eared Grebe",
@@ -71,7 +129,12 @@
       "peak_pk_pct": 10.9,
       "iconic_score": 3.32,
       "seasonality": 6.3,
-      "peak_month": "Wrz"
+      "peak_month": "Wrz",
+      "present_weeks": 31,
+      "active_months": [
+        8,
+        9
+      ]
     },
     {
       "name_en": "Arctic Loon",
@@ -79,7 +142,12 @@
       "peak_pk_pct": 17.9,
       "iconic_score": 3.31,
       "seasonality": 9.8,
-      "peak_month": "Lis"
+      "peak_month": "Lis",
+      "present_weeks": 18,
+      "active_months": [
+        11,
+        12
+      ]
     },
     {
       "name_en": "Black-crowned Night Heron",
@@ -87,7 +155,12 @@
       "peak_pk_pct": 12.5,
       "iconic_score": 3.13,
       "seasonality": 7.3,
-      "peak_month": "Sie"
+      "peak_month": "Sie",
+      "present_weeks": 23,
+      "active_months": [
+        7,
+        8
+      ]
     },
     {
       "name_en": "Mistle Thrush",
@@ -95,7 +168,15 @@
       "peak_pk_pct": 30.6,
       "iconic_score": 3.05,
       "seasonality": 3.4,
-      "peak_month": "Paź"
+      "peak_month": "Paź",
+      "present_weeks": 48,
+      "active_months": [
+        2,
+        3,
+        6,
+        10,
+        11
+      ]
     },
     {
       "name_en": "Willow Tit",
@@ -103,7 +184,18 @@
       "peak_pk_pct": 25.4,
       "iconic_score": 3.02,
       "seasonality": 2.6,
-      "peak_month": "Gru"
+      "peak_month": "Gru",
+      "present_weeks": 48,
+      "active_months": [
+        1,
+        2,
+        3,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
     },
     {
       "name_en": "European Honey-buzzard",
@@ -111,7 +203,14 @@
       "peak_pk_pct": 9.2,
       "iconic_score": 2.98,
       "seasonality": 5.1,
-      "peak_month": "Wrz"
+      "peak_month": "Wrz",
+      "present_weeks": 20,
+      "active_months": [
+        5,
+        7,
+        8,
+        9
+      ]
     },
     {
       "name_en": "Greater Scaup",
@@ -119,7 +218,12 @@
       "peak_pk_pct": 15.2,
       "iconic_score": 2.86,
       "seasonality": 10.3,
-      "peak_month": "Lis"
+      "peak_month": "Lis",
+      "present_weeks": 18,
+      "active_months": [
+        11,
+        12
+      ]
     },
     {
       "name_en": "Red-breasted Merganser",
@@ -127,7 +231,11 @@
       "peak_pk_pct": 15.2,
       "iconic_score": 2.86,
       "seasonality": 16.1,
-      "peak_month": "Lis"
+      "peak_month": "Lis",
+      "present_weeks": 12,
+      "active_months": [
+        11
+      ]
     },
     {
       "name_en": "European Golden-Plover",
@@ -135,7 +243,12 @@
       "peak_pk_pct": 10.6,
       "iconic_score": 2.73,
       "seasonality": 6.8,
-      "peak_month": "Lut"
+      "peak_month": "Lut",
+      "present_weeks": 28,
+      "active_months": [
+        2,
+        3
+      ]
     },
     {
       "name_en": "Stock Dove",
@@ -143,7 +256,17 @@
       "peak_pk_pct": 16.6,
       "iconic_score": 2.69,
       "seasonality": 2.8,
-      "peak_month": "Maj"
+      "peak_month": "Maj",
+      "present_weeks": 45,
+      "active_months": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
     },
     {
       "name_en": "Black Stork",
@@ -151,7 +274,15 @@
       "peak_pk_pct": 11.2,
       "iconic_score": 2.46,
       "seasonality": 3.6,
-      "peak_month": "Lip"
+      "peak_month": "Lip",
+      "present_weeks": 29,
+      "active_months": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
     },
     {
       "name_en": "European Stonechat",
@@ -159,7 +290,17 @@
       "peak_pk_pct": 20.6,
       "iconic_score": 2.45,
       "seasonality": 2.7,
-      "peak_month": "Mar"
+      "peak_month": "Mar",
+      "present_weeks": 34,
+      "active_months": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
     },
     {
       "name_en": "Tree Pipit",
@@ -167,7 +308,12 @@
       "peak_pk_pct": 37.5,
       "iconic_score": 2.39,
       "seasonality": 6.1,
-      "peak_month": "Wrz"
+      "peak_month": "Wrz",
+      "present_weeks": 29,
+      "active_months": [
+        8,
+        9
+      ]
     },
     {
       "name_en": "Great Gray Shrike",
@@ -175,7 +321,18 @@
       "peak_pk_pct": 21.7,
       "iconic_score": 2.29,
       "seasonality": 2.3,
-      "peak_month": "Gru"
+      "peak_month": "Gru",
+      "present_weeks": 48,
+      "active_months": [
+        1,
+        2,
+        3,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
     },
     {
       "name_en": "Coal Tit",
@@ -183,7 +340,22 @@
       "peak_pk_pct": 29.7,
       "iconic_score": 2.26,
       "seasonality": 2.1,
-      "peak_month": "Wrz"
+      "peak_month": "Wrz",
+      "present_weeks": 48,
+      "active_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
     },
     {
       "name_en": "Red-breasted Flycatcher",
@@ -191,7 +363,11 @@
       "peak_pk_pct": 10,
       "iconic_score": 2.25,
       "seasonality": 7.2,
-      "peak_month": "Sie"
+      "peak_month": "Sie",
+      "present_weeks": 20,
+      "active_months": [
+        8
+      ]
     },
     {
       "name_en": "Eurasian Penduline-Tit",
@@ -199,7 +375,12 @@
       "peak_pk_pct": 12.2,
       "iconic_score": 2.21,
       "seasonality": 4.7,
-      "peak_month": "Wrz"
+      "peak_month": "Wrz",
+      "present_weeks": 29,
+      "active_months": [
+        9,
+        10
+      ]
     },
     {
       "name_en": "Common Pochard",
@@ -207,7 +388,18 @@
       "peak_pk_pct": 25,
       "iconic_score": 2.19,
       "seasonality": 2.5,
-      "peak_month": "Lis"
+      "peak_month": "Lis",
+      "present_weeks": 48,
+      "active_months": [
+        1,
+        3,
+        4,
+        5,
+        9,
+        10,
+        11,
+        12
+      ]
     },
     {
       "name_en": "Rough-legged Hawk",
@@ -215,7 +407,13 @@
       "peak_pk_pct": 10.3,
       "iconic_score": 2.16,
       "seasonality": 6.6,
-      "peak_month": "Gru"
+      "peak_month": "Gru",
+      "present_weeks": 24,
+      "active_months": [
+        1,
+        2,
+        12
+      ]
     },
     {
       "name_en": "Common Quail",
@@ -223,7 +421,13 @@
       "peak_pk_pct": 10.1,
       "iconic_score": 2.14,
       "seasonality": 4.9,
-      "peak_month": "Cze"
+      "peak_month": "Cze",
+      "present_weeks": 22,
+      "active_months": [
+        5,
+        6,
+        7
+      ]
     },
     {
       "name_en": "Eurasian Linnet",
@@ -231,7 +435,19 @@
       "peak_pk_pct": 36.1,
       "iconic_score": 2.09,
       "seasonality": 2,
-      "peak_month": "Wrz"
+      "peak_month": "Wrz",
+      "present_weeks": 48,
+      "active_months": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     {
       "name_en": "Common Kingfisher",
@@ -239,7 +455,17 @@
       "peak_pk_pct": 28.8,
       "iconic_score": 2.09,
       "seasonality": 2.7,
-      "peak_month": "Sie"
+      "peak_month": "Sie",
+      "present_weeks": 47,
+      "active_months": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
     },
     {
       "name_en": "White Stork",
@@ -247,7 +473,15 @@
       "peak_pk_pct": 41.3,
       "iconic_score": 2.09,
       "seasonality": 3.4,
-      "peak_month": "Sie"
+      "peak_month": "Sie",
+      "present_weeks": 31,
+      "active_months": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
     },
     {
       "name_en": "Eurasian Bullfinch",
@@ -255,7 +489,14 @@
       "peak_pk_pct": 46.7,
       "iconic_score": 2.07,
       "seasonality": 3.5,
-      "peak_month": "Gru"
+      "peak_month": "Gru",
+      "present_weeks": 48,
+      "active_months": [
+        1,
+        2,
+        11,
+        12
+      ]
     },
     {
       "name_en": "Corn Crake",
@@ -263,7 +504,13 @@
       "peak_pk_pct": 11.5,
       "iconic_score": 2.06,
       "seasonality": 6.5,
-      "peak_month": "Cze"
+      "peak_month": "Cze",
+      "present_weeks": 16,
+      "active_months": [
+        5,
+        6,
+        7
+      ]
     },
     {
       "name_en": "Red-footed Falcon",
@@ -271,7 +518,11 @@
       "peak_pk_pct": 18.5,
       "iconic_score": 2.06,
       "seasonality": 12.3,
-      "peak_month": "Wrz"
+      "peak_month": "Wrz",
+      "present_weeks": 15,
+      "active_months": [
+        9
+      ]
     },
     {
       "name_en": "Dunnock",
@@ -279,7 +530,99 @@
       "peak_pk_pct": 24.5,
       "iconic_score": 1.99,
       "seasonality": 5.3,
-      "peak_month": "Wrz"
+      "peak_month": "Wrz",
+      "present_weeks": 42,
+      "active_months": [
+        9,
+        10
+      ]
+    },
+    {
+      "name_en": "Little Grebe",
+      "name_pl": null,
+      "peak_pk_pct": 23.9,
+      "iconic_score": 1.98,
+      "seasonality": 2.7,
+      "peak_month": "Gru",
+      "present_weeks": 48,
+      "active_months": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "name_en": "Collared Flycatcher",
+      "name_pl": "Muchołówka Białoszyja",
+      "peak_pk_pct": 10.1,
+      "iconic_score": 1.97,
+      "seasonality": 6.5,
+      "peak_month": "Maj",
+      "present_weeks": 18,
+      "active_months": [
+        5,
+        6
+      ]
+    },
+    {
+      "name_en": "Caspian Gull",
+      "name_pl": null,
+      "peak_pk_pct": 40.3,
+      "iconic_score": 1.94,
+      "seasonality": 2.1,
+      "peak_month": "Gru",
+      "present_weeks": 48,
+      "active_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "name_en": "Eurasian Wigeon",
+      "name_pl": null,
+      "peak_pk_pct": 31.3,
+      "iconic_score": 1.93,
+      "seasonality": 4.1,
+      "peak_month": "Gru",
+      "present_weeks": 41,
+      "active_months": [
+        3,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "name_en": "Whinchat",
+      "name_pl": null,
+      "peak_pk_pct": 22.9,
+      "iconic_score": 1.9,
+      "seasonality": 5,
+      "peak_month": "Maj",
+      "present_weeks": 24,
+      "active_months": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
     }
   ],
   "rankingB_common": [
@@ -289,7 +632,22 @@
       "peak_pk_pct": 76.7,
       "iconic_score": 1.15,
       "seasonality": 1.5,
-      "peak_month": "Gru"
+      "peak_month": "Gru",
+      "present_weeks": 48,
+      "active_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
     },
     {
       "name_en": "Eurasian Blackbird",
@@ -297,7 +655,21 @@
       "peak_pk_pct": 70.2,
       "iconic_score": 1.17,
       "seasonality": 1.8,
-      "peak_month": "Cze"
+      "peak_month": "Cze",
+      "present_weeks": 48,
+      "active_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ]
     },
     {
       "name_en": "Common Wood-Pigeon",
@@ -305,7 +677,18 @@
       "peak_pk_pct": 69.5,
       "iconic_score": 1.09,
       "seasonality": 2,
-      "peak_month": "Kwi"
+      "peak_month": "Kwi",
+      "present_weeks": 41,
+      "active_months": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
     },
     {
       "name_en": "Barn Swallow",
@@ -313,7 +696,16 @@
       "peak_pk_pct": 67.1,
       "iconic_score": 1.21,
       "seasonality": 2.9,
-      "peak_month": "Sie"
+      "peak_month": "Sie",
+      "present_weeks": 28,
+      "active_months": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
     },
     {
       "name_en": "Eurasian Blackcap",
@@ -321,7 +713,14 @@
       "peak_pk_pct": 66.2,
       "iconic_score": 1.12,
       "seasonality": 3.4,
-      "peak_month": "Cze"
+      "peak_month": "Cze",
+      "present_weeks": 29,
+      "active_months": [
+        4,
+        5,
+        6,
+        7
+      ]
     },
     {
       "name_en": "Eurasian Blue Tit",
@@ -329,7 +728,22 @@
       "peak_pk_pct": 65,
       "iconic_score": 1.24,
       "seasonality": 1.7,
-      "peak_month": "Gru"
+      "peak_month": "Gru",
+      "present_weeks": 48,
+      "active_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
     },
     {
       "name_en": "Common Chiffchaff",
@@ -337,7 +751,17 @@
       "peak_pk_pct": 63,
       "iconic_score": 1.06,
       "seasonality": 2.4,
-      "peak_month": "Kwi"
+      "peak_month": "Kwi",
+      "present_weeks": 34,
+      "active_months": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
     },
     {
       "name_en": "Common Chaffinch",
@@ -345,7 +769,21 @@
       "peak_pk_pct": 61.6,
       "iconic_score": 1.15,
       "seasonality": 1.7,
-      "peak_month": "Cze"
+      "peak_month": "Cze",
+      "present_weeks": 48,
+      "active_months": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
     },
     {
       "name_en": "White Wagtail",
@@ -353,7 +791,18 @@
       "peak_pk_pct": 60.5,
       "iconic_score": 1.36,
       "seasonality": 2.5,
-      "peak_month": "Wrz"
+      "peak_month": "Wrz",
+      "present_weeks": 45,
+      "active_months": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
     },
     {
       "name_en": "Mallard",
@@ -361,7 +810,22 @@
       "peak_pk_pct": 57.1,
       "iconic_score": 1.13,
       "seasonality": 1.5,
-      "peak_month": "Lis"
+      "peak_month": "Lis",
+      "present_weeks": 48,
+      "active_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
     }
   ]
 }
