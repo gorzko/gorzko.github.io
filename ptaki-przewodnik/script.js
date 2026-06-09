@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const searchInput     = document.getElementById('search-input');
   const searchClear     = document.getElementById('search-clear');
   const filterButtons   = document.querySelectorAll('.filter-btn');
+  const monthFilter     = document.getElementById('month-filter');
+  const monthButtons    = document.querySelectorAll('.month-btn');
   const resultsInfo     = document.getElementById('results-info');
   const heroCta         = document.getElementById('hero-cta-btn');
   const heroScroll      = document.getElementById('hero-scroll-btn');
@@ -21,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let allBirds = [];
   let currentSearchTerm = '';
   let currentCategoryFilter = 'all';
+  let currentMonthFilter = 0;
 
   // ── Inicjalizacja reveal-animacji ────────
   initRevealAnimations();
@@ -253,6 +256,16 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.classList.add('active');
         btn.setAttribute('aria-pressed', 'true');
         currentCategoryFilter = btn.dataset.category;
+
+        if (currentCategoryFilter === 'Podkarpacie') {
+          monthFilter.hidden = false;
+          const curMonth = new Date().getMonth() + 1;
+          setMonthFilter(curMonth);
+        } else {
+          monthFilter.hidden = true;
+          currentMonthFilter = 0;
+        }
+
         applyFilter();
         closeSearchOverlay();
       });
@@ -261,16 +274,38 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
+    monthButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        setMonthFilter(parseInt(btn.dataset.month, 10));
+        applyFilter();
+      });
+      btn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
+      });
+    });
+
+  }
+
+  function setMonthFilter(month) {
+    currentMonthFilter = month;
+    monthButtons.forEach(b => {
+      const active = parseInt(b.dataset.month, 10) === month;
+      b.classList.toggle('active', active);
+      b.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
   }
 
   function openSearchOverlay() {
     searchInput.value = '';
     currentSearchTerm = '';
     currentCategoryFilter = 'all';
+    currentMonthFilter = 0;
     filterButtons.forEach(b => {
       b.classList.remove('active');
       b.setAttribute('aria-pressed', 'false');
     });
+    monthFilter.hidden = true;
+    setMonthFilter(0);
     searchClear.style.display = 'none';
     resultsInfo.textContent = '';
     applyFilter();
@@ -286,14 +321,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function filterBirds() {
-    const term = currentSearchTerm.toLowerCase();
-    const cat  = currentCategoryFilter;
+    const term  = currentSearchTerm.toLowerCase();
+    const cat   = currentCategoryFilter;
+    const month = currentMonthFilter;
     return allBirds.filter(p => {
       const matchSearch = !term ||
         p.nazwa.toLowerCase().includes(term) ||
         p.nazwaLacinska.toLowerCase().includes(term);
       const matchCat = cat === 'all' || p.kategorie.includes(cat);
-      return matchSearch && matchCat;
+      const matchMonth = cat !== 'Podkarpacie' || month === 0 ||
+        (Array.isArray(p.peakMonths) && p.peakMonths.includes(month));
+      return matchSearch && matchCat && matchMonth;
     });
   }
 

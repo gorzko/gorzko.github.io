@@ -344,6 +344,57 @@ body {
 
 .filter-btn:focus-visible { outline: 2px solid var(--leaf); outline-offset: 2px; }
 
+/* ─────────────────────────────────────────
+   FILTR MIESIĘCY (tylko dla Podkarpacie)
+───────────────────────────────────────── */
+
+.month-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  background: rgba(40,168,152,0.07);
+  border: 1px solid rgba(40,168,152,0.18);
+  border-radius: 10px;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.month-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  padding: 4px 8px;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border: 1.5px solid rgba(40,168,152,0.22);
+  border-radius: 20px;
+  background: var(--p-bg);
+  color: var(--p-tx);
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.month-btn:hover {
+  border-color: var(--p-dot);
+  background: rgba(40,168,152,0.18);
+}
+.month-btn.active {
+  border-color: var(--p-dot);
+  background: rgba(40,168,152,0.22);
+  color: #a8ede6;
+  font-weight: 600;
+}
+.month-btn:focus-visible { outline: 2px solid var(--p-dot); outline-offset: 2px; }
+
 .results-info {
   font-size: 12px;
   color: var(--muted-lt);
