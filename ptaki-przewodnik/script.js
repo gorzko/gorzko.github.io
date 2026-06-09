@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ═══════════════════════════════════════════
 
   function getCategoryClass(category) {
-    return { 'Ogród': 'g', 'Najliczniejsze': 'b', 'Najpowszechniejsze': 'o' }[category] || 'g';
+    return { 'Ogród': 'g', 'Najliczniejsze': 'b', 'Najpowszechniejsze': 'o', 'inne': 'i' }[category] || 'g';
   }
 
   function getStatusText(status) {

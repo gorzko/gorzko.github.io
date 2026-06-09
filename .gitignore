@@ -1,0 +1,22 @@
+# Narzędzia deweloperskie / MCP
+*.ps1
+*.bat
+config.json
+
+# Node
+node_modules/
+.npm
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Vibe (katalog tymczasowy)
+.vibe/tmp/

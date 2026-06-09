@@ -92,6 +92,7 @@ button {
   --g-bg:  rgba(22,38,16,0.82);  --g-tx: #b8d4a0; --g-dot: #5ca832;
   --b-bg:  rgba(12,28,58,0.82);  --b-tx: #a0c4f0; --b-dot: #4a90d9;
   --o-bg:  rgba(50,20,4,0.82);   --o-tx: #f0c090; --o-dot: #e07830;
+  --i-bg:  rgba(40,40,40,0.82);  --i-tx: #c8c8c8; --i-dot: #888888;
 
   --forest:  #2a3d24;
   --leaf:    #5ca832;
@@ -330,6 +331,11 @@ body {
 .filter-btn[data-category="Najpowszechniejsze"] .filter-dot { background: var(--o-dot); }
 .filter-btn[data-category="Najpowszechniejsze"]:hover,
 .filter-btn[data-category="Najpowszechniejsze"].active { border-color: var(--o-dot); }
+
+.filter-btn[data-category="inne"] { background: var(--i-bg); color: var(--i-tx); border-color: rgba(136,136,136,0.25); }
+.filter-btn[data-category="inne"] .filter-dot { background: var(--i-dot); }
+.filter-btn[data-category="inne"]:hover,
+.filter-btn[data-category="inne"].active { border-color: var(--i-dot); }
 
 .filter-btn:focus-visible { outline: 2px solid var(--leaf); outline-offset: 2px; }
 
@@ -1055,10 +1061,12 @@ body {
 .cat-tag.g { background: var(--g-bg); color: var(--g-tx); }
 .cat-tag.b { background: var(--b-bg); color: var(--b-tx); }
 .cat-tag.o { background: var(--o-bg); color: var(--o-tx); }
+.cat-tag.i { background: var(--i-bg); color: var(--i-tx); }
 .cat-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
 .cat-tag.g .cat-dot { background: var(--g-dot); }
 .cat-tag.b .cat-dot { background: var(--b-dot); }
 .cat-tag.o .cat-dot { background: var(--o-dot); }
+.cat-tag.i .cat-dot { background: var(--i-dot); }
 .cat-rank { opacity: .68; font-size: 8px; font-weight: 400; letter-spacing: 0; margin-left: 1px; }
 
 .name-pl {

@@ -8,18 +8,17 @@
         "Ogród"
       ],
       "zdjecie": "img/Phasianus_colchicus.jpg",
-      "liczebnosc": "100–200 tys. par",
+      "liczebnosc": "100–200 tys.",
       "trend": "↓",
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🖤 Samiec: jaskrawo ubarwiony, rudoczerwona głowa z zieloną obwódką",
-        "🟡 Biała plama na policzkach i metaliczne kolczyki na nogach",
-        "📏 53–89 cm (w tym ogon 30–50 cm), masa 0,5–1,5 kg",
-        "🌾 Tereny rolnicze z zaroślami, lasy liściaste z gęstym podszyciem",
-        "🥚 Gniazdo na ziemi, ukryte w roślinności, 7–16 jaj",
-        "🐛 Wszystkożerny: owady, nasiona, owoce, jagody",
-        "🔊 Głośne odgłosy: 'kurrr-kurrr' lub metaliczne 'kien-kien'"
+        "🟠 Samiec: rudoczerwony z metalicznie zieloną głową",
+        "🟤 Samica: brązowa, maskująca",
+        "📏 60–89 cm (z ogonem)",
+        "🌾 Pola, zarośla, lasy z gęstym podszyciem",
+        "🐛 Wszystkożerny: nasiona, owady, owoce",
+        "🔊 Głośne 'kurrr-kurrr' z trzepotaniem skrzydeł"
       ],
       "film": {
         "id": "8Z32v2fzmDA",
@@ -40,18 +39,17 @@
         "Najpowszechniejsze"
       ],
       "zdjecie": "img/Parus_major.jpg",
-      "liczebnosc": "3–4 mln par",
+      "liczebnosc": "3–4 mln",
       "trend": "→",
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🖤 Czarna głowa z białymi policzkami i czarną pręgą przez oko",
+        "🖤 Czarna głowa z białymi policzkami",
         "🟡 Żółty brzuch z czarnym paskiem",
-        "📏 11–12,5 cm, rozpiętość skrzydeł 17–20 cm",
-        "🌳 Lasy liściaste i mieszane, parki, ogrody, sady",
-        "🐛 Owadożerna: mszyce, gąsienice, chrząszcze, pająki",
-        "🎵 Śpiew: szybka seria 'hui-hui-hui' lub 'cui-cui-cui'",
-        "🏠 Gniazduje w dziuplach i budkach lęgowych, 8–13 jaj"
+        "📏 12 cm",
+        "🌳 Lasy, parki, ogrody, sady",
+        "🐛 Owadożerna; nasiona zimą",
+        "🎵 Głośne 'hui-hui-hui' lub 'cui-cui-cui'"
       ],
       "film": {
         "id": "Ne3BLHIUSbU",
@@ -68,22 +66,20 @@
       "nazwa": "Gil",
       "nazwaLacinska": "Pyrrhula pyrrhula",
       "kategorie": [
-        "Najliczniejsze",
-        "Najpowszechniejsze"
+        "inne"
       ],
       "zdjecie": "img/Pyrrhula_pyrrhula.jpg",
-      "liczebnosc": "800–1200 tys. par",
+      "liczebnosc": "800–1200 tys.",
       "trend": "→",
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🟠 Samiec: różowa pierś, szare plecy, czarna głowa",
-        "🟤 Samica: brązowa z delikatnym czubkiem, mniej kontrastowa",
-        "📏 14–16 cm, rozpiętość skrzydeł 21–25 cm",
-        "🌿 Gęste wilgotne lasy liściaste, zarośla w dolinach rzecznych",
-        "🌰 Roślinożerny: nasiona traw, pędy, pąki wierzb i topól",
-        "🎵 Ciche, miękkie 'dū-dū-dū' przypominające gołębia",
-        "🕊️ Płochliwy, trudny do obserwacji, porusza się skokami"
+        "🟠 Samiec: różowa pierś, czarna głowa i dziób",
+        "🟤 Samica: brązowawa, mniej kontrastowa",
+        "📏 15 cm",
+        "🌿 Wilgotne lasy, zarośla rzeczne",
+        "🌰 Nasiona, pąki wierzb i topól",
+        "🎵 Ciche, miękkie 'du-du-du'"
       ],
       "film": {
         "id": "ltzhV-j86DU",
@@ -104,18 +100,17 @@
         "Najpowszechniejsze"
       ],
       "zdjecie": "img/Columba_palumbus.jpg",
-      "liczebnosc": "1.5–2 mln par",
+      "liczebnosc": "1,5–2 mln",
       "trend": "→",
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🟤 Szarobrązowy z białym paskiem nad okiem",
-        "✨ Biała plama na szyi ('lusterko')",
-        "📏 14–15 cm, rozpiętość skrzydeł 23–27 cm",
-        "🌲 Stare lasy iglaste i mieszane z martwymi drzewami",
-        "🐛 Owadożerny: chrząszcze, mrówki, gąsienice, pająki",
-        "🎵 Śpiew: szybka seria 'sri-sri-sri' zakończona tremą",
-        "🏠 Gniazduje w dziuplach, 5–7 białych jaj"
+        "🕊️ Szaroniebieski z białą plamą na szyi i białym paskiem na skrzydłach",
+        "🟣 Różowawy brzuch, czerwony dziób z żółtą końcówką",
+        "📏 41 cm",
+        "🌳 Lasy, parki, pola uprawne",
+        "🌰 Roślinożerny: nasiona, zboże, liście, żołędzie",
+        "🔊 Głębokie gruchanie 'kuu-KUU-ku-ku-ku'"
       ],
       "film": {
         "id": "1b0KD40bmQ4",
@@ -135,18 +130,17 @@
         "Ogród"
       ],
       "zdjecie": "img/Apus_apus.jpg",
-      "liczebnosc": "100–200 tys. par",
+      "liczebnosc": "100–200 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "✈️ Całe życie w powietrzu – ląduje tylko do gniazdowania",
-        "🖤 Ciemnobrunatne upierzenie z jaśniejszym gardłem",
-        "🪁 Długi, widlasty ogon i sierpowate skrzydła",
-        "📏 16–17 cm, rozpiętość skrzydeł 40–44 cm",
-        "🏙️ Gniazduje w koloniach na budynkach, mostach, wieżach",
-        "🐛 Żywi się wyłącznie owadami łowionymi w locie",
-        "🔊 Przenikliwy gwizd 'srrrii' powtarzany w locie"
+        "✈️ Całe życie w powietrzu — ląduje tylko do lęgu",
+        "🖤 Ciemnobrunatny z jaśniejszym gardłem",
+        "📏 17 cm",
+        "🏙️ Gniazda w szczelinach budynków i wież",
+        "🐛 Żywi się wyłącznie owadami w locie",
+        "🔊 Przenikliwy gwizd 'srrrii'"
       ],
       "film": {
         "id": "1180063663008040",
@@ -168,18 +162,17 @@
         "Najpowszechniejsze"
       ],
       "zdjecie": "img/Sylvia_atricapilla.jpg",
-      "liczebnosc": "2–3 mln par",
+      "liczebnosc": "2–3 mln",
       "trend": "→",
       "migracja": "Wędrowny",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🖤 Samiec: czarna 'czapeczka' na głowie",
-        "🟤 Samica: brązowa czapeczka, szarobrązowe upierzenie",
-        "📏 11–12 cm, rozpiętość skrzydeł 17–20 cm",
-        "🌳 Lasy liściaste i mieszane, parki, ogrody z gęstym podszyciem",
-        "🐛 Owadożerna: mszyce, gąsienice, chrząszcze, pająki",
-        "🎵 Śpiew: miękka seria 'hiu-hiu-hiu' zakończona tremą",
-        "✈️ Wędrowny: odlatuje na zimowiska do południa Europy"
+        "🖤 Samiec: czarna czapeczka",
+        "🟤 Samica: brązowa czapeczka",
+        "📏 12 cm",
+        "🌳 Lasy, parki, ogrody z gęstym podszyciem",
+        "🐛 Owadożerna; jesienią owoce",
+        "🎵 Melodyjny śpiew zakończony bogatą tremą"
       ],
       "film": {
         "id": "Tm0PV1vBmRg",
@@ -199,18 +192,17 @@
         "Ogród"
       ],
       "zdjecie": "img/Corvus_monedula.jpg",
-      "liczebnosc": "100–200 tys. par",
+      "liczebnosc": "100–200 tys.",
       "trend": "↑",
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🖤 Całkowicie czarne upierzenie z metalicznym poświtem",
-        "👁️‍🗨 Czerwone oczy i szary dziób",
-        "📏 37–44 cm, rozpiętość skrzydeł 64–73 cm",
-        "🏙️ Tereny miejskie i wiejskie, gniazduje w koloniach na drzewach i budynkach",
-        "🍖 Wszystkożerny: owady, nasiona, owoce, padlina, odpadki",
-        "🧠 Inteligentna – używa narzędzi, otwiera pojemniki",
-        "🔊 Głośne, chrapliwe 'kaaa-kaaa' w koloniach"
+        "🖤 Czarny z szarym karkiem i policzkami",
+        "👁️ Jasnoniebieskie oczy",
+        "📏 34 cm",
+        "🏙️ Miasta, wsie, gniazda w koloniach na budynkach",
+        "🍽️ Wszystkożerna: owady, nasiona, odpadki",
+        "🔊 Krótkie, chrapliwe 'kjau'"
       ],
       "film": {
         "id": "Gv7W1jS7V9I",
@@ -232,18 +224,17 @@
         "Najpowszechniejsze"
       ],
       "zdjecie": "img/Turdus_merula.jpg",
-      "liczebnosc": "5–6 mln par",
+      "liczebnosc": "5–6 mln",
       "trend": "→",
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🖤 Samiec: całkowicie czarny z metalicznym poświtem",
+        "🖤 Samiec: całkowicie czarny",
         "🟡 Żółty dziób i obrączka oka",
-        "🟤 Samica: brunatna z ciemnymi pręgami, spód jaśniejszy",
-        "📏 24–27 cm, rozpiętość skrzydeł 34–40 cm",
-        "🎵 Melodyjny, głośny śpiew o świcie i wieczorem",
-        "🌳 Ogrody, parki, lasy liściaste z gęstym podszyciem",
-        "🐛🍇 Wszystkożerny: owady, dżdżownice, owoce, nasiona"
+        "🟤 Samica: brunatna, pstra",
+        "🎵 Melodyjny, głośny śpiew",
+        "📏 25 cm",
+        "🌳 Ogrody, parki, lasy"
       ],
       "film": {
         "id": "4axfqloLdn4",
@@ -263,18 +254,17 @@
         "Ogród"
       ],
       "zdjecie": "img/Cuculus_canorus.jpg",
-      "liczebnosc": "100–200 tys. par",
+      "liczebnosc": "100–200 tys.",
       "trend": "↓",
       "migracja": "Wędrowny",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🟤 Samiec: szare upierzenie z ciemnymi paskami na spodzie",
-        "🟤 Samica: brązowe upierzenie z rdzawymi pręgami",
-        "📏 32–37 cm, rozpiętość skrzydeł 55–65 cm",
+        "🟤 Szare upierzenie z ciemnymi paskami na spodzie (jak krogulec)",
         "🪁 Długi ogon z białymi plamami",
-        "🥚 Pasożyt lęgowy – podrzuca jaja do gniazd innych ptaków",
-        "🔊 Charakterystyczne 'kuku-kuku-kuku' samca, chichoczący odgłos samicy",
-        "✈️ Wędrowna – zimuje w Afryce (Kongo, Tanzania)"
+        "📏 34 cm",
+        "🌿 Lasy, zarośla, łąki",
+        "🥚 Pasożyt lęgowy — podrzuca jaja do gniazd innych ptaków",
+        "🔊 Samiec: 'ku-ku', samica: bulgoczący śmiech"
       ],
       "film": {
         "id": "pMcPWmyfZeQ",
@@ -294,18 +284,17 @@
         "Ogród"
       ],
       "zdjecie": "img/Acrocephalus_palustris.jpg",
-      "liczebnosc": "50–100 tys. par",
+      "liczebnosc": "50–100 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🟤 Brązowy wierzch, kremowy spód z ciemnymi pręgami",
-        "📏 13–15 cm, rozpiętość skrzydeł 19–24 cm",
-        "🌿 Zarośla wierzbowe, ogrody, wilgotne łąki, brzegi lasów",
-        "🦜 Doskonałe naśladowanie dźwięków środowiska",
-        "🎵 Nieustanny śpiew z imitacjami innych ptaków",
-        "🪱 Owadożerna: muchy, komary, chrząszcze, gąsienice",
-        "✈️ Wędrowna – zimuje w południowo-zachodniej Europie i Afryce"
+        "🟤 Brązowy wierzch, kremowy spód",
+        "🎵 Nieustanny śpiew z imitacjami",
+        "🦜 Naśladuje inne ptaki i dźwięki",
+        "📏 13 cm",
+        "🌿 Zarośla wierzbowe, ogrody, łąki",
+        "✈️ Wędrowna — zimuje w Afryce"
       ],
       "film": {
         "id": "wE2IG6Zll_k",
@@ -322,22 +311,20 @@
       "nazwa": "Modraszka",
       "nazwaLacinska": "Cyanistes caeruleus",
       "kategorie": [
-        "Najliczniejsze",
-        "Najpowszechniejsze"
+        "Najliczniejsze"
       ],
       "zdjecie": "img/Cyanistes_caeruleus.jpg",
-      "liczebnosc": "1–2 mln par",
+      "liczebnosc": "1–2 mln",
       "trend": "→",
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🔵 Niebieska czapeczka i skrzydła z czarnymi paskami",
-        "🟡 Żółty brzuch, policzki białe z niebieską obwódką",
-        "📏 10–12 cm, rozpiętość skrzydeł 15–18 cm",
-        "🌳 Lasy liściaste i mieszane, parki, ogrody, sady",
-        "🐛 Owadożerna: mszyce, gąsienice, pająki, nasiona",
-        "🎵 Pieśń: cienka, świstowa 'siu-siu-siu' zakończona tremą",
-        "🏠 Gniazduje w dziuplach drzew i budkach lęgowych"
+        "🔵 Niebieska czapeczka i skrzydła",
+        "🟡 Żółty brzuch, białe policzki",
+        "📏 11 cm",
+        "🌳 Lasy liściaste, parki, ogrody",
+        "🐛 Owadożerna; nasiona zimą",
+        "🎵 Cienkie, świstowe 'siu-siu-siu'"
       ],
       "film": {
         "id": "5WOPT40Bh3M",
@@ -357,18 +344,17 @@
         "Ogród"
       ],
       "zdjecie": "img/Sylvia_curruca.jpg",
-      "liczebnosc": "500–800 tys. par",
+      "liczebnosc": "500–800 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🖤 Samiec: szare upierzenie z ciemną maską na głowie",
+        "🖤 Samiec: szara z ciemną maską",
         "🟤 Samica: brązowa, mniej kontrastowa",
-        "📏 12–13,5 cm, rozpiętość skrzydeł 17–20 cm",
-        "🌿 Zarośla, zakrzewienia, brzegi lasów, wilgotne łąki",
-        "🎵 Śpiew: głośna, melodyjna 'zja-zja-zja-zju' o zmierzchu i świcie",
-        "🐛 Owadożerna: muchy, komary, chrząszcze, gąsienice",
-        "✈️ Wędrowna – zimuje w południowo-zachodniej Europie i Afryce"
+        "📏 13 cm",
+        "🌿 Zarośla, zakrzewienia, brzegi lasów",
+        "🐛 Owadożerna",
+        "🎵 Głośna 'zja-zja-zja-zju' o zmierzchu"
       ],
       "film": {
         "id": "pqYIPxUsdjE",
@@ -385,22 +371,20 @@
       "nazwa": "Rudzik",
       "nazwaLacinska": "Erithacus rubecula",
       "kategorie": [
-        "Najliczniejsze",
-        "Najpowszechniejsze"
+        "Najliczniejsze"
       ],
       "zdjecie": "img/Erithacus_rubecula.jpg",
-      "liczebnosc": "2–3 mln par",
+      "liczebnosc": "2–3 mln",
       "trend": "→",
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🟠 Pomarańczowoczerwona pierś, gardło i twarz",
-        "🟤 Szare plecy, wierzch głowy i skrzydła",
-        "📏 12,5–14 cm, rozpiętość skrzydeł 20–22 cm",
-        "🌳 Lasy liściaste i mieszane, parki, ogrody, sady",
-        "🐛 Owadożerny: chrząszcze, gąsienice, muchy, mrówki, pająki",
-        "🎵 Śpiew: miękka, melodyjna 'tiu-tiu-tiu' przez cały dzień",
-        "🌅 Aktywny także w pochmurne dni i przy sztucznym oświetleniu"
+        "🟠 Pomarańczowoczerwona pierś i twarz",
+        "🟤 Brązowe plecy i skrzydła",
+        "📏 13 cm",
+        "🌳 Lasy, parki, ogrody",
+        "🐛 Owadożerny: dżdżownice, owady",
+        "🎵 Miękki, melodyjny śpiew przez cały rok"
       ],
       "film": {
         "id": "rszYm1T7XKA",
@@ -416,20 +400,21 @@
       "id": 14,
       "nazwa": "Sierpówka",
       "nazwaLacinska": "Streptopelia decaocto",
-      "kategorie": ["Ogród"],
-      "zdjecie": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Streptopelia_decaocto_%28Marek_Szczepanek%29.jpg/800px-Streptopelia_decaocto_%28Marek_Szczepanek%29.jpg",
-      "liczebnosc": "400–600 tys. par",
+      "kategorie": [
+        "Ogród"
+      ],
+      "zdjecie": "img/Streptopelia_decaocto.jpg",
+      "liczebnosc": "400–600 tys.",
       "trend": "↑",
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🤍 Jasnoszarobrązowe upierzenie z różowawym odcieniem na piersi",
-        "🖤 Czarna półobroża na tylnej stronie szyi (cecha charakterystyczna)",
-        "📏 31–33 cm, rozpiętość skrzydeł 47–55 cm",
-        "🏘️ Osady ludzkie: ogrody, parki, wsie, tereny rolnicze",
-        "🌾 Głównie ziarnożerna: zboża, nasiona, owoce",
-        "🎵 Głos: monotonne, powtarzane 'kru-kru-kru' i urywane 'ku'",
-        "🔄 Ekspansywny gatunek – skolonizował Europę Zachodnią w XX w."
+        "🕊️ Beżowa z czarnym półkołnierzykiem na karku",
+        "🔵 Biały koniec ogona, różowawy spód",
+        "📏 31 cm",
+        "🏙️ Ogrody, osiedla, wsie, podwórza",
+        "🌾 Nasionożerna: zboże, trawy, chwasty",
+        "🔊 Monotonne 'ku-KUU-ku' powtarzane nieustannie"
       ],
       "film": {
         "id": "0IwaZl1zCOs",
@@ -449,18 +434,17 @@
         "Ogród"
       ],
       "zdjecie": "img/Garrulus_glandarius.jpg",
-      "liczebnosc": "200–300 tys. par",
+      "liczebnosc": "200–300 tys.",
       "trend": "→",
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🔵 Niebieskie skrzydła z czarnymi pręgami i białe 'lusterko'",
-        "🖤 Czarno-biała głowa i rdzawobrązowy grzbiet",
-        "📏 32–35 cm, rozpiętość skrzydeł 52–58 cm",
-        "🌳 Lasy liściaste i mieszane, zwłaszcza dębowe i bukowe",
-        "🌰 Wszystkożerna: żołędzie, orzechy, nasiona, owady, jaja innych ptaków",
-        "🎵 Głośne, chrapliwe 'rraa-rraa' i naśladownictwo głosów innych ptaków",
-        "🧠 Inteligentna – chowa żołędzie w ziemi na później"
+        "🔵 Niebieskie pasy na skrzydłach",
+        "🟤 Rdzawobrązowy grzbiet, czarno-biała głowa",
+        "📏 34 cm",
+        "🌳 Lasy liściaste, zwłaszcza dębowe",
+        "🌰 Wszystkożerna; magazynuje żołędzie",
+        "🎵 Chrapliwe 'rraa' i imitacje innych ptaków"
       ],
       "film": {
         "id": "hUaj5JVOyYA",
@@ -477,22 +461,20 @@
       "nazwa": "Sroka",
       "nazwaLacinska": "Pica pica",
       "kategorie": [
-        "Ogród",
-        "Najpowszechniejsze"
+        "Ogród"
       ],
       "zdjecie": "img/Pica_pica.jpg",
-      "liczebnosc": "500–700 tys. par",
+      "liczebnosc": "500–700 tys.",
       "trend": "→",
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "⚫⚪ Czarno-białe upierzenie z metalicznym zielono-niebieskim poświtem",
-        "🪁 Długi ogon (20–30 cm) z zielonkawym poświtem",
-        "📏 40–51 cm (w tym ogon), rozpiętość skrzydeł 52–62 cm",
-        "🏞️ Tereny otwarte z drzewami: łąki, pastwiska, pola, osiedla",
-        "🍖 Wszystkożerna: małe kręgowce, owady, nasiona, owoce, padlina",
-        "🧠 Inteligentna – rozpoznaje odbicie w lustrze, złodziejka błyskotek",
-        "🔊 Hałaśliwe 'czak-czak-czak' i naśladownictwo dźwięków"
+        "⚫ Czarno-białe z metalicznym zielono-niebieskim połyskiem",
+        "🪁 Długi ogon z zielonkawym połyskiem",
+        "📏 46 cm (z ogonem)",
+        "🏞️ Łąki, pola, osiedla z drzewami",
+        "🍽️ Wszystkożerna: owady, jaja, padlina",
+        "🔊 Hałaśliwe 'czak-czak-czak'"
       ],
       "film": {
         "id": "p-RksHJNrh0",
@@ -509,21 +491,21 @@
       "nazwa": "Skowronek",
       "nazwaLacinska": "Alauda arvensis",
       "kategorie": [
-        "Najliczniejsze"
+        "Najliczniejsze",
+        "Najpowszechniejsze"
       ],
       "zdjecie": "img/Alauda_arvensis.jpg",
-      "liczebnosc": "2–3 mln par",
+      "liczebnosc": "2–3 mln",
       "trend": "↓",
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🟤 Brązowoszare upierzenie z ciemnymi plamami i podkowiastym pasem na piersiach",
-        "✈️ Charakterystyczny śpiew w locie – wznosi się pionowo do 200 m",
-        "📏 18–19 cm, rozpiętość skrzydeł 30–36 cm",
-        "🌾 Tereny otwarte: łąki, pastwiska, pola, wrzosowiska, dachy budynków",
-        "🌰 Nasionożerny: nasiona traw, chwastów, zbóż, owady",
-        "🎵 Pieśń: głośna, melodyjna 'trli-trli-trli-trlu' w locie i z ziemi",
-        "🏡 Gniazduje w zagłębieniach terenu lub na dachach budynków"
+        "🟤 Brązowoszary, niewidoczny na ziemi",
+        "✈️ Śpiewa w locie wznosząc się do 200 m",
+        "📏 18 cm",
+        "🌾 Pola, łąki, pastwiska",
+        "🌰 Nasiona i owady",
+        "🎵 Głośna, ciągła pieśń 'trli-trli-trlu'"
       ],
       "film": {
         "id": "qeW87UpsF-U",
@@ -545,18 +527,17 @@
         "Najpowszechniejsze"
       ],
       "zdjecie": "img/Sturnus_vulgaris.jpg",
-      "liczebnosc": "3–4 mln par",
+      "liczebnosc": "3–4 mln",
       "trend": "↓",
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "✨ Czarne upierzenie z metalicznym fioletowo-niebiesko-zielonym poświtem",
-        "🟡 Żółty dziób u samicy (sezonowo), czarny u samca",
-        "📏 19–21 cm, rozpiętość skrzydeł 31–44 cm",
-        "🏙️ Tereny miejskie i wiejskie, gniazduje w koloniach na budynkach",
-        "🍖 Wszystkożerny: owady, nasiona, owoce, padlina, odpadki",
-        "🎵 Różnorodne odgłosy z naśladownictwami (głosy ptaków, mowa ludzka)",
-        "🧠 Bardzo towarzyski – tworzy wielkie stada zimą"
+        "✨ Czarny z metalicznym, iryzującym połyskiem",
+        "🟡 Żółty dziób (sezonowo), białe plamki zimą",
+        "📏 20 cm",
+        "🏙️ Miasta, wsie, ogrody, sady",
+        "🍽️ Wszystkożerny: owady, owoce, nasiona",
+        "🎵 Imituje głosy ptaków i dźwięki otoczenia"
       ],
       "film": {
         "id": "VE8wQDiOsyI",
@@ -571,26 +552,26 @@
     {
       "id": 19,
       "nazwa": "Śpiewak",
-      "nazwaLacinska": "Phylloscopus collybita",
+      "nazwaLacinska": "Turdus philomelos",
       "kategorie": [
-        "Ogród"
+        "Ogród",
+        "Najpowszechniejsze"
       ],
-      "zdjecie": "img/Phylloscopus_collybita.jpg",
-      "liczebnosc": "1–2 mln par",
+      "zdjecie": "img/Turdus_philomelos.jpg",
+      "liczebnosc": "1–2 mln",
       "trend": "→",
       "migracja": "Wędrowny",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🟢 Zielonkawe upierzenie, samiec z żółtawo-pomarańczowymi partiami",
-        "🟤 Samica: szarobiały spód z ciemnymi pręgami na piersiach",
-        "📏 14–16 cm, rozpiętość skrzydeł 23–26 cm",
-        "🌿 Ogrody, parki, sady, zarośla, brzegi lasów",
-        "🐛 Owadożerny: chrząszcze, gąsienice, muchy, mrówki, pająki",
-        "🎵 Głośny, złożony śpiew 'fiju-fiju-fiju-tix-tix' przez cały dzień",
-        "🌅 Śpiewa także nocą przy sztucznym oświetleniu"
+        "🟤 Brązowy wierzch, kremowy spód z ciemnymi plamkami",
+        "🟡 Żółtawy odcień pod skrzydłami",
+        "📏 23 cm",
+        "🌳 Lasy, ogrody, parki, żywopłoty",
+        "🐌 Rozbija ślimaki o kamień; dżdżownice, jagody",
+        "🎵 Każdą frazę powtarza 2–4 razy"
       ],
       "film": {
-        "id": "D2oPyYU1YhA",
+        "id": "oDtcKD4H57o",
         "tytul": "Leśny Budzik – Śpiewak",
         "platforma": "youtube"
       },
@@ -604,21 +585,21 @@
       "nazwa": "Trznadel",
       "nazwaLacinska": "Emberiza citrinella",
       "kategorie": [
-        "Najliczniejsze"
+        "Najliczniejsze",
+        "Najpowszechniejsze"
       ],
       "zdjecie": "img/Emberiza_citrinella.jpg",
-      "liczebnosc": "1–2 mln par",
+      "liczebnosc": "1–2 mln",
       "trend": "↓",
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🟡 Samiec: żółta głowa, kark i pierś z rdzawoczerwoną plamą",
-        "🟤 Samica i młodociane: brązowe, maskujące z ciemnymi pręgami",
-        "📏 16–18 cm, rozpiętość skrzydeł 26–30 cm",
-        "🌾 Pola uprawne, ugory, łąki, pastwiska, przydroża",
-        "🌰 Nasionożerny: nasiona traw, chwastów, zbóż, owady (dla piskląt)",
-        "🎵 Śpiew: prosta, charakterystyczna 'zja-zja-zja-zju' jak piła mechaniczna",
-        "✈️ Osiadły – ptaki z północy zimują w południowo-zachodniej Europie"
+        "🟡 Samiec: żółta głowa i pierś",
+        "🟤 Samica: brązowa, maskująca",
+        "📏 17 cm",
+        "🌾 Pola, ugory, przydroża",
+        "🌰 Nasionożerny; owady dla piskląt",
+        "🎵 Prosta 'zja-zja-zja-zju' jak piła"
       ],
       "film": {
         "id": "yrRbOqQe6ck",
@@ -638,18 +619,17 @@
         "Najliczniejsze"
       ],
       "zdjecie": "img/Passer_domesticus.jpg",
-      "liczebnosc": "5–7 mln par",
+      "liczebnosc": "5–7 mln",
       "trend": "↓",
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🖤 Samiec: szara czapeczka i czarna plama na gardle ('krawat')",
-        "🟤 Samica: brązowoszara, bez czarnej plamy, mniej kontrastowa",
-        "📏 14–15 cm, rozpiętość skrzydeł 21–25 cm",
-        "🏙️ Silnie związany z człowiekiem: dachy, budynki, place, zagrody",
-        "🍞 Wszystkożerny: nasiona zbóż, chwastów, owady, okruchy chleba",
-        "🏠 Gniazduje w szczelinach budynków, dziuplach, gniazdach innych ptaków",
-        "🔊 Hałaśliwe 'ćwir-ćwir-ćwir' i powtarzane 'czilp-czilp-czilp'"
+        "🖤 Samiec: szara czapeczka, czarny 'krawat'",
+        "🟤 Samica: brązowoszara, bez plamy",
+        "📏 15 cm",
+        "🏙️ Silnie związany z człowiekiem",
+        "🍞 Nasiona, owady, okruchy",
+        "🔊 Hałaśliwe 'ćwir-ćwir', 'czilp-czilp'"
       ],
       "film": {
         "id": "h5lXjewgezw",
@@ -670,22 +650,52 @@
         "Najpowszechniejsze"
       ],
       "zdjecie": "img/Fringilla_coelebs.jpg",
-      "liczebnosc": "3–4 mln par",
+      "liczebnosc": "3–4 mln",
       "trend": "→",
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "🔵 Samiec: niebieskoszara głowa i kark, pomarańczoworóżowa pierś",
-        "🟠 Samiec: rdzawobrązowy grzbiet z charakterystycznymi paskami",
-        "🟤 Samica: brązowoszara z zielonkawymi i żółtymi akcentami na skrzydłach",
-        "📏 14–16 cm, rozpiętość skrzydeł 24–28 cm",
-        "🌳 Lasy liściaste i mieszane z brzozą i olchą, parki, ogrody",
-        "🌰 Nasionożerny: nasiona brzozy, olchy, topoli, wierzby, owady",
-        "🎵 Śpiew: gwizdające 'fiu-fiu-fiu' przypominające dźwięk piły"
+        "🔵 Samiec: niebieskoszara głowa, różowa pierś",
+        "🟤 Samica: brązowoszara, stonowana",
+        "📏 15 cm",
+        "🌳 Lasy, parki, ogrody",
+        "🌰 Nasiona brzozy, olchy; owady",
+        "🎵 Gwiżdżąca, opadająca fraza"
       ],
       "film": {
         "id": "m7bLEac0Zf0",
         "tytul": "Leśny Budzik – Zięba",
+        "platforma": "youtube"
+      },
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ]
+    },
+    {
+      "id": 23,
+      "nazwa": "Pierwiosnek",
+      "nazwaLacinska": "Phylloscopus collybita",
+      "kategorie": [
+        "Najliczniejsze",
+        "Najpowszechniejsze"
+      ],
+      "zdjecie": "img/Phylloscopus_collybita.jpg",
+      "liczebnosc": "2,5–3 mln",
+      "trend": "↑",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "cechy": [
+        "🟢 Oliwkowozielony z jasną brwią",
+        "📏 11 cm",
+        "🌿 Lasy liściaste i mieszane, parki, ogrody",
+        "🐛 Owadożerny: owady, mszyce, gąsienice",
+        "🎵 Monotonne 'łil-łal-łil-łal'",
+        "✈️ Jeden z pierwszych przylatujących wiosną"
+      ],
+      "film": {
+        "id": "Nzj8oAzqVwE",
+        "tytul": "Leśny Budzik – Pierwiosnek",
         "platforma": "youtube"
       },
       "zrodla": [
