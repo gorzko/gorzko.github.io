@@ -1,0 +1,567 @@
+{
+  "generated": "2026-06-09",
+  "rankingA_iconic": [
+    {
+      "name_en": "Pectoral Sandpiper",
+      "name_pl": null,
+      "peak_pk_pct": 8.3,
+      "iconic_score": 26.71,
+      "seasonality": 27.6,
+      "peak_month": "Paź"
+    },
+    {
+      "name_en": "Pine Bunting",
+      "name_pl": null,
+      "peak_pk_pct": 21.9,
+      "iconic_score": 25.3,
+      "seasonality": 30.3,
+      "peak_month": "Sty"
+    },
+    {
+      "name_en": "Gull-billed Tern",
+      "name_pl": null,
+      "peak_pk_pct": 8.3,
+      "iconic_score": 26.71,
+      "seasonality": 19.8,
+      "peak_month": "Paź"
+    },
+    {
+      "name_en": "Common Loon",
+      "name_pl": null,
+      "peak_pk_pct": 17,
+      "iconic_score": 13.37,
+      "seasonality": 26.8,
+      "peak_month": "Lis"
+    },
+    {
+      "name_en": "Long-legged Buzzard",
+      "name_pl": null,
+      "peak_pk_pct": 6.7,
+      "iconic_score": 10.29,
+      "seasonality": 24,
+      "peak_month": "Sie"
+    },
+    {
+      "name_en": "Purple Heron",
+      "name_pl": null,
+      "peak_pk_pct": 6,
+      "iconic_score": 5.18,
+      "seasonality": 12.8,
+      "peak_month": "Sie"
+    },
+    {
+      "name_en": "Northern Nutcracker",
+      "name_pl": null,
+      "peak_pk_pct": 7.4,
+      "iconic_score": 6.9,
+      "seasonality": 4.4,
+      "peak_month": "Paź"
+    },
+    {
+      "name_en": "Red-necked Grebe",
+      "name_pl": null,
+      "peak_pk_pct": 12.5,
+      "iconic_score": 4.76,
+      "seasonality": 9.7,
+      "peak_month": "Lis"
+    },
+    {
+      "name_en": "Red-throated Pipit",
+      "name_pl": null,
+      "peak_pk_pct": 15,
+      "iconic_score": 4.45,
+      "seasonality": 11.4,
+      "peak_month": "Wrz"
+    },
+    {
+      "name_en": "Little Egret",
+      "name_pl": null,
+      "peak_pk_pct": 6.7,
+      "iconic_score": 4.24,
+      "seasonality": 8.4,
+      "peak_month": "Sie"
+    },
+    {
+      "name_en": "Mandarin Duck",
+      "name_pl": null,
+      "peak_pk_pct": 7.5,
+      "iconic_score": 3.15,
+      "seasonality": 16.3,
+      "peak_month": "Gru"
+    },
+    {
+      "name_en": "Ferruginous Duck",
+      "name_pl": null,
+      "peak_pk_pct": 8.2,
+      "iconic_score": 6.6,
+      "seasonality": 2.7,
+      "peak_month": "Maj"
+    },
+    {
+      "name_en": "Bohemian Waxwing",
+      "name_pl": null,
+      "peak_pk_pct": 10.3,
+      "iconic_score": 3.72,
+      "seasonality": 8.3,
+      "peak_month": "Gru"
+    },
+    {
+      "name_en": "Red-breasted Merganser",
+      "name_pl": null,
+      "peak_pk_pct": 15.2,
+      "iconic_score": 2.86,
+      "seasonality": 16.1,
+      "peak_month": "Lis"
+    },
+    {
+      "name_en": "Arctic Loon",
+      "name_pl": null,
+      "peak_pk_pct": 17.9,
+      "iconic_score": 3.31,
+      "seasonality": 9.8,
+      "peak_month": "Lis"
+    },
+    {
+      "name_en": "European Turtle-Dove",
+      "name_pl": null,
+      "peak_pk_pct": 7,
+      "iconic_score": 3.96,
+      "seasonality": 6,
+      "peak_month": "Cze"
+    },
+    {
+      "name_en": "Greater Scaup",
+      "name_pl": null,
+      "peak_pk_pct": 15.2,
+      "iconic_score": 2.86,
+      "seasonality": 10.3,
+      "peak_month": "Lis"
+    },
+    {
+      "name_en": "Gray Wagtail",
+      "name_pl": null,
+      "peak_pk_pct": 22.7,
+      "iconic_score": 4.05,
+      "seasonality": 4.2,
+      "peak_month": "Wrz"
+    },
+    {
+      "name_en": "Black-crowned Night Heron",
+      "name_pl": null,
+      "peak_pk_pct": 12.5,
+      "iconic_score": 3.13,
+      "seasonality": 7.3,
+      "peak_month": "Sie"
+    },
+    {
+      "name_en": "Eared Grebe",
+      "name_pl": null,
+      "peak_pk_pct": 10.9,
+      "iconic_score": 3.32,
+      "seasonality": 6.3,
+      "peak_month": "Wrz"
+    },
+    {
+      "name_en": "Lesser Spotted Eagle",
+      "name_pl": "Orlik Krzykliwy",
+      "peak_pk_pct": 20.8,
+      "iconic_score": 3.87,
+      "seasonality": 4.4,
+      "peak_month": "Wrz"
+    },
+    {
+      "name_en": "European Bee-eater",
+      "name_pl": "Żołna",
+      "peak_pk_pct": 9.6,
+      "iconic_score": 3.43,
+      "seasonality": 4.3,
+      "peak_month": "Cze"
+    },
+    {
+      "name_en": "European Golden-Plover",
+      "name_pl": null,
+      "peak_pk_pct": 10.6,
+      "iconic_score": 2.73,
+      "seasonality": 6.8,
+      "peak_month": "Lut"
+    },
+    {
+      "name_en": "European Honey-buzzard",
+      "name_pl": null,
+      "peak_pk_pct": 9.2,
+      "iconic_score": 2.98,
+      "seasonality": 5.1,
+      "peak_month": "Wrz"
+    },
+    {
+      "name_en": "Red-footed Falcon",
+      "name_pl": null,
+      "peak_pk_pct": 18.5,
+      "iconic_score": 2.06,
+      "seasonality": 12.3,
+      "peak_month": "Wrz"
+    },
+    {
+      "name_en": "Red-breasted Flycatcher",
+      "name_pl": null,
+      "peak_pk_pct": 10,
+      "iconic_score": 2.25,
+      "seasonality": 7.2,
+      "peak_month": "Sie"
+    },
+    {
+      "name_en": "Tree Pipit",
+      "name_pl": "Świergotek Drzewny",
+      "peak_pk_pct": 37.5,
+      "iconic_score": 2.39,
+      "seasonality": 6.1,
+      "peak_month": "Wrz"
+    },
+    {
+      "name_en": "Mistle Thrush",
+      "name_pl": "Paszkot",
+      "peak_pk_pct": 30.6,
+      "iconic_score": 3.05,
+      "seasonality": 3.4,
+      "peak_month": "Paź"
+    },
+    {
+      "name_en": "Rough-legged Hawk",
+      "name_pl": null,
+      "peak_pk_pct": 10.3,
+      "iconic_score": 2.16,
+      "seasonality": 6.6,
+      "peak_month": "Gru"
+    },
+    {
+      "name_en": "Gray-headed Woodpecker",
+      "name_pl": null,
+      "peak_pk_pct": 11,
+      "iconic_score": 3.51,
+      "seasonality": 2.4,
+      "peak_month": "Mar"
+    },
+    {
+      "name_en": "Corn Crake",
+      "name_pl": "Derkacz",
+      "peak_pk_pct": 11.5,
+      "iconic_score": 2.06,
+      "seasonality": 6.5,
+      "peak_month": "Cze"
+    },
+    {
+      "name_en": "Little Stint",
+      "name_pl": null,
+      "peak_pk_pct": 11.9,
+      "iconic_score": 1.73,
+      "seasonality": 9.8,
+      "peak_month": "Wrz"
+    },
+    {
+      "name_en": "Collared Flycatcher",
+      "name_pl": "Muchołówka Białoszyja",
+      "peak_pk_pct": 10.1,
+      "iconic_score": 1.97,
+      "seasonality": 6.5,
+      "peak_month": "Maj"
+    },
+    {
+      "name_en": "Willow Tit",
+      "name_pl": null,
+      "peak_pk_pct": 25.4,
+      "iconic_score": 3.02,
+      "seasonality": 2.6,
+      "peak_month": "Gru"
+    },
+    {
+      "name_en": "Eurasian Penduline-Tit",
+      "name_pl": null,
+      "peak_pk_pct": 12.2,
+      "iconic_score": 2.21,
+      "seasonality": 4.7,
+      "peak_month": "Wrz"
+    }
+  ],
+  "rankingB_common": [
+    {
+      "name_en": "Great Tit",
+      "name_pl": "Bogatka",
+      "peak_pk_pct": 76.7,
+      "iconic_score": 1.15,
+      "seasonality": 1.5,
+      "peak_month": "Gru"
+    },
+    {
+      "name_en": "Eurasian Blackbird",
+      "name_pl": null,
+      "peak_pk_pct": 70.2,
+      "iconic_score": 1.17,
+      "seasonality": 1.8,
+      "peak_month": "Cze"
+    },
+    {
+      "name_en": "Common Wood-Pigeon",
+      "name_pl": null,
+      "peak_pk_pct": 69.5,
+      "iconic_score": 1.09,
+      "seasonality": 2,
+      "peak_month": "Kwi"
+    },
+    {
+      "name_en": "Barn Swallow",
+      "name_pl": "Jaskółka Dymówka",
+      "peak_pk_pct": 67.1,
+      "iconic_score": 1.21,
+      "seasonality": 2.9,
+      "peak_month": "Sie"
+    },
+    {
+      "name_en": "Eurasian Blackcap",
+      "name_pl": null,
+      "peak_pk_pct": 66.2,
+      "iconic_score": 1.12,
+      "seasonality": 3.4,
+      "peak_month": "Cze"
+    },
+    {
+      "name_en": "Eurasian Blue Tit",
+      "name_pl": null,
+      "peak_pk_pct": 65,
+      "iconic_score": 1.24,
+      "seasonality": 1.7,
+      "peak_month": "Gru"
+    },
+    {
+      "name_en": "Common Chiffchaff",
+      "name_pl": "Pierwiosnek",
+      "peak_pk_pct": 63,
+      "iconic_score": 1.06,
+      "seasonality": 2.4,
+      "peak_month": "Kwi"
+    },
+    {
+      "name_en": "Common Chaffinch",
+      "name_pl": "Zięba",
+      "peak_pk_pct": 61.6,
+      "iconic_score": 1.15,
+      "seasonality": 1.7,
+      "peak_month": "Cze"
+    },
+    {
+      "name_en": "White Wagtail",
+      "name_pl": "Pliszka Siwa",
+      "peak_pk_pct": 60.5,
+      "iconic_score": 1.36,
+      "seasonality": 2.5,
+      "peak_month": "Wrz"
+    },
+    {
+      "name_en": "Mallard",
+      "name_pl": null,
+      "peak_pk_pct": 57.1,
+      "iconic_score": 1.13,
+      "seasonality": 1.5,
+      "peak_month": "Lis"
+    },
+    {
+      "name_en": "Common Buzzard",
+      "name_pl": "Myszołów",
+      "peak_pk_pct": 55.8,
+      "iconic_score": 1.67,
+      "seasonality": 1.5,
+      "peak_month": "Wrz"
+    },
+    {
+      "name_en": "Gray Heron",
+      "name_pl": null,
+      "peak_pk_pct": 55.8,
+      "iconic_score": 1.59,
+      "seasonality": 2.2,
+      "peak_month": "Sie"
+    },
+    {
+      "name_en": "Song Thrush",
+      "name_pl": "Śpiewak",
+      "peak_pk_pct": 54.4,
+      "iconic_score": 1.42,
+      "seasonality": 3.1,
+      "peak_month": "Mar"
+    },
+    {
+      "name_en": "Common Cuckoo",
+      "name_pl": "Kukułka",
+      "peak_pk_pct": 53.4,
+      "iconic_score": 1.29,
+      "seasonality": 6.2,
+      "peak_month": "Maj"
+    },
+    {
+      "name_en": "European Starling",
+      "name_pl": null,
+      "peak_pk_pct": 52.4,
+      "iconic_score": 0.98,
+      "seasonality": 2,
+      "peak_month": "Maj"
+    },
+    {
+      "name_en": "Eurasian Jay",
+      "name_pl": "Sójka",
+      "peak_pk_pct": 52.4,
+      "iconic_score": 1.21,
+      "seasonality": 1.7,
+      "peak_month": "Wrz"
+    },
+    {
+      "name_en": "Eurasian Magpie",
+      "name_pl": "Sroka",
+      "peak_pk_pct": 50,
+      "iconic_score": 1.14,
+      "seasonality": 1.7,
+      "peak_month": "Gru"
+    },
+    {
+      "name_en": "Great Spotted Woodpecker",
+      "name_pl": "Dzięcioł Duży",
+      "peak_pk_pct": 49.3,
+      "iconic_score": 1.55,
+      "seasonality": 1.6,
+      "peak_month": "Gru"
+    },
+    {
+      "name_en": "Eurasian Bullfinch",
+      "name_pl": null,
+      "peak_pk_pct": 46.7,
+      "iconic_score": 2.07,
+      "seasonality": 3.5,
+      "peak_month": "Gru"
+    },
+    {
+      "name_en": "Great Cormorant",
+      "name_pl": null,
+      "peak_pk_pct": 46.3,
+      "iconic_score": 1.17,
+      "seasonality": 2.7,
+      "peak_month": "Gru"
+    },
+    {
+      "name_en": "Ring-necked Pheasant",
+      "name_pl": null,
+      "peak_pk_pct": 45.7,
+      "iconic_score": 1.51,
+      "seasonality": 2,
+      "peak_month": "Kwi"
+    },
+    {
+      "name_en": "Eurasian Golden Oriole",
+      "name_pl": null,
+      "peak_pk_pct": 45.6,
+      "iconic_score": 1.54,
+      "seasonality": 4.7,
+      "peak_month": "Cze"
+    },
+    {
+      "name_en": "Yellowhammer",
+      "name_pl": "Trznadel",
+      "peak_pk_pct": 45.6,
+      "iconic_score": 1.35,
+      "seasonality": 1.6,
+      "peak_month": "Cze"
+    },
+    {
+      "name_en": "Eurasian Nuthatch",
+      "name_pl": "Kowalik",
+      "peak_pk_pct": 44.8,
+      "iconic_score": 1.77,
+      "seasonality": 2.2,
+      "peak_month": "Gru"
+    },
+    {
+      "name_en": "Greater Whitethroat",
+      "name_pl": null,
+      "peak_pk_pct": 43.8,
+      "iconic_score": 1.31,
+      "seasonality": 4.7,
+      "peak_month": "Cze"
+    },
+    {
+      "name_en": "European Goldfinch",
+      "name_pl": "Szczygieł",
+      "peak_pk_pct": 43.5,
+      "iconic_score": 1.84,
+      "seasonality": 1.7,
+      "peak_month": "Paź"
+    },
+    {
+      "name_en": "Eurasian Siskin",
+      "name_pl": "Czyż",
+      "peak_pk_pct": 43.5,
+      "iconic_score": 1.33,
+      "seasonality": 3.1,
+      "peak_month": "Paź"
+    },
+    {
+      "name_en": "European Robin",
+      "name_pl": null,
+      "peak_pk_pct": 42.8,
+      "iconic_score": 0.92,
+      "seasonality": 2,
+      "peak_month": "Mar"
+    },
+    {
+      "name_en": "Red-backed Shrike",
+      "name_pl": null,
+      "peak_pk_pct": 42.7,
+      "iconic_score": 1.84,
+      "seasonality": 3.9,
+      "peak_month": "Cze"
+    },
+    {
+      "name_en": "Western Marsh Harrier",
+      "name_pl": null,
+      "peak_pk_pct": 42.3,
+      "iconic_score": 1.42,
+      "seasonality": 2.9,
+      "peak_month": "Sie"
+    },
+    {
+      "name_en": "White Stork",
+      "name_pl": "Bocian Biały",
+      "peak_pk_pct": 41.3,
+      "iconic_score": 2.09,
+      "seasonality": 3.4,
+      "peak_month": "Sie"
+    },
+    {
+      "name_en": "Common Swift",
+      "name_pl": "Jerzyk",
+      "peak_pk_pct": 41.1,
+      "iconic_score": 0.9,
+      "seasonality": 4.8,
+      "peak_month": "Lip"
+    },
+    {
+      "name_en": "Eurasian Kestrel",
+      "name_pl": null,
+      "peak_pk_pct": 41.1,
+      "iconic_score": 1.66,
+      "seasonality": 2.2,
+      "peak_month": "Wrz"
+    },
+    {
+      "name_en": "Fieldfare",
+      "name_pl": "Kwiczoł",
+      "peak_pk_pct": 40.4,
+      "iconic_score": 1.48,
+      "seasonality": 1.7,
+      "peak_month": "Sty"
+    },
+    {
+      "name_en": "Caspian Gull",
+      "name_pl": null,
+      "peak_pk_pct": 40.3,
+      "iconic_score": 1.94,
+      "seasonality": 2.1,
+      "peak_month": "Gru"
+    }
+  ]
+}
