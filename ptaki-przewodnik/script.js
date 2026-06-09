@@ -259,8 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (currentCategoryFilter === 'Podkarpacie') {
           monthFilter.hidden = false;
-          const curMonth = new Date().getMonth() + 1;
-          setMonthFilter(curMonth);
+          setMonthFilter(0);
         } else {
           monthFilter.hidden = true;
           currentMonthFilter = 0;

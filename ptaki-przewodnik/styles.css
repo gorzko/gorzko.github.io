@@ -654,10 +654,12 @@ body {
 .h-tag.g { background: var(--g-bg); color: var(--g-tx); }
 .h-tag.b { background: var(--b-bg); color: var(--b-tx); }
 .h-tag.o { background: var(--o-bg); color: var(--o-tx); }
+.h-tag.p { background: var(--p-bg); color: var(--p-tx); }
 .h-tag-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
 .h-tag.g .h-tag-dot { background: var(--g-dot); }
 .h-tag.b .h-tag-dot { background: var(--b-dot); }
 .h-tag.o .h-tag-dot { background: var(--o-dot); }
+.h-tag.p .h-tag-dot { background: var(--p-dot); }
 
 .hero-scroll {
   position: absolute;
@@ -839,10 +841,12 @@ body {
 .inline-tag.g { background: var(--g-bg); color: var(--g-tx); }
 .inline-tag.b { background: var(--b-bg); color: var(--b-tx); }
 .inline-tag.o { background: var(--o-bg); color: var(--o-tx); }
+.inline-tag.p { background: var(--p-bg); color: var(--p-tx); }
 .inline-dot { width: 4px; height: 4px; border-radius: 50%; }
 .inline-tag.g .inline-dot { background: var(--g-dot); }
 .inline-tag.b .inline-dot { background: var(--b-dot); }
 .inline-tag.o .inline-dot { background: var(--o-dot); }
+.inline-tag.p .inline-dot { background: var(--p-dot); }
 
 /* Karta anatomii */
 .card-anatomy {
