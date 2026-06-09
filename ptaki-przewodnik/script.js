@@ -416,11 +416,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function generateFeatures(cechy) {
-    return cechy.map(c =>
-      `<div class="pill" role="button" tabindex="0" aria-label="${c}">
-         <span class="pill-emoji">${getEmojiForFeature(c)}</span> ${c}
-       </div>`
-    ).join('');
+    return cechy.map(c => {
+      // Jeśli cecha zaczyna się od emoji (nie litera/cyfra), wydziel je jako pill-emoji
+      const parts = c.match(/^(\S+)\s+([\s\S]*)$/);
+      const firstToken = parts ? parts[1] : '';
+      const startsWithEmoji = firstToken && !/^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ0-9]/.test(firstToken);
+      const pillEmoji = startsWithEmoji ? firstToken : getEmojiForFeature(c);
+      const text = startsWithEmoji ? parts[2] : c;
+      return `<div class="pill" role="button" tabindex="0" aria-label="${c}">
+         <span class="pill-emoji">${pillEmoji}</span> ${text}
+       </div>`;
+    }).join('');
   }
 
   function generateVideoBlock(ptak) {
