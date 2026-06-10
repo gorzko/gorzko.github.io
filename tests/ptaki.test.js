@@ -85,6 +85,21 @@ describe('Testy walidacji schematu JSON', () => {
     });
   });
 
+  it('Ptaki kategorii Podkarpacia mają peakMonths', () => {
+    const pkCategories = ['Top Podkarpacia', 'Podkarpackie Atrakcje'];
+    jsonData.ptaki.forEach(ptak => {
+      const isPk = ptak.kategorie.some(k => pkCategories.includes(k));
+      if (isPk) {
+        assert(Array.isArray(ptak.peakMonths) && ptak.peakMonths.length > 0,
+          `Ptak ${ptak.nazwa} (kategoria Podkarpacia) ma peakMonths`);
+        ptak.peakMonths.forEach(m => {
+          assert(m >= 1 && m <= 12,
+            `Ptak ${ptak.nazwa} ma peakMonths w zakresie 1-12: ${m}`);
+        });
+      }
+    });
+  });
+
   it('Status Czerwonej Księgi jest poprawny', () => {
     const validStatuses = ['LC', 'NT', 'VU', 'EN'];
     jsonData.ptaki.forEach(ptak => {
