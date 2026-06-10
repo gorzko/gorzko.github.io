@@ -36,7 +36,8 @@
       "nazwaLacinska": "Parus major",
       "kategorie": [
         "Najliczniejsze",
-        "Najpowszechniejsze"
+        "Najpowszechniejsze",
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Parus_major.jpg",
       "liczebnosc": "3–4 mln",
@@ -66,7 +67,8 @@
       "nazwa": "Gil",
       "nazwaLacinska": "Pyrrhula pyrrhula",
       "kategorie": [
-        "inne"
+        "inne",
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Pyrrhula_pyrrhula.jpg",
       "liczebnosc": "800–1200 tys.",
@@ -97,7 +99,8 @@
       "nazwaLacinska": "Columba palumbus",
       "kategorie": [
         "Najliczniejsze",
-        "Najpowszechniejsze"
+        "Najpowszechniejsze",
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Columba_palumbus.jpg",
       "liczebnosc": "1,5–2 mln",
@@ -159,7 +162,8 @@
       "kategorie": [
         "Ogród",
         "Najliczniejsze",
-        "Najpowszechniejsze"
+        "Najpowszechniejsze",
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Sylvia_atricapilla.jpg",
       "liczebnosc": "2–3 mln",
@@ -221,7 +225,8 @@
       "kategorie": [
         "Ogród",
         "Najliczniejsze",
-        "Najpowszechniejsze"
+        "Najpowszechniejsze",
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Turdus_merula.jpg",
       "liczebnosc": "5–6 mln",
@@ -311,7 +316,8 @@
       "nazwa": "Modraszka",
       "nazwaLacinska": "Cyanistes caeruleus",
       "kategorie": [
-        "Najliczniejsze"
+        "Najliczniejsze",
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Cyanistes_caeruleus.jpg",
       "liczebnosc": "1–2 mln",
@@ -647,7 +653,8 @@
       "nazwaLacinska": "Fringilla coelebs",
       "kategorie": [
         "Najliczniejsze",
-        "Najpowszechniejsze"
+        "Najpowszechniejsze",
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Fringilla_coelebs.jpg",
       "liczebnosc": "3–4 mln",
@@ -678,7 +685,8 @@
       "nazwaLacinska": "Phylloscopus collybita",
       "kategorie": [
         "Najliczniejsze",
-        "Najpowszechniejsze"
+        "Najpowszechniejsze",
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Phylloscopus_collybita.jpg",
       "liczebnosc": "2,5–3 mln",
@@ -708,7 +716,7 @@
       "nazwa": "Podgorzałka",
       "nazwaLacinska": "Aythya nyroca",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Aythya_nyroca.jpg",
       "liczebnosc": "200–400",
@@ -742,7 +750,7 @@
       "nazwa": "Perkoz Rdzawoszyi",
       "nazwaLacinska": "Podiceps grisegena",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Podiceps_grisegena.jpg",
       "liczebnosc": "500–700",
@@ -770,7 +778,7 @@
       "nazwa": "Świergotek Rdzawogardły",
       "nazwaLacinska": "Anthus cervinus",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Anthus_cervinus.jpg",
       "liczebnosc": "setki os.",
@@ -799,7 +807,7 @@
       "nazwa": "Pliszka Górska",
       "nazwaLacinska": "Motacilla cinerea",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Motacilla_cinerea.jpg",
       "liczebnosc": "15–25 tys.",
@@ -830,7 +838,7 @@
       "nazwa": "Orlik Krzykliwy",
       "nazwaLacinska": "Clanga pomarina",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Clanga_pomarina.jpg",
       "liczebnosc": "2,5–3,5 tys.",
@@ -862,7 +870,7 @@
       "nazwa": "Jemiołuszka",
       "nazwaLacinska": "Bombycilla garrulus",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Bombycilla_garrulus.jpg",
       "liczebnosc": "kilka tys.",
@@ -891,7 +899,7 @@
       "nazwa": "Dzięcioł Zielonosiwy",
       "nazwaLacinska": "Picus canus",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Picus_canus.jpg",
       "liczebnosc": "5–8 tys.",
@@ -927,7 +935,7 @@
       "nazwa": "Żołna",
       "nazwaLacinska": "Merops apiaster",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Merops_apiaster.jpg",
       "liczebnosc": "1–2 tys.",
@@ -958,7 +966,7 @@
       "nazwa": "Zausznik",
       "nazwaLacinska": "Podiceps nigricollis",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Podiceps_nigricollis.jpg",
       "liczebnosc": "1–2 tys.",
@@ -987,7 +995,7 @@
       "nazwa": "Nur Czarnoszyi",
       "nazwaLacinska": "Gavia arctica",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Gavia_arctica.jpg",
       "liczebnosc": "setki os.",
@@ -1016,7 +1024,7 @@
       "nazwa": "Ślepowron",
       "nazwaLacinska": "Nycticorax nycticorax",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Nycticorax_nycticorax.jpg",
       "liczebnosc": "200–400",
@@ -1045,7 +1053,7 @@
       "nazwa": "Paszkot",
       "nazwaLacinska": "Turdus viscivorus",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Turdus_viscivorus.jpg",
       "liczebnosc": "30–50 tys.",
@@ -1077,7 +1085,7 @@
       "nazwa": "Sikora Uboga",
       "nazwaLacinska": "Poecile montanus",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Poecile_montanus.jpg",
       "liczebnosc": "300–500 tys.",
@@ -1112,7 +1120,7 @@
       "nazwa": "Trzmielojad",
       "nazwaLacinska": "Pernis apivorus",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Pernis_apivorus.jpg",
       "liczebnosc": "3–5 tys.",
@@ -1143,7 +1151,7 @@
       "nazwa": "Ogorzałka",
       "nazwaLacinska": "Aythya marila",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Aythya_marila.jpg",
       "liczebnosc": "50–150",
@@ -1172,7 +1180,7 @@
       "nazwa": "Szlachar",
       "nazwaLacinska": "Mergus serrator",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Mergus_serrator.jpg",
       "liczebnosc": "800–1,2 tys.",
@@ -1200,7 +1208,7 @@
       "nazwa": "Siewka Złota",
       "nazwaLacinska": "Pluvialis apricaria",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Pluvialis_apricaria.jpg",
       "liczebnosc": "kilkadziesiąt tys.",
@@ -1229,7 +1237,7 @@
       "nazwa": "Siniak",
       "nazwaLacinska": "Columba oenas",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Columba_oenas.jpg",
       "liczebnosc": "80–120 tys.",
@@ -1263,7 +1271,7 @@
       "nazwa": "Bocian Czarny",
       "nazwaLacinska": "Ciconia nigra",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Ciconia_nigra.jpg",
       "liczebnosc": "1–1,2 tys.",
@@ -1295,7 +1303,7 @@
       "nazwa": "Kląskawka",
       "nazwaLacinska": "Saxicola rubicola",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Saxicola_rubicola.jpg",
       "liczebnosc": "10–20 tys.",
@@ -1329,7 +1337,7 @@
       "nazwa": "Świergotek Drzewny",
       "nazwaLacinska": "Anthus trivialis",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Anthus_trivialis.jpg",
       "liczebnosc": "200–400 tys.",
@@ -1358,7 +1366,7 @@
       "nazwa": "Srokosz",
       "nazwaLacinska": "Lanius excubitor",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Lanius_excubitor.jpg",
       "liczebnosc": "20–40 tys.",
@@ -1393,7 +1401,7 @@
       "nazwa": "Sosnówka",
       "nazwaLacinska": "Periparus ater",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Periparus_ater.jpg",
       "liczebnosc": "300–500 tys.",
@@ -1432,7 +1440,7 @@
       "nazwa": "Muchołówka Mała",
       "nazwaLacinska": "Ficedula parva",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Ficedula_parva.jpg",
       "liczebnosc": "40–70 tys.",
@@ -1460,7 +1468,7 @@
       "nazwa": "Remiz",
       "nazwaLacinska": "Remiz pendulinus",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Remiz_pendulinus.jpg",
       "liczebnosc": "20–40 tys.",
@@ -1489,7 +1497,7 @@
       "nazwa": "Głowienka",
       "nazwaLacinska": "Aythya ferina",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Aythya_ferina.jpg",
       "liczebnosc": "3–5 tys.",
@@ -1524,7 +1532,7 @@
       "nazwa": "Myszołów Włochaty",
       "nazwaLacinska": "Buteo lagopus",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Buteo_lagopus.jpg",
       "liczebnosc": "do 1 tys.",
@@ -1554,7 +1562,7 @@
       "nazwa": "Przepiórka",
       "nazwaLacinska": "Coturnix coturnix",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Coturnix_coturnix.jpg",
       "liczebnosc": "100–200 tys.",
@@ -1584,7 +1592,7 @@
       "nazwa": "Makolągwa",
       "nazwaLacinska": "Linaria cannabina",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Linaria_cannabina.jpg",
       "liczebnosc": "1–2 mln",
@@ -1620,7 +1628,7 @@
       "nazwa": "Zimorodek",
       "nazwaLacinska": "Alcedo atthis",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Alcedo_atthis.jpg",
       "liczebnosc": "8–12 tys.",
@@ -1654,7 +1662,7 @@
       "nazwa": "Bocian Biały",
       "nazwaLacinska": "Ciconia ciconia",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Ciconia_ciconia.jpg",
       "liczebnosc": "52–55 tys.",
@@ -1686,7 +1694,7 @@
       "nazwa": "Derkacz",
       "nazwaLacinska": "Crex crex",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Crex_crex.jpg",
       "liczebnosc": "10–20 tys.",
@@ -1716,7 +1724,7 @@
       "nazwa": "Kobczyk",
       "nazwaLacinska": "Falco vespertinus",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Falco_vespertinus.jpg",
       "liczebnosc": "10–30",
@@ -1744,7 +1752,7 @@
       "nazwa": "Pokrzywnica",
       "nazwaLacinska": "Prunella modularis",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Prunella_modularis.jpg",
       "liczebnosc": "1,5–2,5 mln",
@@ -1773,7 +1781,7 @@
       "nazwa": "Perkozek",
       "nazwaLacinska": "Tachybaptus ruficollis",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Tachybaptus_ruficollis.jpg",
       "liczebnosc": "20–30 tys.",
@@ -1809,7 +1817,7 @@
       "nazwa": "Muchołówka Białoszyja",
       "nazwaLacinska": "Ficedula albicollis",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Ficedula_albicollis.jpg",
       "liczebnosc": "150–250 tys.",
@@ -1838,7 +1846,7 @@
       "nazwa": "Mewa Białogłowa",
       "nazwaLacinska": "Larus cachinnans",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Larus_cachinnans.jpg",
       "liczebnosc": "20–30 tys.",
@@ -1877,7 +1885,7 @@
       "nazwa": "Świstun",
       "nazwaLacinska": "Mareca penelope",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Mareca_penelope.jpg",
       "liczebnosc": "kilka tys.",
@@ -1908,7 +1916,7 @@
       "nazwa": "Pokląskwa",
       "nazwaLacinska": "Saxicola rubetra",
       "kategorie": [
-        "Podkarpacie"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Saxicola_rubetra.jpg",
       "liczebnosc": "100–200 tys.",
@@ -1940,7 +1948,7 @@
       "nazwa": "Jaskółka Dymówka",
       "nazwaLacinska": "Hirundo rustica",
       "kategorie": [
-        "Podkarpacie"
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Hirundo_rustica.jpg",
       "liczebnosc": "3–5 mln",
@@ -1973,7 +1981,7 @@
       "nazwa": "Pliszka Siwa",
       "nazwaLacinska": "Motacilla alba",
       "kategorie": [
-        "Podkarpacie"
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Motacilla_alba.jpg",
       "liczebnosc": "2–3 mln",
@@ -2008,7 +2016,7 @@
       "nazwa": "Krzyżówka",
       "nazwaLacinska": "Anas platyrhynchos",
       "kategorie": [
-        "Podkarpacie"
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Anas_platyrhynchos.jpg",
       "liczebnosc": "300–500 tys.",

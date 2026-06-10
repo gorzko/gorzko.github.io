@@ -77,7 +77,7 @@ describe('Testy walidacji schematu JSON', () => {
   });
 
   it('Kategorie są poprawne', () => {
-    const validCategories = ['Ogród', 'Najliczniejsze', 'Najpowszechniejsze', 'inne', 'Podkarpacie'];
+    const validCategories = ['Ogród', 'Najliczniejsze', 'Najpowszechniejsze', 'inne', 'Top Podkarpacia', 'Podkarpackie Atrakcje'];
     jsonData.ptaki.forEach(ptak => {
       ptak.kategorie.forEach(cat => {
         assert(validCategories.includes(cat), `Ptak ${ptak.nazwa} ma poprawną kategorię: ${cat}`);

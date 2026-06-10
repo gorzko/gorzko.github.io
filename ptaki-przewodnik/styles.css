@@ -94,6 +94,7 @@ button {
   --o-bg:  rgba(50,20,4,0.82);   --o-tx: #f0c090; --o-dot: #e07830;
   --i-bg:  rgba(40,40,40,0.82);  --i-tx: #c8c8c8; --i-dot: #888888;
   --p-bg:  rgba(0,36,36,0.82);   --p-tx: #90d4c8; --p-dot: #28a898;
+  --pa-bg: rgba(0,55,45,0.82);  --pa-tx: #b4ece5; --pa-dot: #5cbfb5;
 
   --forest:  #2a3d24;
   --leaf:    #5ca832;
@@ -103,6 +104,8 @@ button {
   --font-serif: 'Playfair Display', serif;
   --font-sans:  'DM Sans', sans-serif;
 }
+
+[hidden] { display: none !important; }
 
 /* --- Bazowe html/body w trybie książki --- */
 html, body {
@@ -337,10 +340,14 @@ body {
 .filter-btn[data-category="inne"] .filter-dot { background: var(--i-dot); }
 .filter-btn[data-category="inne"]:hover,
 .filter-btn[data-category="inne"].active { border-color: var(--i-dot); }
-.filter-btn[data-category="Podkarpacie"] { background: var(--p-bg); color: var(--p-tx); border-color: rgba(40,168,152,0.25); }
-.filter-btn[data-category="Podkarpacie"] .filter-dot { background: var(--p-dot); }
-.filter-btn[data-category="Podkarpacie"]:hover,
-.filter-btn[data-category="Podkarpacie"].active { border-color: var(--p-dot); }
+.filter-btn[data-category="Top Podkarpacia"] { background: var(--p-bg); color: var(--p-tx); border-color: rgba(40,168,152,0.25); }
+.filter-btn[data-category="Top Podkarpacia"] .filter-dot { background: var(--p-dot); }
+.filter-btn[data-category="Top Podkarpacia"]:hover,
+.filter-btn[data-category="Top Podkarpacia"].active { border-color: var(--p-dot); }
+.filter-btn[data-category="Podkarpackie Atrakcje"] { background: var(--pa-bg); color: var(--pa-tx); border-color: rgba(92,191,181,0.25); }
+.filter-btn[data-category="Podkarpackie Atrakcje"] .filter-dot { background: var(--pa-dot); }
+.filter-btn[data-category="Podkarpackie Atrakcje"]:hover,
+.filter-btn[data-category="Podkarpackie Atrakcje"].active { border-color: var(--pa-dot); }
 
 .filter-btn:focus-visible { outline: 2px solid var(--leaf); outline-offset: 2px; }
 
@@ -654,12 +661,14 @@ body {
 .h-tag.g { background: var(--g-bg); color: var(--g-tx); }
 .h-tag.b { background: var(--b-bg); color: var(--b-tx); }
 .h-tag.o { background: var(--o-bg); color: var(--o-tx); }
-.h-tag.p { background: var(--p-bg); color: var(--p-tx); }
+.h-tag.p  { background: var(--p-bg);  color: var(--p-tx); }
+.h-tag.pa { background: var(--pa-bg); color: var(--pa-tx); }
 .h-tag-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
 .h-tag.g .h-tag-dot { background: var(--g-dot); }
 .h-tag.b .h-tag-dot { background: var(--b-dot); }
 .h-tag.o .h-tag-dot { background: var(--o-dot); }
-.h-tag.p .h-tag-dot { background: var(--p-dot); }
+.h-tag.p  .h-tag-dot { background: var(--p-dot); }
+.h-tag.pa .h-tag-dot { background: var(--pa-dot); }
 
 .hero-scroll {
   position: absolute;
@@ -841,12 +850,14 @@ body {
 .inline-tag.g { background: var(--g-bg); color: var(--g-tx); }
 .inline-tag.b { background: var(--b-bg); color: var(--b-tx); }
 .inline-tag.o { background: var(--o-bg); color: var(--o-tx); }
-.inline-tag.p { background: var(--p-bg); color: var(--p-tx); }
+.inline-tag.p  { background: var(--p-bg);  color: var(--p-tx); }
+.inline-tag.pa { background: var(--pa-bg); color: var(--pa-tx); }
 .inline-dot { width: 4px; height: 4px; border-radius: 50%; }
 .inline-tag.g .inline-dot { background: var(--g-dot); }
 .inline-tag.b .inline-dot { background: var(--b-dot); }
 .inline-tag.o .inline-dot { background: var(--o-dot); }
-.inline-tag.p .inline-dot { background: var(--p-dot); }
+.inline-tag.p  .inline-dot { background: var(--p-dot); }
+.inline-tag.pa .inline-dot { background: var(--pa-dot); }
 
 /* Karta anatomii */
 .card-anatomy {
@@ -1122,13 +1133,15 @@ body {
 .cat-tag.b { background: var(--b-bg); color: var(--b-tx); }
 .cat-tag.o { background: var(--o-bg); color: var(--o-tx); }
 .cat-tag.i { background: var(--i-bg); color: var(--i-tx); }
-.cat-tag.p { background: var(--p-bg); color: var(--p-tx); }
+.cat-tag.p  { background: var(--p-bg);  color: var(--p-tx); }
+.cat-tag.pa { background: var(--pa-bg); color: var(--pa-tx); }
 .cat-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
 .cat-tag.g .cat-dot { background: var(--g-dot); }
 .cat-tag.b .cat-dot { background: var(--b-dot); }
 .cat-tag.o .cat-dot { background: var(--o-dot); }
 .cat-tag.i .cat-dot { background: var(--i-dot); }
-.cat-tag.p .cat-dot { background: var(--p-dot); }
+.cat-tag.p  .cat-dot { background: var(--p-dot); }
+.cat-tag.pa .cat-dot { background: var(--pa-dot); }
 .cat-rank { opacity: .68; font-size: 8px; font-weight: 400; letter-spacing: 0; margin-left: 1px; }
 
 .name-pl {

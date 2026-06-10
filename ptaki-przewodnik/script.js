@@ -257,7 +257,8 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.setAttribute('aria-pressed', 'true');
         currentCategoryFilter = btn.dataset.category;
 
-        if (currentCategoryFilter === 'Podkarpacie') {
+        const isPk = ['Top Podkarpacia', 'Podkarpackie Atrakcje'].includes(currentCategoryFilter);
+        if (isPk) {
           monthFilter.hidden = false;
           setMonthFilter(0);
         } else {
@@ -266,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         applyFilter();
-        closeSearchOverlay();
+        if (!isPk) closeSearchOverlay();
       });
       btn.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
@@ -277,6 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.addEventListener('click', () => {
         setMonthFilter(parseInt(btn.dataset.month, 10));
         applyFilter();
+        closeSearchOverlay();
       });
       btn.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
@@ -328,7 +330,8 @@ document.addEventListener('DOMContentLoaded', () => {
         p.nazwa.toLowerCase().includes(term) ||
         p.nazwaLacinska.toLowerCase().includes(term);
       const matchCat = cat === 'all' || p.kategorie.includes(cat);
-      const matchMonth = cat !== 'Podkarpacie' || month === 0 ||
+      const isPkCat = ['Top Podkarpacia', 'Podkarpackie Atrakcje'].includes(cat);
+      const matchMonth = !isPkCat || month === 0 ||
         (Array.isArray(p.peakMonths) && p.peakMonths.includes(month));
       return matchSearch && matchCat && matchMonth;
     });
@@ -369,7 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ═══════════════════════════════════════════
 
   function getCategoryClass(category) {
-    return { 'Ogród': 'g', 'Najliczniejsze': 'b', 'Najpowszechniejsze': 'o', 'inne': 'i', 'Podkarpacie': 'p' }[category] || 'g';
+    return { 'Ogród': 'g', 'Najliczniejsze': 'b', 'Najpowszechniejsze': 'o', 'inne': 'i', 'Top Podkarpacia': 'p', 'Podkarpackie Atrakcje': 'pa' }[category] || 'g';
   }
 
   function getStatusText(status) {
