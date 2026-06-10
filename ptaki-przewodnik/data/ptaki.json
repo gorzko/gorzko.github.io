@@ -67,7 +67,6 @@
       "nazwa": "Gil",
       "nazwaLacinska": "Pyrrhula pyrrhula",
       "kategorie": [
-        "inne",
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Pyrrhula_pyrrhula.jpg",
@@ -771,7 +770,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "6Fyjgdi6Vrg",
+        "tytul": "Leśny Budzik – Perkoz Rdzawoszyi",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 26,
@@ -831,7 +835,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "CoQ4jmL7-mg",
+        "tytul": "Leśny Budzik – Pliszka Górska",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 28,
@@ -892,7 +901,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "GUP1kaZeBn4",
+        "tytul": "Leśny Budzik – Jemiołuszka",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 30,
@@ -959,7 +973,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "E0HFM_heEgU",
+        "tytul": "Leśny Budzik – Żołna",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 32,
@@ -1078,7 +1097,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "g1rnZPQn_S8",
+        "tytul": "Leśny Budzik – Paszkot",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 36,
@@ -1113,7 +1137,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "En9x3USIV70",
+        "tytul": "Leśny Budzik – Sikora Uboga",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 37,
@@ -1264,7 +1293,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "uEOLj-VHQ2c",
+        "tytul": "Leśny Budzik – Siniak",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 42,
@@ -1461,7 +1495,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "ZQim_emQek4",
+        "tytul": "Leśny Budzik – Muchołówka Mała",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 48,
@@ -1490,7 +1529,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "sCR9tYpg6jA",
+        "tytul": "Leśny Budzik – Remiz",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 49,
@@ -1525,7 +1569,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "AA0t8Exp_Gw",
+        "tytul": "Leśny Budzik – Głowienka",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 50,
@@ -1555,7 +1604,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "3BrRKC1Wdco",
+        "tytul": "Leśny Budzik – Myszołów Włochaty",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 51,
@@ -1585,7 +1639,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "3fgho8XNLJc",
+        "tytul": "Leśny Budzik – Przepiórka",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 52,
@@ -1621,7 +1680,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "e35QdUhUotc",
+        "tytul": "Leśny Budzik – Makolągwa",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 53,
@@ -1655,7 +1719,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "xzAiD_1temA",
+        "tytul": "Leśny Budzik – Zimorodek",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 54,
@@ -1687,7 +1756,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "5ZxNSem9tMI",
+        "tytul": "Leśny Budzik – Bocian Biały",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 55,
@@ -1717,7 +1791,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "z9biVFLnJpE",
+        "tytul": "Leśny Budzik – Derkacz",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 56,
@@ -1774,7 +1853,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "2T_oAF15pZ0",
+        "tytul": "Leśny Budzik – Pokrzywnica",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 58,
@@ -1810,7 +1894,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "hHf5IGIUvBg",
+        "tytul": "Leśny Budzik – Perkozek",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 59,
@@ -1839,7 +1928,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "QTEyH9SMTJM",
+        "tytul": "Leśny Budzik – Muchołówka Białoszyja",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 60,
@@ -1909,7 +2003,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "u4MKmSKVjJ8",
+        "tytul": "Leśny Budzik – Świstun",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 62,
@@ -1941,7 +2040,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "GiBOU9fEJOg",
+        "tytul": "Leśny Budzik – Pokląskwa",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 63,
@@ -1974,7 +2078,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "3jcjidW_ImY",
+        "tytul": "Leśny Budzik – Jaskółka Dymówka",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 64,
@@ -2009,7 +2118,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "qZsRyzEeZEA",
+        "tytul": "Leśny Budzik – Pliszka Siwa",
+        "platforma": "youtube"
+      }
     },
     {
       "id": 65,
@@ -2048,7 +2162,12 @@
       "zrodla": [
         "eBird PL-PK 2025",
         "Czerwona Księga Ptaków Polski"
-      ]
+      ],
+      "film": {
+        "id": "As7fV2E-_Vo",
+        "tytul": "Leśny Budzik – Krzyżówka",
+        "platforma": "youtube"
+      }
     }
   ]
 }

@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       renderBookPages(allBirds);
       navigator.refresh();
       setupSearchAndFilters();
+      updateFilterButtonVisibility();
     })
     .catch(err => {
       console.error(err);
@@ -296,6 +297,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  function updateFilterButtonVisibility() {
+    const MAIN_CATS = ['Ogród','Najliczniejsze','Najpowszechniejsze','Top Podkarpacia','Podkarpackie Atrakcje'];
+    filterButtons.forEach(btn => {
+      const cat = btn.dataset.category;
+      if (cat === 'all') return;
+      const count = cat === 'inne'
+        ? allBirds.filter(p => !p.kategorie.some(k => MAIN_CATS.includes(k))).length
+        : allBirds.filter(p => p.kategorie.includes(cat)).length;
+      btn.hidden = count === 0;
+    });
+  }
+
   function openSearchOverlay() {
     searchInput.value = '';
     currentSearchTerm = '';
@@ -329,7 +342,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const matchSearch = !term ||
         p.nazwa.toLowerCase().includes(term) ||
         p.nazwaLacinska.toLowerCase().includes(term);
-      const matchCat = cat === 'all' || p.kategorie.includes(cat);
+      const MAIN_CATS = ['Ogród','Najliczniejsze','Najpowszechniejsze','Top Podkarpacia','Podkarpackie Atrakcje'];
+      const matchCat = cat === 'all'
+        ? true
+        : cat === 'inne'
+          ? !p.kategorie.some(k => MAIN_CATS.includes(k))
+          : p.kategorie.includes(cat);
       const isPkCat = ['Top Podkarpacia', 'Podkarpackie Atrakcje'].includes(cat);
       const matchMonth = !isPkCat || month === 0 ||
         (Array.isArray(p.peakMonths) && p.peakMonths.includes(month));
