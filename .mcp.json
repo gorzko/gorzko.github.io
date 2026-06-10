@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "wikimedia-image-search": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "wikimedia-image-search-mcp"]
+    }
+  }
+}
