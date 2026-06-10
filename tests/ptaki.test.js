@@ -77,11 +77,26 @@ describe('Testy walidacji schematu JSON', () => {
   });
 
   it('Kategorie są poprawne', () => {
-    const validCategories = ['Ogród', 'Najliczniejsze', 'Najpowszechniejsze', 'inne', 'Podkarpacie'];
+    const validCategories = ['Ogród', 'Najliczniejsze', 'Najpowszechniejsze', 'inne', 'Top Podkarpacia', 'Podkarpackie Atrakcje'];
     jsonData.ptaki.forEach(ptak => {
       ptak.kategorie.forEach(cat => {
         assert(validCategories.includes(cat), `Ptak ${ptak.nazwa} ma poprawną kategorię: ${cat}`);
       });
+    });
+  });
+
+  it('Ptaki kategorii Podkarpacia mają peakMonths', () => {
+    const pkCategories = ['Top Podkarpacia', 'Podkarpackie Atrakcje'];
+    jsonData.ptaki.forEach(ptak => {
+      const isPk = ptak.kategorie.some(k => pkCategories.includes(k));
+      if (isPk) {
+        assert(Array.isArray(ptak.peakMonths) && ptak.peakMonths.length > 0,
+          `Ptak ${ptak.nazwa} (kategoria Podkarpacia) ma peakMonths`);
+        ptak.peakMonths.forEach(m => {
+          assert(m >= 1 && m <= 12,
+            `Ptak ${ptak.nazwa} ma peakMonths w zakresie 1-12: ${m}`);
+        });
+      }
     });
   });
 

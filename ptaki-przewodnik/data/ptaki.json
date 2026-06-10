@@ -36,7 +36,8 @@
       "nazwaLacinska": "Parus major",
       "kategorie": [
         "Najliczniejsze",
-        "Najpowszechniejsze"
+        "Najpowszechniejsze",
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Parus_major.jpg",
       "liczebnosc": "3–4 mln",
@@ -59,6 +60,20 @@
       "zrodla": [
         "MPPL 2025",
         "Czerwona Księga Ptaków Polski"
+      ],
+      "peakMonths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
       ]
     },
     {
@@ -66,7 +81,7 @@
       "nazwa": "Gil",
       "nazwaLacinska": "Pyrrhula pyrrhula",
       "kategorie": [
-        "inne"
+        "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Pyrrhula_pyrrhula.jpg",
       "liczebnosc": "800–1200 tys.",
@@ -89,6 +104,12 @@
       "zrodla": [
         "MPPL 2025",
         "Czerwona Księga Ptaków Polski"
+      ],
+      "peakMonths": [
+        1,
+        2,
+        11,
+        12
       ]
     },
     {
@@ -97,7 +118,8 @@
       "nazwaLacinska": "Columba palumbus",
       "kategorie": [
         "Najliczniejsze",
-        "Najpowszechniejsze"
+        "Najpowszechniejsze",
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Columba_palumbus.jpg",
       "liczebnosc": "1,5–2 mln",
@@ -120,6 +142,16 @@
       "zrodla": [
         "MPPL 2025",
         "Czerwona Księga Ptaków Polski"
+      ],
+      "peakMonths": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
       ]
     },
     {
@@ -159,7 +191,8 @@
       "kategorie": [
         "Ogród",
         "Najliczniejsze",
-        "Najpowszechniejsze"
+        "Najpowszechniejsze",
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Sylvia_atricapilla.jpg",
       "liczebnosc": "2–3 mln",
@@ -182,6 +215,12 @@
       "zrodla": [
         "MPPL 2025",
         "Czerwona Księga Ptaków Polski"
+      ],
+      "peakMonths": [
+        4,
+        5,
+        6,
+        7
       ]
     },
     {
@@ -221,7 +260,8 @@
       "kategorie": [
         "Ogród",
         "Najliczniejsze",
-        "Najpowszechniejsze"
+        "Najpowszechniejsze",
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Turdus_merula.jpg",
       "liczebnosc": "5–6 mln",
@@ -244,6 +284,19 @@
       "zrodla": [
         "MPPL 2025",
         "Czerwona Księga Ptaków Polski"
+      ],
+      "peakMonths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
       ]
     },
     {
@@ -311,7 +364,8 @@
       "nazwa": "Modraszka",
       "nazwaLacinska": "Cyanistes caeruleus",
       "kategorie": [
-        "Najliczniejsze"
+        "Najliczniejsze",
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Cyanistes_caeruleus.jpg",
       "liczebnosc": "1–2 mln",
@@ -334,6 +388,20 @@
       "zrodla": [
         "MPPL 2025",
         "Czerwona Księga Ptaków Polski"
+      ],
+      "peakMonths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
       ]
     },
     {
@@ -647,7 +715,8 @@
       "nazwaLacinska": "Fringilla coelebs",
       "kategorie": [
         "Najliczniejsze",
-        "Najpowszechniejsze"
+        "Najpowszechniejsze",
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Fringilla_coelebs.jpg",
       "liczebnosc": "3–4 mln",
@@ -670,6 +739,19 @@
       "zrodla": [
         "MPPL 2025",
         "Czerwona Księga Ptaków Polski"
+      ],
+      "peakMonths": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
       ]
     },
     {
@@ -678,7 +760,8 @@
       "nazwaLacinska": "Phylloscopus collybita",
       "kategorie": [
         "Najliczniejsze",
-        "Najpowszechniejsze"
+        "Najpowszechniejsze",
+        "Top Podkarpacia"
       ],
       "zdjecie": "img/Phylloscopus_collybita.jpg",
       "liczebnosc": "2,5–3 mln",
@@ -701,7 +784,1565 @@
       "zrodla": [
         "MPPL 2025",
         "Czerwona Księga Ptaków Polski"
+      ],
+      "peakMonths": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
       ]
+    },
+    {
+      "id": 24,
+      "nazwa": "Podgorzałka",
+      "nazwaLacinska": "Aythya nyroca",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Aythya_nyroca.jpg",
+      "liczebnosc": "200–400",
+      "trend": "↓",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "NT",
+      "peakMonths": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "cechy": [
+        "🟤 Kasztanowate upierzenie, białe oko u samca",
+        "⚪ Biała plama na spodzie ogona",
+        "📏 38–42 cm",
+        "💧 Stawy z gęstą roślinnością szuwarową",
+        "🌿 Wodne rośliny i bezkręgowce",
+        "✈️ Wędrowna — rzadki gniazdownik w Polsce"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "tIGE37BLGqQ",
+        "tytul": "1568. Polák malý / Ferruginous Duck / Podgorzałka zwyczajna",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 25,
+      "nazwa": "Perkoz Rdzawoszyi",
+      "nazwaLacinska": "Podiceps grisegena",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Podiceps_grisegena.jpg",
+      "liczebnosc": "500–700",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        11
+      ],
+      "cechy": [
+        "🟤 Rdzawa szyja, szare policzki w szacie godowej",
+        "⚫ Czarna czapa, żółty dziób",
+        "📏 40–50 cm",
+        "💧 Jeziora i zbiorniki z bogatą roślinnością",
+        "🐟 Rybożerny — nurkuje za rybami",
+        "✈️ Wędrowny — pojawia się głównie w czasie migracji"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "6Fyjgdi6Vrg",
+        "tytul": "Leśny Budzik – Perkoz Rdzawoszyi",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 26,
+      "nazwa": "Świergotek Rdzawogardły",
+      "nazwaLacinska": "Anthus cervinus",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Anthus_cervinus.jpg",
+      "liczebnosc": "setki os.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        9,
+        10
+      ],
+      "cechy": [
+        "🟠 Rdzawoczerwone gardło w szacie lęgowej",
+        "🟤 Brązowy wierzch z wyraźnymi pręgami",
+        "📏 14–15 cm",
+        "🌾 Łąki, torfowiska, obrzeża wód",
+        "🐛 Owadożerny",
+        "✈️ Wędrowny — przelatuje przez PK jesienią"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "e_dAzayCGuo",
+        "tytul": "4K Świergotek rdzawogardły / Red-throated pipit / Anthus cervinus",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 27,
+      "nazwa": "Pliszka Górska",
+      "nazwaLacinska": "Motacilla cinerea",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Motacilla_cinerea.jpg",
+      "liczebnosc": "15–25 tys.",
+      "trend": "↑",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "cechy": [
+        "🟡 Jaskrawo żółty brzuch przez cały rok",
+        "⚫ Szary wierzch, czarne gardło samca latem",
+        "📏 17–20 cm",
+        "🏔️ Górskie i podgórskie potoki i rzeki",
+        "🐛 Owady i bezkręgowce wodne",
+        "✈️ Wędrowna — gnieździ się nad potokami PK"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "CoQ4jmL7-mg",
+        "tytul": "Leśny Budzik – Pliszka Górska",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 28,
+      "nazwa": "Orlik Krzykliwy",
+      "nazwaLacinska": "Clanga pomarina",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Clanga_pomarina.jpg",
+      "liczebnosc": "2,5–3,5 tys.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "cechy": [
+        "🟤 Brązowy orzeł z jaśniejszymi plamami na nadgarstkach",
+        "🦅 Szerokie skrzydła, leniwy lot szybujący",
+        "📏 55–65 cm",
+        "🌲 Lasy z sąsiadującymi łąkami i mokradłami",
+        "🐸 Żaby, gryzonie, ślimaki, ptaki",
+        "✈️ Wędrowny — przylatuje w kwietniu, odlatuje we wrześniu"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "6zXJ5n6MJ_0",
+        "tytul": "769. Orel křiklavý / Lesser Spotted Eagle / Orlik krzykliwy",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 29,
+      "nazwa": "Jemiołuszka",
+      "nazwaLacinska": "Bombycilla garrulus",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Bombycilla_garrulus.jpg",
+      "liczebnosc": "kilka tys.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        1,
+        12
+      ],
+      "cechy": [
+        "🌸 Różowobrązowe upierzenie z czarną maską",
+        "🔴 Czerwone końcówki lotek, żółty koniec ogona",
+        "📏 17–21 cm",
+        "🌳 Tajga; zimą zadrzewienia z owocami",
+        "🍎 Jarzębina, owoce jemioły, jagody",
+        "✈️ Wędrowna — zimuje nieregularnie w Polsce"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "GUP1kaZeBn4",
+        "tytul": "Leśny Budzik – Jemiołuszka",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 30,
+      "nazwa": "Dzięcioł Zielonosiwy",
+      "nazwaLacinska": "Picus canus",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Picus_canus.jpg",
+      "liczebnosc": "5–8 tys.",
+      "trend": "→",
+      "migracja": "Osiadły",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "cechy": [
+        "🟢 Zielone upierzenie, szara głowa",
+        "🔴 Czerwona plamka na czole tylko u samca",
+        "📏 25–28 cm",
+        "🌳 Lasy liściaste i mieszane, stare sady",
+        "🐛 Mrówki i larwy owadów",
+        "🎵 Powoli opadające 'kjü-kjü-kjü'"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "O2eYVOZ-YTs",
+        "tytul": "Žluna šedá / Grey-headed woodpecker / Dzięcioł zielonosiwy / Pic cendré",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 31,
+      "nazwa": "Żołna",
+      "nazwaLacinska": "Merops apiaster",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Merops_apiaster.jpg",
+      "liczebnosc": "1–2 tys.",
+      "trend": "↑",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "NT",
+      "peakMonths": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "cechy": [
+        "🌈 Ruda głowa, niebieskozielony brzuch",
+        "🟡 Żółte gardło z czarną obrączką",
+        "📏 27–29 cm",
+        "🌿 Otwarte tereny z gliniasto-piaszczystymi skarpami",
+        "🐝 Pszczoły, szerszenie, ważki",
+        "✈️ Wędrowna — przylatuje w maju, odlatuje w sierpniu"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "E0HFM_heEgU",
+        "tytul": "Leśny Budzik – Żołna",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 32,
+      "nazwa": "Zausznik",
+      "nazwaLacinska": "Podiceps nigricollis",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Podiceps_nigricollis.jpg",
+      "liczebnosc": "1–2 tys.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        8,
+        9
+      ],
+      "cechy": [
+        "⚫ Czarne upierzenie z rdzawymi bokami w szacie godowej",
+        "🟡 Złote pióra uszne",
+        "📏 28–34 cm",
+        "💧 Stawy i jeziora z trzciną",
+        "🐟 Ryby i bezkręgowce wodne",
+        "✈️ Wędrowny — gniazduje kolonijnie"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "jUq4JdZcAzk",
+        "tytul": "852. Potápka černokrká / Black-necked grebe / Perkoz zausznik",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 33,
+      "nazwa": "Nur Czarnoszyi",
+      "nazwaLacinska": "Gavia arctica",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Gavia_arctica.jpg",
+      "liczebnosc": "setki os.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        11,
+        12
+      ],
+      "cechy": [
+        "⚫ Czarna głowa z fioletowym połyskiem w szacie godowej",
+        "⬛ Czarno-białe szachownicowe wzory na grzbiecie",
+        "📏 58–73 cm",
+        "💧 Jeziora i rzeki; morze zimą",
+        "🐟 Rybożerny — nurkuje głęboko",
+        "✈️ Wędrowny — przelatuje przez Polskę jesienią"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "zLImq0U1hyU",
+        "tytul": "4K Nur czarnoszyi i perkoz rogaty / Arctic loon & Horned grebe",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 34,
+      "nazwa": "Ślepowron",
+      "nazwaLacinska": "Nycticorax nycticorax",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Nycticorax_nycticorax.jpg",
+      "liczebnosc": "200–400",
+      "trend": "↓",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        7,
+        8
+      ],
+      "cechy": [
+        "⚫ Czarna czapa i grzbiet, białe czoło i pióra ozdobne",
+        "⚪ Szaro-białe upierzenie spodu",
+        "📏 58–65 cm",
+        "💧 Mokradła, stawy, rzeki z drzewami nadwodnymi",
+        "🐟 Ryby, żaby, owady — aktywny o zmierzchu",
+        "✈️ Wędrowny — przylatuje w marcu, odlatuje jesienią"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "TeYdmL7gsR8",
+        "tytul": "Bird sounds – Black-crowned night heron (Nycticorax nycticorax)",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 35,
+      "nazwa": "Paszkot",
+      "nazwaLacinska": "Turdus viscivorus",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Turdus_viscivorus.jpg",
+      "liczebnosc": "30–50 tys.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        2,
+        3,
+        6,
+        10,
+        11
+      ],
+      "cechy": [
+        "🟤 Brązowy wierzch, kremowy spód z dużymi ciemnymi plamkami",
+        "⚪ Białe końcówki zewnętrznych sterówek",
+        "📏 26–29 cm",
+        "🌳 Lasy i ogrody z wysokimi drzewami",
+        "🍒 Jemioła, jagody, dżdżownice, owady",
+        "🎵 Śpiewa przy wietrznej pogodzie — 'burzowy śpiewak'"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "g1rnZPQn_S8",
+        "tytul": "Leśny Budzik – Paszkot",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 36,
+      "nazwa": "Sikora Uboga",
+      "nazwaLacinska": "Poecile montanus",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Poecile_montanus.jpg",
+      "liczebnosc": "300–500 tys.",
+      "trend": "↓",
+      "migracja": "Osiadły",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        1,
+        2,
+        3,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "cechy": [
+        "⚫ Czarna czapka matowa, bez połysku",
+        "🟤 Brązowawe boki, biały policzek i szyja",
+        "📏 12–13 cm",
+        "🌲 Wilgotne lasy olszowe i wierzbowe",
+        "🐛 Owady latem; nasiona i orzeszki zimą",
+        "🎵 Charakterystyczne 'czej-czej' i gwizd 'pii'"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "En9x3USIV70",
+        "tytul": "Leśny Budzik – Sikora Uboga",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 37,
+      "nazwa": "Trzmielojad",
+      "nazwaLacinska": "Pernis apivorus",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Pernis_apivorus.jpg",
+      "liczebnosc": "3–5 tys.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        5,
+        7,
+        8,
+        9
+      ],
+      "cechy": [
+        "🟤 Brązowy z szerokim deseniem na szerokich skrzydłach",
+        "🦅 Mała gołębia głowa i gęste łuski przy dziobie",
+        "📏 52–60 cm",
+        "🌳 Lasy liściaste i mieszane",
+        "🐝 Gniazda os i trzmieli — wyspecjalizowana dieta",
+        "✈️ Wędrowny — przylatuje w maju, odlatuje w sierpniu"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "8PEMhQztiF8",
+        "tytul": "Honey Buzzard (Pernis apivorus) male feeds fledgling and makes lure calls",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 38,
+      "nazwa": "Ogorzałka",
+      "nazwaLacinska": "Aythya marila",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Aythya_marila.jpg",
+      "liczebnosc": "50–150",
+      "trend": "↓",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "NT",
+      "peakMonths": [
+        11,
+        12
+      ],
+      "cechy": [
+        "⚫ Samiec: czarny przód i tył, szary grzbiet",
+        "🟤 Samica: brązowa z białą plamą przy dziobie",
+        "📏 40–51 cm",
+        "💧 Duże jeziora i zbiorniki; morze zimą",
+        "🐚 Małże, ślimaki, bezkręgowce",
+        "✈️ Wędrowna — zimuje w Polsce"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "E6vOA56cCrI",
+        "tytul": "1283. Polák kaholka / Greater Scaup / Ogorzałka zwyczajna",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 39,
+      "nazwa": "Szlachar",
+      "nazwaLacinska": "Mergus serrator",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Mergus_serrator.jpg",
+      "liczebnosc": "800–1,2 tys.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        11
+      ],
+      "cechy": [
+        "🟢 Samiec: zielona głowa z czubem, ruda pierś z prążkami",
+        "🟤 Samica: ruda głowa, szary grzbiet",
+        "📏 52–58 cm",
+        "💧 Górskie i podgórskie rzeki, wybrzeże",
+        "🐟 Rybożerny — ząbkowany dziób do łapania ryb",
+        "✈️ Wędrowny — pojawia się podczas migracji"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "R-MTwBWSZD4",
+        "tytul": "Merganser duck call sound, diving, bathing, flying, running",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 40,
+      "nazwa": "Siewka Złota",
+      "nazwaLacinska": "Pluvialis apricaria",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Pluvialis_apricaria.jpg",
+      "liczebnosc": "kilkadziesiąt tys.",
+      "trend": "↓",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        2,
+        3
+      ],
+      "cechy": [
+        "🟡 Złotobrązowy, nakrapiany wierzch",
+        "⚫ Czarny spód w szacie godowej",
+        "📏 26–29 cm",
+        "🌾 Pola, łąki, torfowiska podczas przelotu",
+        "🐛 Dżdżownice, owady, jagody",
+        "✈️ Wędrowna — przelatuje przez PK w lutym–marcu"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "ove0UrDSKjM",
+        "tytul": "914. Kulík zlatý / European Golden Plover / Siewka złota",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 41,
+      "nazwa": "Siniak",
+      "nazwaLacinska": "Columba oenas",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Columba_oenas.jpg",
+      "liczebnosc": "80–120 tys.",
+      "trend": "↑",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "cechy": [
+        "🔵 Niebieskoszary, bez białych plam",
+        "💚 Zielonkawy połysk na szyi, różowawa pierś",
+        "📏 32–34 cm",
+        "🌳 Stare lasy z dziuplami, otoczone polami",
+        "🌾 Nasiona, żołędzie, owoce leśne",
+        "🔊 Monotonne 'wu-wu' powtarzane w seriach"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "uEOLj-VHQ2c",
+        "tytul": "Leśny Budzik – Siniak",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 42,
+      "nazwa": "Bocian Czarny",
+      "nazwaLacinska": "Ciconia nigra",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Ciconia_nigra.jpg",
+      "liczebnosc": "1–1,2 tys.",
+      "trend": "↑",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "cechy": [
+        "⚫ Czarne upierzenie z zielonym i fioletowym metalicznym połyskiem",
+        "🔴 Czerwony dziób i nogi",
+        "📏 95–100 cm",
+        "🌲 Stare lasy nizinne i górskie z rzekami",
+        "🐟 Ryby, żaby, owady",
+        "✈️ Wędrowny — przylatuje w kwietniu, odlatuje w sierpniu"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "zvfgBXD4yE0",
+        "tytul": "Black stork (Ciconia nigra) sound – call and song",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 43,
+      "nazwa": "Kląskawka",
+      "nazwaLacinska": "Saxicola rubicola",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Saxicola_rubicola.jpg",
+      "liczebnosc": "10–20 tys.",
+      "trend": "↑",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "cechy": [
+        "⚫ Samiec: czarna głowa, biała łata na szyi",
+        "🟠 Rdzawa pierś, biały kuper",
+        "📏 12–13 cm",
+        "🌾 Łąki, zarośla cierniowe, wrzosowiska",
+        "🐛 Owadożerna — chwyta owady z wysokich roślin",
+        "✈️ Wędrowna — przylatuje w marcu"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "rMwYBw7zMmY",
+        "tytul": "Kląskawka (Saxicola rubicola)",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 44,
+      "nazwa": "Świergotek Drzewny",
+      "nazwaLacinska": "Anthus trivialis",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Anthus_trivialis.jpg",
+      "liczebnosc": "200–400 tys.",
+      "trend": "↓",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        8,
+        9
+      ],
+      "cechy": [
+        "🟤 Brązowy wierzch z pręgami, kremowy spód",
+        "🟡 Biała brew, plamkowana pierś",
+        "📏 15 cm",
+        "🌲 Skraje lasów, polany, młodniki",
+        "🐛 Owadożerny",
+        "✈️ Wędrowny — przylatuje w marcu, odlatuje we wrześniu"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "8vsWVzZ2PuY",
+        "tytul": "Leśny Budzik – Świergotek Drzewny",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 45,
+      "nazwa": "Srokosz",
+      "nazwaLacinska": "Lanius excubitor",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Lanius_excubitor.jpg",
+      "liczebnosc": "20–40 tys.",
+      "trend": "↓",
+      "migracja": "Osiadły",
+      "statusCzerwonejKsiazki": "NT",
+      "peakMonths": [
+        1,
+        2,
+        3,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "cechy": [
+        "⚫ Czarna maska przez oczy, szary wierzch",
+        "⚪ Biały brzuch, czarne skrzydła z białą plamą",
+        "📏 22–26 cm",
+        "🌾 Otwarte tereny z krzewami i drzewami",
+        "🐭 Myszy, duże owady, małe ptaki",
+        "🍢 Nadziewanie zdobyczy na ciernie — 'spiżarnia'"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "lEVP-wHYkWo",
+        "tytul": "4K Srokosz – na czatach i w zawisie / Great grey shrike",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 46,
+      "nazwa": "Sosnówka",
+      "nazwaLacinska": "Periparus ater",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Periparus_ater.jpg",
+      "liczebnosc": "300–500 tys.",
+      "trend": "→",
+      "migracja": "Osiadły",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "cechy": [
+        "⚫ Czarna głowa z białą plamą na karku",
+        "⚪ Białe policzki, jasny spód",
+        "📏 11 cm",
+        "🌲 Lasy iglaste — szczególnie sosnowe i świerkowe",
+        "🐛 Owadożerna; nasiona szyszek zimą",
+        "🎵 Powtarzane 'pitiu-pitiu'"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "IKxcC_bUHuI",
+        "tytul": "Sýkora uhelníček / Coal tit / Tannenmeise / Sosnówka",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 47,
+      "nazwa": "Muchołówka Mała",
+      "nazwaLacinska": "Ficedula parva",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Ficedula_parva.jpg",
+      "liczebnosc": "40–70 tys.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        8
+      ],
+      "cechy": [
+        "🟠 Samiec: rdzawawe gardło, szary wierzch",
+        "⚪ Samica: kremowe gardło, brązowy wierzch",
+        "📏 11 cm",
+        "🌳 Stare lasy liściaste i mieszane",
+        "🐛 Owadożerna — chwyta muchy w powietrzu",
+        "✈️ Wędrowna — przylatuje w maju, odlatuje jesienią"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "ZQim_emQek4",
+        "tytul": "Leśny Budzik – Muchołówka Mała",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 48,
+      "nazwa": "Remiz",
+      "nazwaLacinska": "Remiz pendulinus",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Remiz_pendulinus.jpg",
+      "liczebnosc": "20–40 tys.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        9,
+        10
+      ],
+      "cechy": [
+        "🟤 Ruda pierś, szara głowa, czarna maska u samca",
+        "⚪ Kremowoszary grzbiet",
+        "📏 11 cm",
+        "💧 Zarośla wierzbowe nad wodą, trzcinowiska",
+        "🌱 Nasiona wierzby, trzciny i topoli",
+        "🧶 Tka wiszące gniazdo w kształcie torebki"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "sCR9tYpg6jA",
+        "tytul": "Leśny Budzik – Remiz",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 49,
+      "nazwa": "Głowienka",
+      "nazwaLacinska": "Aythya ferina",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Aythya_ferina.jpg",
+      "liczebnosc": "3–5 tys.",
+      "trend": "↓",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "VU",
+      "peakMonths": [
+        1,
+        3,
+        4,
+        5,
+        9,
+        10,
+        11,
+        12
+      ],
+      "cechy": [
+        "🟤 Samiec: rdzawa głowa, czarny przód, szary grzbiet",
+        "🟤 Samica: brązowoszara, jasne brwi",
+        "📏 42–49 cm",
+        "💧 Zbiorniki z bogatą roślinnością",
+        "🌿 Wodne rośliny, małże, owady",
+        "✈️ Wędrowna — odlatuje na zimę, wraca wiosną"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "AA0t8Exp_Gw",
+        "tytul": "Leśny Budzik – Głowienka",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 50,
+      "nazwa": "Myszołów Włochaty",
+      "nazwaLacinska": "Buteo lagopus",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Buteo_lagopus.jpg",
+      "liczebnosc": "do 1 tys.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        1,
+        2,
+        12
+      ],
+      "cechy": [
+        "⚪ Jasne upierzenie z wyraźnym ciemnym brzuchem",
+        "⚫ Czarny nadgarstek, ciemna plama na piersi",
+        "📏 50–60 cm",
+        "🌾 Tundra latem; pola i łąki zimą",
+        "🐭 Gryzonie, lemingi",
+        "✈️ Wędrowny — zimuje w Polsce nieregularnie"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "3BrRKC1Wdco",
+        "tytul": "Leśny Budzik – Myszołów Włochaty",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 51,
+      "nazwa": "Przepiórka",
+      "nazwaLacinska": "Coturnix coturnix",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Coturnix_coturnix.jpg",
+      "liczebnosc": "100–200 tys.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        5,
+        6,
+        7
+      ],
+      "cechy": [
+        "🟤 Drobna, brązowo-kremowa, ukryta w trawie",
+        "🎵 Głośne 'pójdź tu' (pwit-pwit-pwit) samca",
+        "📏 17–19 cm",
+        "🌾 Pola zbożowe, łąki, ugory",
+        "🌰 Nasiona, owady, pączki roślin",
+        "✈️ Wędrowna — przylatuje w maju, odlatuje we wrześniu"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "3fgho8XNLJc",
+        "tytul": "Leśny Budzik – Przepiórka",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 52,
+      "nazwa": "Makolągwa",
+      "nazwaLacinska": "Linaria cannabina",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Linaria_cannabina.jpg",
+      "liczebnosc": "1–2 mln",
+      "trend": "↓",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "VU",
+      "peakMonths": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "cechy": [
+        "🔴 Samiec: karminowe czoło i pierś wiosną",
+        "🟤 Samica: brązowopręgowana, bez czerwieni",
+        "📏 13–14 cm",
+        "🌿 Zarośla, skraje pól i ogrodów",
+        "🌱 Nasiona chwastów, konopie i trawy",
+        "✈️ Wędrowna — odlatuje jesienią na południe"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "e35QdUhUotc",
+        "tytul": "Leśny Budzik – Makolągwa",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 53,
+      "nazwa": "Zimorodek",
+      "nazwaLacinska": "Alcedo atthis",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Alcedo_atthis.jpg",
+      "liczebnosc": "8–12 tys.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "cechy": [
+        "🔵 Metalicznie niebieskozielony wierzch",
+        "🟠 Rdzawy spód, biała plama na szyi",
+        "📏 17–19 cm",
+        "💧 Czyste rzeki i potoki z nadbrzeżnymi skarpami",
+        "🐟 Poluje nurkując na ryby do 9 cm",
+        "🎵 Przenikliwy gwizd 'tsi-tsi' w locie"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "xzAiD_1temA",
+        "tytul": "Leśny Budzik – Zimorodek",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 54,
+      "nazwa": "Bocian Biały",
+      "nazwaLacinska": "Ciconia ciconia",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Ciconia_ciconia.jpg",
+      "liczebnosc": "52–55 tys.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "cechy": [
+        "⚪ Białe z czarnymi lotkami i czerwonym dziobem",
+        "🔴 Czerwone nogi",
+        "📏 100–115 cm",
+        "🌾 Łąki, mokradła, tereny wiejskie",
+        "🐸 Żaby, myszy, krety, dżdżownice",
+        "✈️ Wędrowny — zimuje w Afryce"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "5ZxNSem9tMI",
+        "tytul": "Leśny Budzik – Bocian Biały",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 55,
+      "nazwa": "Derkacz",
+      "nazwaLacinska": "Crex crex",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Crex_crex.jpg",
+      "liczebnosc": "10–20 tys.",
+      "trend": "↓",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "NT",
+      "peakMonths": [
+        5,
+        6,
+        7
+      ],
+      "cechy": [
+        "🟤 Brązowy, skrycie żyjący w trawie",
+        "🎵 Głośne chrapliwe 'krek-krek' nocą",
+        "📏 27–30 cm",
+        "🌾 Wilgotne łąki i turzycowiska",
+        "🐛 Owady, ślimaki, nasiona",
+        "✈️ Wędrowny — przylatuje w maju, odlatuje w sierpniu"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "z9biVFLnJpE",
+        "tytul": "Leśny Budzik – Derkacz",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 56,
+      "nazwa": "Kobczyk",
+      "nazwaLacinska": "Falco vespertinus",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Falco_vespertinus.jpg",
+      "liczebnosc": "10–30",
+      "trend": "↓",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "NT",
+      "peakMonths": [
+        9
+      ],
+      "cechy": [
+        "⚫ Samiec: ciemnoszary z czerwonymi nogami i podogoniem",
+        "🟤 Samica: ruda głowa i brzuch, paskowany grzbiet",
+        "📏 28–31 cm",
+        "🌾 Otwarte tereny, pola, stepy",
+        "🐛 Owady — szarańcza, ważki, chrząszcze",
+        "✈️ Wędrowny — przelotny w Polsce, rzadko gniazduje"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "fMYf1j9XnCc",
+        "tytul": "Kobczyk / Der Rotfußfalke / Falco vespertinus",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 57,
+      "nazwa": "Pokrzywnica",
+      "nazwaLacinska": "Prunella modularis",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Prunella_modularis.jpg",
+      "liczebnosc": "1,5–2,5 mln",
+      "trend": "↑",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        9,
+        10
+      ],
+      "cechy": [
+        "🔵 Szaroniebieskawa głowa i pierś",
+        "🟤 Brązowy, paskowany wierzch",
+        "📏 13–14 cm",
+        "🌿 Lasy z gęstym podszyciem, ogrody, parki",
+        "🐛 Owady latem; nasiona zimą",
+        "🎵 Szybki, nieprzerwany melodyjny świergot"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "2T_oAF15pZ0",
+        "tytul": "Leśny Budzik – Pokrzywnica",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 58,
+      "nazwa": "Perkozek",
+      "nazwaLacinska": "Tachybaptus ruficollis",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Tachybaptus_ruficollis.jpg",
+      "liczebnosc": "20–30 tys.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "cechy": [
+        "🟤 Rdzawobrązowe boki głowy i szyja w szacie godowej",
+        "🟡 Żółtawa plama u nasady dzioba",
+        "📏 23–29 cm",
+        "💧 Stawy z roślinnością, wolno płynące rzeki",
+        "🐟 Ryby, owady i bezkręgowce",
+        "🔊 Głośny, drżący tryl zwłaszcza wieczorami"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "hHf5IGIUvBg",
+        "tytul": "Leśny Budzik – Perkozek",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 59,
+      "nazwa": "Muchołówka Białoszyja",
+      "nazwaLacinska": "Ficedula albicollis",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Ficedula_albicollis.jpg",
+      "liczebnosc": "150–250 tys.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        5,
+        6
+      ],
+      "cechy": [
+        "⚫ Samiec: czarny wierzch, biała szyja i brzuch",
+        "⚪ Duże białe plamy na skrzydłach",
+        "📏 12–13 cm",
+        "🌳 Stare lasy bukowe i dębowe",
+        "🐛 Owadożerna — chwyta muchy w powietrzu",
+        "✈️ Wędrowna — przylatuje w maju, odlatuje we wrześniu"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "QTEyH9SMTJM",
+        "tytul": "Leśny Budzik – Muchołówka Białoszyja",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 60,
+      "nazwa": "Mewa Białogłowa",
+      "nazwaLacinska": "Larus cachinnans",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Larus_cachinnans.jpg",
+      "liczebnosc": "20–30 tys.",
+      "trend": "↑",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "cechy": [
+        "⚪ Biała głowa przez cały rok, żółte oczy",
+        "⚫ Szary grzbiet, żółty dziób z czerwoną plamką",
+        "📏 55–67 cm",
+        "💧 Rzeki, zbiorniki, wysypiska śmieci",
+        "🍽️ Wszystkożerna — ryby, odpadki, padlina",
+        "🔊 Charakterystyczne 'kjaw-kjaw'"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "pnvwJ9Fp_g8",
+        "tytul": "Caspian Gull (Larus cachinnans) – long call",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 61,
+      "nazwa": "Świstun",
+      "nazwaLacinska": "Mareca penelope",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Mareca_penelope.jpg",
+      "liczebnosc": "kilka tys.",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        3,
+        10,
+        11,
+        12
+      ],
+      "cechy": [
+        "🟠 Samiec: rdzawa głowa z kremowym czołem",
+        "⚫ Szary grzbiet, biały brzuch",
+        "📏 45–51 cm",
+        "💧 Zbiorniki, rzeki, estuaria",
+        "🌿 Trawy wodne i roślinność błotna",
+        "✈️ Wędrowny — przelatuje wiosną i jesienią"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "u4MKmSKVjJ8",
+        "tytul": "Leśny Budzik – Świstun",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 62,
+      "nazwa": "Pokląskwa",
+      "nazwaLacinska": "Saxicola rubetra",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Saxicola_rubetra.jpg",
+      "liczebnosc": "100–200 tys.",
+      "trend": "↓",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "NT",
+      "peakMonths": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "cechy": [
+        "⚫ Samiec: ciemna maska, wyraźna biała brew",
+        "🟠 Rdzawa pierś, białe plamy na szyi",
+        "📏 12–13 cm",
+        "🌾 Łąki, zarośla, skraje lasów",
+        "🐛 Owadożerna — łapie owady z wysokich traw",
+        "✈️ Wędrowna — przylatuje w kwietniu, odlatuje w sierpniu"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "GiBOU9fEJOg",
+        "tytul": "Leśny Budzik – Pokląskwa",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 63,
+      "nazwa": "Jaskółka Dymówka",
+      "nazwaLacinska": "Hirundo rustica",
+      "kategorie": [
+        "Top Podkarpacia"
+      ],
+      "zdjecie": "img/Hirundo_rustica.jpg",
+      "liczebnosc": "3–5 mln",
+      "trend": "↓",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "cechy": [
+        "🔵 Stalowoniebieskie upierzenie wierzchu",
+        "🟠 Rdzawe czoło i gardło",
+        "📏 17–21 cm",
+        "🏠 Stodoły, budynki gospodarcze, mosty",
+        "🐛 Owady łapane wyłącznie w locie",
+        "✈️ Wędrowna — zimuje w Afryce"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "3jcjidW_ImY",
+        "tytul": "Leśny Budzik – Jaskółka Dymówka",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 64,
+      "nazwa": "Pliszka Siwa",
+      "nazwaLacinska": "Motacilla alba",
+      "kategorie": [
+        "Top Podkarpacia"
+      ],
+      "zdjecie": "img/Motacilla_alba.jpg",
+      "liczebnosc": "2–3 mln",
+      "trend": "→",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "cechy": [
+        "⚫ Czarno-biała z długim ogonem",
+        "⚪ Biała twarz z czarnym gardłem (samiec)",
+        "📏 18–19 cm",
+        "🏙️ Brzegi wód, drogi, osiedla, łąki",
+        "🐛 Owady, pająki, dżdżownice",
+        "🎵 Głośne 'czi-czit' w locie"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "qZsRyzEeZEA",
+        "tytul": "Leśny Budzik – Pliszka Siwa",
+        "platforma": "youtube"
+      }
+    },
+    {
+      "id": 65,
+      "nazwa": "Krzyżówka",
+      "nazwaLacinska": "Anas platyrhynchos",
+      "kategorie": [
+        "Top Podkarpacia"
+      ],
+      "zdjecie": "img/Anas_platyrhynchos.jpg",
+      "liczebnosc": "300–500 tys.",
+      "trend": "↓",
+      "migracja": "Wędrowny",
+      "statusCzerwonejKsiazki": "LC",
+      "peakMonths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "cechy": [
+        "🟢 Samiec: metalicznie zielona głowa, brązowa pierś",
+        "🟤 Samica: brązowokremowa, maskująca",
+        "📏 50–65 cm",
+        "💧 Wszelkie zbiorniki wodne",
+        "🌿 Wszystkożerna — roślinność, bezkręgowce, owady",
+        "🔊 Kwakanie — głośne 'kwa-kwa' samicy"
+      ],
+      "zrodla": [
+        "eBird PL-PK 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "film": {
+        "id": "As7fV2E-_Vo",
+        "tytul": "Leśny Budzik – Krzyżówka",
+        "platforma": "youtube"
+      }
     }
   ]
 }
