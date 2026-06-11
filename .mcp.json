@@ -4,6 +4,11 @@
       "type": "stdio",
       "command": "npx",
       "args": ["-y", "wikimedia-image-search-mcp"]
+    },
+    "youtube": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "zubeid-youtube-mcp-server"]
     }
   }
 }
