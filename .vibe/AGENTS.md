@@ -1,6 +1,8 @@
-# Repository Agent Instructions
+# Repository Agent Instructions — Mistral Vibe
 
-These instructions apply specifically to the **gorzko.github.io** repository.
+> **Wspólne zasady projektu** (struktura, schemat danych, komendy, zasady obrazów) → zob. [`CLAUDE.md`](../CLAUDE.md) w root repo.
+
+Poniższe instrukcje dotyczą specyfiki agenta **Mistral Vibe** w tym repozytorium.
 
 ## Repository Structure
 

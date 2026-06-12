@@ -1,3 +1,16 @@
 {
-  "enabledMcpjsonServers": ["wikimedia-image-search"]
+  "enabledMcpjsonServers": ["wikimedia-image-search", "youtube", "tavily"],
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npm install 2>/dev/null || true",
+            "statusMessage": "Instalowanie zależności npm..."
+          }
+        ]
+      }
+    ]
+  }
 }
