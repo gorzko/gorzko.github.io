@@ -4,6 +4,14 @@
       "type": "stdio",
       "command": "npx",
       "args": ["-y", "wikimedia-image-search-mcp"]
+    },
+    "youtube": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@kirbah/mcp-youtube"],
+      "env": {
+        "YOUTUBE_API_KEY": "${YOUTUBE_API_KEY}"
+      }
     }
   }
 }
