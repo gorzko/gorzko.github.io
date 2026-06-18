@@ -1,3 +1,6 @@
+# Ustawienia lokalne (sekrety)
+.claude/settings.local.json
+
 # Narzędzia deweloperskie / MCP
 *.ps1
 *.bat
