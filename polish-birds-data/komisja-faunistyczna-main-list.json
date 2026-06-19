@@ -1,0 +1,2165 @@
+{
+  "source": "Komisja Faunistyczna",
+  "url": "https://komisjafaunistyczna.pl/lista/",
+  "extraction_date": "2026-06-19",
+  "description": "Gatunki ptaków stwierdzone w Polsce – stan z 01.01.2026. Systematyka i taksonomia na liście krajowej są oparte na globalnie uzgodnionej liście ptaków świata AviList.",
+  "total_species": 308,
+  "species": [
+    {
+      "lp": 1,
+      "scientific_name": "Oxyura leucocephala",
+      "polish_name": "sterniczka",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 2,
+      "scientific_name": "Cygnus olor",
+      "polish_name": "łabędź niemy",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 3,
+      "scientific_name": "Cygnus columbianus",
+      "polish_name": "łabędź czarnodzioby",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 4,
+      "scientific_name": "Cygnus cygnus",
+      "polish_name": "łabędź krzykliwy",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 5,
+      "scientific_name": "Branta bernicla",
+      "polish_name": "bernikla obrożna",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 6,
+      "scientific_name": "Branta ruficollis",
+      "polish_name": "bernikla rdzawoszyja",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 7,
+      "scientific_name": "Branta canadensis",
+      "polish_name": "bernikla kanadyjska",
+      "category": "C",
+      "status": "l P"
+    },
+    {
+      "lp": 8,
+      "scientific_name": "Branta leucopsis",
+      "polish_name": "bernikla białolica",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 9,
+      "scientific_name": "Anser anser",
+      "polish_name": "gęgawa",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 10,
+      "scientific_name": "Anser erythropus",
+      "polish_name": "gęś mała",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 11,
+      "scientific_name": "Anser albifrons",
+      "polish_name": "gęś białoczelna",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 12,
+      "scientific_name": "Anser serrirostris",
+      "polish_name": "gęś tundrowa",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 13,
+      "scientific_name": "Anser brachyrhynchus",
+      "polish_name": "gęś krótkodzioba",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 14,
+      "scientific_name": "Anser fabalis",
+      "polish_name": "gęś zbożowa",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 15,
+      "scientific_name": "Aix galericulata",
+      "polish_name": "mandarynka",
+      "category": "C",
+      "status": "l P"
+    },
+    {
+      "lp": 16,
+      "scientific_name": "Alopochen aegyptiaca",
+      "polish_name": "gęsiówka egipska",
+      "category": "C",
+      "status": "l P"
+    },
+    {
+      "lp": 17,
+      "scientific_name": "Tadorna tadorna",
+      "polish_name": "ohar",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 18,
+      "scientific_name": "Tadorna ferruginea",
+      "polish_name": "kazarka rdzawa",
+      "category": "A",
+      "status": "(l) P"
+    },
+    {
+      "lp": 19,
+      "scientific_name": "Clangula hyemalis",
+      "polish_name": "lodówka",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 20,
+      "scientific_name": "Polysticta stelleri",
+      "polish_name": "birginiak",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 21,
+      "scientific_name": "Somateria spectabilis",
+      "polish_name": "turkan",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 22,
+      "scientific_name": "Somateria mollissima",
+      "polish_name": "edredon",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 23,
+      "scientific_name": "Histrionicus histrionicus",
+      "polish_name": "kamieniuszka",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 24,
+      "scientific_name": "Melanitta nigra",
+      "polish_name": "markaczka",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 25,
+      "scientific_name": "Melanitta americana",
+      "polish_name": "markaczka amerykańska",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 26,
+      "scientific_name": "Melanitta fusca",
+      "polish_name": "uhla",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 27,
+      "scientific_name": "Melanitta stejnegeri",
+      "polish_name": "uhla azjatycka",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 28,
+      "scientific_name": "Bucephala clangula",
+      "polish_name": "gągoł",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 29,
+      "scientific_name": "Mergellus albellus",
+      "polish_name": "bielaczek",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 30,
+      "scientific_name": "Mergus serrator",
+      "polish_name": "szlachar",
+      "category": "A",
+      "status": "(l) P"
+    },
+    {
+      "lp": 31,
+      "scientific_name": "Mergus merganser",
+      "polish_name": "nurogęś",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 32,
+      "scientific_name": "Netta rufina",
+      "polish_name": "hełmiatka",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 33,
+      "scientific_name": "Aythya nyroca",
+      "polish_name": "podgorzałka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 34,
+      "scientific_name": "Aythya ferina",
+      "polish_name": "głowienka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 35,
+      "scientific_name": "Aythya collaris",
+      "polish_name": "czerniczka",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 36,
+      "scientific_name": "Aythya fuligula",
+      "polish_name": "czernica",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 37,
+      "scientific_name": "Aythya affinis",
+      "polish_name": "ogorzałka mała",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 38,
+      "scientific_name": "Aythya marila",
+      "polish_name": "ogorzałka",
+      "category": "A",
+      "status": "(l) P"
+    },
+    {
+      "lp": 39,
+      "scientific_name": "Sibirionetta formosa",
+      "polish_name": "bajkałówka",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 40,
+      "scientific_name": "Spatula querquedula",
+      "polish_name": "cyranka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 41,
+      "scientific_name": "Spatula discors",
+      "polish_name": "cyranka modroskrzydła",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 42,
+      "scientific_name": "Spatula clypeata",
+      "polish_name": "płaskonos",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 43,
+      "scientific_name": "Mareca strepera",
+      "polish_name": "krakwa",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 44,
+      "scientific_name": "Mareca penelope",
+      "polish_name": "świstun",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 45,
+      "scientific_name": "Mareca americana",
+      "polish_name": "świstun amerykański",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 46,
+      "scientific_name": "Anas platyrhynchos",
+      "polish_name": "krzyżówka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 47,
+      "scientific_name": "Anas acuta",
+      "polish_name": "rożeniec",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 48,
+      "scientific_name": "Anas crecca",
+      "polish_name": "cyraneczka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 49,
+      "scientific_name": "Tetrastes bonasia",
+      "polish_name": "jarząbek",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 50,
+      "scientific_name": "Lagopus lagopus",
+      "polish_name": "pardwa mszarna",
+      "category": "B",
+      "status": "(z)"
+    },
+    {
+      "lp": 51,
+      "scientific_name": "Tetrao urogallus",
+      "polish_name": "głuszec",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 52,
+      "scientific_name": "Lyrurus tetrix",
+      "polish_name": "cietrzew",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 53,
+      "scientific_name": "Perdix perdix",
+      "polish_name": "kuropatwa",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 54,
+      "scientific_name": "Phasianus colchicus",
+      "polish_name": "bażant",
+      "category": "C",
+      "status": "L"
+    },
+    {
+      "lp": 55,
+      "scientific_name": "Coturnix coturnix",
+      "polish_name": "przepiórka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 56,
+      "scientific_name": "Phoenicopterus roseus",
+      "polish_name": "flaming różowy",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 57,
+      "scientific_name": "Tachybaptus ruficollis",
+      "polish_name": "perkozek",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 58,
+      "scientific_name": "Podilymbus podiceps",
+      "polish_name": "perkoz grubodzioby",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 59,
+      "scientific_name": "Podiceps auritus",
+      "polish_name": "perkoz rogaty",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 60,
+      "scientific_name": "Podiceps grisegena",
+      "polish_name": "perkoz rdzawoszyi",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 61,
+      "scientific_name": "Podiceps cristatus",
+      "polish_name": "perkoz dwuczuby",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 62,
+      "scientific_name": "Podiceps nigricollis",
+      "polish_name": "zausznik",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 63,
+      "scientific_name": "Otis tarda",
+      "polish_name": "drop",
+      "category": "A",
+      "status": "(l) Z"
+    },
+    {
+      "lp": 64,
+      "scientific_name": "Chlamydotis macqueenii",
+      "polish_name": "hubara arabska",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 65,
+      "scientific_name": "Tetrax tetrax",
+      "polish_name": "strepet",
+      "category": "A",
+      "status": "(l) Z"
+    },
+    {
+      "lp": 66,
+      "scientific_name": "Cuculus canorus",
+      "polish_name": "kukułka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 67,
+      "scientific_name": "Syrrhaptes paradoxus",
+      "polish_name": "pustynnik",
+      "category": "A",
+      "status": "(l) Z"
+    },
+    {
+      "lp": 68,
+      "scientific_name": "Streptopelia orientalis",
+      "polish_name": "turkawka wschodnia",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 69,
+      "scientific_name": "Streptopelia turtur",
+      "polish_name": "turkawka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 70,
+      "scientific_name": "Streptopelia decaocto",
+      "polish_name": "sierpówka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 71,
+      "scientific_name": "Columba palumbus",
+      "polish_name": "grzywacz",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 72,
+      "scientific_name": "*Columba livia* forma *urbana*",
+      "polish_name": "gołąb miejski",
+      "category": "C",
+      "status": "L"
+    },
+    {
+      "lp": 73,
+      "scientific_name": "Columba oenas",
+      "polish_name": "siniak",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 74,
+      "scientific_name": "Antigone canadensis",
+      "polish_name": "żuraw kanadyjski",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 75,
+      "scientific_name": "Grus virgo",
+      "polish_name": "żuraw stepowy",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 76,
+      "scientific_name": "Grus grus",
+      "polish_name": "żuraw",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 77,
+      "scientific_name": "Rallus aquaticus",
+      "polish_name": "wodnik",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 78,
+      "scientific_name": "Crex crex",
+      "polish_name": "derkacz",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 79,
+      "scientific_name": "Porzana porzana",
+      "polish_name": "kropiatka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 80,
+      "scientific_name": "Gallinula chloropus",
+      "polish_name": "kokoszka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 81,
+      "scientific_name": "Fulica atra",
+      "polish_name": "łyska",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 82,
+      "scientific_name": "Zapornia parva",
+      "polish_name": "zielonka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 83,
+      "scientific_name": "Zapornia pusilla",
+      "polish_name": "karliczka",
+      "category": "A",
+      "status": "l Z"
+    },
+    {
+      "lp": 84,
+      "scientific_name": "Burhinus oedicnemus",
+      "polish_name": "kulon",
+      "category": "A",
+      "status": "(l) Z"
+    },
+    {
+      "lp": 85,
+      "scientific_name": "Recurvirostra avosetta",
+      "polish_name": "szablodziób",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 86,
+      "scientific_name": "Himantopus himantopus",
+      "polish_name": "szczudłak",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 87,
+      "scientific_name": "Haematopus ostralegus",
+      "polish_name": "ostrygojad",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 88,
+      "scientific_name": "Pluvialis squatarola",
+      "polish_name": "siewnica",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 89,
+      "scientific_name": "Pluvialis apricaria",
+      "polish_name": "siewka złota",
+      "category": "A",
+      "status": "(l) P"
+    },
+    {
+      "lp": 90,
+      "scientific_name": "Pluvialis dominica",
+      "polish_name": "siewka szara",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 91,
+      "scientific_name": "Pluvialis fulva",
+      "polish_name": "siewka złotawa",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 92,
+      "scientific_name": "Eudromias morinellus",
+      "polish_name": "mornel",
+      "category": "A",
+      "status": "(l) P"
+    },
+    {
+      "lp": 93,
+      "scientific_name": "Charadrius hiaticula",
+      "polish_name": "sieweczka obrożna",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 94,
+      "scientific_name": "Thinornis dubius",
+      "polish_name": "sieweczka rzeczna",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 95,
+      "scientific_name": "Vanellus vanellus",
+      "polish_name": "czajka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 96,
+      "scientific_name": "Vanellus spinosus",
+      "polish_name": "czajka szponiasta",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 97,
+      "scientific_name": "Vanellus gregarius",
+      "polish_name": "czajka towarzyska",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 98,
+      "scientific_name": "Vanellus leucurus",
+      "polish_name": "czajka stepowa",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 99,
+      "scientific_name": "Anarhynchus asiaticus",
+      "polish_name": "sieweczka długonoga",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 100,
+      "scientific_name": "Anarhynchus atrifrons",
+      "polish_name": "sieweczka tybetańska",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 101,
+      "scientific_name": "Anarhynchus leschenaultii",
+      "polish_name": "sieweczka pustynna",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 102,
+      "scientific_name": "Anarhynchus alexandrinus",
+      "polish_name": "sieweczka morska",
+      "category": "A",
+      "status": "l Z"
+    },
+    {
+      "lp": 103,
+      "scientific_name": "Numenius phaeopus",
+      "polish_name": "kulik mniejszy",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 104,
+      "scientific_name": "Numenius tenuirostris",
+      "polish_name": "kulik cienkodzioby",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 105,
+      "scientific_name": "Numenius arquata",
+      "polish_name": "kulik wielki",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 106,
+      "scientific_name": "Limosa lapponica",
+      "polish_name": "szlamnik",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 107,
+      "scientific_name": "Limosa limosa",
+      "polish_name": "rycyk",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 108,
+      "scientific_name": "Limnodromus scolopaceus",
+      "polish_name": "szlamiec długodzioby",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 109,
+      "scientific_name": "Lymnocryptes minimus",
+      "polish_name": "bekasik",
+      "category": "A",
+      "status": "(l) P"
+    },
+    {
+      "lp": 110,
+      "scientific_name": "Scolopax rusticola",
+      "polish_name": "słonka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 111,
+      "scientific_name": "Gallinago media",
+      "polish_name": "dubelt",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 112,
+      "scientific_name": "Gallinago gallinago",
+      "polish_name": "kszyk",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 113,
+      "scientific_name": "Xenus cinereus",
+      "polish_name": "terekia",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 114,
+      "scientific_name": "Actitis hypoleucos",
+      "polish_name": "brodziec piskliwy",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 115,
+      "scientific_name": "Actitis macularius",
+      "polish_name": "brodziec plamisty",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 116,
+      "scientific_name": "Phalaropus fulicarius",
+      "polish_name": "płatkonóg płaskodzioby",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 117,
+      "scientific_name": "Phalaropus lobatus",
+      "polish_name": "płatkonóg szydłodzioby",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 118,
+      "scientific_name": "Tringa ochropus",
+      "polish_name": "samotnik",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 119,
+      "scientific_name": "Tringa stagnatilis",
+      "polish_name": "brodziec pławny",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 120,
+      "scientific_name": "Tringa glareola",
+      "polish_name": "łęczak",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 121,
+      "scientific_name": "Tringa totanus",
+      "polish_name": "krwawodziób",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 122,
+      "scientific_name": "Tringa flavipes",
+      "polish_name": "brodziec żółtonogi",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 123,
+      "scientific_name": "Tringa erythropus",
+      "polish_name": "brodziec śniady",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 124,
+      "scientific_name": "Tringa nebularia",
+      "polish_name": "kwokacz",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 125,
+      "scientific_name": "Tringa melanoleuca",
+      "polish_name": "brodziec piegowaty",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 126,
+      "scientific_name": "Arenaria interpres",
+      "polish_name": "kamusznik",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 127,
+      "scientific_name": "Calidris canutus",
+      "polish_name": "biegus rdzawy",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 128,
+      "scientific_name": "Calidris tenuirostris",
+      "polish_name": "biegus wielki",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 129,
+      "scientific_name": "Calidris pugnax",
+      "polish_name": "batalion",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 130,
+      "scientific_name": "Calidris acuminata",
+      "polish_name": "biegus ostrosterny",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 131,
+      "scientific_name": "Calidris falcinellus",
+      "polish_name": "biegus płaskodzioby",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 132,
+      "scientific_name": "Calidris ferruginea",
+      "polish_name": "biegus krzywodzioby",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 133,
+      "scientific_name": "Calidris temminckii",
+      "polish_name": "biegus mały",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 134,
+      "scientific_name": "Calidris subruficollis",
+      "polish_name": "biegus płowy",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 135,
+      "scientific_name": "Calidris alba",
+      "polish_name": "piaskowiec",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 136,
+      "scientific_name": "Calidris alpina",
+      "polish_name": "biegus zmienny",
+      "category": "A",
+      "status": "(l) P"
+    },
+    {
+      "lp": 137,
+      "scientific_name": "Calidris maritima",
+      "polish_name": "biegus morski",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 138,
+      "scientific_name": "Calidris bairdii",
+      "polish_name": "biegus długoskrzydły",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 139,
+      "scientific_name": "Calidris melanotos",
+      "polish_name": "biegus arktyczny",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 140,
+      "scientific_name": "Calidris pusilla",
+      "polish_name": "biegus tundrowy",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 141,
+      "scientific_name": "Calidris minuta",
+      "polish_name": "biegus malutki",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 142,
+      "scientific_name": "Calidris minutilla",
+      "polish_name": "biegus karłowaty",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 143,
+      "scientific_name": "Calidris fuscicollis",
+      "polish_name": "biegus białorzytny",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 144,
+      "scientific_name": "Glareola nordmanni",
+      "polish_name": "żwirowiec stepowy",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 145,
+      "scientific_name": "Glareola pratincola",
+      "polish_name": "żwirowiec łąkowy",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 146,
+      "scientific_name": "Stercorarius parasiticus",
+      "polish_name": "wydrzyk ostrosterny",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 147,
+      "scientific_name": "Stercorarius longicaudus",
+      "polish_name": "wydrzyk długosterny",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 148,
+      "scientific_name": "Stercorarius pomarinus",
+      "polish_name": "wydrzyk tęposterny",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 149,
+      "scientific_name": "Stercorarius skua",
+      "polish_name": "wydrzyk wielki",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 150,
+      "scientific_name": "Fratercula arctica",
+      "polish_name": "maskonur",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 151,
+      "scientific_name": "Cepphus grylle",
+      "polish_name": "nurnik",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 152,
+      "scientific_name": "Alca torda",
+      "polish_name": "alka",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 153,
+      "scientific_name": "Alle alle",
+      "polish_name": "alczyk",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 154,
+      "scientific_name": "Uria lomvia",
+      "polish_name": "nurzyk polarny",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 155,
+      "scientific_name": "Uria aalge",
+      "polish_name": "nurzyk",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 156,
+      "scientific_name": "Sternula albifrons",
+      "polish_name": "rybitwa białoczelna",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 157,
+      "scientific_name": "Hydroprogne caspia",
+      "polish_name": "rybitwa wielkodzioba",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 158,
+      "scientific_name": "Gelochelidon nilotica",
+      "polish_name": "rybitwa krótkodzioba",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 159,
+      "scientific_name": "Chlidonias hybrida",
+      "polish_name": "rybitwa białowąsa",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 160,
+      "scientific_name": "Chlidonias leucopterus",
+      "polish_name": "rybitwa białoskrzydła",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 161,
+      "scientific_name": "Chlidonias niger",
+      "polish_name": "rybitwa czarna",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 162,
+      "scientific_name": "Thalasseus sandvicensis",
+      "polish_name": "rybitwa czubata",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 163,
+      "scientific_name": "Sterna paradisaea",
+      "polish_name": "rybitwa popielata",
+      "category": "A",
+      "status": "(l) P"
+    },
+    {
+      "lp": 164,
+      "scientific_name": "Sterna hirundo",
+      "polish_name": "rybitwa rzeczna",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 165,
+      "scientific_name": "Sterna dougallii",
+      "polish_name": "rybitwa różowa",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 166,
+      "scientific_name": "Hydrocoloeus minutus",
+      "polish_name": "mewa mała",
+      "category": "A",
+      "status": "(l) P"
+    },
+    {
+      "lp": 167,
+      "scientific_name": "Rhodostethia rosea",
+      "polish_name": "mewa różowa",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 168,
+      "scientific_name": "Rissa tridactyla",
+      "polish_name": "mewa trójpalczasta",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 169,
+      "scientific_name": "Xema sabini",
+      "polish_name": "mewa obrożna",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 170,
+      "scientific_name": "Pagophila eburnea",
+      "polish_name": "mewa modrodzioba",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 171,
+      "scientific_name": "Chroicocephalus genei",
+      "polish_name": "mewa cienkodzioba",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 172,
+      "scientific_name": "Chroicocephalus ridibundus",
+      "polish_name": "śmieszka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 173,
+      "scientific_name": "Leucophaeus atricilla",
+      "polish_name": "mewa karaibska",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 174,
+      "scientific_name": "Ichthyaetus ichthyaetus",
+      "polish_name": "orlica",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 175,
+      "scientific_name": "Ichthyaetus audouinii",
+      "polish_name": "mewa śródziemnomorska",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 176,
+      "scientific_name": "Ichthyaetus melanocephalus",
+      "polish_name": "mewa czarnogłowa",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 177,
+      "scientific_name": "Larus delawarensis",
+      "polish_name": "mewa delawarska",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 178,
+      "scientific_name": "Larus canus",
+      "polish_name": "mewa siwa",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 179,
+      "scientific_name": "Larus cachinnans",
+      "polish_name": "mewa białogłowa",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 180,
+      "scientific_name": "Larus smithsonianus",
+      "polish_name": "mewa popielata",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 181,
+      "scientific_name": "Larus argentatus",
+      "polish_name": "mewa srebrzysta",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 182,
+      "scientific_name": "Larus michahellis",
+      "polish_name": "mewa romańska",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 183,
+      "scientific_name": "Larus marinus",
+      "polish_name": "mewa siodłata",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 184,
+      "scientific_name": "Larus hyperboreus",
+      "polish_name": "mewa blada",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 185,
+      "scientific_name": "Larus fuscus",
+      "polish_name": "mewa żółtonoga",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 186,
+      "scientific_name": "Larus schistisagus",
+      "polish_name": "mewa ochocka",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 187,
+      "scientific_name": "Larus glaucoides",
+      "polish_name": "mewa polarna",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 188,
+      "scientific_name": "Gavia stellata",
+      "polish_name": "nur rdzawoszyi",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 189,
+      "scientific_name": "Gavia immer",
+      "polish_name": "lodowiec",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 190,
+      "scientific_name": "Gavia adamsii",
+      "polish_name": "nur białodzioby",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 191,
+      "scientific_name": "Gavia pacifica",
+      "polish_name": "nur pacyficzny",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 192,
+      "scientific_name": "Gavia arctica",
+      "polish_name": "nur czarnoszyi",
+      "category": "A",
+      "status": "(l) P"
+    },
+    {
+      "lp": 193,
+      "scientific_name": "Hydrobates pelagicus",
+      "polish_name": "nawałnik burzowy",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 194,
+      "scientific_name": "Hydrobates leucorhous",
+      "polish_name": "nawałnik duży",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 195,
+      "scientific_name": "Fulmarus glacialis",
+      "polish_name": "fulmar",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 196,
+      "scientific_name": "Calonectris diomedea",
+      "polish_name": "burzyk żółtodzioby",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 197,
+      "scientific_name": "Ardenna grisea",
+      "polish_name": "burzyk szary",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 198,
+      "scientific_name": "Puffinus puffinus",
+      "polish_name": "burzyk północny",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 199,
+      "scientific_name": "Puffinus yelkouan",
+      "polish_name": "burzyk śródziemnomorski",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 200,
+      "scientific_name": "Ciconia nigra",
+      "polish_name": "bocian czarny",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 201,
+      "scientific_name": "Ciconia ciconia",
+      "polish_name": "bocian biały",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 202,
+      "scientific_name": "Morus bassanus",
+      "polish_name": "głuptak",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 203,
+      "scientific_name": "Sula leucogaster",
+      "polish_name": "głuptak białobrzuchy",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 204,
+      "scientific_name": "Microcarbo pygmaeus",
+      "polish_name": "kormoran mały",
+      "category": "A",
+      "status": "l Z"
+    },
+    {
+      "lp": 205,
+      "scientific_name": "Gulosus aristotelis",
+      "polish_name": "kormoran czubaty",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 206,
+      "scientific_name": "Phalacrocorax carbo",
+      "polish_name": "kormoran",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 207,
+      "scientific_name": "Plegadis falcinellus",
+      "polish_name": "ibis kasztanowaty",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 208,
+      "scientific_name": "Platalea leucorodia",
+      "polish_name": "warzęcha",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 209,
+      "scientific_name": "Pelecanus onocrotalus",
+      "polish_name": "pelikan różowy",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 210,
+      "scientific_name": "Pelecanus crispus",
+      "polish_name": "pelikan kędzierzawy",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 211,
+      "scientific_name": "Botaurus stellaris",
+      "polish_name": "bąk",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 212,
+      "scientific_name": "Botaurus minutus",
+      "polish_name": "bączek",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 213,
+      "scientific_name": "Egretta garzetta",
+      "polish_name": "czapla nadobna",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 214,
+      "scientific_name": "Nycticorax nycticorax",
+      "polish_name": "ślepowron",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 215,
+      "scientific_name": "Ardeola ralloides",
+      "polish_name": "czapla modronosa",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 216,
+      "scientific_name": "Ardea alba",
+      "polish_name": "czapla biała",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 217,
+      "scientific_name": "Ardea ibis",
+      "polish_name": "czapla złotawa",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 218,
+      "scientific_name": "Ardea purpurea",
+      "polish_name": "czapla purpurowa",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 219,
+      "scientific_name": "Ardea cinerea",
+      "polish_name": "czapla siwa",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 220,
+      "scientific_name": "Caprimulgus europaeus",
+      "polish_name": "lelek",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 221,
+      "scientific_name": "Tachymarptis melba",
+      "polish_name": "jerzyk alpejski",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 222,
+      "scientific_name": "Apus apus",
+      "polish_name": "jerzyk",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 223,
+      "scientific_name": "Apus pallidus",
+      "polish_name": "jerzyk blady",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 224,
+      "scientific_name": "Tyto alba",
+      "polish_name": "płomykówka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 225,
+      "scientific_name": "Aegolius funereus",
+      "polish_name": "włochatka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 226,
+      "scientific_name": "Athene noctua",
+      "polish_name": "pójdźka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 227,
+      "scientific_name": "Surnia ulula",
+      "polish_name": "sowa jarzębata",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 228,
+      "scientific_name": "Glaucidium passerinum",
+      "polish_name": "sóweczka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 229,
+      "scientific_name": "Otus scops",
+      "polish_name": "syczek",
+      "category": "A",
+      "status": "l Z"
+    },
+    {
+      "lp": 230,
+      "scientific_name": "Asio flammeus",
+      "polish_name": "uszatka błotna",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 231,
+      "scientific_name": "Asio otus",
+      "polish_name": "uszatka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 232,
+      "scientific_name": "Bubo scandiacus",
+      "polish_name": "puchacz śnieżny",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 233,
+      "scientific_name": "Bubo bubo",
+      "polish_name": "puchacz",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 234,
+      "scientific_name": "Strix aluco",
+      "polish_name": "puszczyk",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 235,
+      "scientific_name": "Strix uralensis",
+      "polish_name": "puszczyk uralski",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 236,
+      "scientific_name": "Strix nebulosa",
+      "polish_name": "puszczyk mszarny",
+      "category": "A",
+      "status": "l Z"
+    },
+    {
+      "lp": 237,
+      "scientific_name": "Pandion haliaetus",
+      "polish_name": "rybołów",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 238,
+      "scientific_name": "Elanus caeruleus",
+      "polish_name": "kaniuk",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 239,
+      "scientific_name": "Gypaetus barbatus",
+      "polish_name": "orłosęp",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 240,
+      "scientific_name": "Neophron percnopterus",
+      "polish_name": "ścierwnik",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 241,
+      "scientific_name": "Pernis apivorus",
+      "polish_name": "trzmielojad",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 242,
+      "scientific_name": "Aegypius monachus",
+      "polish_name": "sęp kasztanowaty",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 243,
+      "scientific_name": "Gyps fulvus",
+      "polish_name": "sęp płowy",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 244,
+      "scientific_name": "Circaetus gallicus",
+      "polish_name": "gadożer",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 245,
+      "scientific_name": "Clanga clanga",
+      "polish_name": "orlik grubodzioby",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 246,
+      "scientific_name": "Clanga pomarina",
+      "polish_name": "orlik krzykliwy",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 247,
+      "scientific_name": "Hieraaetus pennatus",
+      "polish_name": "orzełek",
+      "category": "A",
+      "status": "(l) Z"
+    },
+    {
+      "lp": 248,
+      "scientific_name": "Aquila nipalensis",
+      "polish_name": "orzeł stepowy",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 249,
+      "scientific_name": "Aquila heliaca",
+      "polish_name": "orzeł cesarski",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 250,
+      "scientific_name": "Aquila chrysaetos",
+      "polish_name": "orzeł przedni",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 251,
+      "scientific_name": "Aquila fasciata",
+      "polish_name": "orzeł południowy",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 252,
+      "scientific_name": "Tachyspiza brevipes",
+      "polish_name": "krogulec krótkonogi",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 253,
+      "scientific_name": "Accipiter nisus",
+      "polish_name": "krogulec",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 254,
+      "scientific_name": "Astur gentilis",
+      "polish_name": "jastrząb",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 255,
+      "scientific_name": "Circus macrourus",
+      "polish_name": "błotniak stepowy",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 256,
+      "scientific_name": "Circus cyaneus",
+      "polish_name": "błotniak zbożowy",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 257,
+      "scientific_name": "Circus pygargus",
+      "polish_name": "błotniak łąkowy",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 258,
+      "scientific_name": "Circus aeruginosus",
+      "polish_name": "błotniak stawowy",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 259,
+      "scientific_name": "Milvus milvus",
+      "polish_name": "kania ruda",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 260,
+      "scientific_name": "Milvus migrans",
+      "polish_name": "kania czarna",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 261,
+      "scientific_name": "Haliaeetus leucoryphus",
+      "polish_name": "bielik wschodni",
+      "category": "B",
+      "status": "(z)"
+    },
+    {
+      "lp": 262,
+      "scientific_name": "Haliaeetus albicilla",
+      "polish_name": "bielik",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 263,
+      "scientific_name": "Buteo lagopus",
+      "polish_name": "myszołów włochaty",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 264,
+      "scientific_name": "Buteo buteo",
+      "polish_name": "myszołów",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 265,
+      "scientific_name": "Buteo rufinus",
+      "polish_name": "kurhannik",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 266,
+      "scientific_name": "Upupa epops",
+      "polish_name": "dudek",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 267,
+      "scientific_name": "Coracias garrulus",
+      "polish_name": "kraska",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 268,
+      "scientific_name": "Merops apiaster",
+      "polish_name": "żołna",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 269,
+      "scientific_name": "Alcedo atthis",
+      "polish_name": "zimorodek",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 270,
+      "scientific_name": "Ceryle rudis",
+      "polish_name": "rybaczek srokaty",
+      "category": "B",
+      "status": "(z)"
+    },
+    {
+      "lp": 271,
+      "scientific_name": "Jynx torquilla",
+      "polish_name": "krętogłów",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 272,
+      "scientific_name": "Picus canus",
+      "polish_name": "dzięcioł zielonosiwy",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 273,
+      "scientific_name": "Picus viridis",
+      "polish_name": "dzięcioł zielony",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 274,
+      "scientific_name": "Dryocopus martius",
+      "polish_name": "dzięcioł czarny",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 275,
+      "scientific_name": "Picoides tridactylus",
+      "polish_name": "dzięcioł trójpalczasty",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 276,
+      "scientific_name": "Dendrocoptes medius",
+      "polish_name": "dzięcioł średni",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 277,
+      "scientific_name": "Dendrocopos leucotos",
+      "polish_name": "dzięcioł białogrzbiety",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 278,
+      "scientific_name": "Dendrocopos major",
+      "polish_name": "dzięcioł duży",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 279,
+      "scientific_name": "Dendrocopos syriacus",
+      "polish_name": "dzięcioł białoszyi",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 280,
+      "scientific_name": "Dryobates minor",
+      "polish_name": "dzięciołek",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 281,
+      "scientific_name": "Falco naumanni",
+      "polish_name": "pustułeczka",
+      "category": "A",
+      "status": "(l) Z"
+    },
+    {
+      "lp": 282,
+      "scientific_name": "Falco tinnunculus",
+      "polish_name": "pustułka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 283,
+      "scientific_name": "Falco vespertinus",
+      "polish_name": "kobczyk",
+      "category": "A",
+      "status": "(l) P"
+    },
+    {
+      "lp": 284,
+      "scientific_name": "Falco columbarius",
+      "polish_name": "drzemlik",
+      "category": "A",
+      "status": "P"
+    },
+    {
+      "lp": 285,
+      "scientific_name": "Falco eleonorae",
+      "polish_name": "sokół skalny",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 286,
+      "scientific_name": "Falco subbuteo",
+      "polish_name": "kobuz",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 287,
+      "scientific_name": "Falco peregrinus",
+      "polish_name": "sokół wędrowny",
+      "category": "A",
+      "status": "l P"
+    },
+    {
+      "lp": 288,
+      "scientific_name": "Falco biarmicus",
+      "polish_name": "raróg górski",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 289,
+      "scientific_name": "Falco rusticolus",
+      "polish_name": "białozór",
+      "category": "A",
+      "status": "Z"
+    },
+    {
+      "lp": 290,
+      "scientific_name": "Falco cherrug",
+      "polish_name": "raróg",
+      "category": "A",
+      "status": "l Z"
+    },
+    {
+      "lp": 291,
+      "scientific_name": "Vireo olivaceus",
+      "polish_name": "wireonek czerwonooki",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 292,
+      "scientific_name": "Oriolus oriolus",
+      "polish_name": "wilga",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 293,
+      "scientific_name": "Lanius excubitor",
+      "polish_name": "srokosz",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 294,
+      "scientific_name": "Lanius borealis",
+      "polish_name": "srokosz północny",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 295,
+      "scientific_name": "Lanius minor",
+      "polish_name": "dzierzba czarnoczelna",
+      "category": "A",
+      "status": "l Z"
+    },
+    {
+      "lp": 296,
+      "scientific_name": "Lanius senator",
+      "polish_name": "dzierzba rudogłowa",
+      "category": "A",
+      "status": "(l) Z"
+    },
+    {
+      "lp": 297,
+      "scientific_name": "Lanius isabellinus",
+      "polish_name": "dzierzba pustynna",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 298,
+      "scientific_name": "Lanius collurio",
+      "polish_name": "gąsiorek",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 299,
+      "scientific_name": "Lanius phoenicuroides",
+      "polish_name": "dzierzba rdzawosterna",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 300,
+      "scientific_name": "Pyrrhocorax graculus",
+      "polish_name": "wieszczek",
+      "category": "A",
+      "status": "(l) z"
+    },
+    {
+      "lp": 301,
+      "scientific_name": "Perisoreus infaustus",
+      "polish_name": "sójka syberyjska",
+      "category": "A",
+      "status": "z"
+    },
+    {
+      "lp": 302,
+      "scientific_name": "Garrulus glandarius",
+      "polish_name": "sójka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 303,
+      "scientific_name": "Pica pica",
+      "polish_name": "sroka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 304,
+      "scientific_name": "Nucifraga caryocatactes",
+      "polish_name": "orzechówka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 305,
+      "scientific_name": "Coloeus monedula",
+      "polish_name": "kawka",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 306,
+      "scientific_name": "Corvus frugilegus",
+      "polish_name": "gawron",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 307,
+      "scientific_name": "Corvus corax",
+      "polish_name": "kruk",
+      "category": "A",
+      "status": "L"
+    },
+    {
+      "lp": 308,
+      "scientific_name": "Corvus corone",
+      "polish_name": "wrona",
+      "category": "A",
+      "status": "L"
+    }
+  ]
+}
