@@ -1,0 +1,507 @@
+{
+  "source": "Komisja Faunistyczna - Aneks",
+  "url": "https://komisjafaunistyczna.pl/lista/aneks/",
+  "extraction_date": "2026-06-19",
+  "description": "Gatunki ptaków stwierdzone w Polsce do 01.01.2023, lecz nie zaliczone do awifauny krajowej",
+  "total_species": 83,
+  "species": [
+    {
+      "scientific_name": "Dromaius novaehollandiae",
+      "polish_name": "emu",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Dendrocygna bicolor",
+      "polish_name": "drzewica dwubarwna",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Dendrocygna arcuata",
+      "polish_name": "drzewica wędrowna",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Oxyura jamaicensis",
+      "polish_name": "sterniczka jamajska",
+      "category": "D",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Coscoroba coscoroba",
+      "polish_name": "koskoroba",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Cygnus melancoryphus",
+      "polish_name": "łabędź czarnoszyi",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Cygnus atratus",
+      "polish_name": "łabędź czarny",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Cygnus buccinator",
+      "polish_name": "łabędź trąbiący",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Anser indicus",
+      "polish_name": "gęś tybetańska",
+      "category": "D",
+      "status": "\\[Z\\]"
+    },
+    {
+      "scientific_name": "Anser caerulescens",
+      "polish_name": "śnieżyca duża",
+      "category": "D",
+      "status": "\\[Z\\]"
+    },
+    {
+      "scientific_name": "Anser rossii",
+      "polish_name": "śnieżyca mała",
+      "category": "D",
+      "status": "\\[Z\\]"
+    },
+    {
+      "scientific_name": "Anser canagicus",
+      "polish_name": "śnieżyca cesarska",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Branta hutchinsii",
+      "polish_name": "bernikla północna",
+      "category": "D",
+      "status": "\\[Z\\]"
+    },
+    {
+      "scientific_name": "Bucephala albeola",
+      "polish_name": "gągołek",
+      "category": "D",
+      "status": "\\[z\\]"
+    },
+    {
+      "scientific_name": "Bucephala islandica",
+      "polish_name": "sierpiec",
+      "category": "D",
+      "status": "\\[z\\]"
+    },
+    {
+      "scientific_name": "Lophodytes cucullatus",
+      "polish_name": "kapturnik",
+      "category": "D",
+      "status": "\\[Z\\]"
+    },
+    {
+      "scientific_name": "Tadorna radjah",
+      "polish_name": "kazarka nadobna",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Tadorna cana",
+      "polish_name": "kazarka szarogłowa",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Netta peposaca",
+      "polish_name": "hełmiatka różowodzioba",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Anas cyanoptera",
+      "polish_name": "cynamonka",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Anas falcata",
+      "polish_name": "czuprynka",
+      "category": "D",
+      "status": "\\[z\\]"
+    },
+    {
+      "scientific_name": "Anas zonorhyncha",
+      "polish_name": "kaczka chińska",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Anas poecilorhyncha",
+      "polish_name": "kaczka pstrodzioba",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Anas sibilatrix",
+      "polish_name": "świstun chilijski",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Anas castanea",
+      "polish_name": "cyraneczka kasztanowata",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Anas bahamensis",
+      "polish_name": "rożeniec białolicy",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Anas flavirostris",
+      "polish_name": "cyraneczka żółtodzioba",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Aix sponsa",
+      "polish_name": "karolinka",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Oressochen melanopterus",
+      "polish_name": "grzywoszyjka andyjska",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Chenonetta jubata",
+      "polish_name": "grzywienka",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Callonetta leucophrys",
+      "polish_name": "cudokaczka",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Alectoris rufa",
+      "polish_name": "góropatwa czerwona",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Syrmaticus reevesii",
+      "polish_name": "bażant królewski",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Chrysolophus pictus",
+      "polish_name": "bażant złocisty",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Chrysolophus amherstiae",
+      "polish_name": "bażant diamentowy",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Lophura nycthemera",
+      "polish_name": "kiściec srebrzysty",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Phoenicopterus ruber",
+      "polish_name": "flaming karmazynowy",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Phoenicopterus minor",
+      "polish_name": "flaming mały",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Phoenicopterus chilensis",
+      "polish_name": "flaming chilijski",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Columba guinea",
+      "polish_name": "gołąb okularowy",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Streptopelia roseogrisea",
+      "polish_name": "cukrówka",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Spilopelia senegalensis",
+      "polish_name": "synogarlica senegalska",
+      "category": "D",
+      "status": "\\[z\\]"
+    },
+    {
+      "scientific_name": "Oena capensis",
+      "polish_name": "turkaweczka czarnogardła",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Geopelia cuneata",
+      "polish_name": "gołąbek diamentowy",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Porphyrio porphyrio",
+      "polish_name": "modrzyk",
+      "category": "D",
+      "status": "\\[z\\]"
+    },
+    {
+      "scientific_name": "Porphyrio poliocephalus",
+      "polish_name": "modrzyk siwogłowy",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Pluvianus aegyptius",
+      "polish_name": "pijawnik",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Eudyptes chrysocome",
+      "polish_name": "pingwin skalny",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Mycteria ibis",
+      "polish_name": "dławigad afrykański",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Ciconia abdimii",
+      "polish_name": "bocian białobrzuchy",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Pelecanus rufescens",
+      "polish_name": "pelikan mały",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Geronticus eremita",
+      "polish_name": "ibis grzywiasty",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Threskiornis aethiopicus",
+      "polish_name": "ibis czczony",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Eudocimus ruber",
+      "polish_name": "ibis szkarłatny",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Platalea alba",
+      "polish_name": "warzęcha czerwonolica",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Cathartes aura",
+      "polish_name": "sępnik różowogłowy",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Haliaeetus leucocephalus",
+      "polish_name": "bielik amerykański",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Haliaeetus pelagicus",
+      "polish_name": "bielik olbrzymi",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Parabuteo unicinctus",
+      "polish_name": "myszołowiec towarzyski",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Gyps rueppelli",
+      "polish_name": "sęp plamisty",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Merops nubicus",
+      "polish_name": "żołna szkarłatna",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Coracias caudataus",
+      "polish_name": "kraska liliowopierśna",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Caracara plancus",
+      "polish_name": "karakara czarnobrzucha",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Myiopsitta monachus",
+      "polish_name": "mnicha",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Cyanoliseus patagonus",
+      "polish_name": "patagonka",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Polytelis anthopeplus",
+      "polish_name": "księżniczka słoneczna",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Psittacula krameri",
+      "polish_name": "aleksandretta obrożna",
+      "category": "E",
+      "status": "x l"
+    },
+    {
+      "scientific_name": "Psittacula eupatria",
+      "polish_name": "aleksandretta większa",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Psittacula derbiana",
+      "polish_name": "aleksandretta chińska",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Platycercus eximius",
+      "polish_name": "rozella białolica",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Platycercus elegans",
+      "polish_name": "rozella królewska",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Barnardius zonarius",
+      "polish_name": "rozella czarnogłowa",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Agapornis roseicollis",
+      "polish_name": "nierozłączka czerwonoczelna",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Agapornis personatus",
+      "polish_name": "nierozłączka czarnogłowa",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Corvus splendens",
+      "polish_name": "wrona orientalna",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Bombycilla japonica",
+      "polish_name": "jemiołuszka japońska",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Acridotheres tristis",
+      "polish_name": "majna brunatna",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Phoenicurus leucocephalus",
+      "polish_name": "pleszka białogłowa",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Poephila guttata",
+      "polish_name": "zeberka",
+      "category": "E",
+      "status": "x l"
+    },
+    {
+      "scientific_name": "Serinus pusillus",
+      "polish_name": "kulczyk królewski",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Emberiza elegans",
+      "polish_name": "trznadel żółtogardły",
+      "category": "E",
+      "status": "x"
+    },
+    {
+      "scientific_name": "Passerina cyanea",
+      "polish_name": "łuszczyk indygowy",
+      "category": "D",
+      "status": "\\[z\\]"
+    },
+    {
+      "scientific_name": "Cardinalis cardinalis",
+      "polish_name": "kardynał szkarłatny",
+      "category": "E",
+      "status": "x"
+    }
+  ]
+}
