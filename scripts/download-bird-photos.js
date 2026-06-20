@@ -83,14 +83,14 @@ async function findImageUrl(latinName) {
   const apiBase = 'https://commons.wikimedia.org/w/api.php';
 
   // 1. Try direct file title
-  const directUrl = `${apiBase}?action=query&titles=${encodeURIComponent(fileTitle)}&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=800&format=json&origin=*`;
+  const directUrl = `${apiBase}?action=query&titles=${encodeURIComponent(fileTitle)}&prop=imageinfo&iiprop=url|extmetadata&format=json&origin=*`;
   const direct = await fetchJson(directUrl);
   const pages = Object.values(direct.query.pages);
   if (pages[0] && pages[0].imageinfo && pages[0].imageinfo[0]) {
     const ii = pages[0].imageinfo[0];
     const author = ii.extmetadata?.Artist?.value?.replace(/<[^>]+>/g, '') || 'unknown';
     const license = ii.extmetadata?.LicenseShortName?.value || 'unknown';
-    return { url: ii.thumburl || ii.url, author, license };
+    return { url: ii.url, author, license };
   }
 
   await sleep(API_DELAY);
@@ -103,14 +103,14 @@ async function findImageUrl(latinName) {
   await sleep(API_DELAY);
 
   const title = search.query.search[0].title;
-  const infoUrl = `${apiBase}?action=query&titles=${encodeURIComponent(title)}&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=800&format=json&origin=*`;
+  const infoUrl = `${apiBase}?action=query&titles=${encodeURIComponent(title)}&prop=imageinfo&iiprop=url|extmetadata&format=json&origin=*`;
   const info = await fetchJson(infoUrl);
   const p = Object.values(info.query.pages)[0];
   if (!p || !p.imageinfo) return null;
   const ii = p.imageinfo[0];
   const author = ii.extmetadata?.Artist?.value?.replace(/<[^>]+>/g, '') || 'unknown';
   const license = ii.extmetadata?.LicenseShortName?.value || 'unknown';
-  return { url: ii.thumburl || ii.url, author, license };
+  return { url: ii.url, author, license };
 }
 
 async function main() {
