@@ -186,10 +186,11 @@ document.addEventListener('DOMContentLoaded', () => {
             sizes="(max-width: 600px) 100vw, 45vw"
             alt="${ptak.nazwa} (${ptak.nazwaLacinska})"
             loading="lazy"
+            style="object-position:${ptak.focalPoint || 'center'}"
             onerror="this.removeAttribute('onerror');this.src='https://placehold.co/600x400/2a3226/b8d4a0?text=${encodeURIComponent(ptak.nazwa)}';"
           >
           <div class="photo-fade"></div>
-          <div class="photo-credit">© Wikimedia Commons</div>
+          <div class="photo-credit">${generatePhotoCredit(ptak)}</div>
           <div class="cat-strip">${generateCategoryTags(ptak.kategorie)}</div>
         </div>
 
@@ -402,6 +403,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }[status] || 'nieznany';
   }
 
+  function generatePhotoCredit(ptak) {
+    if (ptak.autor && ptak.licencja) {
+      return `Fot. ${ptak.autor} / ${ptak.licencja}`;
+    }
+    if (ptak.autor) {
+      return `Fot. ${ptak.autor} / Wikimedia Commons`;
+    }
+    return '© Wikimedia Commons';
+  }
+
   function getOptimizedImageUrl(url, size = '600px') {
     if (!url.includes('upload.wikimedia.org')) return url;
     return url.replace(/\/\d+px-/g, `/${size}-`);
@@ -520,7 +531,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <path d="M7 4.5L18 11L7 17.5V4.5Z" fill="#1c2319"/>
             </svg>
           </div>
-          <div class="yt-label">Leśny Budzik · Echa Leśne</div>
+          <div class="yt-label">${ptak.film.zrodlo || 'Leśny Budzik · Echa Leśne'}</div>
         </div>
       </div>`;
   }
