@@ -5,7 +5,9 @@
  *   node scripts/download-bird-photos.js
  *
  * Images are saved to ptaki-przewodnik/img/<NazwaLacinska>.jpg
- * Attribution (author, license) is printed for each downloaded file.
+ * Attribution (author, license) is printed for each downloaded file AND persisted
+ * into ptaki.json as the `autor` / `licencja` fields, so future photo updates keep
+ * their attribution in sync automatically.
  */
 const fs   = require('fs');
 const path = require('path');
@@ -138,6 +140,9 @@ async function main() {
         failed++;
       } else {
         await downloadFile(result.url, dest);
+        // Persist attribution into the dataset (bird is a reference into data.ptaki)
+        if (result.author && result.author !== 'unknown') bird.autor = result.author.trim();
+        if (result.license && result.license !== 'unknown') bird.licencja = result.license.trim();
         console.log(`OK  |  ${result.license}  |  ${result.author}`);
         ok++;
       }
@@ -146,6 +151,12 @@ async function main() {
       failed++;
     }
     await sleep(DELAY_MS);
+  }
+
+  // Save attribution back to ptaki.json (only if we downloaded anything new)
+  if (ok > 0) {
+    fs.writeFileSync(DATA_PATH, JSON.stringify(data, null, 2));
+    console.log('Zaktualizowano atrybucję (autor/licencja) w ptaki.json');
   }
 
   console.log(`\nDownloaded: ${ok}  |  Failed: ${failed}`);
