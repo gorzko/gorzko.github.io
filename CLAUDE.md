@@ -1,96 +1,121 @@
-# Przewodnik Ptaków Polski — instrukcje dla agentów AI
+# Polish Bird Guide — AI agent instructions
 
-Interaktywny przewodnik ptaków lęgowych Polski (65 gatunków). Statyczna strona na GitHub Pages, vanilla JS, brak frameworków. Właściciel: Marek (Podkarpacie).
+Interactive guide to breeding birds of Poland (65 species). Static site on GitHub Pages, vanilla JS, no frameworks. Owner: Marek (Podkarpacie region). The webpage content is in Polish.
 
-## Komendy
+## Commands
 
 ```bash
-npm test              # uruchom testy (walidacja danych + renderowanie)
-npm run test:watch    # tryb watch z nodemon
+npm test              # run tests (data validation + rendering)
+npm run test:watch    # watch mode with nodemon
+node scripts/verify-bird-photos.js   # verify sizes and existence of photos for all 65 species
 ```
 
-CI uruchamia testy automatycznie przy push/PR na main (tylko jeśli zmieniono ptaki.json, tests/ lub package.json).
+CI runs tests automatically on push/PR to main (only when ptaki.json, tests/, or package.json changed).
 
-## Struktura projektu
+## Project structure
 
 ```
 ptaki-przewodnik/
-  index.html          # główna strona
-  script.js           # cała logika JS (556 linii)
-  styles.css          # style + tokeny CSS (1428 linii)
-  data/ptaki.json     # dane 65 gatunków
-  img/                # zdjęcia ptaków (3 rozmiary każde)
-scripts/              # jednorazowe skrypty do przetwarzania danych
-tests/ptaki.test.js   # testy
-mockups/              # NIE MODYFIKOWAĆ (pliki referencyjne)
+  index.html          # main page
+  script.js           # all JS logic
+  styles.css          # styles + CSS tokens
+  data/ptaki.json     # data for 65 species
+  img/                # bird photos (3 sizes each)
+polish-birds-data/    # Komisja Faunistyczna data (391 species)
+scripts/
+  download-bird-photos.js   # download photos from Wikimedia (handles rate limiting)
+  verify-bird-photos.js     # verify photo sizes/existence
+tests/
+  ptaki.test.js       # data validation + rendering tests
+  e2e.spec.js         # e2e tests (Playwright)
+mockups/              # DO NOT MODIFY (reference files)
 ```
 
-## Schemat ptaki.json
+## ptaki.json schema
 
-Każdy ptak musi mieć:
+Each bird must have:
 
-| Pole | Typ | Dozwolone wartości |
-|------|-----|-------------------|
-| `id` | number | unikalne |
-| `nazwa` | string | polska nazwa |
+| Field | Type | Allowed values |
+|-------|------|----------------|
+| `id` | number | unique |
+| `nazwa` | string | Polish name |
 | `nazwaLacinska` | string | |
 | `kategorie` | array | `"Ogród"`, `"Najliczniejsze"`, `"Najpowszechniejsze"`, `"Top Podkarpacia"`, `"Podkarpackie Atrakcje"` |
-| `zdjecie` | string | `img/NazwaGatunku.jpg` |
-| `liczebnosc` | string | np. `"100–200 tys."` |
+| `zdjecie` | string | `img/SpeciesName.jpg` |
+| `liczebnosc` | string | e.g. `"100–200 tys."` |
 | `trend` | string | `↑` / `→` / `↓` |
 | `migracja` | string | `"Osiadły"` / `"Wędrowny"` |
 | `statusCzerwonejKsiazki` | string | `LC` / `NT` / `VU` / `EN` |
-| `cechy` | array | 5–7 cech z emoji, np. `"🔊 Melodyjny śpiew"` |
-| `film.id` | string | 11-znakowe ID YouTube |
+| `cechy` | array | 5–7 traits with emoji, e.g. `"🔊 Melodyjny śpiew"` |
+| `film.id` | string | 11-character YouTube ID |
 | `film.platforma` | string | `"youtube"` / `"facebook"` |
 | `zrodla` | array | `"MPPL 2025"`, `"Czerwona Księga Ptaków Polski"` |
-| `peakMonths` | array | 1–12, tylko dla ptaków Podkarpackich |
+| `peakMonths` | array | 1–12, only for Podkarpacie birds |
 
-## Zasady treści (obrazy)
+## Image content rules
 
-- **TYLKO** Wikimedia Commons — nigdy inne źródła bez zgody użytkownika
-- Wyłącznie fotografie (nie ilustracje, rysunki, grafiki cyfrowe)
-- Dorosłe osobniki w naturalnej pozie, wyraźne, prawidłowo naświetlone
-- Licencje: CC0, CC-BY-SA 4.0, CC-BY-SA 3.0, CC-BY 4.0 — unikać NC
-- Wymagane 3 rozmiary: `NazwaGatunku.jpg` + `800px_NazwaGatunku.jpg` + `1920px_NazwaGatunku.jpg`
-- Minimum: desktop 1200×900px / 100KB, mobile 800×600px / 50KB
-- Pełna specyfikacja: `ptaki-przewodnik/img/image-quality.md`
+- **ONLY** Wikimedia Commons — never other sources without user consent
+- Photographs only (not illustrations, drawings, digital art)
+- Adult specimens in natural pose, sharp, properly exposed
+- Licenses: CC0, CC-BY-SA (any version), CC-BY (any version) — avoid NC
+- Required 3 sizes with prefix: `SpeciesName.jpg` (original) + `800px_SpeciesName.jpg` (mobile) + `1920px_SpeciesName.jpg` (desktop)
+- Generate variants: Python PIL with `Image.LANCZOS`, JPEG quality 85–90
+- Minimum: desktop 1200x900px / 100KB, mobile 800x600px / 50KB
+- Full spec: `ptaki-przewodnik/img/image-quality.md`
 
-### Priorytet wyboru zdjęć z Wikimedia
-1. Featured Pictures → 2. Quality Images → 3. Valued Images → 4. inne wysokiej jakości
+### Wikimedia image selection priority
+1. Featured Pictures → 2. Quality Images → 3. Valued Images → 4. other high-quality
 
-## Pliki NIE modyfikować
+### Visual inspection (mandatory)
+
+After every download or replacement, **always** use the `Read` tool to visually inspect the image. Check criteria from `image-quality.md`:
+
+- **Content**: is it a photograph (not eggs, illustration, book cover)? Adult specimen? Wild bird?
+- **Visual quality**: sharpness, no grain/noise, no motion blur, no soft focus
+- **Composition**: bird large in frame (>10% of area), diagnostic features visible, natural pose
+- **Aesthetics**: not unsettling appearance, natural colors, good lighting
+
+Technical tests (resolution, file size) are **not sufficient** — a 4252x3307px photo of eggs will pass all tests but it's not a bird photo.
+
+### Downloading from Wikimedia
+
+- For searching: MCP `wikimedia-image-search`
+- For downloading: `scripts/download-bird-photos.js` (handles 429 rate limiting, exponential backoff, response validation)
+- When using manual `curl`: add `-A "BirdGuide/1.0"`, `sleep 3` between requests, check file size (< 5KB = HTML error page)
+
+## Do NOT modify
 
 - `mockups/lozowka.html`
 - `mockups/ptaki-przewodnik.html`
 
 ## MCP Servers
 
-| Serwer | Kiedy używać |
+| Server | When to use |
 |--------|-------------|
-| `wikimedia-image-search` | szukanie zdjęć ptaków do ptaki.json |
-| `youtube` (`@kirbah/mcp-youtube`) | sprawdzanie ID filmów, metadane, wyszukiwanie nagrań gatunków |
-| `tavily` | wyszukiwanie danych o gatunkach (IUCN, MPPL, eBird), weryfikacja faktów |
+| `wikimedia-image-search` | searching for bird photos for ptaki.json |
+| `youtube` (`@kirbah/mcp-youtube`) | checking video IDs, metadata, searching for species recordings |
+| `tavily` | searching for species data (IUCN, MPPL, eBird), fact verification |
 
-## Claude Code — ograniczenia i konfiguracja
+## Claude Code — limitations and configuration
 
-### Zmienne środowiskowe
+### Environment variables
 
-| Zmienna | Do czego | Gdzie ustawić |
-|---------|----------|---------------|
-| `YOUTUBE_API_KEY` | youtube MCP (search, channel stats) | lokalnie: `.claude/settings.local.json`; chmura: claude.ai/code → Environments |
-| `TAVILY_API_KEY` | tavily MCP | j.w. |
+| Variable | Purpose | Where to set |
+|----------|---------|--------------|
+| `YOUTUBE_API_KEY` | youtube MCP (search, channel stats) | locally: `.claude/settings.local.json`; cloud: claude.ai/code → Environments |
+| `TAVILY_API_KEY` | tavily MCP | same as above |
 
-`settings.local.json` jest w `.gitignore` — nie commitować.
+`settings.local.json` is in `.gitignore` — do not commit.
 
-### Znane ograniczenia w sesji chmurowej
+### Known limitations in cloud sessions
 
-- `getTranscripts` (youtube MCP) **nie działa** — YouTube blokuje zapytania z IP centrów danych. Działa normalnie lokalnie. Nie jest to błąd konfiguracji, nie ma obejścia bez proxy z rezydencjalnym IP.
-- Pozostałe 7/8 narzędzi youtube MCP działają poprawnie.
+- `getTranscripts` (youtube MCP) **does not work** — YouTube blocks requests from data center IPs. Works normally locally. Not a configuration issue, no workaround without a residential IP proxy.
+- The remaining 7/8 youtube MCP tools work correctly.
 
-### Weryfikacja przed committem
+### Pre-commit verification
 
 ```bash
-npm test              # musi przejść bez błędów
-git status            # sprawdź co idzie do commita
+npm test                              # must pass with no errors
+node scripts/verify-bird-photos.js    # 65 PASS, 0 FAIL (when photos changed)
+git status                            # check what's going into the commit
 ```
