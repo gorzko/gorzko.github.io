@@ -830,13 +830,14 @@
       ],
       "film": {
         "id": "tIGE37BLGqQ",
-        "tytul": "1568. Polák malý / Ferruginous Duck / Podgorzałka zwyczajna",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Podgorzałka",
+        "platforma": "youtube",
+        "zrodlo": "Jarmila Kačírková"
       }
     },
     {
       "id": 25,
-      "nazwa": "Perkoz Rdzawoszyi",
+      "nazwa": "Perkoz rdzawoszyi",
       "nazwaLacinska": "Podiceps grisegena",
       "kategorie": [
         "Podkarpackie Atrakcje"
@@ -869,7 +870,7 @@
     },
     {
       "id": 26,
-      "nazwa": "Świergotek Rdzawogardły",
+      "nazwa": "Świergotek rdzawogardły",
       "nazwaLacinska": "Anthus cervinus",
       "kategorie": [
         "Podkarpackie Atrakcje"
@@ -897,13 +898,14 @@
       ],
       "film": {
         "id": "Rscdi2LsuB4",
-        "tytul": "Lapinkirvinen - Anthus cervinus - Red-throated Pipit",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Świergotek rdzawogardły",
+        "platforma": "youtube",
+        "zrodlo": "Suomen Linnut"
       }
     },
     {
       "id": 27,
-      "nazwa": "Pliszka Górska",
+      "nazwa": "Pliszka górska",
       "nazwaLacinska": "Motacilla cinerea",
       "kategorie": [
         "Podkarpackie Atrakcje"
@@ -939,7 +941,7 @@
     },
     {
       "id": 28,
-      "nazwa": "Orlik Krzykliwy",
+      "nazwa": "Orlik krzykliwy",
       "nazwaLacinska": "Clanga pomarina",
       "kategorie": [
         "Podkarpackie Atrakcje"
@@ -970,8 +972,9 @@
       ],
       "film": {
         "id": "Ud8weSBN_3s",
-        "tytul": "Eagle call. Female Lesser Spotted Eagle (Aquila pomarina)",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Orlik krzykliwy",
+        "platforma": "youtube",
+        "zrodlo": "jenteandfriends"
       }
     },
     {
@@ -1010,7 +1013,7 @@
     },
     {
       "id": 30,
-      "nazwa": "Dzięcioł Zielonosiwy",
+      "nazwa": "Dzięcioł zielonosiwy",
       "nazwaLacinska": "Picus canus",
       "kategorie": [
         "Podkarpackie Atrakcje"
@@ -1045,8 +1048,9 @@
       ],
       "film": {
         "id": "O2eYVOZ-YTs",
-        "tytul": "Žluna šedá / Grey-headed woodpecker / Dzięcioł zielonosiwy / Pic cendré",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Dzięcioł zielonosiwy",
+        "platforma": "youtube",
+        "zrodlo": "Jarmila Kačírková"
       }
     },
     {
@@ -1115,13 +1119,14 @@
       ],
       "film": {
         "id": "wJho1mfO3HY",
-        "tytul": "Zausznik – śpiew i głosy",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Zausznik",
+        "platforma": "youtube",
+        "zrodlo": "YouTube Birds"
       }
     },
     {
       "id": 33,
-      "nazwa": "Nur Czarnoszyi",
+      "nazwa": "Nur czarnoszyi",
       "nazwaLacinska": "Gavia arctica",
       "kategorie": [
         "Podkarpackie Atrakcje"
@@ -1149,8 +1154,9 @@
       ],
       "film": {
         "id": "l_LHI5VMg5w",
-        "tytul": "Black throated loon (Gavia arctica) sound call and song",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Nur czarnoszyi",
+        "platforma": "youtube",
+        "zrodlo": "YouTube Birds"
       }
     },
     {
@@ -1183,8 +1189,9 @@
       ],
       "film": {
         "id": "TeYdmL7gsR8",
-        "tytul": "Bird sounds – Black-crowned night heron (Nycticorax nycticorax)",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Ślepowron",
+        "platforma": "youtube",
+        "zrodlo": "European Wildlife by Lukáš Pich"
       }
     },
     {
@@ -1226,7 +1233,7 @@
     },
     {
       "id": 36,
-      "nazwa": "Sikora Uboga",
+      "nazwa": "Sikora uboga",
       "nazwaLacinska": "Poecile palustris",
       "kategorie": [
         "Podkarpackie Atrakcje"
@@ -1260,8 +1267,9 @@
       ],
       "film": {
         "id": "RBAU0RFygZQ",
-        "tytul": "Sýkora babka - The marsh tit (Parus palustris)",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Sikora uboga",
+        "platforma": "youtube",
+        "zrodlo": "Cesty Přírodou"
       }
     },
     {
@@ -1296,8 +1304,9 @@
       ],
       "film": {
         "id": "8PEMhQztiF8",
-        "tytul": "Honey Buzzard (Pernis apivorus) male feeds fledgling and makes lure calls",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Trzmielojad",
+        "platforma": "youtube",
+        "zrodlo": "Stef van Rijn"
       }
     },
     {
@@ -1330,8 +1339,9 @@
       ],
       "film": {
         "id": "_bhb9FhoeWM",
-        "tytul": "Lapasotka - Aythya marila - Greater Scaup",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Ogorzałka",
+        "platforma": "youtube",
+        "zrodlo": "Suomen Linnut"
       }
     },
     {
@@ -1363,13 +1373,14 @@
       ],
       "film": {
         "id": "bVjtfhYapjE",
-        "tytul": "Tukkakoskelo (głos szlachara)",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Szlachar",
+        "platforma": "youtube",
+        "zrodlo": "Rantojen laulavat linnut"
       }
     },
     {
       "id": 40,
-      "nazwa": "Siewka Złota",
+      "nazwa": "Siewka złota",
       "nazwaLacinska": "Pluvialis apricaria",
       "kategorie": [
         "Podkarpackie Atrakcje"
@@ -1397,8 +1408,9 @@
       ],
       "film": {
         "id": "RlmD389XosQ",
-        "tytul": "Siewka złota – głosy (Islandia)",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Siewka złota",
+        "platforma": "youtube",
+        "zrodlo": "Birdfun"
       }
     },
     {
@@ -1442,7 +1454,7 @@
     },
     {
       "id": 42,
-      "nazwa": "Bocian Czarny",
+      "nazwa": "Bocian czarny",
       "nazwaLacinska": "Ciconia nigra",
       "kategorie": [
         "Podkarpackie Atrakcje"
@@ -1473,8 +1485,9 @@
       ],
       "film": {
         "id": "StkccZA8W2M",
-        "tytul": "Bird sounds – Black stork (Ciconia nigra)",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Bocian czarny",
+        "platforma": "youtube",
+        "zrodlo": "European Wildlife by Lukáš Pich"
       }
     },
     {
@@ -1512,13 +1525,14 @@
       ],
       "film": {
         "id": "gEYQEPboBM8",
-        "tytul": "Stonechat at Hells Mouth, Cornwall - Tarier Pâtre",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Kląskawka",
+        "platforma": "youtube",
+        "zrodlo": "Paul Dinning"
       }
     },
     {
       "id": 44,
-      "nazwa": "Świergotek Drzewny",
+      "nazwa": "Świergotek drzewny",
       "nazwaLacinska": "Anthus trivialis",
       "kategorie": [
         "Podkarpackie Atrakcje"
@@ -1586,8 +1600,9 @@
       ],
       "film": {
         "id": "OM98Su48oy8",
-        "tytul": "Great grey shrike Song",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Srokosz",
+        "platforma": "youtube",
+        "zrodlo": "ToToWildlife"
       }
     },
     {
@@ -1630,13 +1645,14 @@
       ],
       "film": {
         "id": "IKxcC_bUHuI",
-        "tytul": "Sýkora uhelníček / Coal tit / Tannenmeise / Sosnówka",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Sosnówka",
+        "platforma": "youtube",
+        "zrodlo": "BIRDS"
       }
     },
     {
       "id": 47,
-      "nazwa": "Muchołówka Mała",
+      "nazwa": "Muchołówka mała",
       "nazwaLacinska": "Ficedula parva",
       "kategorie": [
         "Podkarpackie Atrakcje"
@@ -1743,7 +1759,7 @@
     },
     {
       "id": 50,
-      "nazwa": "Myszołów Włochaty",
+      "nazwa": "Myszołów włochaty",
       "nazwaLacinska": "Buteo lagopus",
       "kategorie": [
         "Podkarpackie Atrakcje"
@@ -1893,7 +1909,7 @@
     },
     {
       "id": 54,
-      "nazwa": "Bocian Biały",
+      "nazwa": "Bocian biały",
       "nazwaLacinska": "Ciconia ciconia",
       "kategorie": [
         "Podkarpackie Atrakcje"
@@ -1992,8 +2008,9 @@
       ],
       "film": {
         "id": "dhaCumm3qXc",
-        "tytul": "Red-footed falcon sound (falco vespertinus) [Nature sounds]",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Kobczyk",
+        "platforma": "youtube",
+        "zrodlo": "Serhii B."
       }
     },
     {
@@ -2073,7 +2090,7 @@
     },
     {
       "id": 59,
-      "nazwa": "Muchołówka Białoszyja",
+      "nazwa": "Muchołówka białoszyja",
       "nazwaLacinska": "Ficedula albicollis",
       "kategorie": [
         "Podkarpackie Atrakcje"
@@ -2107,7 +2124,7 @@
     },
     {
       "id": 60,
-      "nazwa": "Mewa Białogłowa",
+      "nazwa": "Mewa białogłowa",
       "nazwaLacinska": "Larus cachinnans",
       "kategorie": [
         "Podkarpackie Atrakcje"
@@ -2145,8 +2162,9 @@
       ],
       "film": {
         "id": "-u2omwUgXa0",
-        "tytul": "Caspian Gull (Larus cachinans) feeding on fish",
-        "platforma": "youtube"
+        "tytul": "Mewa białogłowa – żerowanie",
+        "platforma": "youtube",
+        "zrodlo": "Petr Podzemny"
       }
     },
     {
@@ -2224,7 +2242,7 @@
     },
     {
       "id": 63,
-      "nazwa": "Jaskółka Dymówka",
+      "nazwa": "Jaskółka dymówka",
       "nazwaLacinska": "Hirundo rustica",
       "kategorie": [
         "Top Podkarpacia"
@@ -2262,7 +2280,7 @@
     },
     {
       "id": 64,
-      "nazwa": "Pliszka Siwa",
+      "nazwa": "Pliszka siwa",
       "nazwaLacinska": "Motacilla alba",
       "kategorie": [
         "Top Podkarpacia"
@@ -2343,6 +2361,46 @@
         "tytul": "Leśny Budzik – Krzyżówka",
         "platforma": "youtube"
       }
+    },
+    {
+      "id": 66,
+      "nazwa": "Sikora czarnogłowa",
+      "nazwaLacinska": "Poecile montanus",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Poecile_montanus.jpg",
+      "liczebnosc": "300–500 tys.",
+      "trend": "↓",
+      "migracja": "Osiadły",
+      "statusCzerwonejKsiazki": "LC",
+      "cechy": [
+        "⚫ Czarna czapka matowa, bez połysku",
+        "🟤 Brązowawe boki, biały policzek i szyja",
+        "📏 12–13 cm",
+        "🌲 Wilgotne lasy olszowe i wierzbowe",
+        "🐛 Owady latem; nasiona i orzeszki zimą",
+        "🎵 Charakterystyczne 'czej-czej' i gwizd 'pii'"
+      ],
+      "film": {
+        "id": "luBtm8Fx4VI",
+        "tytul": "Leśny Budzik – Sikora czarnogłowa",
+        "platforma": "youtube"
+      },
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "peakMonths": [
+        1,
+        2,
+        3,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
     }
   ]
 }
