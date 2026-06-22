@@ -1,0 +1,476 @@
+lp.,nazwa naukowa,nazwa polska,kategoria,status
+1,Oxyura leucocephala,sterniczka,A,Z
+2,Cygnus olor,łabędź niemy,A,L
+3,Cygnus columbianus,łabędź czarnodzioby,A,P
+4,Cygnus cygnus,łabędź krzykliwy,A,L
+5,Branta bernicla,bernikla obrożna,A,P
+6,Branta ruficollis,bernikla rdzawoszyja,A,P
+7,Branta canadensis,bernikla kanadyjska,C,l P
+8,Branta leucopsis,bernikla białolica,A,P
+9,Anser anser,gęgawa,A,L
+10,Anser erythropus,gęś mała,A,P
+11,Anser albifrons,gęś białoczelna,A,P
+12,Anser serrirostris,gęś tundrowa,A,P
+13,Anser brachyrhynchus,gęś krótkodzioba,A,P
+14,Anser fabalis,gęś zbożowa,A,P
+15,Aix galericulata,mandarynka,C,l P
+16,Alopochen aegyptiaca,gęsiówka egipska,C,l P
+17,Tadorna tadorna,ohar,A,L
+18,Tadorna ferruginea,kazarka rdzawa,A,(l) P
+19,Clangula hyemalis,lodówka,A,P
+20,Polysticta stelleri,birginiak,A,Z
+21,Somateria spectabilis,turkan,A,Z
+22,Somateria mollissima,edredon,A,l P
+23,Histrionicus histrionicus,kamieniuszka,A,z
+24,Melanitta nigra,markaczka,A,P
+25,Melanitta americana,markaczka amerykańska,A,Z
+26,Melanitta fusca,uhla,A,P
+27,Melanitta stejnegeri,uhla azjatycka,A,Z
+28,Bucephala clangula,gągoł,A,L
+29,Mergellus albellus,bielaczek,A,P
+30,Mergus serrator,szlachar,A,(l) P
+31,Mergus merganser,nurogęś,A,L
+32,Netta rufina,hełmiatka,A,l P
+33,Aythya nyroca,podgorzałka,A,L
+34,Aythya ferina,głowienka,A,L
+35,Aythya collaris,czerniczka,A,Z
+36,Aythya fuligula,czernica,A,L
+37,Aythya affinis,ogorzałka mała,A,z
+38,Aythya marila,ogorzałka,A,(l) P
+39,Sibirionetta formosa,bajkałówka,A,z
+40,Spatula querquedula,cyranka,A,L
+41,Spatula discors,cyranka modroskrzydła,A,z
+42,Spatula clypeata,płaskonos,A,L
+43,Mareca strepera,krakwa,A,L
+44,Mareca penelope,świstun,A,l P
+45,Mareca americana,świstun amerykański,A,Z
+46,Anas platyrhynchos,krzyżówka,A,L
+47,Anas acuta,rożeniec,A,l P
+48,Anas crecca,cyraneczka,A,L
+49,Tetrastes bonasia,jarząbek,A,L
+50,Lagopus lagopus,pardwa mszarna,B,(z)
+51,Tetrao urogallus,głuszec,A,L
+52,Lyrurus tetrix,cietrzew,A,L
+53,Perdix perdix,kuropatwa,A,L
+54,Phasianus colchicus,bażant,C,L
+55,Coturnix coturnix,przepiórka,A,L
+56,Phoenicopterus roseus,flaming różowy,A,Z
+57,Tachybaptus ruficollis,perkozek,A,L
+58,Podilymbus podiceps,perkoz grubodzioby,A,z
+59,Podiceps auritus,perkoz rogaty,A,l P
+60,Podiceps grisegena,perkoz rdzawoszyi,A,L
+61,Podiceps cristatus,perkoz dwuczuby,A,L
+62,Podiceps nigricollis,zausznik,A,L
+63,Otis tarda,drop,A,(l) Z
+64,Chlamydotis macqueenii,hubara arabska,A,z
+65,Tetrax tetrax,strepet,A,(l) Z
+66,Cuculus canorus,kukułka,A,L
+67,Syrrhaptes paradoxus,pustynnik,A,(l) Z
+68,Streptopelia orientalis,turkawka wschodnia,A,z
+69,Streptopelia turtur,turkawka,A,L
+70,Streptopelia decaocto,sierpówka,A,L
+71,Columba palumbus,grzywacz,A,L
+72,Columba livia forma urbana,gołąb miejski,C,L
+73,Columba oenas,siniak,A,L
+74,Antigone canadensis,żuraw kanadyjski,A,z
+75,Grus virgo,żuraw stepowy,A,z
+76,Grus grus,żuraw,A,L
+77,Rallus aquaticus,wodnik,A,L
+78,Crex crex,derkacz,A,L
+79,Porzana porzana,kropiatka,A,L
+80,Gallinula chloropus,kokoszka,A,L
+81,Fulica atra,łyska,A,L
+82,Zapornia parva,zielonka,A,L
+83,Zapornia pusilla,karliczka,A,l Z
+84,Burhinus oedicnemus,kulon,A,(l) Z
+85,Recurvirostra avosetta,szablodziób,A,l P
+86,Himantopus himantopus,szczudłak,A,l P
+87,Haematopus ostralegus,ostrygojad,A,l P
+88,Pluvialis squatarola,siewnica,A,P
+89,Pluvialis apricaria,siewka złota,A,(l) P
+90,Pluvialis dominica,siewka szara,A,Z
+91,Pluvialis fulva,siewka złotawa,A,Z
+92,Eudromias morinellus,mornel,A,(l) P
+93,Charadrius hiaticula,sieweczka obrożna,A,L
+94,Thinornis dubius,sieweczka rzeczna,A,L
+95,Vanellus vanellus,czajka,A,L
+96,Vanellus spinosus,czajka szponiasta,A,z
+97,Vanellus gregarius,czajka towarzyska,A,Z
+98,Vanellus leucurus,czajka stepowa,A,Z
+99,Anarhynchus asiaticus,sieweczka długonoga,A,z
+100,Anarhynchus atrifrons,sieweczka tybetańska,A,z
+101,Anarhynchus leschenaultii,sieweczka pustynna,A,Z
+102,Anarhynchus alexandrinus,sieweczka morska,A,l Z
+103,Numenius phaeopus,kulik mniejszy,A,P
+104,Numenius tenuirostris,kulik cienkodzioby,A,z
+105,Numenius arquata,kulik wielki,A,L
+106,Limosa lapponica,szlamnik,A,P
+107,Limosa limosa,rycyk,A,L
+108,Limnodromus scolopaceus,szlamiec długodzioby,A,Z
+109,Lymnocryptes minimus,bekasik,A,(l) P
+110,Scolopax rusticola,słonka,A,L
+111,Gallinago media,dubelt,A,L
+112,Gallinago gallinago,kszyk,A,L
+113,Xenus cinereus,terekia,A,Z
+114,Actitis hypoleucos,brodziec piskliwy,A,L
+115,Actitis macularius,brodziec plamisty,A,z
+116,Phalaropus fulicarius,płatkonóg płaskodzioby,A,Z
+117,Phalaropus lobatus,płatkonóg szydłodzioby,A,P
+118,Tringa ochropus,samotnik,A,L
+119,Tringa stagnatilis,brodziec pławny,A,l P
+120,Tringa glareola,łęczak,A,l P
+121,Tringa totanus,krwawodziób,A,L
+122,Tringa flavipes,brodziec żółtonogi,A,z
+123,Tringa erythropus,brodziec śniady,A,P
+124,Tringa nebularia,kwokacz,A,P
+125,Tringa melanoleuca,brodziec piegowaty,A,z
+126,Arenaria interpres,kamusznik,A,P
+127,Calidris canutus,biegus rdzawy,A,P
+128,Calidris tenuirostris,biegus wielki,A,z
+129,Calidris pugnax,batalion,A,l P
+130,Calidris acuminata,biegus ostrosterny,A,z
+131,Calidris falcinellus,biegus płaskodzioby,A,P
+132,Calidris ferruginea,biegus krzywodzioby,A,P
+133,Calidris temminckii,biegus mały,A,P
+134,Calidris subruficollis,biegus płowy,A,Z
+135,Calidris alba,piaskowiec,A,P
+136,Calidris alpina,biegus zmienny,A,(l) P
+137,Calidris maritima,biegus morski,A,Z
+138,Calidris bairdii,biegus długoskrzydły,A,z
+139,Calidris melanotos,biegus arktyczny,A,Z
+140,Calidris pusilla,biegus tundrowy,A,z
+141,Calidris minuta,biegus malutki,A,P
+142,Calidris minutilla,biegus karłowaty,A,z
+143,Calidris fuscicollis,biegus białorzytny,A,Z
+144,Glareola nordmanni,żwirowiec stepowy,A,Z
+145,Glareola pratincola,żwirowiec łąkowy,A,Z
+146,Stercorarius parasiticus,wydrzyk ostrosterny,A,P
+147,Stercorarius longicaudus,wydrzyk długosterny,A,Z
+148,Stercorarius pomarinus,wydrzyk tęposterny,A,Z
+149,Stercorarius skua,wydrzyk wielki,A,Z
+150,Fratercula arctica,maskonur,A,Z
+151,Cepphus grylle,nurnik,A,P
+152,Alca torda,alka,A,P
+153,Alle alle,alczyk,A,Z
+154,Uria lomvia,nurzyk polarny,A,z
+155,Uria aalge,nurzyk,A,P
+156,Sternula albifrons,rybitwa białoczelna,A,L
+157,Hydroprogne caspia,rybitwa wielkodzioba,A,l P
+158,Gelochelidon nilotica,rybitwa krótkodzioba,A,Z
+159,Chlidonias hybrida,rybitwa białowąsa,A,L
+160,Chlidonias leucopterus,rybitwa białoskrzydła,A,L
+161,Chlidonias niger,rybitwa czarna,A,L
+162,Thalasseus sandvicensis,rybitwa czubata,A,L
+163,Sterna paradisaea,rybitwa popielata,A,(l) P
+164,Sterna hirundo,rybitwa rzeczna,A,L
+165,Sterna dougallii,rybitwa różowa,A,z
+166,Hydrocoloeus minutus,mewa mała,A,(l) P
+167,Rhodostethia rosea,mewa różowa,A,z
+168,Rissa tridactyla,mewa trójpalczasta,A,P
+169,Xema sabini,mewa obrożna,A,Z
+170,Pagophila eburnea,mewa modrodzioba,A,z
+171,Chroicocephalus genei,mewa cienkodzioba,A,Z
+172,Chroicocephalus ridibundus,śmieszka,A,L
+173,Leucophaeus atricilla,mewa karaibska,A,z
+174,Ichthyaetus ichthyaetus,orlica,A,Z
+175,Ichthyaetus audouinii,mewa śródziemnomorska,A,z
+176,Ichthyaetus melanocephalus,mewa czarnogłowa,A,l P
+177,Larus delawarensis,mewa delawarska,A,Z
+178,Larus canus,mewa siwa,A,L
+179,Larus cachinnans,mewa białogłowa,A,L
+180,Larus smithsonianus,mewa popielata,A,z
+181,Larus argentatus,mewa srebrzysta,A,L
+182,Larus michahellis,mewa romańska,A,l P
+183,Larus marinus,mewa siodłata,A,P
+184,Larus hyperboreus,mewa blada,A,Z
+185,Larus fuscus,mewa żółtonoga,A,l P
+186,Larus schistisagus,mewa ochocka,A,z
+187,Larus glaucoides,mewa polarna,A,Z
+188,Gavia stellata,nur rdzawoszyi,A,P
+189,Gavia immer,lodowiec,A,Z
+190,Gavia adamsii,nur białodzioby,A,Z
+191,Gavia pacifica,nur pacyficzny,A,z
+192,Gavia arctica,nur czarnoszyi,A,(l) P
+193,Hydrobates pelagicus,nawałnik burzowy,A,Z
+194,Hydrobates leucorhous,nawałnik duży,A,Z
+195,Fulmarus glacialis,fulmar,A,Z
+196,Calonectris diomedea,burzyk żółtodzioby,A,z
+197,Ardenna grisea,burzyk szary,A,Z
+198,Puffinus puffinus,burzyk północny,A,z
+199,Puffinus yelkouan,burzyk śródziemnomorski,A,z
+200,Ciconia nigra,bocian czarny,A,L
+201,Ciconia ciconia,bocian biały,A,L
+202,Morus bassanus,głuptak,A,Z
+203,Sula leucogaster,głuptak białobrzuchy,A,z
+204,Microcarbo pygmaeus,kormoran mały,A,l Z
+205,Gulosus aristotelis,kormoran czubaty,A,z
+206,Phalacrocorax carbo,kormoran,A,L
+207,Plegadis falcinellus,ibis kasztanowaty,A,Z
+208,Platalea leucorodia,warzęcha,A,Z
+209,Pelecanus onocrotalus,pelikan różowy,A,Z
+210,Pelecanus crispus,pelikan kędzierzawy,A,Z
+211,Botaurus stellaris,bąk,A,L
+212,Botaurus minutus,bączek,A,L
+213,Egretta garzetta,czapla nadobna,A,l P
+214,Nycticorax nycticorax,ślepowron,A,L
+215,Ardeola ralloides,czapla modronosa,A,Z
+216,Ardea alba,czapla biała,A,L
+217,Ardea ibis,czapla złotawa,A,Z
+218,Ardea purpurea,czapla purpurowa,A,l P
+219,Ardea cinerea,czapla siwa,A,L
+220,Caprimulgus europaeus,lelek,A,L
+221,Tachymarptis melba,jerzyk alpejski,A,Z
+222,Apus apus,jerzyk,A,L
+223,Apus pallidus,jerzyk blady,A,Z
+224,Tyto alba,płomykówka,A,L
+225,Aegolius funereus,włochatka,A,L
+226,Athene noctua,pójdźka,A,L
+227,Surnia ulula,sowa jarzębata,A,Z
+228,Glaucidium passerinum,sóweczka,A,L
+229,Otus scops,syczek,A,l Z
+230,Asio flammeus,uszatka błotna,A,l P
+231,Asio otus,uszatka,A,L
+232,Bubo scandiacus,puchacz śnieżny,A,Z
+233,Bubo bubo,puchacz,A,L
+234,Strix aluco,puszczyk,A,L
+235,Strix uralensis,puszczyk uralski,A,L
+236,Strix nebulosa,puszczyk mszarny,A,l Z
+237,Pandion haliaetus,rybołów,A,l P
+238,Elanus caeruleus,kaniuk,A,Z
+239,Gypaetus barbatus,orłosęp,A,z
+240,Neophron percnopterus,ścierwnik,A,Z
+241,Pernis apivorus,trzmielojad,A,L
+242,Aegypius monachus,sęp kasztanowaty,A,Z
+243,Gyps fulvus,sęp płowy,A,Z
+244,Circaetus gallicus,gadożer,A,l P
+245,Clanga clanga,orlik grubodzioby,A,l P
+246,Clanga pomarina,orlik krzykliwy,A,L
+247,Hieraaetus pennatus,orzełek,A,(l) Z
+248,Aquila nipalensis,orzeł stepowy,A,Z
+249,Aquila heliaca,orzeł cesarski,A,Z
+250,Aquila chrysaetos,orzeł przedni,A,l P
+251,Aquila fasciata,orzeł południowy,A,z
+252,Tachyspiza brevipes,krogulec krótkonogi,A,z
+253,Accipiter nisus,krogulec,A,L
+254,Astur gentilis,jastrząb,A,L
+255,Circus macrourus,błotniak stepowy,A,l P
+256,Circus cyaneus,błotniak zbożowy,A,l P
+257,Circus pygargus,błotniak łąkowy,A,L
+258,Circus aeruginosus,błotniak stawowy,A,L
+259,Milvus milvus,kania ruda,A,L
+260,Milvus migrans,kania czarna,A,L
+261,Haliaeetus leucoryphus,bielik wschodni,B,(z)
+262,Haliaeetus albicilla,bielik,A,L
+263,Buteo lagopus,myszołów włochaty,A,P
+264,Buteo buteo,myszołów,A,L
+265,Buteo rufinus,kurhannik,A,P
+266,Upupa epops,dudek,A,L
+267,Coracias garrulus,kraska,A,l P
+268,Merops apiaster,żołna,A,L
+269,Alcedo atthis,zimorodek,A,L
+270,Ceryle rudis,rybaczek srokaty,B,(z)
+271,Jynx torquilla,krętogłów,A,L
+272,Picus canus,dzięcioł zielonosiwy,A,L
+273,Picus viridis,dzięcioł zielony,A,L
+274,Dryocopus martius,dzięcioł czarny,A,L
+275,Picoides tridactylus,dzięcioł trójpalczasty,A,L
+276,Dendrocoptes medius,dzięcioł średni,A,L
+277,Dendrocopos leucotos,dzięcioł białogrzbiety,A,L
+278,Dendrocopos major,dzięcioł duży,A,L
+279,Dendrocopos syriacus,dzięcioł białoszyi,A,L
+280,Dryobates minor,dzięciołek,A,L
+281,Falco naumanni,pustułeczka,A,(l) Z
+282,Falco tinnunculus,pustułka,A,L
+283,Falco vespertinus,kobczyk,A,(l) P
+284,Falco columbarius,drzemlik,A,P
+285,Falco eleonorae,sokół skalny,A,z
+286,Falco subbuteo,kobuz,A,L
+287,Falco peregrinus,sokół wędrowny,A,l P
+288,Falco biarmicus,raróg górski,A,z
+289,Falco rusticolus,białozór,A,Z
+290,Falco cherrug,raróg,A,l Z
+291,Vireo olivaceus,wireonek czerwonooki,A,z
+292,Oriolus oriolus,wilga,A,L
+293,Lanius excubitor,srokosz,A,L
+294,Lanius borealis,srokosz północny,A,z
+295,Lanius minor,dzierzba czarnoczelna,A,l Z
+296,Lanius senator,dzierzba rudogłowa,A,(l) Z
+297,Lanius isabellinus,dzierzba pustynna,A,z
+298,Lanius collurio,gąsiorek,A,L
+299,Lanius phoenicuroides,dzierzba rdzawosterna,A,z
+300,Pyrrhocorax graculus,wieszczek,A,(l) z
+301,Perisoreus infaustus,sójka syberyjska,A,z
+302,Garrulus glandarius,sójka,A,L
+303,Pica pica,sroka,A,L
+304,Nucifraga caryocatactes,orzechówka,A,L
+305,Coloeus monedula,kawka,A,L
+306,Corvus frugilegus,gawron,A,L
+307,Corvus corax,kruk,A,L
+308,Corvus corone,wrona,A,L
+309,Remiz pendulinus,remiz,A,L
+310,Cyanistes caeruleus,modraszka,A,L
+311,Cyanistes cyanus,sikora lazurowa,A,Z
+312,Parus major,bogatka,A,L
+313,Periparus ater,sosnówka,A,L
+314,Lophophanes cristatus,czubatka,A,L
+315,Poecile palustris,sikora uboga,A,L
+316,Poecile montanus,czarnogłówka,A,L
+317,Panurus biarmicus,wąsatka,A,L
+318,Lullula arborea,lerka,A,L
+319,Alauda leucoptera,skowronek białoskrzydły,A,z
+320,Alauda arvensis,skowronek,A,L
+321,Galerida cristata,dzierlatka,A,L
+322,Eremophila alpestris,górniczek,A,P
+323,Calandrella brachydactyla,skowrończyk krótkopalcowy,A,Z
+324,Melanocorypha bimaculata,kalandra dwuplamista,A,z
+325,Melanocorypha yeltoniensis,kalandra czarna,A,z
+326,Melanocorypha calandra,kalandra szara,A,z
+327,Hippolais icterina,zaganiacz,A,L
+328,Hippolais polyglotta,zaganiacz szczebiotliwy,A,z
+329,Iduna rama,zaganiacz afgański,A,z
+330,Iduna caligata,zaganiacz mały,A,Z
+331,Iduna pallida,zaganiacz blady,A,z
+332,Acrocephalus schoenobaenus,rokitniczka,A,L
+333,Acrocephalus paludicola,wodniczka,A,L
+334,Acrocephalus melanopogon,tamaryszka,A,Z
+335,Acrocephalus agricola,trzcinniczek kaspijski,A,Z
+336,Acrocephalus dumetorum,zaroślówka,A,l P
+337,Acrocephalus palustris,łozówka,A,L
+338,Acrocephalus scirpaceus,trzcinniczek,A,L
+339,Acrocephalus arundinaceus,trzciniak,A,L
+340,Helopsaltes certhiola,świerszczak melodyjny,A,z
+341,Locustella fluviatilis,strumieniówka,A,L
+342,Locustella luscinioides,brzęczka,A,L
+343,Locustella naevia,świerszczak,A,L
+344,Riparia riparia,brzegówka,A,L
+345,Hirundo rustica,dymówka,A,L
+346,Delichon urbicum,oknówka,A,L
+347,Cecropis rufula,jaskółka śródziemnomorska,A,Z
+348,Aegithalos caudatus,raniuszek,A,L
+349,Cettia cetti,wierzbówka,A,z
+350,Phylloscopus sibilatrix,świstunka leśna,A,L
+351,Phylloscopus bonelli,świstunka górska,A,(l) Z
+352,Phylloscopus inornatus,świstunka żółtawa,A,P
+353,Phylloscopus humei,świstunka ałtajska,A,Z
+354,Phylloscopus proregulus,świstunka złotawa,A,Z
+355,Phylloscopus schwarzi,świstunka grubodzioba,A,Z
+356,Phylloscopus fuscatus,świstunka brunatna,A,Z
+357,Phylloscopus trochilus,piecuszek,A,L
+358,Phylloscopus ibericus,świstunka iberyjska,A,l z
+359,Phylloscopus collybita,pierwiosnek,A,L
+360,Phylloscopus trochiloides,wójcik,A,l P
+361,Phylloscopus borealis,świstunka północna,A,z
+362,Sylvia borin,gajówka,A,L
+363,Sylvia atricapilla,kapturka,A,L
+364,Curruca nisoria,jarzębatka,A,L
+365,Curruca curruca,piegża,A,L
+366,Curruca mystacea,pokrzewka kaspijska,A,z
+367,Curruca communis,cierniówka,A,L
+368,Curruca melanocephala,pokrzewka aksamitna,A,z
+369,Curruca iberiae,pokrzewka iberyjska,A,z
+370,Curruca cantillans,pokrzewka wąsata,A,Z
+371,Bombycilla garrulus,jemiołuszka,A,P
+372,Regulus regulus,mysikrólik,A,L
+373,Regulus ignicapilla,zniczek,A,L
+374,Tichodroma muraria,pomurnik,A,l
+375,Sitta europaea,kowalik,A,L
+376,Certhia familiaris,pełzacz leśny,A,L
+377,Certhia brachydactyla,pełzacz ogrodowy,A,L
+378,Troglodytes troglodytes,strzyżyk,A,L
+379,Sturnus unicolor,szpak jednobarwny,A,z
+380,Sturnus vulgaris,szpak,A,L
+381,Pastor roseus,pasterz,A,Z
+382,Cinclus cinclus,pluszcz,A,L
+383,Zoothera aurea,drozdoń tajgowy,A,Z
+384,Geokichla sibirica,drozdaczek ciemny,A,Z
+385,Turdus viscivorus,paszkot,A,L
+386,Turdus philomelos,śpiewak,A,L
+387,Turdus iliacus,droździk,A,L
+388,Turdus merula,kos,A,L
+389,Turdus pilaris,kwiczoł,A,L
+390,Turdus torquatus,drozd obrożny,A,L
+391,Turdus naumanni,drozd rdzawy,A,z
+392,Turdus eunomus,drozd rdzawoskrzydły,A,z
+393,Turdus ruficollis,drozd rdzawogardły,A,z
+394,Turdus atrogularis,drozd czarnogardły,A,Z
+395,Turdus obscurus,drozd oliwkowy,A,Z
+396,Muscicapa striata,muchołówka szara,A,L
+397,Erithacus rubecula,rudzik,A,L
+398,Luscinia megarhynchos,słowik rdzawy,A,L
+399,Luscinia luscinia,słowik szary,A,L
+400,Luscinia svecica,podróżniczek,A,L
+401,Larvivora sibilans,słowik syberyjski,A,z
+402,Ficedula parva,muchołówka mała,A,L
+403,Ficedula albicollis,muchołówka białoszyja,A,L
+404,Ficedula hypoleuca,muchołówka żałobna,A,L
+405,Tarsiger cyanurus,modraczek,A,Z
+406,Phoenicurus ochruros,kopciuszek,A,L
+407,Phoenicurus phoenicurus,pleszka,A,L
+408,Monticola saxatilis,nagórnik,A,(l) Z
+409,Saxicola rubetra,pokląskwa,A,L
+410,Saxicola maurus,kląskawka syberyjska,A,z
+411,Saxicola rubicola,kląskawka,A,L
+412,Oenanthe deserti,białorzytka pustynna,A,z
+413,Oenanthe hispanica,białorzytka rdzawa,A,z
+414,Oenanthe pleschanka,białorzytka pstra,A,z
+415,Oenanthe oenanthe,białorzytka,A,L
+416,Oenanthe isabellina,białorzytka płowa,A,Z
+417,Oenanthe leucopyga,białorzytka saharyjska,A,z
+418,Prunella collaris,płochacz halny,A,L
+419,Prunella atrogularis,płochacz czarnogardły,A,z
+420,Prunella modularis,pokrzywnica,A,L
+421,Prunella montanella,płochacz syberyjski,A,Z
+422,Petronia petronia,wróbel skalny,B,(z)
+423,Montifringilla nivalis,śnieżka,A,z
+424,Passer montanus,mazurek,A,L
+425,Passer domesticus,wróbel,A,L
+426,Motacilla cinerea,pliszka górska,A,L
+427,Motacilla flava,pliszka żółta,A,L
+428,Motacilla citreola,pliszka cytrynowa,A,L P
+429,Motacilla tschutschensis,pliszka syberyjska,A,z
+430,Motacilla alba,pliszka siwa,A,L
+431,Anthus godlewskii,świergotek stepowy,A,z
+432,Anthus campestris,świergotek polny,A,L
+433,Anthus richardi,świergotek szponiasty,A,Z
+434,Anthus trivialis,świergotek drzewny,A,L
+435,Anthus hodgsoni,świergotek tajgowy,A,Z
+436,Anthus cervinus,świergotek rdzawogardły,A,P
+437,Anthus pratensis,świergotek łąkowy,A,L
+438,Anthus petrosus,świergotek nadmorski,A,P
+439,Anthus spinoletta,siwerniak,A,L
+440,Fringilla montifringilla,jer,A,P
+441,Fringilla coelebs,zięba,A,L
+442,Coccothraustes coccothraustes,grubodziób,A,L
+443,Carpodacus erythrinus,dziwonia,A,L
+444,Pinicola enucleator,łuskowiec,A,Z
+445,Pyrrhula pyrrhula,gil,A,L
+446,Bucanetes githagineus,gilak pustynny,A,z
+447,Chloris chloris,dzwoniec,A,L
+448,Linaria flavirostris,rzepołuch,A,P
+449,Linaria cannabina,makolągwa,A,L
+450,Acanthis flammea,czeczotka,A,l P
+451,Loxia leucoptera,krzyżodziób modrzewiowy,A,Z
+452,Loxia pytyopsittacus,krzyżodziób sosnowy,A,(l) Z
+453,Loxia curvirostra,krzyżodziób świerkowy,A,L
+454,Carduelis citrinella,osetnik,A,z
+455,Carduelis carduelis,szczygieł,A,L
+456,Serinus serinus,kulczyk,A,L
+457,Spinus spinus,czyż,A,L
+458,Plectrophenax nivalis,śnieguła,A,P
+459,Calcarius lapponicus,poświerka,A,P
+460,Emberiza schoeniclus,potrzos,A,L
+461,Emberiza chrysophrys,trznadel złotobrewy,A,z
+462,Emberiza aureola,trznadel złotawy,A,z
+463,Emberiza pusilla,trznadelek,A,Z
+464,Emberiza rustica,trznadel czubaty,A,Z
+465,Emberiza spodocephala,trznadel szarogłowy,A,z
+466,Emberiza melanocephala,trznadel czarnogłowy,A,Z
+467,Emberiza bruniceps,trznadel rudogłowy,A,z
+468,Emberiza calandra,potrzeszcz,A,L
+469,Emberiza cia,głuszek,A,z
+470,Emberiza hortulana,ortolan,A,L
+471,Emberiza cirlus,cierlik,A,z
+472,Emberiza leucocephalos,trznadel białogłowy,A,(l) z
+473,Emberiza citrinella,trznadel,A,L
+474,Junco hyemalis,junko,A,z
+475,Passerculus sandwichensis,bagiennik żółtobrewy,A,z

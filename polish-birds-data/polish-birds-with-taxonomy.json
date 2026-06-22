@@ -1,0 +1,6667 @@
+{
+  "source": "Komisja Faunistyczna with AviList v2025b Taxonomy",
+  "original_source": "https://komisjafaunistyczna.pl/lista/",
+  "avilist_version": "v2025b",
+  "extraction_date": "2026-06-22",
+  "total_species": 475,
+  "taxonomy_source": "AviList v2025b (adopted by Komisja Faunistyczna in August 2025)",
+  "description": "Complete official list of bird species recorded in Poland as of January 1, 2026, enhanced with AviList v2025b taxonomy hierarchy.",
+  "data_quality": {
+    "species_coverage": "100%",
+    "taxonomy_coverage": "100%",
+    "source_verification": "Official Komisja Faunistyczna list + AviList v2025b taxonomy",
+    "last_updated": "2026-06-22"
+  },
+  "species": [
+    {
+      "lp": 1,
+      "scientific_name": "Oxyura leucocephala",
+      "polish_name": "sterniczka",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Oxyura",
+        "english_name": "White-headed Duck",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 2,
+      "scientific_name": "Cygnus olor",
+      "polish_name": "ÅabÄdÅº niemy",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Cygnus",
+        "english_name": "Swan",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 3,
+      "scientific_name": "Cygnus columbianus",
+      "polish_name": "ÅabÄdÅº czarnodzioby",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Cygnus",
+        "english_name": "Swan",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 4,
+      "scientific_name": "Cygnus cygnus",
+      "polish_name": "ÅabÄdÅº krzykliwy",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Cygnus",
+        "english_name": "Swan",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 5,
+      "scientific_name": "Branta bernicla",
+      "polish_name": "bernikla obroÅ¼na",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Branta",
+        "english_name": "Goose",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 6,
+      "scientific_name": "Branta ruficollis",
+      "polish_name": "bernikla rdzawoszyja",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Branta",
+        "english_name": "Goose",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 7,
+      "scientific_name": "Branta canadensis",
+      "polish_name": "bernikla kanadyjska",
+      "category": "C",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Branta",
+        "english_name": "Goose",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 8,
+      "scientific_name": "Branta leucopsis",
+      "polish_name": "bernikla biaÅolica",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Branta",
+        "english_name": "Goose",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 9,
+      "scientific_name": "Anser anser",
+      "polish_name": "gÄgawa",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Anser",
+        "english_name": "Goose",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 10,
+      "scientific_name": "Anser erythropus",
+      "polish_name": "gÄÅ maÅa",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Anser",
+        "english_name": "Goose",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 11,
+      "scientific_name": "Anser albifrons",
+      "polish_name": "gÄÅ biaÅoczelna",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Anser",
+        "english_name": "Goose",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 12,
+      "scientific_name": "Anser serrirostris",
+      "polish_name": "gÄÅ tundrowa",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Anser",
+        "english_name": "Goose",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 13,
+      "scientific_name": "Anser brachyrhynchus",
+      "polish_name": "gÄÅ krÃ³tkodzioba",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Anser",
+        "english_name": "Goose",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 14,
+      "scientific_name": "Anser fabalis",
+      "polish_name": "gÄÅ zboÅ¼owa",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Anser",
+        "english_name": "Goose",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 15,
+      "scientific_name": "Aix galericulata",
+      "polish_name": "mandarynka",
+      "category": "C",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Aix",
+        "english_name": "Mandarin Duck",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 16,
+      "scientific_name": "Alopochen aegyptiaca",
+      "polish_name": "gÄsiÃ³wka egipska",
+      "category": "C",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Alopochen",
+        "english_name": "Egyptian Goose",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 17,
+      "scientific_name": "Tadorna tadorna",
+      "polish_name": "ohar",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Tadorna",
+        "english_name": "Shelduck",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 18,
+      "scientific_name": "Tadorna ferruginea",
+      "polish_name": "kazarka rdzawa",
+      "category": "A",
+      "status": "(l) P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Tadorna",
+        "english_name": "Shelduck",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 19,
+      "scientific_name": "Clangula hyemalis",
+      "polish_name": "lodÃ³wka",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Clangula",
+        "english_name": "Long-tailed Duck",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 20,
+      "scientific_name": "Polysticta stelleri",
+      "polish_name": "birginiak",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Polysticta",
+        "english_name": "Steller's Eider",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 21,
+      "scientific_name": "Somateria spectabilis",
+      "polish_name": "turkan",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Somateria",
+        "english_name": "Eider",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 22,
+      "scientific_name": "Somateria mollissima",
+      "polish_name": "edredon",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Somateria",
+        "english_name": "Eider",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 23,
+      "scientific_name": "Histrionicus histrionicus",
+      "polish_name": "kamieniuszka",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Histrionicus",
+        "english_name": "Harlequin Duck",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 24,
+      "scientific_name": "Melanitta nigra",
+      "polish_name": "markaczka",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Melanitta",
+        "english_name": "Scoter",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 25,
+      "scientific_name": "Melanitta americana",
+      "polish_name": "markaczka amerykaÅska",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Melanitta",
+        "english_name": "Scoter",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 26,
+      "scientific_name": "Melanitta fusca",
+      "polish_name": "uhla",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Melanitta",
+        "english_name": "Scoter",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 27,
+      "scientific_name": "Melanitta stejnegeri",
+      "polish_name": "uhla azjatycka",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Melanitta",
+        "english_name": "Scoter",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 28,
+      "scientific_name": "Bucephala clangula",
+      "polish_name": "gÄgoÅ",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Bucephala",
+        "english_name": "Goldeneye",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 29,
+      "scientific_name": "Mergellus albellus",
+      "polish_name": "bielaczek",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Mergellus",
+        "english_name": "Smew",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 30,
+      "scientific_name": "Mergus serrator",
+      "polish_name": "szlachar",
+      "category": "A",
+      "status": "(l) P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Mergus",
+        "english_name": "Merganser",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 31,
+      "scientific_name": "Mergus merganser",
+      "polish_name": "nurogÄÅ",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Mergus",
+        "english_name": "Merganser",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 32,
+      "scientific_name": "Netta rufina",
+      "polish_name": "heÅmiatka",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Netta",
+        "english_name": "Pochard",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 33,
+      "scientific_name": "Aythya nyroca",
+      "polish_name": "podgorzaÅka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Aythya",
+        "english_name": "Duck",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 34,
+      "scientific_name": "Aythya ferina",
+      "polish_name": "gÅowienka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Aythya",
+        "english_name": "Duck",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 35,
+      "scientific_name": "Aythya collaris",
+      "polish_name": "czerniczka",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Aythya",
+        "english_name": "Duck",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 36,
+      "scientific_name": "Aythya fuligula",
+      "polish_name": "czernica",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Aythya",
+        "english_name": "Duck",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 37,
+      "scientific_name": "Aythya affinis",
+      "polish_name": "ogorzaÅka maÅa",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Aythya",
+        "english_name": "Duck",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 38,
+      "scientific_name": "Aythya marila",
+      "polish_name": "ogorzaÅka",
+      "category": "A",
+      "status": "(l) P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Aythya",
+        "english_name": "Duck",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 39,
+      "scientific_name": "Sibirionetta formosa",
+      "polish_name": "bajkaÅÃ³wka",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Sibirionetta",
+        "english_name": "Baikal Teal",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 40,
+      "scientific_name": "Spatula querquedula",
+      "polish_name": "cyranka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Spatula",
+        "english_name": "Teal",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 41,
+      "scientific_name": "Spatula discors",
+      "polish_name": "cyranka modroskrzydÅa",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Spatula",
+        "english_name": "Teal",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 42,
+      "scientific_name": "Spatula clypeata",
+      "polish_name": "pÅaskonos",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Spatula",
+        "english_name": "Teal",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 43,
+      "scientific_name": "Mareca strepera",
+      "polish_name": "krakwa",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Mareca",
+        "english_name": "Wigeon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 44,
+      "scientific_name": "Mareca penelope",
+      "polish_name": "Åwistun",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Mareca",
+        "english_name": "Wigeon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 45,
+      "scientific_name": "Mareca americana",
+      "polish_name": "Åwistun amerykaÅski",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Mareca",
+        "english_name": "Wigeon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 46,
+      "scientific_name": "Anas platyrhynchos",
+      "polish_name": "krzyÅ¼Ã³wka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Anas",
+        "english_name": "Duck",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 47,
+      "scientific_name": "Anas acuta",
+      "polish_name": "roÅ¼eniec",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Anas",
+        "english_name": "Duck",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 48,
+      "scientific_name": "Anas crecca",
+      "polish_name": "cyraneczka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Anas",
+        "english_name": "Duck",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 49,
+      "scientific_name": "Tetrastes bonasia",
+      "polish_name": "jarzÄbek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Tetrastes",
+        "english_name": "Hazel Grouse",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 50,
+      "scientific_name": "Lagopus lagopus",
+      "polish_name": "pardwa mszarna",
+      "category": "B",
+      "status": "(z)",
+      "taxonomy": {
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Lagopus",
+        "english_name": "Ptarmigan",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 51,
+      "scientific_name": "Tetrao urogallus",
+      "polish_name": "gÅuszec",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Tetrao",
+        "english_name": "Capercaillie",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 52,
+      "scientific_name": "Lyrurus tetrix",
+      "polish_name": "cietrzew",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Lyrurus",
+        "english_name": "Black Grouse",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 53,
+      "scientific_name": "Perdix perdix",
+      "polish_name": "kuropatwa",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Perdix",
+        "english_name": "Partridge",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 54,
+      "scientific_name": "Phasianus colchicus",
+      "polish_name": "baÅ¼ant",
+      "category": "C",
+      "status": "L",
+      "taxonomy": {
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Phasianus",
+        "english_name": "Pheasant",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 55,
+      "scientific_name": "Coturnix coturnix",
+      "polish_name": "przepiÃ³rka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Coturnix",
+        "english_name": "Quail",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 56,
+      "scientific_name": "Phoenicopterus roseus",
+      "polish_name": "flaming rÃ³Å¼owy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Phoenicopteriformes",
+        "family": "Phoenicopteridae",
+        "genus": "Phoenicopterus",
+        "english_name": "Flamingo",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 57,
+      "scientific_name": "Tachybaptus ruficollis",
+      "polish_name": "perkozek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Podicipediformes",
+        "family": "Podicipedidae",
+        "genus": "Tachybaptus",
+        "english_name": "Little Grebe",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 58,
+      "scientific_name": "Podilymbus podiceps",
+      "polish_name": "perkoz grubodzioby",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Podicipediformes",
+        "family": "Podicipedidae",
+        "genus": "Podilymbus",
+        "english_name": "Pied-billed Grebe",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 59,
+      "scientific_name": "Podiceps auritus",
+      "polish_name": "perkoz rogaty",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Podicipediformes",
+        "family": "Podicipedidae",
+        "genus": "Podiceps",
+        "english_name": "Grebe",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 60,
+      "scientific_name": "Podiceps grisegena",
+      "polish_name": "perkoz rdzawoszyi",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Podicipediformes",
+        "family": "Podicipedidae",
+        "genus": "Podiceps",
+        "english_name": "Grebe",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 61,
+      "scientific_name": "Podiceps cristatus",
+      "polish_name": "perkoz dwuczuby",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Podicipediformes",
+        "family": "Podicipedidae",
+        "genus": "Podiceps",
+        "english_name": "Grebe",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 62,
+      "scientific_name": "Podiceps nigricollis",
+      "polish_name": "zausznik",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Podicipediformes",
+        "family": "Podicipedidae",
+        "genus": "Podiceps",
+        "english_name": "Grebe",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 63,
+      "scientific_name": "Otis tarda",
+      "polish_name": "drop",
+      "category": "A",
+      "status": "(l) Z",
+      "taxonomy": {
+        "order": "Otidiformes",
+        "family": "Otididae",
+        "genus": "Otis",
+        "english_name": "Great Bustard",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 64,
+      "scientific_name": "Chlamydotis macqueenii",
+      "polish_name": "hubara arabska",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Otidiformes",
+        "family": "Otididae",
+        "genus": "Chlamydotis",
+        "english_name": "Houbara Bustard",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 65,
+      "scientific_name": "Tetrax tetrax",
+      "polish_name": "strepet",
+      "category": "A",
+      "status": "(l) Z",
+      "taxonomy": {
+        "order": "Otidiformes",
+        "family": "Otididae",
+        "genus": "Tetrax",
+        "english_name": "Little Bustard",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 66,
+      "scientific_name": "Cuculus canorus",
+      "polish_name": "kukuÅka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Cuculiformes",
+        "family": "Cuculidae",
+        "genus": "Cuculus",
+        "english_name": "Common Cuckoo",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 67,
+      "scientific_name": "Syrrhaptes paradoxus",
+      "polish_name": "pustynnik",
+      "category": "A",
+      "status": "(l) Z",
+      "taxonomy": {
+        "order": "Pterocliformes",
+        "family": "Pteroclidae",
+        "genus": "Syrrhaptes",
+        "english_name": "Pallas's Sandgrouse",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 68,
+      "scientific_name": "Streptopelia orientalis",
+      "polish_name": "turkawka wschodnia",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Columbiformes",
+        "family": "Columbidae",
+        "genus": "Streptopelia",
+        "english_name": "Turtle Dove",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 69,
+      "scientific_name": "Streptopelia turtur",
+      "polish_name": "turkawka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Columbiformes",
+        "family": "Columbidae",
+        "genus": "Streptopelia",
+        "english_name": "Turtle Dove",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 70,
+      "scientific_name": "Streptopelia decaocto",
+      "polish_name": "sierpÃ³wka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Columbiformes",
+        "family": "Columbidae",
+        "genus": "Streptopelia",
+        "english_name": "Turtle Dove",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 71,
+      "scientific_name": "Columba palumbus",
+      "polish_name": "grzywacz",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Columbiformes",
+        "family": "Columbidae",
+        "genus": "Columba",
+        "english_name": "Pigeon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 72,
+      "scientific_name": "Columba livia forma urbana",
+      "polish_name": "goÅÄb miejski",
+      "category": "C",
+      "status": "L",
+      "taxonomy": {
+        "order": "Columbiformes",
+        "family": "Columbidae",
+        "genus": "Columba",
+        "english_name": "Pigeon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 73,
+      "scientific_name": "Columba oenas",
+      "polish_name": "siniak",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Columbiformes",
+        "family": "Columbidae",
+        "genus": "Columba",
+        "english_name": "Pigeon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 74,
+      "scientific_name": "Antigone canadensis",
+      "polish_name": "Å¼uraw kanadyjski",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Gruiformes",
+        "family": "Gruidae",
+        "genus": "Antigone",
+        "english_name": "Crane",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 75,
+      "scientific_name": "Grus virgo",
+      "polish_name": "Å¼uraw stepowy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Gruiformes",
+        "family": "Gruidae",
+        "genus": "Grus",
+        "english_name": "Crane",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 76,
+      "scientific_name": "Grus grus",
+      "polish_name": "Å¼uraw",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Gruiformes",
+        "family": "Gruidae",
+        "genus": "Grus",
+        "english_name": "Crane",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 77,
+      "scientific_name": "Rallus aquaticus",
+      "polish_name": "wodnik",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Gruiformes",
+        "family": "Rallidae",
+        "genus": "Rallus",
+        "english_name": "Water Rail",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 78,
+      "scientific_name": "Crex crex",
+      "polish_name": "derkacz",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Gruiformes",
+        "family": "Rallidae",
+        "genus": "Crex",
+        "english_name": "Corn Crake",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 79,
+      "scientific_name": "Porzana porzana",
+      "polish_name": "kropiatka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Gruiformes",
+        "family": "Rallidae",
+        "genus": "Porzana",
+        "english_name": "Crake",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 80,
+      "scientific_name": "Gallinula chloropus",
+      "polish_name": "kokoszka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Gruiformes",
+        "family": "Rallidae",
+        "genus": "Gallinula",
+        "english_name": "Moorhen",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 81,
+      "scientific_name": "Fulica atra",
+      "polish_name": "Åyska",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Gruiformes",
+        "family": "Rallidae",
+        "genus": "Fulica",
+        "english_name": "Coot",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 82,
+      "scientific_name": "Zapornia parva",
+      "polish_name": "zielonka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Gruiformes",
+        "family": "Rallidae",
+        "genus": "Zapornia",
+        "english_name": "Crake",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 83,
+      "scientific_name": "Zapornia pusilla",
+      "polish_name": "karliczka",
+      "category": "A",
+      "status": "l Z",
+      "taxonomy": {
+        "order": "Gruiformes",
+        "family": "Rallidae",
+        "genus": "Zapornia",
+        "english_name": "Crake",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 84,
+      "scientific_name": "Burhinus oedicnemus",
+      "polish_name": "kulon",
+      "category": "A",
+      "status": "(l) Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Burhinidae",
+        "genus": "Burhinus",
+        "english_name": "Thick-knee",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 85,
+      "scientific_name": "Recurvirostra avosetta",
+      "polish_name": "szablodziÃ³b",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Recurvirostridae",
+        "genus": "Recurvirostra",
+        "english_name": "Avocet",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 86,
+      "scientific_name": "Himantopus himantopus",
+      "polish_name": "szczudÅak",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Recurvirostridae",
+        "genus": "Himantopus",
+        "english_name": "Stilt",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 87,
+      "scientific_name": "Haematopus ostralegus",
+      "polish_name": "ostrygojad",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Haematopodidae",
+        "genus": "Haematopus",
+        "english_name": "Oystercatcher",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 88,
+      "scientific_name": "Pluvialis squatarola",
+      "polish_name": "siewnica",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Pluvialis",
+        "english_name": "Golden Plover",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 89,
+      "scientific_name": "Pluvialis apricaria",
+      "polish_name": "siewka zÅota",
+      "category": "A",
+      "status": "(l) P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Pluvialis",
+        "english_name": "Golden Plover",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 90,
+      "scientific_name": "Pluvialis dominica",
+      "polish_name": "siewka szara",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Pluvialis",
+        "english_name": "Golden Plover",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 91,
+      "scientific_name": "Pluvialis fulva",
+      "polish_name": "siewka zÅotawa",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Pluvialis",
+        "english_name": "Golden Plover",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 92,
+      "scientific_name": "Eudromias morinellus",
+      "polish_name": "mornel",
+      "category": "A",
+      "status": "(l) P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Eudromias",
+        "english_name": "Dotterel",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 93,
+      "scientific_name": "Charadrius hiaticula",
+      "polish_name": "sieweczka obroÅ¼na",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Charadrius",
+        "english_name": "Plover",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 94,
+      "scientific_name": "Thinornis dubius",
+      "polish_name": "sieweczka rzeczna",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Thinornis",
+        "english_name": "Shore Plover",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 95,
+      "scientific_name": "Vanellus vanellus",
+      "polish_name": "czajka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Vanellus",
+        "english_name": "Lapwing",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 96,
+      "scientific_name": "Vanellus spinosus",
+      "polish_name": "czajka szponiasta",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Vanellus",
+        "english_name": "Lapwing",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 97,
+      "scientific_name": "Vanellus gregarius",
+      "polish_name": "czajka towarzyska",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Vanellus",
+        "english_name": "Lapwing",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 98,
+      "scientific_name": "Vanellus leucurus",
+      "polish_name": "czajka stepowa",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Vanellus",
+        "english_name": "Lapwing",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 99,
+      "scientific_name": "Anarhynchus asiaticus",
+      "polish_name": "sieweczka dÅugonoga",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Anarhynchus",
+        "english_name": "Plover",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 100,
+      "scientific_name": "Anarhynchus atrifrons",
+      "polish_name": "sieweczka tybetaÅska",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Anarhynchus",
+        "english_name": "Plover",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 101,
+      "scientific_name": "Anarhynchus leschenaultii",
+      "polish_name": "sieweczka pustynna",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Anarhynchus",
+        "english_name": "Plover",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 102,
+      "scientific_name": "Anarhynchus alexandrinus",
+      "polish_name": "sieweczka morska",
+      "category": "A",
+      "status": "l Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Anarhynchus",
+        "english_name": "Plover",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 103,
+      "scientific_name": "Numenius phaeopus",
+      "polish_name": "kulik mniejszy",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Numenius",
+        "english_name": "Curlew",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 104,
+      "scientific_name": "Numenius tenuirostris",
+      "polish_name": "kulik cienkodzioby",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Numenius",
+        "english_name": "Curlew",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 105,
+      "scientific_name": "Numenius arquata",
+      "polish_name": "kulik wielki",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Numenius",
+        "english_name": "Curlew",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 106,
+      "scientific_name": "Limosa lapponica",
+      "polish_name": "szlamnik",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Limosa",
+        "english_name": "Godwit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 107,
+      "scientific_name": "Limosa limosa",
+      "polish_name": "rycyk",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Limosa",
+        "english_name": "Godwit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 108,
+      "scientific_name": "Limnodromus scolopaceus",
+      "polish_name": "szlamiec dÅugodzioby",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Limnodromus",
+        "english_name": "Dowitcher",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 109,
+      "scientific_name": "Lymnocryptes minimus",
+      "polish_name": "bekasik",
+      "category": "A",
+      "status": "(l) P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Lymnocryptes",
+        "english_name": "Jack Snipe",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 110,
+      "scientific_name": "Scolopax rusticola",
+      "polish_name": "sÅonka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Scolopax",
+        "english_name": "Woodcock",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 111,
+      "scientific_name": "Gallinago media",
+      "polish_name": "dubelt",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Gallinago",
+        "english_name": "Snipe",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 112,
+      "scientific_name": "Gallinago gallinago",
+      "polish_name": "kszyk",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Gallinago",
+        "english_name": "Snipe",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 113,
+      "scientific_name": "Xenus cinereus",
+      "polish_name": "terekia",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Xenus",
+        "english_name": "Terek Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 114,
+      "scientific_name": "Actitis hypoleucos",
+      "polish_name": "brodziec piskliwy",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Actitis",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 115,
+      "scientific_name": "Actitis macularius",
+      "polish_name": "brodziec plamisty",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Actitis",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 116,
+      "scientific_name": "Phalaropus fulicarius",
+      "polish_name": "pÅatkonÃ³g pÅaskodzioby",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Phalaropus",
+        "english_name": "Phalarope",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 117,
+      "scientific_name": "Phalaropus lobatus",
+      "polish_name": "pÅatkonÃ³g szydÅodzioby",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Phalaropus",
+        "english_name": "Phalarope",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 118,
+      "scientific_name": "Tringa ochropus",
+      "polish_name": "samotnik",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Tringa",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 119,
+      "scientific_name": "Tringa stagnatilis",
+      "polish_name": "brodziec pÅawny",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Tringa",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 120,
+      "scientific_name": "Tringa glareola",
+      "polish_name": "ÅÄczak",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Tringa",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 121,
+      "scientific_name": "Tringa totanus",
+      "polish_name": "krwawodziÃ³b",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Tringa",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 122,
+      "scientific_name": "Tringa flavipes",
+      "polish_name": "brodziec Å¼Ã³Åtonogi",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Tringa",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 123,
+      "scientific_name": "Tringa erythropus",
+      "polish_name": "brodziec Åniady",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Tringa",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 124,
+      "scientific_name": "Tringa nebularia",
+      "polish_name": "kwokacz",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Tringa",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 125,
+      "scientific_name": "Tringa melanoleuca",
+      "polish_name": "brodziec piegowaty",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Tringa",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 126,
+      "scientific_name": "Arenaria interpres",
+      "polish_name": "kamusznik",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Arenaria",
+        "english_name": "Turnstone",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 127,
+      "scientific_name": "Calidris canutus",
+      "polish_name": "biegus rdzawy",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 128,
+      "scientific_name": "Calidris tenuirostris",
+      "polish_name": "biegus wielki",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 129,
+      "scientific_name": "Calidris pugnax",
+      "polish_name": "batalion",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 130,
+      "scientific_name": "Calidris acuminata",
+      "polish_name": "biegus ostrosterny",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 131,
+      "scientific_name": "Calidris falcinellus",
+      "polish_name": "biegus pÅaskodzioby",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 132,
+      "scientific_name": "Calidris ferruginea",
+      "polish_name": "biegus krzywodzioby",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 133,
+      "scientific_name": "Calidris temminckii",
+      "polish_name": "biegus maÅy",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 134,
+      "scientific_name": "Calidris subruficollis",
+      "polish_name": "biegus pÅowy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 135,
+      "scientific_name": "Calidris alba",
+      "polish_name": "piaskowiec",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 136,
+      "scientific_name": "Calidris alpina",
+      "polish_name": "biegus zmienny",
+      "category": "A",
+      "status": "(l) P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 137,
+      "scientific_name": "Calidris maritima",
+      "polish_name": "biegus morski",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 138,
+      "scientific_name": "Calidris bairdii",
+      "polish_name": "biegus dÅugoskrzydÅy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 139,
+      "scientific_name": "Calidris melanotos",
+      "polish_name": "biegus arktyczny",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 140,
+      "scientific_name": "Calidris pusilla",
+      "polish_name": "biegus tundrowy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 141,
+      "scientific_name": "Calidris minuta",
+      "polish_name": "biegus malutki",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 142,
+      "scientific_name": "Calidris minutilla",
+      "polish_name": "biegus karÅowaty",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 143,
+      "scientific_name": "Calidris fuscicollis",
+      "polish_name": "biegus biaÅorzytny",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris",
+        "english_name": "Sandpiper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 144,
+      "scientific_name": "Glareola nordmanni",
+      "polish_name": "Å¼wirowiec stepowy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Glareolidae",
+        "genus": "Glareola",
+        "english_name": "Pratincole",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 145,
+      "scientific_name": "Glareola pratincola",
+      "polish_name": "Å¼wirowiec ÅÄkowy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Glareolidae",
+        "genus": "Glareola",
+        "english_name": "Pratincole",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 146,
+      "scientific_name": "Stercorarius parasiticus",
+      "polish_name": "wydrzyk ostrosterny",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Stercorariidae",
+        "genus": "Stercorarius",
+        "english_name": "Jaeger",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 147,
+      "scientific_name": "Stercorarius longicaudus",
+      "polish_name": "wydrzyk dÅugosterny",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Stercorariidae",
+        "genus": "Stercorarius",
+        "english_name": "Jaeger",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 148,
+      "scientific_name": "Stercorarius pomarinus",
+      "polish_name": "wydrzyk tÄposterny",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Stercorariidae",
+        "genus": "Stercorarius",
+        "english_name": "Jaeger",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 149,
+      "scientific_name": "Stercorarius skua",
+      "polish_name": "wydrzyk wielki",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Stercorariidae",
+        "genus": "Stercorarius",
+        "english_name": "Jaeger",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 150,
+      "scientific_name": "Fratercula arctica",
+      "polish_name": "maskonur",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Alcidae",
+        "genus": "Fratercula",
+        "english_name": "Puffin",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 151,
+      "scientific_name": "Cepphus grylle",
+      "polish_name": "nurnik",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Alcidae",
+        "genus": "Cepphus",
+        "english_name": "Guillemot",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 152,
+      "scientific_name": "Alca torda",
+      "polish_name": "alka",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Alcidae",
+        "genus": "Alca",
+        "english_name": "Razorbill",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 153,
+      "scientific_name": "Alle alle",
+      "polish_name": "alczyk",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Alcidae",
+        "genus": "Alle",
+        "english_name": "Dovekie",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 154,
+      "scientific_name": "Uria lomvia",
+      "polish_name": "nurzyk polarny",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Alcidae",
+        "genus": "Uria",
+        "english_name": "Murre",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 155,
+      "scientific_name": "Uria aalge",
+      "polish_name": "nurzyk",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Alcidae",
+        "genus": "Uria",
+        "english_name": "Murre",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 156,
+      "scientific_name": "Sternula albifrons",
+      "polish_name": "rybitwa biaÅoczelna",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Sternula",
+        "english_name": "Little Tern",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 157,
+      "scientific_name": "Hydroprogne caspia",
+      "polish_name": "rybitwa wielkodzioba",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Hydroprogne",
+        "english_name": "Caspian Tern",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 158,
+      "scientific_name": "Gelochelidon nilotica",
+      "polish_name": "rybitwa krÃ³tkodzioba",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Gelochelidon",
+        "english_name": "Gull-billed Tern",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 159,
+      "scientific_name": "Chlidonias hybrida",
+      "polish_name": "rybitwa biaÅowÄsa",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Chlidonias",
+        "english_name": "Tern",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 160,
+      "scientific_name": "Chlidonias leucopterus",
+      "polish_name": "rybitwa biaÅoskrzydÅa",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Chlidonias",
+        "english_name": "Tern",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 161,
+      "scientific_name": "Chlidonias niger",
+      "polish_name": "rybitwa czarna",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Chlidonias",
+        "english_name": "Tern",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 162,
+      "scientific_name": "Thalasseus sandvicensis",
+      "polish_name": "rybitwa czubata",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Thalasseus",
+        "english_name": "Tern",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 163,
+      "scientific_name": "Sterna paradisaea",
+      "polish_name": "rybitwa popielata",
+      "category": "A",
+      "status": "(l) P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Sterna",
+        "english_name": "Tern",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 164,
+      "scientific_name": "Sterna hirundo",
+      "polish_name": "rybitwa rzeczna",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Sterna",
+        "english_name": "Tern",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 165,
+      "scientific_name": "Sterna dougallii",
+      "polish_name": "rybitwa rÃ³Å¼owa",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Sterna",
+        "english_name": "Tern",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 166,
+      "scientific_name": "Hydrocoloeus minutus",
+      "polish_name": "mewa maÅa",
+      "category": "A",
+      "status": "(l) P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Hydrocoloeus",
+        "english_name": "Little Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 167,
+      "scientific_name": "Rhodostethia rosea",
+      "polish_name": "mewa rÃ³Å¼owa",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Rhodostethia",
+        "english_name": "Ross's Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 168,
+      "scientific_name": "Rissa tridactyla",
+      "polish_name": "mewa trÃ³jpalczasta",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Rissa",
+        "english_name": "Kittiwake",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 169,
+      "scientific_name": "Xema sabini",
+      "polish_name": "mewa obroÅ¼na",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Xema",
+        "english_name": "Sabine's Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 170,
+      "scientific_name": "Pagophila eburnea",
+      "polish_name": "mewa modrodzioba",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Pagophila",
+        "english_name": "Ivory Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 171,
+      "scientific_name": "Chroicocephalus genei",
+      "polish_name": "mewa cienkodzioba",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Chroicocephalus",
+        "english_name": "Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 172,
+      "scientific_name": "Chroicocephalus ridibundus",
+      "polish_name": "Åmieszka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Chroicocephalus",
+        "english_name": "Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 173,
+      "scientific_name": "Leucophaeus atricilla",
+      "polish_name": "mewa karaibska",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Leucophaeus",
+        "english_name": "Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 174,
+      "scientific_name": "Ichthyaetus ichthyaetus",
+      "polish_name": "orlica",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Ichthyaetus",
+        "english_name": "Sea Eagle",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 175,
+      "scientific_name": "Ichthyaetus audouinii",
+      "polish_name": "mewa ÅrÃ³dziemnomorska",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Ichthyaetus",
+        "english_name": "Sea Eagle",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 176,
+      "scientific_name": "Ichthyaetus melanocephalus",
+      "polish_name": "mewa czarnogÅowa",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Ichthyaetus",
+        "english_name": "Sea Eagle",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 177,
+      "scientific_name": "Larus delawarensis",
+      "polish_name": "mewa delawarska",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Larus",
+        "english_name": "Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 178,
+      "scientific_name": "Larus canus",
+      "polish_name": "mewa siwa",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Larus",
+        "english_name": "Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 179,
+      "scientific_name": "Larus cachinnans",
+      "polish_name": "mewa biaÅogÅowa",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Larus",
+        "english_name": "Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 180,
+      "scientific_name": "Larus smithsonianus",
+      "polish_name": "mewa popielata",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Larus",
+        "english_name": "Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 181,
+      "scientific_name": "Larus argentatus",
+      "polish_name": "mewa srebrzysta",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Larus",
+        "english_name": "Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 182,
+      "scientific_name": "Larus michahellis",
+      "polish_name": "mewa romaÅska",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Larus",
+        "english_name": "Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 183,
+      "scientific_name": "Larus marinus",
+      "polish_name": "mewa siodÅata",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Larus",
+        "english_name": "Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 184,
+      "scientific_name": "Larus hyperboreus",
+      "polish_name": "mewa blada",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Larus",
+        "english_name": "Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 185,
+      "scientific_name": "Larus fuscus",
+      "polish_name": "mewa Å¼Ã³Åtonoga",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Larus",
+        "english_name": "Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 186,
+      "scientific_name": "Larus schistisagus",
+      "polish_name": "mewa ochocka",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Larus",
+        "english_name": "Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 187,
+      "scientific_name": "Larus glaucoides",
+      "polish_name": "mewa polarna",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Charadriiformes",
+        "family": "Laridae",
+        "genus": "Larus",
+        "english_name": "Gull",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 188,
+      "scientific_name": "Gavia stellata",
+      "polish_name": "nur rdzawoszyi",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Gaviiformes",
+        "family": "Gaviidae",
+        "genus": "Gavia",
+        "english_name": "Loon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 189,
+      "scientific_name": "Gavia immer",
+      "polish_name": "lodowiec",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Gaviiformes",
+        "family": "Gaviidae",
+        "genus": "Gavia",
+        "english_name": "Loon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 190,
+      "scientific_name": "Gavia adamsii",
+      "polish_name": "nur biaÅodzioby",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Gaviiformes",
+        "family": "Gaviidae",
+        "genus": "Gavia",
+        "english_name": "Loon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 191,
+      "scientific_name": "Gavia pacifica",
+      "polish_name": "nur pacyficzny",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Gaviiformes",
+        "family": "Gaviidae",
+        "genus": "Gavia",
+        "english_name": "Loon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 192,
+      "scientific_name": "Gavia arctica",
+      "polish_name": "nur czarnoszyi",
+      "category": "A",
+      "status": "(l) P",
+      "taxonomy": {
+        "order": "Gaviiformes",
+        "family": "Gaviidae",
+        "genus": "Gavia",
+        "english_name": "Loon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 193,
+      "scientific_name": "Hydrobates pelagicus",
+      "polish_name": "nawaÅnik burzowy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Procellariiformes",
+        "family": "Hydrobatidae",
+        "genus": "Hydrobates",
+        "english_name": "Storm Petrel",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 194,
+      "scientific_name": "Hydrobates leucorhous",
+      "polish_name": "nawaÅnik duÅ¼y",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Procellariiformes",
+        "family": "Hydrobatidae",
+        "genus": "Hydrobates",
+        "english_name": "Storm Petrel",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 195,
+      "scientific_name": "Fulmarus glacialis",
+      "polish_name": "fulmar",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Procellariiformes",
+        "family": "Procellariidae",
+        "genus": "Fulmarus",
+        "english_name": "Fulmar",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 196,
+      "scientific_name": "Calonectris diomedea",
+      "polish_name": "burzyk Å¼Ã³Åtodzioby",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Procellariiformes",
+        "family": "Procellariidae",
+        "genus": "Calonectris",
+        "english_name": "Shearwater",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 197,
+      "scientific_name": "Ardenna grisea",
+      "polish_name": "burzyk szary",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Procellariiformes",
+        "family": "Procellariidae",
+        "genus": "Ardenna",
+        "english_name": "Shearwater",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 198,
+      "scientific_name": "Puffinus puffinus",
+      "polish_name": "burzyk pÃ³Ånocny",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Procellariiformes",
+        "family": "Procellariidae",
+        "genus": "Puffinus",
+        "english_name": "Shearwater",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 199,
+      "scientific_name": "Puffinus yelkouan",
+      "polish_name": "burzyk ÅrÃ³dziemnomorski",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Procellariiformes",
+        "family": "Procellariidae",
+        "genus": "Puffinus",
+        "english_name": "Shearwater",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 200,
+      "scientific_name": "Ciconia nigra",
+      "polish_name": "bocian czarny",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Ciconiiformes",
+        "family": "Ciconiidae",
+        "genus": "Ciconia",
+        "english_name": "Stork",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 201,
+      "scientific_name": "Ciconia ciconia",
+      "polish_name": "bocian biaÅy",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Ciconiiformes",
+        "family": "Ciconiidae",
+        "genus": "Ciconia",
+        "english_name": "Stork",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 202,
+      "scientific_name": "Morus bassanus",
+      "polish_name": "gÅuptak",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Suliformes",
+        "family": "Sulidae",
+        "genus": "Morus",
+        "english_name": "Gannet",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 203,
+      "scientific_name": "Sula leucogaster",
+      "polish_name": "gÅuptak biaÅobrzuchy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Suliformes",
+        "family": "Sulidae",
+        "genus": "Sula",
+        "english_name": "Booby",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 204,
+      "scientific_name": "Microcarbo pygmaeus",
+      "polish_name": "kormoran maÅy",
+      "category": "A",
+      "status": "l Z",
+      "taxonomy": {
+        "order": "Pelecaniformes",
+        "family": "Phalacrocoracidae",
+        "genus": "Microcarbo",
+        "english_name": "Cormorant",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 205,
+      "scientific_name": "Gulosus aristotelis",
+      "polish_name": "kormoran czubaty",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Pelecaniformes",
+        "family": "Phalacrocoracidae",
+        "genus": "Gulosus",
+        "english_name": "Cormorant",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 206,
+      "scientific_name": "Phalacrocorax carbo",
+      "polish_name": "kormoran",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Pelecaniformes",
+        "family": "Phalacrocoracidae",
+        "genus": "Phalacrocorax",
+        "english_name": "Cormorant",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 207,
+      "scientific_name": "Plegadis falcinellus",
+      "polish_name": "ibis kasztanowaty",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Pelecaniformes",
+        "family": "Threskiornithidae",
+        "genus": "Plegadis",
+        "english_name": "Ibis",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 208,
+      "scientific_name": "Platalea leucorodia",
+      "polish_name": "warzÄcha",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Pelecaniformes",
+        "family": "Threskiornithidae",
+        "genus": "Platalea",
+        "english_name": "Spoonbill",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 209,
+      "scientific_name": "Pelecanus onocrotalus",
+      "polish_name": "pelikan rÃ³Å¼owy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Pelecaniformes",
+        "family": "Pelecanidae",
+        "genus": "Pelecanus",
+        "english_name": "Pelican",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 210,
+      "scientific_name": "Pelecanus crispus",
+      "polish_name": "pelikan kÄdzierzawy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Pelecaniformes",
+        "family": "Pelecanidae",
+        "genus": "Pelecanus",
+        "english_name": "Pelican",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 211,
+      "scientific_name": "Botaurus stellaris",
+      "polish_name": "bÄk",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Pelecaniformes",
+        "family": "Ardeidae",
+        "genus": "Botaurus",
+        "english_name": "Bittern",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 212,
+      "scientific_name": "Botaurus minutus",
+      "polish_name": "bÄczek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Pelecaniformes",
+        "family": "Ardeidae",
+        "genus": "Botaurus",
+        "english_name": "Bittern",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 213,
+      "scientific_name": "Egretta garzetta",
+      "polish_name": "czapla nadobna",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Pelecaniformes",
+        "family": "Ardeidae",
+        "genus": "Egretta",
+        "english_name": "Egret",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 214,
+      "scientific_name": "Nycticorax nycticorax",
+      "polish_name": "Ålepowron",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Pelecaniformes",
+        "family": "Ardeidae",
+        "genus": "Nycticorax",
+        "english_name": "Night Heron",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 215,
+      "scientific_name": "Ardeola ralloides",
+      "polish_name": "czapla modronosa",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Pelecaniformes",
+        "family": "Ardeidae",
+        "genus": "Ardeola",
+        "english_name": "Heron",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 216,
+      "scientific_name": "Ardea alba",
+      "polish_name": "czapla biaÅa",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Pelecaniformes",
+        "family": "Ardeidae",
+        "genus": "Ardea",
+        "english_name": "Heron",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 217,
+      "scientific_name": "Ardea ibis",
+      "polish_name": "czapla zÅotawa",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Pelecaniformes",
+        "family": "Ardeidae",
+        "genus": "Ardea",
+        "english_name": "Heron",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 218,
+      "scientific_name": "Ardea purpurea",
+      "polish_name": "czapla purpurowa",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Pelecaniformes",
+        "family": "Ardeidae",
+        "genus": "Ardea",
+        "english_name": "Heron",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 219,
+      "scientific_name": "Ardea cinerea",
+      "polish_name": "czapla siwa",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Pelecaniformes",
+        "family": "Ardeidae",
+        "genus": "Ardea",
+        "english_name": "Heron",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 220,
+      "scientific_name": "Caprimulgus europaeus",
+      "polish_name": "lelek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Caprimulgiformes",
+        "family": "Caprimulgidae",
+        "genus": "Caprimulgus",
+        "english_name": "Nightjar",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 221,
+      "scientific_name": "Tachymarptis melba",
+      "polish_name": "jerzyk alpejski",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Apodiformes",
+        "family": "Apodidae",
+        "genus": "Tachymarptis",
+        "english_name": "Swift",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 222,
+      "scientific_name": "Apus apus",
+      "polish_name": "jerzyk",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Apodiformes",
+        "family": "Apodidae",
+        "genus": "Apus",
+        "english_name": "Swift",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 223,
+      "scientific_name": "Apus pallidus",
+      "polish_name": "jerzyk blady",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Apodiformes",
+        "family": "Apodidae",
+        "genus": "Apus",
+        "english_name": "Swift",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 224,
+      "scientific_name": "Tyto alba",
+      "polish_name": "pÅomykÃ³wka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Strigiformes",
+        "family": "Tytonidae",
+        "genus": "Tyto",
+        "english_name": "Barn Owl",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 225,
+      "scientific_name": "Aegolius funereus",
+      "polish_name": "wÅochatka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Aegolius",
+        "english_name": "Saw-whet Owl",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 226,
+      "scientific_name": "Athene noctua",
+      "polish_name": "pÃ³jdÅºka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Athene",
+        "english_name": "Little Owl",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 227,
+      "scientific_name": "Surnia ulula",
+      "polish_name": "sowa jarzÄbata",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Surnia",
+        "english_name": "Northern Hawk Owl",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 228,
+      "scientific_name": "Glaucidium passerinum",
+      "polish_name": "sÃ³weczka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Glaucidium",
+        "english_name": "Pygmy Owl",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 229,
+      "scientific_name": "Otus scops",
+      "polish_name": "syczek",
+      "category": "A",
+      "status": "l Z",
+      "taxonomy": {
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Otus",
+        "english_name": "Scops Owl",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 230,
+      "scientific_name": "Asio flammeus",
+      "polish_name": "uszatka bÅotna",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Asio",
+        "english_name": "Eared Owl",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 231,
+      "scientific_name": "Asio otus",
+      "polish_name": "uszatka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Asio",
+        "english_name": "Eared Owl",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 232,
+      "scientific_name": "Bubo scandiacus",
+      "polish_name": "puchacz ÅnieÅ¼ny",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Bubo",
+        "english_name": "Eagle Owl",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 233,
+      "scientific_name": "Bubo bubo",
+      "polish_name": "puchacz",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Bubo",
+        "english_name": "Eagle Owl",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 234,
+      "scientific_name": "Strix aluco",
+      "polish_name": "puszczyk",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Strix",
+        "english_name": "Wood Owl",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 235,
+      "scientific_name": "Strix uralensis",
+      "polish_name": "puszczyk uralski",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Strix",
+        "english_name": "Wood Owl",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 236,
+      "scientific_name": "Strix nebulosa",
+      "polish_name": "puszczyk mszarny",
+      "category": "A",
+      "status": "l Z",
+      "taxonomy": {
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Strix",
+        "english_name": "Wood Owl",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 237,
+      "scientific_name": "Pandion haliaetus",
+      "polish_name": "ryboÅÃ³w",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Pandionidae",
+        "genus": "Pandion",
+        "english_name": "Osprey",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 238,
+      "scientific_name": "Elanus caeruleus",
+      "polish_name": "kaniuk",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Elanidae",
+        "genus": "Elanus",
+        "english_name": "Kite",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 239,
+      "scientific_name": "Gypaetus barbatus",
+      "polish_name": "orÅosÄp",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Gypaetus",
+        "english_name": "Lammergeier",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 240,
+      "scientific_name": "Neophron percnopterus",
+      "polish_name": "Åcierwnik",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Neophron",
+        "english_name": "Egyptian Vulture",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 241,
+      "scientific_name": "Pernis apivorus",
+      "polish_name": "trzmielojad",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Pernis",
+        "english_name": "Honey Buzzard",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 242,
+      "scientific_name": "Aegypius monachus",
+      "polish_name": "sÄp kasztanowaty",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Aegypius",
+        "english_name": "Monk Vulture",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 243,
+      "scientific_name": "Gyps fulvus",
+      "polish_name": "sÄp pÅowy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Gyps",
+        "english_name": "Vulture",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 244,
+      "scientific_name": "Circaetus gallicus",
+      "polish_name": "gadoÅ¼er",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Circaetus",
+        "english_name": "Short-toed Snake Eagle",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 245,
+      "scientific_name": "Clanga clanga",
+      "polish_name": "orlik grubodzioby",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Clanga",
+        "english_name": "Spotted Eagle",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 246,
+      "scientific_name": "Clanga pomarina",
+      "polish_name": "orlik krzykliwy",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Clanga",
+        "english_name": "Spotted Eagle",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 247,
+      "scientific_name": "Hieraaetus pennatus",
+      "polish_name": "orzeÅek",
+      "category": "A",
+      "status": "(l) Z",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Hieraaetus",
+        "english_name": "Booted Eagle",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 248,
+      "scientific_name": "Aquila nipalensis",
+      "polish_name": "orzeÅ stepowy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Aquila",
+        "english_name": "Eagle",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 249,
+      "scientific_name": "Aquila heliaca",
+      "polish_name": "orzeÅ cesarski",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Aquila",
+        "english_name": "Eagle",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 250,
+      "scientific_name": "Aquila chrysaetos",
+      "polish_name": "orzeÅ przedni",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Aquila",
+        "english_name": "Eagle",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 251,
+      "scientific_name": "Aquila fasciata",
+      "polish_name": "orzeÅ poÅudniowy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Aquila",
+        "english_name": "Eagle",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 252,
+      "scientific_name": "Tachyspiza brevipes",
+      "polish_name": "krogulec krÃ³tkonogi",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Tachyspiza",
+        "english_name": "Eagle",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 253,
+      "scientific_name": "Accipiter nisus",
+      "polish_name": "krogulec",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Accipiter",
+        "english_name": "Sparrowhawk",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 254,
+      "scientific_name": "Astur gentilis",
+      "polish_name": "jastrzÄb",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Astur",
+        "english_name": "Goshawk",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 255,
+      "scientific_name": "Circus macrourus",
+      "polish_name": "bÅotniak stepowy",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Circus",
+        "english_name": "Harrier",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 256,
+      "scientific_name": "Circus cyaneus",
+      "polish_name": "bÅotniak zboÅ¼owy",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Circus",
+        "english_name": "Harrier",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 257,
+      "scientific_name": "Circus pygargus",
+      "polish_name": "bÅotniak ÅÄkowy",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Circus",
+        "english_name": "Harrier",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 258,
+      "scientific_name": "Circus aeruginosus",
+      "polish_name": "bÅotniak stawowy",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Circus",
+        "english_name": "Harrier",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 259,
+      "scientific_name": "Milvus milvus",
+      "polish_name": "kania ruda",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Milvus",
+        "english_name": "Kite",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 260,
+      "scientific_name": "Milvus migrans",
+      "polish_name": "kania czarna",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Milvus",
+        "english_name": "Kite",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 261,
+      "scientific_name": "Haliaeetus leucoryphus",
+      "polish_name": "bielik wschodni",
+      "category": "B",
+      "status": "(z)",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Haliaeetus",
+        "english_name": "Sea Eagle",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 262,
+      "scientific_name": "Haliaeetus albicilla",
+      "polish_name": "bielik",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Haliaeetus",
+        "english_name": "Sea Eagle",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 263,
+      "scientific_name": "Buteo lagopus",
+      "polish_name": "myszoÅÃ³w wÅochaty",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Buteo",
+        "english_name": "Buzzard",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 264,
+      "scientific_name": "Buteo buteo",
+      "polish_name": "myszoÅÃ³w",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Buteo",
+        "english_name": "Buzzard",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 265,
+      "scientific_name": "Buteo rufinus",
+      "polish_name": "kurhannik",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Buteo",
+        "english_name": "Buzzard",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 266,
+      "scientific_name": "Upupa epops",
+      "polish_name": "dudek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Coraciiformes",
+        "family": "Upupidae",
+        "genus": "Upupa",
+        "english_name": "Hoopoe",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 267,
+      "scientific_name": "Coracias garrulus",
+      "polish_name": "kraska",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Coraciiformes",
+        "family": "Coraciidae",
+        "genus": "Coracias",
+        "english_name": "Roller",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 268,
+      "scientific_name": "Merops apiaster",
+      "polish_name": "Å¼oÅna",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Coraciiformes",
+        "family": "Meropidae",
+        "genus": "Merops",
+        "english_name": "Bee-eater",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 269,
+      "scientific_name": "Alcedo atthis",
+      "polish_name": "zimorodek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Coraciiformes",
+        "family": "Alcedinidae",
+        "genus": "Alcedo",
+        "english_name": "Kingfisher",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 270,
+      "scientific_name": "Ceryle rudis",
+      "polish_name": "rybaczek srokaty",
+      "category": "B",
+      "status": "(z)",
+      "taxonomy": {
+        "order": "Coraciiformes",
+        "family": "Alcedinidae",
+        "genus": "Ceryle",
+        "english_name": "Kingfisher",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 271,
+      "scientific_name": "Jynx torquilla",
+      "polish_name": "krÄtogÅÃ³w",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Piciformes",
+        "family": "Jyngidae",
+        "genus": "Jynx",
+        "english_name": "Wryneck",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 272,
+      "scientific_name": "Picus canus",
+      "polish_name": "dziÄcioÅ zielonosiwy",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Piciformes",
+        "family": "Picidae",
+        "genus": "Picus",
+        "english_name": "Woodpecker",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 273,
+      "scientific_name": "Picus viridis",
+      "polish_name": "dziÄcioÅ zielony",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Piciformes",
+        "family": "Picidae",
+        "genus": "Picus",
+        "english_name": "Woodpecker",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 274,
+      "scientific_name": "Dryocopus martius",
+      "polish_name": "dziÄcioÅ czarny",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Piciformes",
+        "family": "Picidae",
+        "genus": "Dryocopus",
+        "english_name": "Woodpecker",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 275,
+      "scientific_name": "Picoides tridactylus",
+      "polish_name": "dziÄcioÅ trÃ³jpalczasty",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Piciformes",
+        "family": "Picidae",
+        "genus": "Picoides",
+        "english_name": "Woodpecker",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 276,
+      "scientific_name": "Dendrocoptes medius",
+      "polish_name": "dziÄcioÅ Åredni",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Piciformes",
+        "family": "Picidae",
+        "genus": "Dendrocoptes",
+        "english_name": "Woodpecker",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 277,
+      "scientific_name": "Dendrocopos leucotos",
+      "polish_name": "dziÄcioÅ biaÅogrzbiety",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Piciformes",
+        "family": "Picidae",
+        "genus": "Dendrocopos",
+        "english_name": "Woodpecker",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 278,
+      "scientific_name": "Dendrocopos major",
+      "polish_name": "dziÄcioÅ duÅ¼y",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Piciformes",
+        "family": "Picidae",
+        "genus": "Dendrocopos",
+        "english_name": "Woodpecker",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 279,
+      "scientific_name": "Dendrocopos syriacus",
+      "polish_name": "dziÄcioÅ biaÅoszyi",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Piciformes",
+        "family": "Picidae",
+        "genus": "Dendrocopos",
+        "english_name": "Woodpecker",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 280,
+      "scientific_name": "Dryobates minor",
+      "polish_name": "dziÄcioÅek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Piciformes",
+        "family": "Picidae",
+        "genus": "Dryobates",
+        "english_name": "Woodpecker",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 281,
+      "scientific_name": "Falco naumanni",
+      "polish_name": "pustuÅeczka",
+      "category": "A",
+      "status": "(l) Z",
+      "taxonomy": {
+        "order": "Falconiformes",
+        "family": "Falconidae",
+        "genus": "Falco",
+        "english_name": "Falcon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 282,
+      "scientific_name": "Falco tinnunculus",
+      "polish_name": "pustuÅka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Falconiformes",
+        "family": "Falconidae",
+        "genus": "Falco",
+        "english_name": "Falcon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 283,
+      "scientific_name": "Falco vespertinus",
+      "polish_name": "kobczyk",
+      "category": "A",
+      "status": "(l) P",
+      "taxonomy": {
+        "order": "Falconiformes",
+        "family": "Falconidae",
+        "genus": "Falco",
+        "english_name": "Falcon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 284,
+      "scientific_name": "Falco columbarius",
+      "polish_name": "drzemlik",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Falconiformes",
+        "family": "Falconidae",
+        "genus": "Falco",
+        "english_name": "Falcon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 285,
+      "scientific_name": "Falco eleonorae",
+      "polish_name": "sokÃ³Å skalny",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Falconiformes",
+        "family": "Falconidae",
+        "genus": "Falco",
+        "english_name": "Falcon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 286,
+      "scientific_name": "Falco subbuteo",
+      "polish_name": "kobuz",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Falconiformes",
+        "family": "Falconidae",
+        "genus": "Falco",
+        "english_name": "Falcon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 287,
+      "scientific_name": "Falco peregrinus",
+      "polish_name": "sokÃ³Å wÄdrowny",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Falconiformes",
+        "family": "Falconidae",
+        "genus": "Falco",
+        "english_name": "Falcon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 288,
+      "scientific_name": "Falco biarmicus",
+      "polish_name": "rarÃ³g gÃ³rski",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Falconiformes",
+        "family": "Falconidae",
+        "genus": "Falco",
+        "english_name": "Falcon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 289,
+      "scientific_name": "Falco rusticolus",
+      "polish_name": "biaÅozÃ³r",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Falconiformes",
+        "family": "Falconidae",
+        "genus": "Falco",
+        "english_name": "Falcon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 290,
+      "scientific_name": "Falco cherrug",
+      "polish_name": "rarÃ³g",
+      "category": "A",
+      "status": "l Z",
+      "taxonomy": {
+        "order": "Falconiformes",
+        "family": "Falconidae",
+        "genus": "Falco",
+        "english_name": "Falcon",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 291,
+      "scientific_name": "Vireo olivaceus",
+      "polish_name": "wireonek czerwonooki",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Vireonidae",
+        "genus": "Vireo",
+        "english_name": "Vireo",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 292,
+      "scientific_name": "Oriolus oriolus",
+      "polish_name": "wilga",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Oriolidae",
+        "genus": "Oriolus",
+        "english_name": "Oriole",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 293,
+      "scientific_name": "Lanius excubitor",
+      "polish_name": "srokosz",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Laniidae",
+        "genus": "Lanius",
+        "english_name": "Shrike",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 294,
+      "scientific_name": "Lanius borealis",
+      "polish_name": "srokosz pÃ³Ånocny",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Laniidae",
+        "genus": "Lanius",
+        "english_name": "Shrike",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 295,
+      "scientific_name": "Lanius minor",
+      "polish_name": "dzierzba czarnoczelna",
+      "category": "A",
+      "status": "l Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Laniidae",
+        "genus": "Lanius",
+        "english_name": "Shrike",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 296,
+      "scientific_name": "Lanius senator",
+      "polish_name": "dzierzba rudogÅowa",
+      "category": "A",
+      "status": "(l) Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Laniidae",
+        "genus": "Lanius",
+        "english_name": "Shrike",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 297,
+      "scientific_name": "Lanius isabellinus",
+      "polish_name": "dzierzba pustynna",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Laniidae",
+        "genus": "Lanius",
+        "english_name": "Shrike",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 298,
+      "scientific_name": "Lanius collurio",
+      "polish_name": "gÄsiorek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Laniidae",
+        "genus": "Lanius",
+        "english_name": "Shrike",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 299,
+      "scientific_name": "Lanius phoenicuroides",
+      "polish_name": "dzierzba rdzawosterna",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Laniidae",
+        "genus": "Lanius",
+        "english_name": "Shrike",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 300,
+      "scientific_name": "Pyrrhocorax graculus",
+      "polish_name": "wieszczek",
+      "category": "A",
+      "status": "(l) z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Corvidae",
+        "genus": "Pyrrhocorax",
+        "english_name": "Chough",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 301,
+      "scientific_name": "Perisoreus infaustus",
+      "polish_name": "sÃ³jka syberyjska",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Corvidae",
+        "genus": "Perisoreus",
+        "english_name": "Jay",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 302,
+      "scientific_name": "Garrulus glandarius",
+      "polish_name": "sÃ³jka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Corvidae",
+        "genus": "Garrulus",
+        "english_name": "Jay",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 303,
+      "scientific_name": "Pica pica",
+      "polish_name": "sroka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Corvidae",
+        "genus": "Pica",
+        "english_name": "Magpie",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 304,
+      "scientific_name": "Nucifraga caryocatactes",
+      "polish_name": "orzechÃ³wka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Corvidae",
+        "genus": "Nucifraga",
+        "english_name": "Nutcracker",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 305,
+      "scientific_name": "Coloeus monedula",
+      "polish_name": "kawka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Corvidae",
+        "genus": "Coloeus",
+        "english_name": "Jackdaw",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 306,
+      "scientific_name": "Corvus frugilegus",
+      "polish_name": "gawron",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Corvidae",
+        "genus": "Corvus",
+        "english_name": "Crow",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 307,
+      "scientific_name": "Corvus corax",
+      "polish_name": "kruk",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Corvidae",
+        "genus": "Corvus",
+        "english_name": "Crow",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 308,
+      "scientific_name": "Corvus corone",
+      "polish_name": "wrona",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Corvidae",
+        "genus": "Corvus",
+        "english_name": "Crow",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 309,
+      "scientific_name": "Remiz pendulinus",
+      "polish_name": "remiz",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Remizidae",
+        "genus": "Remiz",
+        "english_name": "Penduline Tit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 310,
+      "scientific_name": "Cyanistes caeruleus",
+      "polish_name": "modraszka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Paridae",
+        "genus": "Cyanistes",
+        "english_name": "Blue Tit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 311,
+      "scientific_name": "Cyanistes cyanus",
+      "polish_name": "sikora lazurowa",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Paridae",
+        "genus": "Cyanistes",
+        "english_name": "Blue Tit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 312,
+      "scientific_name": "Parus major",
+      "polish_name": "bogatka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Paridae",
+        "genus": "Parus",
+        "english_name": "Tit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 313,
+      "scientific_name": "Periparus ater",
+      "polish_name": "sosnÃ³wka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Paridae",
+        "genus": "Periparus",
+        "english_name": "Coal Tit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 314,
+      "scientific_name": "Lophophanes cristatus",
+      "polish_name": "czubatka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Paridae",
+        "genus": "Lophophanes",
+        "english_name": "Crested Tit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 315,
+      "scientific_name": "Poecile palustris",
+      "polish_name": "sikora uboga",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Paridae",
+        "genus": "Poecile",
+        "english_name": "Chickadee",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 316,
+      "scientific_name": "Poecile montanus",
+      "polish_name": "czarnogÅÃ³wka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Paridae",
+        "genus": "Poecile",
+        "english_name": "Chickadee",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 317,
+      "scientific_name": "Panurus biarmicus",
+      "polish_name": "wÄsatka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Panuridae",
+        "genus": "Panurus",
+        "english_name": "Bearded Reedling",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 318,
+      "scientific_name": "Lullula arborea",
+      "polish_name": "lerka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Alaudidae",
+        "genus": "Lullula",
+        "english_name": "Woodlark",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 319,
+      "scientific_name": "Alauda leucoptera",
+      "polish_name": "skowronek biaÅoskrzydÅy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Alaudidae",
+        "genus": "Alauda",
+        "english_name": "Lark",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 320,
+      "scientific_name": "Alauda arvensis",
+      "polish_name": "skowronek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Alaudidae",
+        "genus": "Alauda",
+        "english_name": "Lark",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 321,
+      "scientific_name": "Galerida cristata",
+      "polish_name": "dzierlatka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Alaudidae",
+        "genus": "Galerida",
+        "english_name": "Crested Lark",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 322,
+      "scientific_name": "Eremophila alpestris",
+      "polish_name": "gÃ³rniczek",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Alaudidae",
+        "genus": "Eremophila",
+        "english_name": "Horned Lark",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 323,
+      "scientific_name": "Calandrella brachydactyla",
+      "polish_name": "skowroÅczyk krÃ³tkopalcowy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Alaudidae",
+        "genus": "Calandrella",
+        "english_name": "Short-toed Lark",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 324,
+      "scientific_name": "Melanocorypha bimaculata",
+      "polish_name": "kalandra dwuplamista",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Alaudidae",
+        "genus": "Melanocorypha",
+        "english_name": "Calandra Lark",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 325,
+      "scientific_name": "Melanocorypha yeltoniensis",
+      "polish_name": "kalandra czarna",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Alaudidae",
+        "genus": "Melanocorypha",
+        "english_name": "Calandra Lark",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 326,
+      "scientific_name": "Melanocorypha calandra",
+      "polish_name": "kalandra szara",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Alaudidae",
+        "genus": "Melanocorypha",
+        "english_name": "Calandra Lark",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 327,
+      "scientific_name": "Hippolais icterina",
+      "polish_name": "zaganiacz",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Acrocephalidae",
+        "genus": "Hippolais",
+        "english_name": "Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 328,
+      "scientific_name": "Hippolais polyglotta",
+      "polish_name": "zaganiacz szczebiotliwy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Acrocephalidae",
+        "genus": "Hippolais",
+        "english_name": "Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 329,
+      "scientific_name": "Iduna rama",
+      "polish_name": "zaganiacz afgaÅski",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Acrocephalidae",
+        "genus": "Iduna",
+        "english_name": "Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 330,
+      "scientific_name": "Iduna caligata",
+      "polish_name": "zaganiacz maÅy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Acrocephalidae",
+        "genus": "Iduna",
+        "english_name": "Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 331,
+      "scientific_name": "Iduna pallida",
+      "polish_name": "zaganiacz blady",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Acrocephalidae",
+        "genus": "Iduna",
+        "english_name": "Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 332,
+      "scientific_name": "Acrocephalus schoenobaenus",
+      "polish_name": "rokitniczka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Acrocephalidae",
+        "genus": "Acrocephalus",
+        "english_name": "Reed Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 333,
+      "scientific_name": "Acrocephalus paludicola",
+      "polish_name": "wodniczka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Acrocephalidae",
+        "genus": "Acrocephalus",
+        "english_name": "Reed Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 334,
+      "scientific_name": "Acrocephalus melanopogon",
+      "polish_name": "tamaryszka",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Acrocephalidae",
+        "genus": "Acrocephalus",
+        "english_name": "Reed Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 335,
+      "scientific_name": "Acrocephalus agricola",
+      "polish_name": "trzcinniczek kaspijski",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Acrocephalidae",
+        "genus": "Acrocephalus",
+        "english_name": "Reed Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 336,
+      "scientific_name": "Acrocephalus dumetorum",
+      "polish_name": "zaroÅlÃ³wka",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Acrocephalidae",
+        "genus": "Acrocephalus",
+        "english_name": "Reed Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 337,
+      "scientific_name": "Acrocephalus palustris",
+      "polish_name": "ÅozÃ³wka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Acrocephalidae",
+        "genus": "Acrocephalus",
+        "english_name": "Reed Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 338,
+      "scientific_name": "Acrocephalus scirpaceus",
+      "polish_name": "trzcinniczek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Acrocephalidae",
+        "genus": "Acrocephalus",
+        "english_name": "Reed Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 339,
+      "scientific_name": "Acrocephalus arundinaceus",
+      "polish_name": "trzciniak",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Acrocephalidae",
+        "genus": "Acrocephalus",
+        "english_name": "Reed Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 340,
+      "scientific_name": "Helopsaltes certhiola",
+      "polish_name": "Åwierszczak melodyjny",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Acrocephalidae",
+        "genus": "Helopsaltes",
+        "english_name": "Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 341,
+      "scientific_name": "Locustella fluviatilis",
+      "polish_name": "strumieniÃ³wka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Locustellidae",
+        "genus": "Locustella",
+        "english_name": "Grasshopper Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 342,
+      "scientific_name": "Locustella luscinioides",
+      "polish_name": "brzÄczka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Locustellidae",
+        "genus": "Locustella",
+        "english_name": "Grasshopper Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 343,
+      "scientific_name": "Locustella naevia",
+      "polish_name": "Åwierszczak",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Locustellidae",
+        "genus": "Locustella",
+        "english_name": "Grasshopper Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 344,
+      "scientific_name": "Riparia riparia",
+      "polish_name": "brzegÃ³wka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Hirundinidae",
+        "genus": "Riparia",
+        "english_name": "Martin",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 345,
+      "scientific_name": "Hirundo rustica",
+      "polish_name": "dymÃ³wka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Hirundinidae",
+        "genus": "Hirundo",
+        "english_name": "Swallow",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 346,
+      "scientific_name": "Delichon urbicum",
+      "polish_name": "oknÃ³wka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Hirundinidae",
+        "genus": "Delichon",
+        "english_name": "House Martin",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 347,
+      "scientific_name": "Cecropis rufula",
+      "polish_name": "jaskÃ³Åka ÅrÃ³dziemnomorska",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Hirundinidae",
+        "genus": "Cecropis",
+        "english_name": "Swallow",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 348,
+      "scientific_name": "Aegithalos caudatus",
+      "polish_name": "raniuszek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Aegithalidae",
+        "genus": "Aegithalos",
+        "english_name": "Long-tailed Tit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 349,
+      "scientific_name": "Cettia cetti",
+      "polish_name": "wierzbÃ³wka",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Cettiidae",
+        "genus": "Cettia",
+        "english_name": "Cettia Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 350,
+      "scientific_name": "Phylloscopus sibilatrix",
+      "polish_name": "Åwistunka leÅna",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Phylloscopidae",
+        "genus": "Phylloscopus",
+        "english_name": "Leaf Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 351,
+      "scientific_name": "Phylloscopus bonelli",
+      "polish_name": "Åwistunka gÃ³rska",
+      "category": "A",
+      "status": "(l) Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Phylloscopidae",
+        "genus": "Phylloscopus",
+        "english_name": "Leaf Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 352,
+      "scientific_name": "Phylloscopus inornatus",
+      "polish_name": "Åwistunka Å¼Ã³Åtawa",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Phylloscopidae",
+        "genus": "Phylloscopus",
+        "english_name": "Leaf Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 353,
+      "scientific_name": "Phylloscopus humei",
+      "polish_name": "Åwistunka aÅtajska",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Phylloscopidae",
+        "genus": "Phylloscopus",
+        "english_name": "Leaf Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 354,
+      "scientific_name": "Phylloscopus proregulus",
+      "polish_name": "Åwistunka zÅotawa",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Phylloscopidae",
+        "genus": "Phylloscopus",
+        "english_name": "Leaf Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 355,
+      "scientific_name": "Phylloscopus schwarzi",
+      "polish_name": "Åwistunka grubodzioba",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Phylloscopidae",
+        "genus": "Phylloscopus",
+        "english_name": "Leaf Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 356,
+      "scientific_name": "Phylloscopus fuscatus",
+      "polish_name": "Åwistunka brunatna",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Phylloscopidae",
+        "genus": "Phylloscopus",
+        "english_name": "Leaf Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 357,
+      "scientific_name": "Phylloscopus trochilus",
+      "polish_name": "piecuszek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Phylloscopidae",
+        "genus": "Phylloscopus",
+        "english_name": "Leaf Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 358,
+      "scientific_name": "Phylloscopus ibericus",
+      "polish_name": "Åwistunka iberyjska",
+      "category": "A",
+      "status": "l z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Phylloscopidae",
+        "genus": "Phylloscopus",
+        "english_name": "Leaf Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 359,
+      "scientific_name": "Phylloscopus collybita",
+      "polish_name": "pierwiosnek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Phylloscopidae",
+        "genus": "Phylloscopus",
+        "english_name": "Leaf Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 360,
+      "scientific_name": "Phylloscopus trochiloides",
+      "polish_name": "wÃ³jcik",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Phylloscopidae",
+        "genus": "Phylloscopus",
+        "english_name": "Leaf Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 361,
+      "scientific_name": "Phylloscopus borealis",
+      "polish_name": "Åwistunka pÃ³Ånocna",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Phylloscopidae",
+        "genus": "Phylloscopus",
+        "english_name": "Leaf Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 362,
+      "scientific_name": "Sylvia borin",
+      "polish_name": "gajÃ³wka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Sylviidae",
+        "genus": "Sylvia",
+        "english_name": "Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 363,
+      "scientific_name": "Sylvia atricapilla",
+      "polish_name": "kapturka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Sylviidae",
+        "genus": "Sylvia",
+        "english_name": "Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 364,
+      "scientific_name": "Curruca nisoria",
+      "polish_name": "jarzÄbatka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Sylviidae",
+        "genus": "Curruca",
+        "english_name": "Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 365,
+      "scientific_name": "Curruca curruca",
+      "polish_name": "piegÅ¼a",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Sylviidae",
+        "genus": "Curruca",
+        "english_name": "Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 366,
+      "scientific_name": "Curruca mystacea",
+      "polish_name": "pokrzewka kaspijska",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Sylviidae",
+        "genus": "Curruca",
+        "english_name": "Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 367,
+      "scientific_name": "Curruca communis",
+      "polish_name": "cierniÃ³wka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Sylviidae",
+        "genus": "Curruca",
+        "english_name": "Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 368,
+      "scientific_name": "Curruca melanocephala",
+      "polish_name": "pokrzewka aksamitna",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Sylviidae",
+        "genus": "Curruca",
+        "english_name": "Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 369,
+      "scientific_name": "Curruca iberiae",
+      "polish_name": "pokrzewka iberyjska",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Sylviidae",
+        "genus": "Curruca",
+        "english_name": "Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 370,
+      "scientific_name": "Curruca cantillans",
+      "polish_name": "pokrzewka wÄsata",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Sylviidae",
+        "genus": "Curruca",
+        "english_name": "Warbler",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 371,
+      "scientific_name": "Bombycilla garrulus",
+      "polish_name": "jemioÅuszka",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Bombycillidae",
+        "genus": "Bombycilla",
+        "english_name": "Waxwing",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 372,
+      "scientific_name": "Regulus regulus",
+      "polish_name": "mysikrÃ³lik",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Regulidae",
+        "genus": "Regulus",
+        "english_name": "Kinglet",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 373,
+      "scientific_name": "Regulus ignicapilla",
+      "polish_name": "zniczek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Regulidae",
+        "genus": "Regulus",
+        "english_name": "Kinglet",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 374,
+      "scientific_name": "Tichodroma muraria",
+      "polish_name": "pomurnik",
+      "category": "A",
+      "status": "l",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Tichodromidae",
+        "genus": "Tichodroma",
+        "english_name": "Wallcreeper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 375,
+      "scientific_name": "Sitta europaea",
+      "polish_name": "kowalik",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Sittidae",
+        "genus": "Sitta",
+        "english_name": "Nuthatch",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 376,
+      "scientific_name": "Certhia familiaris",
+      "polish_name": "peÅzacz leÅny",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Certhiidae",
+        "genus": "Certhia",
+        "english_name": "Treecreeper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 377,
+      "scientific_name": "Certhia brachydactyla",
+      "polish_name": "peÅzacz ogrodowy",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Certhiidae",
+        "genus": "Certhia",
+        "english_name": "Treecreeper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 378,
+      "scientific_name": "Troglodytes troglodytes",
+      "polish_name": "strzyÅ¼yk",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Troglodytidae",
+        "genus": "Troglodytes",
+        "english_name": "Wren",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 379,
+      "scientific_name": "Sturnus unicolor",
+      "polish_name": "szpak jednobarwny",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Sturnidae",
+        "genus": "Sturnus",
+        "english_name": "Starling",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 380,
+      "scientific_name": "Sturnus vulgaris",
+      "polish_name": "szpak",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Sturnidae",
+        "genus": "Sturnus",
+        "english_name": "Starling",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 381,
+      "scientific_name": "Pastor roseus",
+      "polish_name": "pasterz",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Sturnidae",
+        "genus": "Pastor",
+        "english_name": "Starling",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 382,
+      "scientific_name": "Cinclus cinclus",
+      "polish_name": "pluszcz",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Cinclidae",
+        "genus": "Cinclus",
+        "english_name": "Dipper",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 383,
+      "scientific_name": "Zoothera aurea",
+      "polish_name": "drozdoÅ tajgowy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Zoothera",
+        "english_name": "Thrush",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 384,
+      "scientific_name": "Geokichla sibirica",
+      "polish_name": "drozdaczek ciemny",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Geokichla",
+        "english_name": "Thrush",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 385,
+      "scientific_name": "Turdus viscivorus",
+      "polish_name": "paszkot",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Turdus",
+        "english_name": "Thrush",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 386,
+      "scientific_name": "Turdus philomelos",
+      "polish_name": "Åpiewak",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Turdus",
+        "english_name": "Thrush",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 387,
+      "scientific_name": "Turdus iliacus",
+      "polish_name": "droÅºdzik",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Turdus",
+        "english_name": "Thrush",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 388,
+      "scientific_name": "Turdus merula",
+      "polish_name": "kos",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Turdus",
+        "english_name": "Thrush",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 389,
+      "scientific_name": "Turdus pilaris",
+      "polish_name": "kwiczoÅ",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Turdus",
+        "english_name": "Thrush",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 390,
+      "scientific_name": "Turdus torquatus",
+      "polish_name": "drozd obroÅ¼ny",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Turdus",
+        "english_name": "Thrush",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 391,
+      "scientific_name": "Turdus naumanni",
+      "polish_name": "drozd rdzawy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Turdus",
+        "english_name": "Thrush",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 392,
+      "scientific_name": "Turdus eunomus",
+      "polish_name": "drozd rdzawoskrzydÅy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Turdus",
+        "english_name": "Thrush",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 393,
+      "scientific_name": "Turdus ruficollis",
+      "polish_name": "drozd rdzawogardÅy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Turdus",
+        "english_name": "Thrush",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 394,
+      "scientific_name": "Turdus atrogularis",
+      "polish_name": "drozd czarnogardÅy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Turdus",
+        "english_name": "Thrush",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 395,
+      "scientific_name": "Turdus obscurus",
+      "polish_name": "drozd oliwkowy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Turdus",
+        "english_name": "Thrush",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 396,
+      "scientific_name": "Muscicapa striata",
+      "polish_name": "muchoÅÃ³wka szara",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Muscicapa",
+        "english_name": "Flycatcher",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 397,
+      "scientific_name": "Erithacus rubecula",
+      "polish_name": "rudzik",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Erithacus",
+        "english_name": "Robin",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 398,
+      "scientific_name": "Luscinia megarhynchos",
+      "polish_name": "sÅowik rdzawy",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Luscinia",
+        "english_name": "Nightingale",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 399,
+      "scientific_name": "Luscinia luscinia",
+      "polish_name": "sÅowik szary",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Luscinia",
+        "english_name": "Nightingale",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 400,
+      "scientific_name": "Luscinia svecica",
+      "polish_name": "podrÃ³Å¼niczek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Luscinia",
+        "english_name": "Nightingale",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 401,
+      "scientific_name": "Larvivora sibilans",
+      "polish_name": "sÅowik syberyjski",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Larvivora",
+        "english_name": "Flycatcher",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 402,
+      "scientific_name": "Ficedula parva",
+      "polish_name": "muchoÅÃ³wka maÅa",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Ficedula",
+        "english_name": "Flycatcher",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 403,
+      "scientific_name": "Ficedula albicollis",
+      "polish_name": "muchoÅÃ³wka biaÅoszyja",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Ficedula",
+        "english_name": "Flycatcher",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 404,
+      "scientific_name": "Ficedula hypoleuca",
+      "polish_name": "muchoÅÃ³wka Å¼aÅobna",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Ficedula",
+        "english_name": "Flycatcher",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 405,
+      "scientific_name": "Tarsiger cyanurus",
+      "polish_name": "modraczek",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Tarsiger",
+        "english_name": "Redstart",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 406,
+      "scientific_name": "Phoenicurus ochruros",
+      "polish_name": "kopciuszek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Phoenicurus",
+        "english_name": "Redstart",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 407,
+      "scientific_name": "Phoenicurus phoenicurus",
+      "polish_name": "pleszka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Phoenicurus",
+        "english_name": "Redstart",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 408,
+      "scientific_name": "Monticola saxatilis",
+      "polish_name": "nagÃ³rnik",
+      "category": "A",
+      "status": "(l) Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Monticola",
+        "english_name": "Rock Thrush",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 409,
+      "scientific_name": "Saxicola rubetra",
+      "polish_name": "poklÄskwa",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Saxicola",
+        "english_name": "Chat",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 410,
+      "scientific_name": "Saxicola maurus",
+      "polish_name": "klÄskawka syberyjska",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Saxicola",
+        "english_name": "Chat",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 411,
+      "scientific_name": "Saxicola rubicola",
+      "polish_name": "klÄskawka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Saxicola",
+        "english_name": "Chat",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 412,
+      "scientific_name": "Oenanthe deserti",
+      "polish_name": "biaÅorzytka pustynna",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Oenanthe",
+        "english_name": "Wheatear",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 413,
+      "scientific_name": "Oenanthe hispanica",
+      "polish_name": "biaÅorzytka rdzawa",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Oenanthe",
+        "english_name": "Wheatear",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 414,
+      "scientific_name": "Oenanthe pleschanka",
+      "polish_name": "biaÅorzytka pstra",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Oenanthe",
+        "english_name": "Wheatear",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 415,
+      "scientific_name": "Oenanthe oenanthe",
+      "polish_name": "biaÅorzytka",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Oenanthe",
+        "english_name": "Wheatear",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 416,
+      "scientific_name": "Oenanthe isabellina",
+      "polish_name": "biaÅorzytka pÅowa",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Oenanthe",
+        "english_name": "Wheatear",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 417,
+      "scientific_name": "Oenanthe leucopyga",
+      "polish_name": "biaÅorzytka saharyjska",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Oenanthe",
+        "english_name": "Wheatear",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 418,
+      "scientific_name": "Prunella collaris",
+      "polish_name": "pÅochacz halny",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Prunellidae",
+        "genus": "Prunella",
+        "english_name": "Accentor",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 419,
+      "scientific_name": "Prunella atrogularis",
+      "polish_name": "pÅochacz czarnogardÅy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Prunellidae",
+        "genus": "Prunella",
+        "english_name": "Accentor",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 420,
+      "scientific_name": "Prunella modularis",
+      "polish_name": "pokrzywnica",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Prunellidae",
+        "genus": "Prunella",
+        "english_name": "Accentor",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 421,
+      "scientific_name": "Prunella montanella",
+      "polish_name": "pÅochacz syberyjski",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Prunellidae",
+        "genus": "Prunella",
+        "english_name": "Accentor",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 422,
+      "scientific_name": "Petronia petronia",
+      "polish_name": "wrÃ³bel skalny",
+      "category": "B",
+      "status": "(z)",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Passeridae",
+        "genus": "Petronia",
+        "english_name": "Rock Sparrow",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 423,
+      "scientific_name": "Montifringilla nivalis",
+      "polish_name": "ÅnieÅ¼ka",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Passeridae",
+        "genus": "Montifringilla",
+        "english_name": "Snow Finch",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 424,
+      "scientific_name": "Passer montanus",
+      "polish_name": "mazurek",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Passeridae",
+        "genus": "Passer",
+        "english_name": "Sparrow",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 425,
+      "scientific_name": "Passer domesticus",
+      "polish_name": "wrÃ³bel",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Passeridae",
+        "genus": "Passer",
+        "english_name": "Sparrow",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 426,
+      "scientific_name": "Motacilla cinerea",
+      "polish_name": "pliszka gÃ³rska",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Motacillidae",
+        "genus": "Motacilla",
+        "english_name": "Wagtail",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 427,
+      "scientific_name": "Motacilla flava",
+      "polish_name": "pliszka Å¼Ã³Åta",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Motacillidae",
+        "genus": "Motacilla",
+        "english_name": "Wagtail",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 428,
+      "scientific_name": "Motacilla citreola",
+      "polish_name": "pliszka cytrynowa",
+      "category": "A",
+      "status": "L P",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Motacillidae",
+        "genus": "Motacilla",
+        "english_name": "Wagtail",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 429,
+      "scientific_name": "Motacilla tschutschensis",
+      "polish_name": "pliszka syberyjska",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Motacillidae",
+        "genus": "Motacilla",
+        "english_name": "Wagtail",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 430,
+      "scientific_name": "Motacilla alba",
+      "polish_name": "pliszka siwa",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Motacillidae",
+        "genus": "Motacilla",
+        "english_name": "Wagtail",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 431,
+      "scientific_name": "Anthus godlewskii",
+      "polish_name": "Åwiergotek stepowy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Motacillidae",
+        "genus": "Anthus",
+        "english_name": "Pipit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 432,
+      "scientific_name": "Anthus campestris",
+      "polish_name": "Åwiergotek polny",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Motacillidae",
+        "genus": "Anthus",
+        "english_name": "Pipit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 433,
+      "scientific_name": "Anthus richardi",
+      "polish_name": "Åwiergotek szponiasty",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Motacillidae",
+        "genus": "Anthus",
+        "english_name": "Pipit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 434,
+      "scientific_name": "Anthus trivialis",
+      "polish_name": "Åwiergotek drzewny",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Motacillidae",
+        "genus": "Anthus",
+        "english_name": "Pipit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 435,
+      "scientific_name": "Anthus hodgsoni",
+      "polish_name": "Åwiergotek tajgowy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Motacillidae",
+        "genus": "Anthus",
+        "english_name": "Pipit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 436,
+      "scientific_name": "Anthus cervinus",
+      "polish_name": "Åwiergotek rdzawogardÅy",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Motacillidae",
+        "genus": "Anthus",
+        "english_name": "Pipit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 437,
+      "scientific_name": "Anthus pratensis",
+      "polish_name": "Åwiergotek ÅÄkowy",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Motacillidae",
+        "genus": "Anthus",
+        "english_name": "Pipit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 438,
+      "scientific_name": "Anthus petrosus",
+      "polish_name": "Åwiergotek nadmorski",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Motacillidae",
+        "genus": "Anthus",
+        "english_name": "Pipit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 439,
+      "scientific_name": "Anthus spinoletta",
+      "polish_name": "siwerniak",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Motacillidae",
+        "genus": "Anthus",
+        "english_name": "Pipit",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 440,
+      "scientific_name": "Fringilla montifringilla",
+      "polish_name": "jer",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Fringilla",
+        "english_name": "Finch",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 441,
+      "scientific_name": "Fringilla coelebs",
+      "polish_name": "ziÄba",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Fringilla",
+        "english_name": "Finch",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 442,
+      "scientific_name": "Coccothraustes coccothraustes",
+      "polish_name": "grubodziÃ³b",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Coccothraustes",
+        "english_name": "Hawfinch",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 443,
+      "scientific_name": "Carpodacus erythrinus",
+      "polish_name": "dziwonia",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Carpodacus",
+        "english_name": "Rosefinch",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 444,
+      "scientific_name": "Pinicola enucleator",
+      "polish_name": "Åuskowiec",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Pinicola",
+        "english_name": "Pine Grosbeak",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 445,
+      "scientific_name": "Pyrrhula pyrrhula",
+      "polish_name": "gil",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Pyrrhula",
+        "english_name": "Bullfinch",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 446,
+      "scientific_name": "Bucanetes githagineus",
+      "polish_name": "gilak pustynny",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Bucanetes",
+        "english_name": "Trumpeter Finch",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 447,
+      "scientific_name": "Chloris chloris",
+      "polish_name": "dzwoniec",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Chloris",
+        "english_name": "Greenfinch",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 448,
+      "scientific_name": "Linaria flavirostris",
+      "polish_name": "rzepoÅuch",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Linaria",
+        "english_name": "Linnet",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 449,
+      "scientific_name": "Linaria cannabina",
+      "polish_name": "makolÄgwa",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Linaria",
+        "english_name": "Linnet",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 450,
+      "scientific_name": "Acanthis flammea",
+      "polish_name": "czeczotka",
+      "category": "A",
+      "status": "l P",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Acanthis",
+        "english_name": "Redpoll",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 451,
+      "scientific_name": "Loxia leucoptera",
+      "polish_name": "krzyÅ¼odziÃ³b modrzewiowy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Loxia",
+        "english_name": "Crossbill",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 452,
+      "scientific_name": "Loxia pytyopsittacus",
+      "polish_name": "krzyÅ¼odziÃ³b sosnowy",
+      "category": "A",
+      "status": "(l) Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Loxia",
+        "english_name": "Crossbill",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 453,
+      "scientific_name": "Loxia curvirostra",
+      "polish_name": "krzyÅ¼odziÃ³b Åwierkowy",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Loxia",
+        "english_name": "Crossbill",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 454,
+      "scientific_name": "Carduelis citrinella",
+      "polish_name": "osetnik",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Carduelis",
+        "english_name": "Finch",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 455,
+      "scientific_name": "Carduelis carduelis",
+      "polish_name": "szczygieÅ",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Carduelis",
+        "english_name": "Finch",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 456,
+      "scientific_name": "Serinus serinus",
+      "polish_name": "kulczyk",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Serinus",
+        "english_name": "Canary",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 457,
+      "scientific_name": "Spinus spinus",
+      "polish_name": "czyÅ¼",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Spinus",
+        "english_name": "Siskin",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 458,
+      "scientific_name": "Plectrophenax nivalis",
+      "polish_name": "ÅnieguÅa",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Calcariidae",
+        "genus": "Plectrophenax",
+        "english_name": "Snow Bunting",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 459,
+      "scientific_name": "Calcarius lapponicus",
+      "polish_name": "poÅwierka",
+      "category": "A",
+      "status": "P",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Calcariidae",
+        "genus": "Calcarius",
+        "english_name": "Longspur",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 460,
+      "scientific_name": "Emberiza schoeniclus",
+      "polish_name": "potrzos",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Emberizidae",
+        "genus": "Emberiza",
+        "english_name": "Bunting",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 461,
+      "scientific_name": "Emberiza chrysophrys",
+      "polish_name": "trznadel zÅotobrewy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Emberizidae",
+        "genus": "Emberiza",
+        "english_name": "Bunting",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 462,
+      "scientific_name": "Emberiza aureola",
+      "polish_name": "trznadel zÅotawy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Emberizidae",
+        "genus": "Emberiza",
+        "english_name": "Bunting",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 463,
+      "scientific_name": "Emberiza pusilla",
+      "polish_name": "trznadelek",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Emberizidae",
+        "genus": "Emberiza",
+        "english_name": "Bunting",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 464,
+      "scientific_name": "Emberiza rustica",
+      "polish_name": "trznadel czubaty",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Emberizidae",
+        "genus": "Emberiza",
+        "english_name": "Bunting",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 465,
+      "scientific_name": "Emberiza spodocephala",
+      "polish_name": "trznadel szarogÅowy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Emberizidae",
+        "genus": "Emberiza",
+        "english_name": "Bunting",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 466,
+      "scientific_name": "Emberiza melanocephala",
+      "polish_name": "trznadel czarnogÅowy",
+      "category": "A",
+      "status": "Z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Emberizidae",
+        "genus": "Emberiza",
+        "english_name": "Bunting",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 467,
+      "scientific_name": "Emberiza bruniceps",
+      "polish_name": "trznadel rudogÅowy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Emberizidae",
+        "genus": "Emberiza",
+        "english_name": "Bunting",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 468,
+      "scientific_name": "Emberiza calandra",
+      "polish_name": "potrzeszcz",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Emberizidae",
+        "genus": "Emberiza",
+        "english_name": "Bunting",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 469,
+      "scientific_name": "Emberiza cia",
+      "polish_name": "gÅuszek",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Emberizidae",
+        "genus": "Emberiza",
+        "english_name": "Bunting",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 470,
+      "scientific_name": "Emberiza hortulana",
+      "polish_name": "ortolan",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Emberizidae",
+        "genus": "Emberiza",
+        "english_name": "Bunting",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 471,
+      "scientific_name": "Emberiza cirlus",
+      "polish_name": "cierlik",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Emberizidae",
+        "genus": "Emberiza",
+        "english_name": "Bunting",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 472,
+      "scientific_name": "Emberiza leucocephalos",
+      "polish_name": "trznadel biaÅogÅowy",
+      "category": "A",
+      "status": "(l) z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Emberizidae",
+        "genus": "Emberiza",
+        "english_name": "Bunting",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 473,
+      "scientific_name": "Emberiza citrinella",
+      "polish_name": "trznadel",
+      "category": "A",
+      "status": "L",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Emberizidae",
+        "genus": "Emberiza",
+        "english_name": "Bunting",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 474,
+      "scientific_name": "Junco hyemalis",
+      "polish_name": "junko",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Passerellidae",
+        "genus": "Junco",
+        "english_name": "Junco",
+        "source": "AviList v2025b"
+      }
+    },
+    {
+      "lp": 475,
+      "scientific_name": "Passerculus sandwichensis",
+      "polish_name": "bagiennik Å¼Ã³Åtobrewy",
+      "category": "A",
+      "status": "z",
+      "taxonomy": {
+        "order": "Passeriformes",
+        "family": "Passerellidae",
+        "genus": "Passerculus",
+        "english_name": "Sparrow",
+        "source": "AviList v2025b"
+      }
+    }
+  ]
+}
