@@ -403,12 +403,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }[status] || 'nieznany';
   }
 
+  // Escape values that originate from external sources (Wikimedia API: autor/licencja/zrodlo)
+  // before inserting them into innerHTML templates.
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c =>
+      ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  }
+
   function generatePhotoCredit(ptak) {
     if (ptak.autor && ptak.licencja) {
-      return `Fot. ${ptak.autor} / ${ptak.licencja}`;
+      return `Fot. ${escapeHtml(ptak.autor)} / ${escapeHtml(ptak.licencja)}`;
     }
     if (ptak.autor) {
-      return `Fot. ${ptak.autor} / Wikimedia Commons`;
+      return `Fot. ${escapeHtml(ptak.autor)} / Wikimedia Commons`;
     }
     return '© Wikimedia Commons';
   }
@@ -531,7 +538,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <path d="M7 4.5L18 11L7 17.5V4.5Z" fill="#1c2319"/>
             </svg>
           </div>
-          <div class="yt-label">${ptak.film.zrodlo || 'Leśny Budzik · Echa Leśne'}</div>
+          <div class="yt-label">${ptak.film.zrodlo ? escapeHtml(ptak.film.zrodlo) : 'Leśny Budzik · Echa Leśne'}</div>
         </div>
       </div>`;
   }

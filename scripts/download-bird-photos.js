@@ -140,9 +140,13 @@ async function main() {
         failed++;
       } else {
         await downloadFile(result.url, dest);
-        // Persist attribution into the dataset (bird is a reference into data.ptaki)
-        if (result.author && result.author !== 'unknown') bird.autor = result.author.trim();
-        if (result.license && result.license !== 'unknown') bird.licencja = result.license.trim();
+        // Persist attribution into the dataset (bird is a reference into data.ptaki).
+        // Strip any HTML/tags so stored values are plain text (defense against XSS on render).
+        const clean = s => String(s).replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+        const autor = clean(result.author);
+        const licencja = clean(result.license);
+        if (autor && autor !== 'unknown') bird.autor = autor;
+        if (licencja && licencja !== 'unknown') bird.licencja = licencja;
         console.log(`OK  |  ${result.license}  |  ${result.author}`);
         ok++;
       }
