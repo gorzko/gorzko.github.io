@@ -1,13 +1,16 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
+// Derive expected species count from the data so adding a species doesn't break e2e.
+const SPECIES_COUNT = require('../ptaki-przewodnik/data/ptaki.json').ptaki.length;
+
 test.describe('Przewodnik Ptaków Polski – testy e2e', () => {
 
-  test('strona ładuje się i renderuje 65 kart gatunków', async ({ page }) => {
+  test('strona ładuje się i renderuje wszystkie karty gatunków', async ({ page }) => {
     await page.goto('/');
     await page.waitForSelector('.page--card', { timeout: 15000 });
     const count = await page.locator('.page--card').count();
-    expect(count).toBe(65);
+    expect(count).toBe(SPECIES_COUNT);
   });
 
   test('wyszukiwanie po nazwie filtruje karty', async ({ page }) => {
@@ -21,7 +24,7 @@ test.describe('Przewodnik Ptaków Polski – testy e2e', () => {
       els => els.filter(el => el.style.display !== 'none').length
     );
     expect(visible).toBeGreaterThan(0);
-    expect(visible).toBeLessThan(65);
+    expect(visible).toBeLessThan(SPECIES_COUNT);
   });
 
   test('filtr kategorii Ogród pokazuje podzbiór kart', async ({ page }) => {
@@ -36,7 +39,7 @@ test.describe('Przewodnik Ptaków Polski – testy e2e', () => {
       els => els.filter(el => el.style.display !== 'none').length
     );
     expect(visible).toBeGreaterThan(0);
-    expect(visible).toBeLessThan(65);
+    expect(visible).toBeLessThan(SPECIES_COUNT);
   });
 
   test('filtr Podkarpacia odsłania filtr miesięcy', async ({ page }) => {
@@ -75,7 +78,7 @@ test.describe('Przewodnik Ptaków Polski – testy e2e', () => {
 
     // Every rendered img should have onerror set (removed only after it fires)
     const withOnerror = await page.locator('#book-cards img[onerror]').count();
-    expect(withOnerror).toBe(65);
+    expect(withOnerror).toBe(SPECIES_COUNT);
   });
 
 });
