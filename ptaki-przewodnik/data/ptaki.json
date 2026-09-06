@@ -8,6 +8,8 @@
         "Ogród"
       ],
       "zdjecie": "img/Phasianus_colchicus.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "100–200 tys.",
       "trend": "↓",
       "migracja": "Osiadły",
@@ -203,6 +205,8 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Sylvia_atricapilla.jpg",
+      "autor": "Alexis Lours",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "2–3 mln",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -239,6 +243,8 @@
         "Ogród"
       ],
       "zdjecie": "img/Corvus_monedula.jpg",
+      "autor": "Alexis Lours",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "100–200 tys.",
       "trend": "↑",
       "migracja": "Osiadły",
@@ -317,6 +323,8 @@
         "Ogród"
       ],
       "zdjecie": "img/Cuculus_canorus.jpg",
+      "autor": "Andy Morffew",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "100–200 tys.",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -490,6 +498,8 @@
         "Ogród"
       ],
       "zdjecie": "img/Streptopelia_decaocto.jpg",
+      "autor": "Zeynel Cebeci",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "400–600 tys.",
       "trend": "↑",
       "migracja": "Osiadły",
@@ -619,6 +629,8 @@
         "Najpowszechniejsze"
       ],
       "zdjecie": "img/Sturnus_vulgaris.jpg",
+      "autor": "Rhododendrites",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "3–4 mln",
       "trend": "↓",
       "migracja": "Osiadły",
@@ -650,6 +662,8 @@
         "Najpowszechniejsze"
       ],
       "zdjecie": "img/Turdus_philomelos.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "1–2 mln",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -794,6 +808,8 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Phylloscopus_collybita.jpg",
+      "autor": "Alexis Lours",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "2,5–3 mln",
       "trend": "↑",
       "migracja": "Wędrowny",
@@ -1143,6 +1159,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Podiceps_nigricollis.jpg",
+      "autor": "Stephan Sprinz",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "1–2 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -1215,6 +1233,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Nycticorax_nycticorax.jpg",
+      "autor": "Rhododendrites",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "200–400",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -1289,6 +1309,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Poecile_palustris.jpg",
+      "autor": "TRinaud",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "300–500 tys.",
       "trend": "↓",
       "migracja": "Osiadły",
@@ -1330,6 +1352,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Pernis_apivorus.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "3–5 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -1440,6 +1464,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Pluvialis_apricaria.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "kilkadziesiąt tys.",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -1677,6 +1703,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Periparus_ater.jpg",
+      "autor": "TRinaud",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "300–500 tys.",
       "trend": "→",
       "migracja": "Osiadły",
@@ -2141,6 +2169,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Tachybaptus_ruficollis.jpg",
+      "autor": "El Golli Mohamed",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "20–30 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -2342,6 +2372,8 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Hirundo_rustica.jpg",
+      "autor": "Zeynel Cebeci",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "3–5 mln",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -2380,6 +2412,8 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Motacilla_alba.jpg",
+      "autor": "Alexis Lours",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "2–3 mln",
       "trend": "→",
       "migracja": "Wędrowny",
