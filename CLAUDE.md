@@ -1,6 +1,6 @@
 # Polish Bird Guide — AI agent instructions
 
-Interactive guide to breeding birds of Poland (65 species). Static site on GitHub Pages, vanilla JS, no frameworks. Owner: Marek (Podkarpacie region). The webpage content is in Polish.
+Interactive guide to breeding birds of Poland (66 species). Static site on GitHub Pages, vanilla JS, no frameworks. Owner: Marek (Podkarpacie region). The webpage content is in Polish.
 
 ## Commands
 
@@ -45,11 +45,11 @@ Each bird must have:
 | `liczebnosc` | string | e.g. `"100–200 tys."` |
 | `trend` | string | `↑` / `→` / `↓` |
 | `migracja` | string | `"Osiadły"` / `"Wędrowny"` |
-| `statusCzerwonejKsiazki` | string | `LC` / `NT` / `VU` / `EN` |
+| `statusCzerwonejKsiazki` | string | `LC` / `NT` / `VU` / `EN` / `CR` / `RE` |
 | `cechy` | array | 5–7 traits with emoji, e.g. `"🔊 Melodyjny śpiew"` |
 | `film.id` | string | 11-character YouTube ID |
 | `film.platforma` | string | `"youtube"` / `"facebook"` |
-| `zrodla` | array | `"MPPL 2025"`, `"Czerwona Księga Ptaków Polski"` |
+| `zrodla` | array | `"MPPL 2025"`, `"Czerwona Księga Ptaków Polski"`, `"Czerwona lista ptaków Polski 2020"` |
 | `peakMonths` | array | 1–12, only for Podkarpacie birds |
 
 ## Image content rules
