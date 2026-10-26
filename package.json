@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Przewodnik Ptaków Polski - interaktywny przewodnik ptaków lęgowych w Polsce",
   "scripts": {
-    "test": "node tests/ptaki.test.js",
+    "test": "node tests/ptaki.test.js && node tests/attribution.test.js",
     "test:watch": "nodemon --watch tests --watch ptaki-przewodnik/data --ext js,json --exec \"npm test\"",
     "test:e2e": "playwright test",
     "test:all": "npm test && npm run test:e2e"

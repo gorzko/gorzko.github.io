@@ -77,6 +77,46 @@ async function downloadFile(url, dest) {
 }
 
 /**
+ * Decodes common HTML entities in a string (after tag stripping).
+ * Wikimedia Artist fields often contain &amp; and similar entities.
+ */
+function decodeHtmlEntities(str) {
+  return str
+    .replace(/&#0*39;|&#x0*27;/gi, "'")
+    .replace(/&amp;/gi, '&')
+    .replace(/&quot;/gi, '"')
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)));
+}
+
+/**
+ * Strips HTML tags, decodes entities, and normalises whitespace.
+ * Used to produce plain-text attribution from Wikimedia API values.
+ */
+function cleanAttribution(raw) {
+  return decodeHtmlEntities(String(raw).replace(/<[^>]+>/g, '')).replace(/\s+/g, ' ').trim();
+}
+
+/**
+ * Writes attribution fields into a bird record.
+ * Always clears the previous autor/licencja first so a re-download with
+ * unknown metadata cannot leave a stale previous author's credit in place.
+ */
+function applyAttribution(bird, author, license, filePageUrl) {
+  delete bird.autor;
+  delete bird.licencja;
+  if (filePageUrl) delete bird.zrodloZdjecia;
+
+  const cleanAuthor = cleanAttribution(author);
+  const cleanLicense = cleanAttribution(license);
+  if (cleanAuthor && cleanAuthor !== 'unknown') bird.autor = cleanAuthor;
+  if (cleanLicense && cleanLicense !== 'unknown') bird.licencja = cleanLicense;
+  if (filePageUrl) bird.zrodloZdjecia = filePageUrl;
+}
+
+/**
  * Query Wikimedia Commons API for the best image of a species.
  * Tries direct file title first, falls back to a text search.
  */
@@ -90,9 +130,10 @@ async function findImageUrl(latinName) {
   const pages = Object.values(direct.query.pages);
   if (pages[0] && pages[0].imageinfo && pages[0].imageinfo[0]) {
     const ii = pages[0].imageinfo[0];
-    const author = ii.extmetadata?.Artist?.value?.replace(/<[^>]+>/g, '') || 'unknown';
+    const author = ii.extmetadata?.Artist?.value || 'unknown';
     const license = ii.extmetadata?.LicenseShortName?.value || 'unknown';
-    return { url: ii.url, author, license };
+    const filePageUrl = ii.descriptionurl || null;
+    return { url: ii.url, author, license, filePageUrl };
   }
 
   await sleep(API_DELAY);
@@ -110,9 +151,10 @@ async function findImageUrl(latinName) {
   const p = Object.values(info.query.pages)[0];
   if (!p || !p.imageinfo) return null;
   const ii = p.imageinfo[0];
-  const author = ii.extmetadata?.Artist?.value?.replace(/<[^>]+>/g, '') || 'unknown';
+  const author = ii.extmetadata?.Artist?.value || 'unknown';
   const license = ii.extmetadata?.LicenseShortName?.value || 'unknown';
-  return { url: ii.url, author, license };
+  const filePageUrl = ii.descriptionurl || null;
+  return { url: ii.url, author, license, filePageUrl };
 }
 
 async function main() {
@@ -140,13 +182,7 @@ async function main() {
         failed++;
       } else {
         await downloadFile(result.url, dest);
-        // Persist attribution into the dataset (bird is a reference into data.ptaki).
-        // Strip any HTML/tags so stored values are plain text (defense against XSS on render).
-        const clean = s => String(s).replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
-        const autor = clean(result.author);
-        const licencja = clean(result.license);
-        if (autor && autor !== 'unknown') bird.autor = autor;
-        if (licencja && licencja !== 'unknown') bird.licencja = licencja;
+        applyAttribution(bird, result.author, result.license, result.filePageUrl);
         console.log(`OK  |  ${result.license}  |  ${result.author}`);
         ok++;
       }
@@ -159,7 +195,7 @@ async function main() {
 
   // Save attribution back to ptaki.json (only if we downloaded anything new)
   if (ok > 0) {
-    fs.writeFileSync(DATA_PATH, JSON.stringify(data, null, 2));
+    fs.writeFileSync(DATA_PATH, JSON.stringify(data, null, 2) + '\n');
     console.log('Zaktualizowano atrybucję (autor/licencja) w ptaki.json');
   }
 
@@ -167,3 +203,8 @@ async function main() {
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
+
+// Export pure helpers for unit tests (no network, no fs side-effects)
+if (require.main !== module) {
+  module.exports = { decodeHtmlEntities, cleanAttribution, applyAttribution };
+}

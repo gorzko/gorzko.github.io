@@ -81,4 +81,34 @@ test.describe('Przewodnik Ptaków Polski – testy e2e', () => {
     expect(withOnerror).toBe(SPECIES_COUNT);
   });
 
+  test('każda karta ma atrybucję zdjęcia zaczynającą się od "Fot. "', async ({ page }) => {
+    await page.goto('/');
+    await page.waitForSelector('.page--card');
+
+    const credits = await page.locator('.photo-credit').allTextContents();
+    expect(credits.length).toBe(SPECIES_COUNT);
+    for (const credit of credits) {
+      expect(credit, `Atrybucja "${credit}" powinna zaczynać się od "Fot. "`).toMatch(/^Fot\. /);
+    }
+  });
+
+  test('karta z film.zrodlo pokazuje źródło w .yt-label zamiast "Leśny Budzik"', async ({ page }) => {
+    await page.goto('/');
+    await page.waitForSelector('.page--card');
+
+    // Find a bird that has film.zrodlo set
+    const data = require('../ptaki-przewodnik/data/ptaki.json');
+    const birdWithZrodlo = data.ptaki.find(p => p.film && p.film.zrodlo);
+    if (!birdWithZrodlo) return; // no such bird — skip
+
+    // Navigate to the card by searching for the bird's name
+    await page.click('#nav-search');
+    await page.fill('#search-input', birdWithZrodlo.nazwa);
+    await page.waitForTimeout(300);
+
+    const ytLabel = await page.locator('.page--card:visible .yt-label').first().textContent();
+    expect(ytLabel).toBe(birdWithZrodlo.film.zrodlo);
+    expect(ytLabel).not.toContain('Leśny Budzik');
+  });
+
 });
