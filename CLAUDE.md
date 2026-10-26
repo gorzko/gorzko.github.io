@@ -51,6 +51,7 @@ Each bird must have:
 | `film.platforma` | string | `"youtube"` / `"facebook"` |
 | `zrodla` | array | `"MPPL 2025"`, `"Czerwona Księga Ptaków Polski"` |
 | `peakMonths` | array | 1–12, only for Podkarpacie birds |
+| `focalPoint` | string | optional; CSS `object-position` value, e.g. `"left"`, `"35% center"` — set when `object-fit: cover` would crop the bird's head/beak |
 
 ## Image content rules
 
