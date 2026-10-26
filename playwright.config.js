@@ -16,6 +16,12 @@ module.exports = defineConfig({
     timeout: 10000,
   },
   projects: [
-    { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
+    {
+      name: 'chromium',
+      use: {
+        ...devices['Desktop Chrome'],
+        launchOptions: { executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' },
+      },
+    },
   ],
 });
