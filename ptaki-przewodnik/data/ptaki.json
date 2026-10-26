@@ -205,6 +205,7 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Sylvia_atricapilla.jpg",
+      "focalPoint": "40% center",
       "autor": "Alexis Lours",
       "licencja": "CC BY 4.0",
       "liczebnosc": "2–3 mln",
@@ -243,6 +244,7 @@
         "Ogród"
       ],
       "zdjecie": "img/Corvus_monedula.jpg",
+      "focalPoint": "left",
       "autor": "Alexis Lours",
       "licencja": "CC BY 4.0",
       "liczebnosc": "100–200 tys.",
@@ -278,6 +280,7 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Turdus_merula.jpg",
+      "focalPoint": "40% center",
       "autor": "Zeynel Cebeci",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "5–6 mln",
@@ -355,6 +358,7 @@
         "Ogród"
       ],
       "zdjecie": "img/Acrocephalus_palustris.jpg",
+      "focalPoint": "30% center",
       "autor": "Аимаина хикари",
       "licencja": "CC0",
       "liczebnosc": "50–100 tys.",
@@ -466,6 +470,7 @@
         "Najliczniejsze"
       ],
       "zdjecie": "img/Erithacus_rubecula.jpg",
+      "focalPoint": "30% center",
       "autor": "Emmanuel Douzery",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "2–3 mln",
@@ -562,6 +567,7 @@
         "Ogród"
       ],
       "zdjecie": "img/Pica_pica.jpg",
+      "focalPoint": "40% center",
       "autor": "Alexis Lours",
       "licencja": "CC BY 4.0",
       "liczebnosc": "500–700 tys.",
@@ -629,6 +635,7 @@
         "Najpowszechniejsze"
       ],
       "zdjecie": "img/Sturnus_vulgaris.jpg",
+      "focalPoint": "25% center",
       "autor": "Rhododendrites",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "3–4 mln",
@@ -662,6 +669,7 @@
         "Najpowszechniejsze"
       ],
       "zdjecie": "img/Turdus_philomelos.jpg",
+      "focalPoint": "30% center",
       "autor": "Charles J. Sharp",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "1–2 mln",
@@ -695,6 +703,7 @@
         "Najpowszechniejsze"
       ],
       "zdjecie": "img/Emberiza_citrinella.jpg",
+      "focalPoint": "35% center",
       "autor": "Andreas Trepte",
       "licencja": "CC BY-SA 2.5",
       "liczebnosc": "1–2 mln",
@@ -761,6 +770,7 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Fringilla_coelebs.jpg",
+      "focalPoint": "25% center",
       "autor": "Andreas Trepte",
       "licencja": "CC BY-SA 2.5",
       "liczebnosc": "3–4 mln",
@@ -926,6 +936,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Anthus_cervinus.jpg",
+      "focalPoint": "40% center",
       "autor": "Imran Shah",
       "licencja": "CC BY-SA 2.0",
       "liczebnosc": "setki os.",
@@ -963,6 +974,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Motacilla_cinerea.jpg",
+      "focalPoint": "30% center",
       "autor": "Charles J. Sharp",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "15–25 tys.",
@@ -1041,6 +1053,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Bombycilla_garrulus.jpg",
+      "focalPoint": "35% center",
       "autor": "Cephas",
       "licencja": "CC BY-SA 3.0",
       "liczebnosc": "kilka tys.",
@@ -1196,6 +1209,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Gavia_arctica.jpg",
+      "focalPoint": "left",
       "autor": "Jan Ebr & Ivana Ebrová",
       "licencja": "CC BY 4.0",
       "liczebnosc": "setki os.",
@@ -1233,6 +1247,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Nycticorax_nycticorax.jpg",
+      "focalPoint": "35% center",
       "autor": "Rhododendrites",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "200–400",
@@ -1270,6 +1285,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Turdus_viscivorus.jpg",
+      "focalPoint": "35% center",
       "autor": "Alun Williams333",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "30–50 tys.",
@@ -1391,6 +1407,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Aythya_marila.jpg",
+      "focalPoint": "25% center",
       "autor": "Basar",
       "licencja": "CC BY-SA 3.0",
       "liczebnosc": "50–150",
@@ -1464,6 +1481,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Pluvialis_apricaria.jpg",
+      "focalPoint": "35% center",
       "autor": "Charles J. Sharp",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "kilkadziesiąt tys.",
@@ -1501,6 +1519,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Columba_oenas.jpg",
+      "focalPoint": "25% center",
       "autor": "MPF",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "80–120 tys.",
@@ -1785,6 +1804,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Remiz_pendulinus.jpg",
+      "focalPoint": "60% center",
       "autor": "Иван Везенковић",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "20–40 tys.",
@@ -1821,6 +1841,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Aythya_ferina.jpg",
+      "focalPoint": "65% center",
       "autor": "Charles J. Sharp",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "3–5 tys.",
@@ -2248,6 +2269,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Larus_cachinnans.jpg",
+      "focalPoint": "35% center",
       "autor": "Yu Moskalenko",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "20–30 tys.",
@@ -2295,6 +2317,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Mareca_penelope.jpg",
+      "focalPoint": "left",
       "autor": "Andreas Trepte",
       "licencja": "CC BY-SA 2.5",
       "liczebnosc": "kilka tys.",
@@ -2454,6 +2477,7 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Anas_platyrhynchos.jpg",
+      "focalPoint": "60% center",
       "autor": "Charles J. Sharp",
       "licencja": "CC BY-SA 3.0",
       "liczebnosc": "300–500 tys.",
