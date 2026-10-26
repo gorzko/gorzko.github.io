@@ -11,6 +11,10 @@ config.json
 node_modules/
 .npm
 
+# Playwright
+test-results/
+playwright-report/
+
 # IDE
 .vscode/
 .idea/
