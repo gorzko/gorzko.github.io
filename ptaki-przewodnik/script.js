@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
             sizes="(max-width: 600px) 100vw, 45vw"
             alt="${ptak.nazwa} (${ptak.nazwaLacinska})"
             loading="lazy"
-            style="object-position:${ptak.focalPoint || 'center'}"
+            style="object-position:${escapeHtml(ptak.focalPoint || 'center')}"
             onerror="this.removeAttribute('onerror');this.src='https://placehold.co/600x400/2a3226/b8d4a0?text=${encodeURIComponent(ptak.nazwa)}';"
           >
           <div class="photo-fade"></div>
@@ -513,7 +513,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const fbVideoUrl = `https://www.facebook.com/watch?v=${videoId}`;
       const fbUrl = `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(fbVideoUrl)}&show_text=false&width=560`;
       return `
-        <div class="slbl">🎬 ${tytul}</div>
+        <div class="slbl">🎬 ${escapeHtml(tytul)}</div>
         <div class="fb-player">
           <iframe src="${fbUrl}"
             style="border:none;overflow:hidden"
@@ -528,10 +528,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const thumb = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
     const embed = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
     return `
-      <div class="slbl">🎬 ${tytul}</div>
+      <div class="slbl">🎬 ${escapeHtml(tytul)}</div>
       <div class="yt-player"
            onclick="this.innerHTML='<iframe src=\\'${embed}\\' frameborder=\\'0\\' allow=\\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\\' allowfullscreen></iframe>'">
-        <img src="${thumb}" alt="${tytul}" loading="lazy">
+        <img src="${thumb}" alt="${escapeHtml(tytul)}" loading="lazy">
         <div class="yt-overlay">
           <div class="yt-btn">
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none">

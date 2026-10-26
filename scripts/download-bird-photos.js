@@ -76,6 +76,9 @@ async function downloadFile(url, dest) {
   fs.writeFileSync(dest, r.body);
 }
 
+// Strip HTML tags and normalize whitespace from Wikimedia extmetadata strings.
+const cleanWikiText = s => String(s).replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+
 /**
  * Query Wikimedia Commons API for the best image of a species.
  * Tries direct file title first, falls back to a text search.
@@ -90,7 +93,7 @@ async function findImageUrl(latinName) {
   const pages = Object.values(direct.query.pages);
   if (pages[0] && pages[0].imageinfo && pages[0].imageinfo[0]) {
     const ii = pages[0].imageinfo[0];
-    const author = ii.extmetadata?.Artist?.value?.replace(/<[^>]+>/g, '') || 'unknown';
+    const author = cleanWikiText(ii.extmetadata?.Artist?.value || 'unknown');
     const license = ii.extmetadata?.LicenseShortName?.value || 'unknown';
     return { url: ii.url, author, license };
   }
@@ -110,7 +113,7 @@ async function findImageUrl(latinName) {
   const p = Object.values(info.query.pages)[0];
   if (!p || !p.imageinfo) return null;
   const ii = p.imageinfo[0];
-  const author = ii.extmetadata?.Artist?.value?.replace(/<[^>]+>/g, '') || 'unknown';
+  const author = cleanWikiText(ii.extmetadata?.Artist?.value || 'unknown');
   const license = ii.extmetadata?.LicenseShortName?.value || 'unknown';
   return { url: ii.url, author, license };
 }
@@ -141,10 +144,8 @@ async function main() {
       } else {
         await downloadFile(result.url, dest);
         // Persist attribution into the dataset (bird is a reference into data.ptaki).
-        // Strip any HTML/tags so stored values are plain text (defense against XSS on render).
-        const clean = s => String(s).replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
-        const autor = clean(result.author);
-        const licencja = clean(result.license);
+        const autor = cleanWikiText(result.author);
+        const licencja = cleanWikiText(result.license);
         if (autor && autor !== 'unknown') bird.autor = autor;
         if (licencja && licencja !== 'unknown') bird.licencja = licencja;
         console.log(`OK  |  ${result.license}  |  ${result.author}`);
