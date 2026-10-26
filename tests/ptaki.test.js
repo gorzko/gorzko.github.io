@@ -87,7 +87,7 @@ describe('Testy walidacji schematu JSON', () => {
     );
     assert(badCats.length === 0, `Wszystkie kategorie są z dozwolonej listy${badCats.length ? ` (błąd: ${badCats.join(', ')})` : ''}`);
 
-    assertAll('Status Czerwonej Księgi jest poprawny', bad(birds, p => ['LC', 'NT', 'VU', 'EN'].includes(p.statusCzerwonejKsiazki)));
+    assertAll('Status Czerwonej Księgi jest poprawny', bad(birds, p => ['LC', 'NT', 'VU', 'EN', 'CR', 'RE'].includes(p.statusCzerwonejKsiazki)));
     assertAll('Trend jest poprawny',                   bad(birds, p => ['↑', '↓', '→'].includes(p.trend)));
     assertAll('Migracja jest poprawna',                bad(birds, p => ['Osiadły', 'Wędrowny'].includes(p.migracja)));
   });
