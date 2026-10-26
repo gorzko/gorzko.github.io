@@ -874,8 +874,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski",
-        "Wilk et al. 2020"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "tIGE37BLGqQ",
@@ -911,8 +910,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski",
-        "Wilk et al. 2020"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "6Fyjgdi6Vrg",
@@ -1181,8 +1179,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski",
-        "Wilk et al. 2020"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "wJho1mfO3HY",
@@ -1219,8 +1216,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski",
-        "Wilk et al. 2020"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "l_LHI5VMg5w",
@@ -1333,9 +1329,9 @@
         "⚫ Czarna czapka z granatowym połyskiem",
         "🟤 Brązowawe boki, biały policzek i szyja",
         "📏 12–13 cm",
-        "🌲 Wilgotne lasy olszowe i wierzbowe",
+        "🌲 Liściaste lasy grądowe, bukowe i parki; stroni od wilgotnych zarośli",
         "🐛 Owady latem; nasiona i orzeszki zimą",
-        "🎵 Charakterystyczne 'czej-czej' i gwizd 'pii'"
+        "🎵 Wybuchowe 'pitiu' (lub 'pti-di-di'); głos odróżniający od Sikory czarnogłowej"
       ],
       "zrodla": [
         "eBird PL-PK 2025",
@@ -1451,8 +1447,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski",
-        "Wilk et al. 2020"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "bVjtfhYapjE",
@@ -1489,8 +1484,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski",
-        "Wilk et al. 2020"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "RlmD389XosQ",
@@ -1927,8 +1921,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski",
-        "Wilk et al. 2020"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "3fgho8XNLJc",
@@ -2088,8 +2081,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski",
-        "Wilk et al. 2020"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "z9biVFLnJpE",
@@ -2124,8 +2116,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski",
-        "Wilk et al. 2020"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "dhaCumm3qXc",
@@ -2326,8 +2317,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski",
-        "Wilk et al. 2020"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "u4MKmSKVjJ8",
@@ -2517,12 +2507,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "⚫ Czarna czapka matowa, duży czarny śliniaczek pod dziobem",
+        "⚫ Czarna czapka matowa (bez połysku), duży czarny śliniaczek pod dziobem",
         "🤍 Białe policzki i szyja, brązowawe boki",
-        "📏 11–12 cm",
+        "🦆 Krępa sylwetka i większa głowa ('byczy' kark) niż u Sikory ubogiej",
+        "🪶 Jasne pole na złożonym skrzydle (brzegi lotek II rzędu)",
         "🌲 Lasy iglaste i mieszane; gniazduje w próchniejącym drewnie",
         "🐛 Owady latem; magazynuje zapasy nasion na zimę",
-        "🎵 Chrypiące 'czy-czy-czy' i miauczące 'pi-ju'"
+        "🎵 Nosowe, chrapliwe 'czi-czi-dże-dże-dże'; śpiew: żałosne 'tiu-tiu-tiu'"
       ],
       "film": {
         "id": "luBtm8Fx4VI",

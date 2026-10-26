@@ -70,6 +70,16 @@ test.describe('Przewodnik Ptaków Polski – testy e2e', () => {
     // getStatusText('LC') → 'gatunek najmniejszej troski'
     const lcCount = await page.locator('.rbadge').filter({ hasText: 'gatunek najmniejszej troski' }).count();
     expect(lcCount).toBeGreaterThan(0);
+
+    // żadna plakietka nie powinna pokazywać wartości domyślnej 'nieznany'
+    const unknownCount = await page.locator('.rbadge').filter({ hasText: 'nieznany' }).count();
+    expect(unknownCount).toBe(0);
+
+    // CR i RE mają swoje polskie etykiety
+    const crCount = await page.locator('.rbadge').filter({ hasText: 'krytycznie zagrożony' }).count();
+    expect(crCount).toBeGreaterThan(0);
+    const reCount = await page.locator('.rbadge').filter({ hasText: 'wymarły regionalnie' }).count();
+    expect(reCount).toBeGreaterThan(0);
   });
 
   test('zdjęcia mają zdefiniowaną obsługę błędu ładowania', async ({ page }) => {
