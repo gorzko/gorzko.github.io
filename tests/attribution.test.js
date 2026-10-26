@@ -61,6 +61,14 @@ describe('cleanAttribution', () => {
     cleanAttribution('<span>A</span> &amp; <em>B</em>') === 'A & B',
     'strips tags then decodes entities',
   );
+  assert(
+    cleanAttribution('&lt;script&gt;evil&lt;/script&gt;') === 'evil',
+    'no sanitizer bypass: entity-encoded tags stripped after decoding',
+  );
+  assert(
+    cleanAttribution('value &gt; zero') === 'value zero',
+    'residual > removed when no matching < (not a tag)',
+  );
 });
 
 // ── applyAttribution ─────────────────────────────────────────────────────────
@@ -96,7 +104,21 @@ describe('applyAttribution — decodes entities in raw API value', () => {
 describe('applyAttribution — stores zrodloZdjecia when provided', () => {
   const bird = {};
   applyAttribution(bird, 'Author', 'CC BY 4.0', 'https://commons.wikimedia.org/wiki/File:X.jpg');
-  assert(bird.zrodloZdjecia === 'https://commons.wikimedia.org/wiki/File:X.jpg', 'stores file page URL');
+  assert(bird.zrodloZdjecia === 'https://commons.wikimedia.org/wiki/File:X.jpg', 'stores valid Commons URL');
+});
+
+describe('applyAttribution — rejects non-Commons or non-https URLs', () => {
+  const bird1 = {};
+  applyAttribution(bird1, 'A', 'CC BY 4.0', 'http://commons.wikimedia.org/wiki/File:X.jpg');
+  assert(bird1.zrodloZdjecia === undefined, 'rejects http (not https)');
+
+  const bird2 = {};
+  applyAttribution(bird2, 'A', 'CC BY 4.0', 'https://evil.example.com/file.jpg');
+  assert(bird2.zrodloZdjecia === undefined, 'rejects non-Wikimedia hostname');
+
+  const bird3 = {};
+  applyAttribution(bird3, 'A', 'CC BY 4.0', 'not-a-url');
+  assert(bird3.zrodloZdjecia === undefined, 'rejects malformed URL');
 });
 
 // ── Summary ───────────────────────────────────────────────────────────────────

@@ -93,10 +93,14 @@ function decodeHtmlEntities(str) {
 
 /**
  * Strips HTML tags, decodes entities, and normalises whitespace.
- * Used to produce plain-text attribution from Wikimedia API values.
+ * Decode first, then strip tags — prevents the &lt;script&gt; bypass where
+ * entity-encoded tags survive a tag-stripper that only sees literal < >.
+ * Any residual < or > after stripping are also removed.
  */
 function cleanAttribution(raw) {
-  return decodeHtmlEntities(String(raw).replace(/<[^>]+>/g, '')).replace(/\s+/g, ' ').trim();
+  const decoded = decodeHtmlEntities(String(raw));
+  const stripped = decoded.replace(/<[^>]*>/g, '').replace(/[<>]/g, '');
+  return stripped.replace(/\s+/g, ' ').trim();
 }
 
 /**
@@ -113,7 +117,16 @@ function applyAttribution(bird, author, license, filePageUrl) {
   const cleanLicense = cleanAttribution(license);
   if (cleanAuthor && cleanAuthor !== 'unknown') bird.autor = cleanAuthor;
   if (cleanLicense && cleanLicense !== 'unknown') bird.licencja = cleanLicense;
-  if (filePageUrl) bird.zrodloZdjecia = filePageUrl;
+  if (filePageUrl) {
+    try {
+      const u = new URL(filePageUrl);
+      if (u.protocol === 'https:' && u.hostname === 'commons.wikimedia.org') {
+        bird.zrodloZdjecia = filePageUrl;
+      }
+    } catch {
+      // invalid URL — skip
+    }
+  }
 }
 
 /**
