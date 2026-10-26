@@ -45,7 +45,7 @@ Each bird must have:
 | `liczebnosc` | string | e.g. `"100–200 tys."` |
 | `trend` | string | `↑` / `→` / `↓` |
 | `migracja` | string | `"Osiadły"` / `"Wędrowny"` |
-| `statusCzerwonejKsiazki` | string | `LC` / `NT` / `VU` / `EN` |
+| `statusCzerwonejKsiazki` | string | `LC` / `NT` / `VU` / `EN` / `CR` / `RE` |
 | `cechy` | array | 5–7 traits with emoji, e.g. `"🔊 Melodyjny śpiew"` |
 | `film.id` | string | 11-character YouTube ID |
 | `film.platforma` | string | `"youtube"` / `"facebook"` |
