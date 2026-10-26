@@ -399,7 +399,9 @@ document.addEventListener('DOMContentLoaded', () => {
       'LC': 'gatunek najmniejszej troski',
       'NT': 'bliski zagrożenia',
       'VU': 'narażony',
-      'EN': 'zagrożony'
+      'EN': 'zagrożony',
+      'CR': 'krytycznie zagrożony',
+      'RE': 'wymarły regionalnie'
     }[status] || 'nieznany';
   }
 
