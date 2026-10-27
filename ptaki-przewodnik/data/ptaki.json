@@ -99,7 +99,7 @@
         "🟤 Samica: brązowawa, mniej kontrastowa",
         "📏 15 cm",
         "🌿 Wilgotne lasy, zarośla rzeczne",
-        "🌰 Nasiona, pąki wierzb i topól",
+        "🌰 Nasiona, pąki wierzb i topoli",
         "🎵 Ciche, miękkie 'du-du-du'"
       ],
       "film": {
@@ -238,7 +238,7 @@
     {
       "id": 7,
       "nazwa": "Kawka",
-      "nazwaLacinska": "Corvus monedula",
+      "nazwaLacinska": "Coloeus monedula",
       "kategorie": [
         "Ogród"
       ],
@@ -429,7 +429,7 @@
     {
       "id": 12,
       "nazwa": "Piegża",
-      "nazwaLacinska": "Sylvia curruca",
+      "nazwaLacinska": "Curruca curruca",
       "kategorie": [
         "Ogród"
       ],
@@ -603,7 +603,7 @@
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
         "🟤 Brązowoszary, niewidoczny na ziemi",
-        "✈️ Śpiewa w locie wznosząc się do 200 m",
+        "✈️ Śpiew w locie na wysokości do 200 m",
         "📏 18 cm",
         "🌾 Pola, łąki, pastwiska",
         "🌰 Nasiona i owady",
@@ -914,7 +914,7 @@
       ],
       "film": {
         "id": "6Fyjgdi6Vrg",
-        "tytul": "Leśny Budzik – Perkoz Rdzawoszyi",
+        "tytul": "Leśny Budzik – Perkoz rdzawoszyi",
         "platforma": "youtube"
       }
     },
@@ -989,7 +989,7 @@
       ],
       "film": {
         "id": "CoQ4jmL7-mg",
-        "tytul": "Leśny Budzik – Pliszka Górska",
+        "tytul": "Leśny Budzik – Pliszka górska",
         "platforma": "youtube"
       }
     },
@@ -1648,7 +1648,7 @@
       ],
       "film": {
         "id": "8vsWVzZ2PuY",
-        "tytul": "Leśny Budzik – Świergotek Drzewny",
+        "tytul": "Leśny Budzik – Świergotek drzewny",
         "platforma": "youtube"
       }
     },
@@ -1773,7 +1773,7 @@
       ],
       "film": {
         "id": "ZQim_emQek4",
-        "tytul": "Leśny Budzik – Muchołówka Mała",
+        "tytul": "Leśny Budzik – Muchołówka mała",
         "platforma": "youtube"
       }
     },
@@ -1888,7 +1888,7 @@
       ],
       "film": {
         "id": "3BrRKC1Wdco",
-        "tytul": "Leśny Budzik – Myszołów Włochaty",
+        "tytul": "Leśny Budzik – Myszołów włochaty",
         "platforma": "youtube"
       }
     },
@@ -2048,7 +2048,7 @@
       ],
       "film": {
         "id": "5ZxNSem9tMI",
-        "tytul": "Leśny Budzik – Bocian Biały",
+        "tytul": "Leśny Budzik – Bocian biały",
         "platforma": "youtube"
       }
     },
@@ -2236,7 +2236,7 @@
       ],
       "film": {
         "id": "QTEyH9SMTJM",
-        "tytul": "Leśny Budzik – Muchołówka Białoszyja",
+        "tytul": "Leśny Budzik – Muchołówka białoszyja",
         "platforma": "youtube"
       }
     },
@@ -2400,7 +2400,7 @@
       ],
       "film": {
         "id": "3jcjidW_ImY",
-        "tytul": "Leśny Budzik – Jaskółka Dymówka",
+        "tytul": "Leśny Budzik – Jaskółka dymówka",
         "platforma": "youtube"
       }
     },
@@ -2442,7 +2442,7 @@
       ],
       "film": {
         "id": "qZsRyzEeZEA",
-        "tytul": "Leśny Budzik – Pliszka Siwa",
+        "tytul": "Leśny Budzik – Pliszka siwa",
         "platforma": "youtube"
       }
     },
