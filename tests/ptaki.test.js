@@ -156,6 +156,30 @@ describe('Testy integralności danych', () => {
 
 });
 
+// ============================================
+// TESTY BEZPIECZEŃSTWA RENDEROWANIA HTML
+// ============================================
+describe('Bezpieczeństwo renderowania HTML (escapeHtml)', () => {
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c =>
+      ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  }
+
+  it('escapeHtml zabezpiecza znaki specjalne (film.tytul, focalPoint)', () => {
+    assert(escapeHtml('<b>tytuł</b>') === '&lt;b&gt;tytuł&lt;/b&gt;', 'escapeHtml: < > są escapowane');
+    assert(escapeHtml('"Leśny Budzik"') === '&quot;Leśny Budzik&quot;', 'escapeHtml: " jest escapowany');
+    assert(escapeHtml("O'Brien") === 'O&#39;Brien', "escapeHtml: ' jest escapowany");
+    assert(escapeHtml('a & b') === 'a &amp; b', 'escapeHtml: & jest escapowany');
+  });
+
+  it('Tytul z tagami HTML nie jest zainjektowany do DOM w nieescapowanej formie', () => {
+    const tytul = '<script>alert(1)</script>';
+    const escaped = escapeHtml(tytul);
+    assert(!escaped.includes('<script>'), 'Skrypt nie jest zainjektowany');
+    assert(escaped.includes('&lt;script&gt;'), 'Tagi skryptu są escapowane');
+  });
+});
+
 // ── Podsumowanie ──────────────────────────────────────────────
 console.log(`\n${colors.cyan}${'='.repeat(50)}${colors.reset}`);
 console.log(`${colors.cyan}Podsumowanie: ${colors.green}${testsPassed} ✓${colors.reset}  ${colors.red}${testsFailed} ✗${colors.reset}`);

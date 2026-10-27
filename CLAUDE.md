@@ -51,6 +51,7 @@ Each bird must have:
 | `licencja` | string | required; one of: `CC0`, `CC BY x.x`, `CC BY-SA x.x`, `Public domain` — no NC |
 | `film.id` | string | 11-character YouTube ID |
 | `film.platforma` | string | `"youtube"` / `"facebook"` |
+| `film.zrodlo` | string | optional; YouTube channel name shown on thumbnail (omit for Leśny Budzik default) |
 | `zrodla` | array | `"MPPL 2025"`, `"Czerwona Księga Ptaków Polski"` |
 | `peakMonths` | array | 1–12, only for Podkarpacie birds |
 | `focalPoint` | string | optional; CSS `object-position` value, e.g. `"left"`, `"35% center"` — set when `object-fit: cover` would crop the bird's head/beak |
