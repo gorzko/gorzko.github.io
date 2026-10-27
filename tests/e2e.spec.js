@@ -99,7 +99,7 @@ test.describe('Przewodnik Ptaków Polski – testy e2e', () => {
     // Find a bird that has film.zrodlo set
     const data = require('../ptaki-przewodnik/data/ptaki.json');
     const birdWithZrodlo = data.ptaki.find(p => p.film && p.film.zrodlo);
-    if (!birdWithZrodlo) return; // no such bird — skip
+    expect(birdWithZrodlo).toBeDefined();
 
     // Navigate to the card by searching for the bird's name
     await page.click('#nav-search');

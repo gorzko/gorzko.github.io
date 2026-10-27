@@ -59,7 +59,11 @@ describe('cleanAttribution', () => {
   );
   assert(
     cleanAttribution('<span>A</span> &amp; <em>B</em>') === 'A & B',
-    'strips tags then decodes entities',
+    'decodes entities then strips tags',
+  );
+  assert(
+    cleanAttribution('&lt;b&gt;x&lt;/b&gt;') === 'x',
+    'order matters: entity-encoded tags are decoded then stripped',
   );
   assert(
     cleanAttribution('&lt;script&gt;evil&lt;/script&gt;') === 'evil',

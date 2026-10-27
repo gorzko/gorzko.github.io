@@ -1,5 +1,15 @@
 // @ts-check
 const { defineConfig, devices } = require('@playwright/test');
+const fs = require('fs');
+
+// Cloud sandbox ships a stable symlink; honour an env var override for CI / local dev.
+const CLOUD_CHROME = '/opt/pw-browsers/chromium';
+function chromiumLaunchOptions() {
+  const override = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH;
+  if (override) return { executablePath: override };
+  if (fs.existsSync(CLOUD_CHROME)) return { executablePath: CLOUD_CHROME };
+  return {};
+}
 
 module.exports = defineConfig({
   testDir: 'tests',
@@ -20,7 +30,7 @@ module.exports = defineConfig({
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        launchOptions: { executablePath: '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome' },
+        launchOptions: chromiumLaunchOptions(),
       },
     },
   ],
