@@ -47,6 +47,8 @@ Each bird must have:
 | `migracja` | string | `"Osiadły"` / `"Wędrowny"` |
 | `statusCzerwonejKsiazki` | string | `LC` / `NT` / `VU` / `EN` |
 | `cechy` | array | 5–7 traits with emoji, e.g. `"🔊 Melodyjny śpiew"` |
+| `autor` | string | required, non-empty; photo author from Wikimedia Commons |
+| `licencja` | string | required; one of: `CC0`, `CC BY x.x`, `CC BY-SA x.x`, `Public domain` — no NC |
 | `film.id` | string | 11-character YouTube ID |
 | `film.platforma` | string | `"youtube"` / `"facebook"` |
 | `zrodla` | array | `"MPPL 2025"`, `"Czerwona Księga Ptaków Polski"` |

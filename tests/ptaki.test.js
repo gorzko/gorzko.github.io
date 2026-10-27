@@ -102,16 +102,16 @@ describe('Testy walidacji schematu JSON', () => {
     assertAll('Nazwy mają tylko pierwszy wyraz wielką literą', violations);
   });
 
-  it('Atrybucja zdjęć (autor/licencja) ma poprawny format, jeśli jest obecna', () => {
+  it('Atrybucja zdjęć (autor/licencja) jest wymagana i ma poprawny format', () => {
     const validLicenses = [
       'CC0', 'CC BY-SA 4.0', 'CC BY-SA 3.0', 'CC BY-SA 2.5', 'CC BY-SA 2.0',
       'CC BY-SA 1.0', 'CC BY 4.0', 'CC BY 3.0', 'CC BY 2.5', 'CC BY 2.0',
       'Public domain'
     ];
-    assertAll('Pole "autor" (jeśli jest) to niepusty ciąg',
-      bad(birds, p => p.autor === undefined || (typeof p.autor === 'string' && p.autor.trim().length > 0)));
-    assertAll('Pole "licencja" (jeśli jest) jest z dozwolonej listy (bez NC)',
-      bad(birds, p => p.licencja === undefined || validLicenses.includes(p.licencja)));
+    assertAll('Pole "autor" jest wymagane (niepusty ciąg)',
+      bad(birds, p => typeof p.autor === 'string' && p.autor.trim().length > 0));
+    assertAll('Pole "licencja" jest wymagane i z dozwolonej listy (bez NC)',
+      bad(birds, p => validLicenses.includes(p.licencja)));
   });
 
   it('Ptaki kategorii Podkarpacia mają poprawne peakMonths', () => {
