@@ -47,8 +47,13 @@ Each bird must have:
 | `migracja` | string | `"Osiadły"` / `"Wędrowny"` |
 | `statusCzerwonejKsiazki` | string | `LC` / `NT` / `VU` / `EN` |
 | `cechy` | array | 5–7 traits with emoji, e.g. `"🔊 Melodyjny śpiew"` |
-| `film.id` | string | 11-character YouTube ID |
+| `film.id` | string | 11-character YouTube ID, charset `[A-Za-z0-9_-]` |
+| `film.tytul` | string | video title shown on thumbnail |
 | `film.platforma` | string | `"youtube"` / `"facebook"` |
+| `film.zrodlo` | string | optional — YouTube channel name shown on thumbnail (omit for Leśny Budzik default) |
+| `autor` | string | optional — photo author from Wikimedia Commons, populated by `download-bird-photos.js` |
+| `licencja` | string | optional — photo license, e.g. `"CC BY-SA 4.0"`; populated by `download-bird-photos.js` |
+| `focalPoint` | string | optional — CSS `object-position` value for the card photo, e.g. `"top"`, `"center"`, `"30% 20%"` |
 | `zrodla` | array | `"MPPL 2025"`, `"Czerwona Księga Ptaków Polski"` |
 | `peakMonths` | array | 1–12, only for Podkarpacie birds |
 

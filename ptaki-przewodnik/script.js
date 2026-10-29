@@ -181,12 +181,12 @@ document.addEventListener('DOMContentLoaded', () => {
       card.innerHTML = `
         <div class="photo-wrap">
           <img
-            src="${getOptimizedImageUrl(ptak.zdjecie, '600px')}"
-            srcset="${getImageSrcset(ptak.zdjecie)}"
+            src="${escapeHtml(getOptimizedImageUrl(ptak.zdjecie, '600px'))}"
+            srcset="${escapeHtml(getImageSrcset(ptak.zdjecie))}"
             sizes="(max-width: 600px) 100vw, 45vw"
-            alt="${ptak.nazwa} (${ptak.nazwaLacinska})"
+            alt="${escapeHtml(ptak.nazwa)} (${escapeHtml(ptak.nazwaLacinska)})"
             loading="lazy"
-            style="object-position:${ptak.focalPoint || 'center'}"
+            style="object-position:${escapeHtml(ptak.focalPoint || 'center')}"
             onerror="this.removeAttribute('onerror');this.src='https://placehold.co/600x400/2a3226/b8d4a0?text=${encodeURIComponent(ptak.nazwa)}';"
           >
           <div class="photo-fade"></div>
@@ -195,14 +195,14 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
 
         <div class="body">
-          <div class="name-pl">${ptak.nazwa}</div>
-          <div class="name-lat">${ptak.nazwaLacinska}</div>
+          <div class="name-pl">${escapeHtml(ptak.nazwa)}</div>
+          <div class="name-lat">${escapeHtml(ptak.nazwaLacinska)}</div>
 
           ${generateStats(ptak)}
 
-          <div class="rbadge ${ptak.statusCzerwonejKsiazki}">
+          <div class="rbadge ${escapeHtml(ptak.statusCzerwonejKsiazki)}">
             <div class="rbadge-dot"></div>
-            Czerwona Księga: ${ptak.statusCzerwonejKsiazki} – ${getStatusText(ptak.statusCzerwonejKsiazki)}
+            Czerwona Księga: ${escapeHtml(ptak.statusCzerwonejKsiazki)} – ${escapeHtml(getStatusText(ptak.statusCzerwonejKsiazki))}
           </div>
 
           <div class="rule"></div>
@@ -403,8 +403,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }[status] || 'nieznany';
   }
 
-  // Escape values that originate from external sources (Wikimedia API: autor/licencja/zrodlo)
-  // before inserting them into innerHTML templates.
+  // Escape all data-derived values before inserting them into innerHTML templates.
+  // External-source fields (Wikimedia API: autor/licencja/zrodlo/tytul) are the real
+  // XSS vector; author-controlled fields (nazwa/cechy/kategorie/...) are escaped too,
+  // so a stray HTML-special character in ptaki.json can never break out of a template.
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, c =>
       ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -438,9 +440,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function generateCategoryTags(kategorie) {
     return kategorie.map((k, i) => {
       const cls = getCategoryClass(k);
-      return `<div class="cat-tag ${cls}" role="button" tabindex="0" aria-label="Kategoria: ${k}">
+      return `<div class="cat-tag ${cls}" role="button" tabindex="0" aria-label="Kategoria: ${escapeHtml(k)}">
         <div class="cat-dot"></div>
-        ${k}${k.includes('Naj') ? ` <span class="cat-rank">#${i + 1}</span>` : ''}
+        ${escapeHtml(k)}${k.includes('Naj') ? ` <span class="cat-rank">#${i + 1}</span>` : ''}
       </div>`;
     }).join('');
   }
@@ -452,15 +454,15 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="stats" role="list" aria-label="Statystyki">
         <div class="stat" role="listitem">
           <div class="stat-l">Liczebność</div>
-          <div class="stat-v">${ptak.liczebnosc}<small>par lęg.</small></div>
+          <div class="stat-v">${escapeHtml(ptak.liczebnosc)}<small>par lęg.</small></div>
         </div>
         <div class="stat" role="listitem">
           <div class="stat-l">Trend</div>
-          <div class="stat-v">${ptak.trend} <small>${trendText}</small></div>
+          <div class="stat-v">${escapeHtml(ptak.trend)} <small>${escapeHtml(trendText)}</small></div>
         </div>
         <div class="stat" role="listitem">
           <div class="stat-l">Migracje</div>
-          <div class="stat-v">${ptak.migracja} <small>/ ${migText}</small></div>
+          <div class="stat-v">${escapeHtml(ptak.migracja)} <small>/ ${escapeHtml(migText)}</small></div>
         </div>
       </div>`;
   }
@@ -499,8 +501,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const startsWithEmoji = firstToken && !/^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ0-9]/.test(firstToken);
       const pillEmoji = startsWithEmoji ? firstToken : getEmojiForFeature(c);
       const text = startsWithEmoji ? parts[2] : c;
-      return `<div class="pill" role="button" tabindex="0" aria-label="${c}">
-         <span class="pill-emoji">${pillEmoji}</span> ${text}
+      return `<div class="pill" role="button" tabindex="0" aria-label="${escapeHtml(c)}">
+         <span class="pill-emoji">${pillEmoji}</span> ${escapeHtml(text)}
        </div>`;
     }).join('');
   }
@@ -513,7 +515,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const fbVideoUrl = `https://www.facebook.com/watch?v=${videoId}`;
       const fbUrl = `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(fbVideoUrl)}&show_text=false&width=560`;
       return `
-        <div class="slbl">🎬 ${tytul}</div>
+        <div class="slbl">🎬 ${escapeHtml(tytul)}</div>
         <div class="fb-player">
           <iframe src="${fbUrl}"
             style="border:none;overflow:hidden"
@@ -528,10 +530,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const thumb = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
     const embed = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
     return `
-      <div class="slbl">🎬 ${tytul}</div>
+      <div class="slbl">🎬 ${escapeHtml(tytul)}</div>
       <div class="yt-player"
            onclick="this.innerHTML='<iframe src=\\'${embed}\\' frameborder=\\'0\\' allow=\\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\\' allowfullscreen></iframe>'">
-        <img src="${thumb}" alt="${tytul}" loading="lazy">
+        <img src="${thumb}" alt="${escapeHtml(tytul)}" loading="lazy">
         <div class="yt-overlay">
           <div class="yt-btn">
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
