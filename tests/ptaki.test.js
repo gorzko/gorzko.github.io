@@ -130,6 +130,8 @@ describe('Testy walidacji schematu JSON', () => {
       bad(withFilm, p => ['youtube', 'facebook'].includes(p.film.platforma || 'youtube')));
     assertAll('ID YouTube ma 11 znaków',
       bad(ytBirds, p => p.film.id.length === 11));
+    assertAll('ID YouTube ma tylko znaki [A-Za-z0-9_-] (bezpieczne w atrybutach HTML/JS)',
+      bad(ytBirds, p => /^[A-Za-z0-9_-]{11}$/.test(p.film.id)));
   });
 
 });
