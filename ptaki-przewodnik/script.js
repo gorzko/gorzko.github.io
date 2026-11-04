@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       allBirds = data.ptaki.sort((a, b) => a.nazwa.localeCompare(b.nazwa, 'pl'));
       renderBookPages(allBirds);
+      initSmartCrop();
       navigator.refresh();
       setupSearchAndFilters();
       updateFilterButtonVisibility();
@@ -187,6 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alt="${ptak.nazwa} (${ptak.nazwaLacinska})"
             loading="lazy"
             style="object-position:${escapeHtml(ptak.focalPoint || 'center')}"
+            ${ptak.cropRange ? `data-crop-left="${ptak.cropRange[0]}" data-crop-right="${ptak.cropRange[1]}"` : ''}
             onerror="this.removeAttribute('onerror');this.src='https://placehold.co/600x400/2a3226/b8d4a0?text=${encodeURIComponent(ptak.nazwa)}';"
           >
           <div class="photo-fade"></div>
@@ -562,6 +564,54 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     revealEls.forEach(el => revealIO.observe(el));
   }
+
+  // ═══════════════════════════════════════════
+  // SMART CROP — dynamic object-position from cropRange
+  // ═══════════════════════════════════════════
+
+  function computeSmartPosition(img) {
+    const L = parseFloat(img.dataset.cropLeft);
+    const R = parseFloat(img.dataset.cropRight);
+    if (isNaN(L) || isNaN(R)) return;
+
+    const container = img.parentElement;
+    if (!container) return;
+    const cW = container.clientWidth;
+    const cH = container.clientHeight;
+    const iW = img.naturalWidth;
+    const iH = img.naturalHeight;
+    if (!cW || !cH || !iW || !iH) return;
+
+    const scale = Math.max(cW / iW, cH / iH);
+    const visibleW = (cW / (scale * iW)) * 100;
+
+    if (visibleW >= 100) {
+      img.style.objectPosition = 'center';
+      return;
+    }
+
+    const x = Math.max(0, Math.min(100, ((L + R - visibleW) * 50) / (100 - visibleW)));
+    img.style.objectPosition = `${Math.round(x)}% center`;
+  }
+
+  function initSmartCrop() {
+    const imgs = document.querySelectorAll('img[data-crop-left]');
+    imgs.forEach(img => {
+      if (img.naturalWidth) {
+        computeSmartPosition(img);
+      } else {
+        img.addEventListener('load', () => computeSmartPosition(img), { once: true });
+      }
+    });
+  }
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      document.querySelectorAll('img[data-crop-left]').forEach(computeSmartPosition);
+    }, 100);
+  });
 
   // ── Obsługa błędów obrazów ─────────────────
   window.addEventListener('error', (e) => {
