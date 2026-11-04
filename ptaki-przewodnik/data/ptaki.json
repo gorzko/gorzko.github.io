@@ -8,6 +8,7 @@
         "Ogród"
       ],
       "zdjecie": "img/Phasianus_colchicus.jpg",
+      "focalPoint": "25% center",
       "autor": "Charles J. Sharp",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "100–200 tys.",
@@ -170,6 +171,7 @@
         "Ogród"
       ],
       "zdjecie": "img/Apus_apus.jpg",
+      "focalPoint": "55% center",
       "autor": "Alexis Lours",
       "licencja": "CC BY 4.0",
       "liczebnosc": "100–200 tys.",
@@ -244,7 +246,7 @@
         "Ogród"
       ],
       "zdjecie": "img/Corvus_monedula.jpg",
-      "focalPoint": "35% center",
+      "focalPoint": "45% center",
       "autor": "Alexis Lours",
       "licencja": "CC BY 4.0",
       "liczebnosc": "100–200 tys.",
@@ -392,6 +394,7 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Cyanistes_caeruleus.jpg",
+      "focalPoint": "40% center",
       "autor": "Luc Viatour",
       "licencja": "CC BY-SA 3.0",
       "liczebnosc": "1–2 mln",
@@ -503,6 +506,7 @@
         "Ogród"
       ],
       "zdjecie": "img/Streptopelia_decaocto.jpg",
+      "focalPoint": "70% center",
       "autor": "Zeynel Cebeci",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "400–600 tys.",
@@ -535,6 +539,7 @@
         "Ogród"
       ],
       "zdjecie": "img/Garrulus_glandarius.jpg",
+      "focalPoint": "60% center",
       "autor": "Luc Viatour",
       "licencja": "CC BY-SA 3.0",
       "liczebnosc": "200–300 tys.",
@@ -901,6 +906,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Podiceps_grisegena.jpg",
+      "focalPoint": "60% center",
       "autor": "Charles J. Sharp",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "500–700",
@@ -1445,6 +1451,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Mergus_serrator.jpg",
+      "focalPoint": "65% center",
       "autor": "Needsmoreritalin",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "800–1,2 tys.",
@@ -1561,6 +1568,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Ciconia_nigra.jpg",
+      "focalPoint": "55% center",
       "autor": "Charles J. Sharp",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "1–1,2 tys.",
@@ -1722,6 +1730,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Periparus_ater.jpg",
+      "focalPoint": "75% center",
       "autor": "TRinaud",
       "licencja": "CC BY 4.0",
       "liczebnosc": "300–500 tys.",
@@ -1958,6 +1967,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Linaria_cannabina.jpg",
+      "focalPoint": "60% center",
       "autor": "Charles J. Sharp",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "1–2 mln",
@@ -2042,6 +2052,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Ciconia_ciconia.jpg",
+      "focalPoint": "60% center",
       "autor": "Stefan Heß",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "52–55 tys.",
@@ -2081,6 +2092,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Crex_crex.jpg",
+      "focalPoint": "40% center",
       "autor": "Ivan Medenica",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "10–20 tys.",
@@ -2190,6 +2202,7 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Tachybaptus_ruficollis.jpg",
+      "focalPoint": "65% center",
       "autor": "El Golli Mohamed",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "20–30 tys.",
@@ -2395,6 +2408,7 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Hirundo_rustica.jpg",
+      "focalPoint": "35% center",
       "autor": "Zeynel Cebeci",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "3–5 mln",
