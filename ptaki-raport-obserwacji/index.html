@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rzadkie ptaki</title>
+<style>
+  /* Calm, natural layout: warm paper, forest green, gentle accents.
+     No loud badges — meanings are conveyed by a colored dot and quiet typography.
+     The time span is chosen with a two-sided 1-7 day slider; the handles may cross
+     freely, the range is always [min, max] of their positions (no handle can get stuck). */
+  :root {
+    color-scheme: light;
+    --paper: #f6f3ea;
+    --surface: #fffdf7;
+    --ink: #33322a;
+    --muted: #7c7867;
+    --faint: #a49f8d;
+    --hairline: #e6e1d2;
+    --moss: #47634a;
+    --moss-soft: #eaf0e4;
+    --ochre: #a3762e;
+    --ochre-soft: #f5ecd7;
+    --sage: #6d7566;
+    --sage-soft: #edece3;
+    --warn: #8a5a2b;
+    --warn-soft: #f4ecdd;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --paper: #191d17;
+      --surface: #20251e;
+      --ink: #e2e0d3;
+      --muted: #a09c89;
+      --faint: #6d6a5c;
+      --hairline: #30352b;
+      --moss: #8fae8b;
+      --moss-soft: #26301f;
+      --ochre: #d3a961;
+      --ochre-soft: #322a19;
+      --sage: #a3ab9a;
+      --sage-soft: #2a2e26;
+      --warn: #d3a961;
+      --warn-soft: #322a19;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 28px max(18px, env(safe-area-inset-left, 0px)) 64px max(18px, env(safe-area-inset-right, 0px));
+    background:
+      radial-gradient(1100px 420px at 85% -80px, var(--moss-soft), transparent 70%),
+      radial-gradient(900px 380px at -120px 25%, var(--ochre-soft), transparent 75%),
+      radial-gradient(var(--hairline) 1px, transparent 1.3px),
+      var(--paper);
+    background-size: auto, auto, 26px 26px, auto;
+    color: var(--ink);
+    font: 15px/1.55 var(--sans);
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+
+  /* --- header --- */
+  header { margin-bottom: 14px; }
+  .brand { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+  h1 {
+    font: 400 2.05rem/1.12 var(--serif);
+    letter-spacing: 0.01em;
+    margin: 0;
+  }
+  .flock { flex: 0 0 auto; margin-top: 4px; color: var(--moss); }
+  .flock svg { display: block; }
+  /* ornament: thin lines with a leaf, separating the header from the filter */
+  .ornament { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 2px 0 26px; color: var(--sage); }
+  .ornament::before, .ornament::after { content: ""; flex: 1 1 40px; max-width: 150px; border-top: 1px solid var(--hairline); }
+  .ornament svg { display: block; }
+  .meta { color: var(--muted); font-size: 0.85rem; margin-top: 8px; }
+  .warn {
+    background: var(--warn-soft); color: var(--warn);
+    border-left: 2px solid var(--warn);
+    padding: 10px 14px; margin-top: 16px; font-size: 0.85rem; border-radius: 0 6px 6px 0;
+  }
+
+  /* --- day-range slider (two-sided) --- */
+  .range { margin: 4px 0 22px; }
+  .range-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
+  .range-cap { color: var(--faint); font-size: 0.75rem; }
+  .range-lbl { color: var(--moss); font-size: 0.82rem; }
+  .range-box { position: relative; height: 26px; touch-action: none; }
+  .range-track { position: absolute; left: 0; right: 0; top: 12px; height: 2px; background: var(--hairline); border-radius: 1px; }
+  .range-fill { position: absolute; top: 12px; height: 2px; background: linear-gradient(90deg, var(--sage), var(--moss)); border-radius: 1px; }
+  .range-box input[type="range"] {
+    position: absolute; left: 0; width: 100%; top: 0; height: 26px; margin: 0;
+    -webkit-appearance: none; appearance: none; background: none; pointer-events: none;
+  }
+  .range-box input[type="range"]:focus-visible { outline: none; }
+  .range-box input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; width: 15px; height: 15px; border-radius: 50%;
+    background: var(--surface); border: 1.5px solid var(--moss);
+    pointer-events: auto; cursor: grab; box-shadow: 0 0 0 4px var(--paper);
+  }
+  .range-box input[type="range"]:active::-webkit-slider-thumb { cursor: grabbing; background: var(--moss-soft); }
+  .range-box input[type="range"]::-moz-range-thumb {
+    width: 13px; height: 13px; border-radius: 50%;
+    background: var(--surface); border: 1.5px solid var(--moss);
+    pointer-events: auto; cursor: grab;
+  }
+  .range-box input[type="range"]:active::-moz-range-thumb { background: var(--moss-soft); }
+  .range-box input[type="range"]::-moz-range-track { background: none; }
+  .range-ticks { display: flex; justify-content: space-between; padding: 0 7px; margin-top: 3px; }
+  .range-ticks span { color: var(--faint); font-size: 0.68rem; width: 34px; text-align: center; font-variant-numeric: tabular-nums; }
+  .range-ticks span:last-child { color: var(--muted); }
+
+  /* --- filters: quiet, thin, no fills --- */
+  .bar { display: flex; flex-direction: column; gap: 10px; margin: 0 0 30px; }
+  .row { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; }
+  button { font: inherit; color: inherit; cursor: pointer; background: none; border: 0; padding: 0; }
+  button:focus-visible { outline: 1.5px solid var(--moss); outline-offset: 3px; border-radius: 3px; }
+  .pill { font-size: 0.88rem; color: var(--muted); padding: 1px 0; border-bottom: 1.5px solid transparent; transition: color 0.2s ease; }
+  .pill:hover { color: var(--ink); }
+  .pill[aria-pressed="true"] { color: var(--moss); border-bottom-color: var(--moss); }
+  .pill .n { color: var(--faint); font-size: 0.75rem; margin-left: 3px; }
+  .pill.zero { opacity: 0.45; }
+  .chip { font-size: 0.85rem; color: var(--muted); display: inline-flex; align-items: baseline; gap: 5px; }
+  .chip[aria-pressed="false"] { opacity: 0.4; }
+  .chip .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; transform: translateY(-1px); }
+
+  /* --- region sections: soft cards on paper --- */
+  section {
+    margin: 0 0 28px;
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 14px;
+    padding: 20px 22px 8px;
+    box-shadow: 0 1px 2px rgba(51, 50, 42, 0.05), 0 14px 30px -24px rgba(51, 50, 42, 0.3);
+  }
+  @media (prefers-color-scheme: dark) { section { box-shadow: 0 14px 30px -24px rgba(0, 0, 0, 0.6); } }
+  h2 { font: 400 1.25rem/1.2 var(--serif); margin: 0 0 4px; }
+  h2 .cnt { font-family: var(--sans); font-weight: 400; color: var(--faint); font-size: 0.78rem; margin-left: 10px; }
+  .region-hr { border: 0; border-top: 1px solid var(--hairline); margin: 0 0 4px; }
+  .list { display: flex; flex-direction: column; }
+
+  /* --- species: a calm row separated by a hairline, no boxes --- */
+  .sp { padding: 16px 10px 18px; margin: 0 -8px; border-bottom: 1px solid var(--hairline); border-radius: 8px; transition: background-color 0.25s ease; }
+  .sp:last-child { border-bottom: 0; }
+  .sp:hover { background: color-mix(in srgb, var(--moss-soft) 55%, transparent); }
+  .nm { font: 500 1.05rem/1.3 var(--sans); }
+  .nm .la { font: italic 400 0.92rem var(--serif); color: var(--muted); margin-left: 8px; }
+  .nm .cnt { font-family: var(--sans); font-weight: 400; color: var(--faint); font-size: 0.78rem; margin-left: 10px; }
+  .kind { font-size: 0.8rem; margin-left: 10px; white-space: nowrap; }
+  .kind .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 5px; transform: translateY(-1px); }
+  .kind.lifer { color: var(--moss); } .kind.lifer .dot { background: var(--moss); }
+  .kind.rare { color: var(--ochre); } .kind.rare .dot { background: var(--ochre); }
+  .kind.tick { color: var(--sage); } .kind.tick .dot { background: var(--sage); }
+  .places { font-size: 0.9rem; color: var(--muted); margin-top: 6px; }
+  a { color: var(--moss); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+  details { margin-top: 10px; }
+  summary { cursor: pointer; font-size: 0.8rem; color: var(--faint); user-select: none; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary:hover { color: var(--moss); }
+  summary::before { content: "· "; }
+  ul { list-style: none; margin: 10px 0 0; padding: 0; }
+  li { font-size: 0.84rem; color: var(--muted); padding: 3.5px 0; }
+  li .d { color: var(--ink); font-variant-numeric: tabular-nums; }
+  li .t { font-style: italic; color: var(--faint); }
+  li .new { color: var(--moss); background: var(--moss-soft); border-radius: 999px; padding: 1px 7px; font-size: 0.68rem; margin-left: 7px; letter-spacing: 0.03em; white-space: nowrap; }
+  .pin { display: inline-flex; align-items: center; justify-content: center; width: 21px; height: 21px; border: 1px solid var(--hairline); border-radius: 5px; padding: 2px; margin-left: 6px; vertical-align: -4px; background: var(--surface); }
+  .pin:hover { border-color: var(--moss); text-decoration: none; }
+  .pin img { width: 13px; height: 13px; display: block; border-radius: 2px; }
+  .pin span { color: var(--faint); font-size: 0.7rem; }
+
+  .empty { text-align: center; color: var(--muted); padding: 48px 8px; font-family: var(--serif); font-style: italic; font-size: 1rem; }
+  footer { color: var(--faint); font-size: 0.75rem; margin-top: 44px; text-align: center; }
+  footer .orn { display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--sage); margin-bottom: 12px; }
+  footer .orn::before, footer .orn::after { content: ""; flex: 1 1 40px; max-width: 150px; border-top: 1px solid var(--hairline); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <h1>Rzadkie ptaki</h1>
+      <div class="flock" aria-hidden="true">
+        <svg width="92" height="34" viewBox="0 0 92 34" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+          <path d="M6 10 Q14 18 22 10" opacity="0.9"></path>
+          <path d="M36 5 Q46 15 56 5" opacity="0.5"></path>
+          <path d="M64 13 Q70 19 76 13" opacity="0.72" stroke-width="1.4"></path>
+        </svg>
+      </div>
+    </div>
+    <p class="meta" id="meta">&nbsp;</p>
+    <div class="warn" id="stale" hidden></div>
+  </header>
+  <div class="ornament" aria-hidden="true">
+    <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+      <path d="M13 3 C13 9 9 13 3 13 C3 7 7 3 13 3 Z"></path>
+      <path d="M3 13 C6 9.5 9 6.5 12 4.5"></path>
+    </svg>
+  </div>
+  <div class="bar" id="bar" hidden>
+    <div class="range">
+      <div class="range-head">
+        <span class="range-cap">zakres dni</span>
+        <span class="range-lbl" id="rlbl"></span>
+      </div>
+      <div class="range-box" id="rbox">
+        <div class="range-track"></div>
+        <div class="range-fill" id="rfill"></div>
+        <input type="range" id="rA" min="0" max="6" step="1" aria-label="Granica zakresu dni — uchwyt 1">
+        <input type="range" id="rB" min="0" max="6" step="1" aria-label="Granica zakresu dni — uchwyt 2">
+      </div>
+      <div class="range-ticks" id="rticks"></div>
+    </div>
+    <div class="row" id="regions" role="group" aria-label="Region"></div>
+    <div class="row" id="groupby" role="group" aria-label="Grupowanie"></div>
+    <div class="row" id="types" role="group" aria-label="Rodzaj"></div>
+  </div>
+  <main id="out"></main>
+  <footer>
+    <div class="orn" aria-hidden="true">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M13 3 C13 9 9 13 3 13 C3 7 7 3 13 3 Z"></path><path d="M3 13 C6 9.5 9 6.5 12 4.5"></path></svg>
+    </div>
+    Dane: eBird.org (API), Clanga, Ornitho.DE. Obserwacje oznaczone „nowe” pojawiły się po ostatnim uruchomieniu zadania.
+  </footer>
+</div>
+<script type="application/json" id="rp-data">{"v":1,"generated":"2026-11-04 16:50","today":"2026-11-04","from":"2026-10-29","regions":[{"n":"małopolskie","d":1},{"n":"śląskie","d":0},{"n":"podkarpackie","d":0},{"n":"mazowieckie","d":0},{"n":"pomorskie","d":0},{"n":"Stuttgart","d":0},{"n":"Karlsruhe","d":0},{"n":"Campinas","d":0},{"n":"Lanzarote","d":0},{"n":"Tromsø","d":0}],"stale":[],"groups":[{"r":"małopolskie","pl":"pokrzywnica","en":"Dunnock","la":"Prunella modularis","u":"https://ebird.org/species/dunnoc1/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-11-01","l":"Kraków--Aleja M. Małeckiego","lu":null,"c":"https://ebird.org/checklist/S407177645","gm":"https://www.google.com/maps?q=50.0562424,19.8962055","om":"https://omaps.app/s4H4OEf3ev/Krak%C3%B3w--Aleja_M._Ma%C5%82eckiego","t":"Lifer","n":1},{"d":"2026-10-31","l":"Wokowice-Bielcza pola","lu":"https://ebird.org/species/dunnoc1/L68719489","c":"https://ebird.org/checklist/S406762938","gm":"https://www.google.com/maps?q=50.01157,20.71839","om":"https://omaps.app/s4H5NRczEX/Wokowice-Bielcza_pola","t":"Lifer","n":1},{"d":"2026-10-31","l":"Wisła--Zapora Łączany","lu":"https://ebird.org/species/dunnoc1/L8254090","c":"https://ebird.org/checklist/S406757854","gm":"https://www.google.com/maps?q=49.9874979,19.5963058","om":"https://omaps.app/s4HtWf7w0K/Wis%C5%82a--Zapora_%C5%81%C4%85czany","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"świergotek łąkowy","en":"Meadow Pipit","la":"Anthus pratensis","u":"https://ebird.org/species/meapip1/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-11-02","l":"Wróblówka-Długopole--Żwirownia","lu":"https://ebird.org/species/meapip1/L9134446","c":"https://ebird.org/checklist/S407608834","gm":"https://www.google.com/maps?q=49.4709301,19.8845743","om":"https://omaps.app/s4Hwmj_YAu/Wr%C3%B3bl%C3%B3wka-D%C5%82ugopole--%C5%BBwirownia","t":"Lifer","n":1},{"d":"2026-11-02","l":"Młoszowa--Góra Bożnowia, Dolina Doły & łąki","lu":"https://ebird.org/species/meapip1/L40054020","c":"https://ebird.org/checklist/S407447631","gm":"https://www.google.com/maps?q=50.166919,19.4880767","om":"https://omaps.app/s4Htzx08up/M%C5%82oszowa--G%C3%B3ra_Bo%C5%BCnowia%2C_Dolina_Do%C5%82y_%26_%C5%82%C4%85ki","t":"Lifer","n":1},{"d":"2026-11-02","l":"Żwirownia Brzegi","lu":"https://ebird.org/species/meapip1/L8271201","c":"https://ebird.org/checklist/S407423826","gm":"https://www.google.com/maps?q=50.02968,20.07706","om":"https://omaps.app/s4H4YPnREW/%C5%BBwirownia_Brzegi","t":"Lifer","n":1},{"d":"2026-11-02","l":"Wokowice-Bielcza pola","lu":"https://ebird.org/species/meapip1/L68719489","c":"https://ebird.org/checklist/S407434565","gm":"https://www.google.com/maps?q=50.01157,20.71839","om":"https://omaps.app/s4H5NRczEX/Wokowice-Bielcza_pola","t":"Lifer","n":1},{"d":"2026-11-01","l":"Puszcza Niepołomicka--łąki nad Drwinką","lu":"https://ebird.org/species/meapip1/L10789937","c":"https://ebird.org/checklist/S407270520","gm":"https://www.google.com/maps?q=50.0786935,20.4018465","om":"https://omaps.app/s4H5KhgLE1/Puszcza_Niepo%C5%82omicka--%C5%82%C4%85ki_nad_Drwink%C4%85","t":"Lifer","n":1},{"d":"2026-11-01","l":"Paszkówka","lu":null,"c":"https://ebird.org/checklist/S407533056","gm":"https://www.google.com/maps?q=49.9454859,19.6935085","om":"https://omaps.app/s4H4AgYPAi/Paszk%C3%B3wka","t":"Lifer","n":1},{"d":"2026-10-31","l":"Zbiornik Dobczycki (obszar ogólny)","lu":"https://ebird.org/species/meapip1/L6529661","c":"https://ebird.org/checklist/S406825768","gm":"https://www.google.com/maps?q=49.8667306,20.0475917","om":"https://omaps.app/s4Hy4i-jxH/Zbiornik_Dobczycki_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1},{"d":"2026-10-31","l":"Wisła--Zapora Łączany","lu":"https://ebird.org/species/meapip1/L8254090","c":"https://ebird.org/checklist/S406757854","gm":"https://www.google.com/maps?q=49.9874979,19.5963058","om":"https://omaps.app/s4HtWf7w0K/Wis%C5%82a--Zapora_%C5%81%C4%85czany","t":"Lifer","n":1},{"d":"2026-10-30","l":"Kraków--Zalew Zesławice","lu":"https://ebird.org/species/meapip1/L4988846","c":"https://ebird.org/checklist/S406559432","gm":"https://www.google.com/maps?q=50.1047685,20.0345462","om":"https://omaps.app/s4H4lXYZ56/Krak%C3%B3w--Zalew_Zes%C5%82awice","t":"Lifer","n":1},{"d":"2026-10-30","l":"Balin--pola (zachód)","lu":"https://ebird.org/species/meapip1/L76602033","c":"https://ebird.org/checklist/S406614305","gm":"https://www.google.com/maps?q=50.168545,19.353282","om":"https://omaps.app/s4Htyh6TqM/Balin--pola_%28zach%C3%B3d%29","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"czeczotka","en":"Redpoll","la":"Acanthis flammea","u":"https://ebird.org/species/redpol1/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-11-02","l":"Młoszowa--Park","lu":"https://ebird.org/species/redpol1/L41431789","c":"https://ebird.org/checklist/S407446707","gm":"https://www.google.com/maps?q=50.1513905,19.4937636","om":"https://omaps.app/s4HtzWsdFL/M%C5%82oszowa--Park","t":"Lifer","n":1},{"d":"2026-11-02","l":"Żwirownia Brzegi","lu":"https://ebird.org/species/redpol1/L8271201","c":"https://ebird.org/checklist/S407423826","gm":"https://www.google.com/maps?q=50.02968,20.07706","om":"https://omaps.app/s4H4YPnREW/%C5%BBwirownia_Brzegi","t":"Lifer","n":1},{"d":"2026-10-31","l":"Luszowice (wieś)","lu":"https://ebird.org/species/redpol1/L28516747","c":"https://ebird.org/checklist/S406768504","gm":"https://www.google.com/maps?q=50.17405,19.40254","om":"https://omaps.app/s4Hty2qNVf/Luszowice_%28wie%C5%9B%29","t":"Lifer","n":1},{"d":"2026-10-31","l":"Zbiornik Dobczycki (obszar ogólny)","lu":"https://ebird.org/species/redpol1/L6529661","c":"https://ebird.org/checklist/S406825768","gm":"https://www.google.com/maps?q=49.8667306,20.0475917","om":"https://omaps.app/s4Hy4i-jxH/Zbiornik_Dobczycki_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1},{"d":"2026-10-30","l":"Balin--pola (zachód)","lu":"https://ebird.org/species/redpol1/L76602033","c":"https://ebird.org/checklist/S406614305","gm":"https://www.google.com/maps?q=50.168545,19.353282","om":"https://omaps.app/s4Htyh6TqM/Balin--pola_%28zach%C3%B3d%29","t":"Lifer","n":1},{"d":"2026-10-29","l":"Tatrzański PN--Morskie Oko","lu":"https://ebird.org/species/redpol1/L57075708","c":"https://ebird.org/checklist/S406347079","gm":"https://www.google.com/maps?q=49.1964668,20.0698053","om":"https://omaps.app/s4Ha6O-lKR/Tatrza%C5%84ski_PN--Morskie_Oko","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"jer","en":"Brambling","la":"Fringilla montifringilla","u":"https://ebird.org/species/brambl/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-11-02","l":"Młoszowa--Góra Bożnowia, Dolina Doły & łąki","lu":"https://ebird.org/species/brambl/L40054020","c":"https://ebird.org/checklist/S407447631","gm":"https://www.google.com/maps?q=50.166919,19.4880767","om":"https://omaps.app/s4Htzx08up/M%C5%82oszowa--G%C3%B3ra_Bo%C5%BCnowia%2C_Dolina_Do%C5%82y_%26_%C5%82%C4%85ki","t":"Lifer","n":1},{"d":"2026-11-02","l":"Młoszowa--Park","lu":"https://ebird.org/species/brambl/L41431789","c":"https://ebird.org/checklist/S407446707","gm":"https://www.google.com/maps?q=50.1513905,19.4937636","om":"https://omaps.app/s4HtzWsdFL/M%C5%82oszowa--Park","t":"Lifer","n":1},{"d":"2026-11-02","l":"Balin","lu":null,"c":"https://ebird.org/checklist/S407458477","gm":"https://www.google.com/maps?q=50.1718806,19.3480492","om":"https://omaps.app/s4HtyjgU4H/Balin","t":"Lifer","n":1},{"d":"2026-11-02","l":"Tarnów--Park Strzelecki","lu":"https://ebird.org/species/brambl/L19904865","c":"https://ebird.org/checklist/S407432979","gm":"https://www.google.com/maps?q=50.0199543,20.9853089","om":"https://omaps.app/s4H5cWpomm/Tarn%C3%B3w--Park_Strzelecki","t":"Lifer","n":1},{"d":"2026-11-02","l":"Wokowice-Bielcza pola","lu":"https://ebird.org/species/brambl/L68719489","c":"https://ebird.org/checklist/S407434565","gm":"https://www.google.com/maps?q=50.01157,20.71839","om":"https://omaps.app/s4H5NRczEX/Wokowice-Bielcza_pola","t":"Lifer","n":1},{"d":"2026-11-01","l":"Nowe Brzesko - Podwale","lu":null,"c":"https://ebird.org/checklist/S407129102","gm":"https://www.google.com/maps?q=50.1261216,20.3755483","om":"https://omaps.app/s4H412TKjH/Nowe_Brzesko_-_Podwale","t":"Lifer","n":1},{"d":"2026-11-01","l":"Puszcza Niepołomicka--łąki nad Drwinką","lu":"https://ebird.org/species/brambl/L10789937","c":"https://ebird.org/checklist/S407270520","gm":"https://www.google.com/maps?q=50.0786935,20.4018465","om":"https://omaps.app/s4H5KhgLE1/Puszcza_Niepo%C5%82omicka--%C5%82%C4%85ki_nad_Drwink%C4%85","t":"Lifer","n":1},{"d":"2026-10-31","l":"Zbiornik Dobczycki (obszar ogólny)","lu":"https://ebird.org/species/brambl/L6529661","c":"https://ebird.org/checklist/S406825768","gm":"https://www.google.com/maps?q=49.8667306,20.0475917","om":"https://omaps.app/s4Hy4i-jxH/Zbiornik_Dobczycki_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1},{"d":"2026-10-31","l":"Wisła--Zapora Łączany","lu":"https://ebird.org/species/brambl/L8254090","c":"https://ebird.org/checklist/S406757854","gm":"https://www.google.com/maps?q=49.9874979,19.5963058","om":"https://omaps.app/s4HtWf7w0K/Wis%C5%82a--Zapora_%C5%81%C4%85czany","t":"Lifer","n":1},{"d":"2026-10-30","l":"Balin--pola (zachód)","lu":"https://ebird.org/species/brambl/L76602033","c":"https://ebird.org/checklist/S406614305","gm":"https://www.google.com/maps?q=50.168545,19.353282","om":"https://omaps.app/s4Htyh6TqM/Balin--pola_%28zach%C3%B3d%29","t":"Lifer","n":1},{"d":"2026-10-30","l":"Żwirownia Brzegi","lu":"https://ebird.org/species/brambl/L8271201","c":"https://ebird.org/checklist/S406479361","gm":"https://www.google.com/maps?q=50.02968,20.07706","om":"https://omaps.app/s4H4YPnREW/%C5%BBwirownia_Brzegi","t":"Lifer","n":1},{"d":"2026-10-29","l":"Gorzków KiR ogród","lu":null,"c":"https://ebird.org/checklist/S406386909","gm":"https://www.google.com/maps?q=49.922288,20.030285","om":"https://omaps.app/s4H4FVBw8f/Gorzk%C3%B3w_KiR_ogr%C3%B3d","t":"Lifer","n":1},{"d":"2026-10-29","l":"Trzebinia--Rafineria ORLEN Południe","lu":null,"c":"https://ebird.org/checklist/S406248311","gm":"https://www.google.com/maps?q=50.1594077,19.4489986","om":"https://omaps.app/s4HtzOGubi/Trzebinia--Rafineria_ORLEN_Po%C5%82udnie","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"makolągwa","en":"Eurasian Linnet","la":"Linaria cannabina","u":"https://ebird.org/species/eurlin1/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-11-02","l":"Żwirownia Brzegi","lu":"https://ebird.org/species/eurlin1/L8271201","c":"https://ebird.org/checklist/S407423826","gm":"https://www.google.com/maps?q=50.02968,20.07706","om":"https://omaps.app/s4H4YPnREW/%C5%BBwirownia_Brzegi","t":"Lifer","n":1},{"d":"2026-11-02","l":"Wokowice-Bielcza pola","lu":"https://ebird.org/species/eurlin1/L68719489","c":"https://ebird.org/checklist/S407434565","gm":"https://www.google.com/maps?q=50.01157,20.71839","om":"https://omaps.app/s4H5NRczEX/Wokowice-Bielcza_pola","t":"Lifer","n":1},{"d":"2026-11-01","l":"Charzewice--Żwirownia","lu":"https://ebird.org/species/eurlin1/L18288540","c":"https://ebird.org/checklist/S407242159","gm":"https://www.google.com/maps?q=49.8603167,20.7513164","om":"https://omaps.app/s4Hz4g8ZpN/Charzewice--%C5%BBwirownia","t":"Lifer","n":1},{"d":"2026-11-01","l":"Nowe Brzesko - Podwale","lu":null,"c":"https://ebird.org/checklist/S407129102","gm":"https://www.google.com/maps?q=50.1261216,20.3755483","om":"https://omaps.app/s4H412TKjH/Nowe_Brzesko_-_Podwale","t":"Lifer","n":1},{"d":"2026-11-01","l":"Krzeczów","lu":null,"c":"https://ebird.org/checklist/S407168334","gm":"https://www.google.com/maps?q=49.9998403,20.4894155","om":"https://omaps.app/s4H5DoX1N_/Krzecz%C3%B3w","t":"Lifer","n":1},{"d":"2026-11-01","l":"Puszcza Niepołomicka--łąki nad Drwinką","lu":"https://ebird.org/species/eurlin1/L10789937","c":"https://ebird.org/checklist/S407270520","gm":"https://www.google.com/maps?q=50.0786935,20.4018465","om":"https://omaps.app/s4H5KhgLE1/Puszcza_Niepo%C5%82omicka--%C5%82%C4%85ki_nad_Drwink%C4%85","t":"Lifer","n":1},{"d":"2026-10-31","l":"Grądy Jodłowskie, Województwo małopolskie, PL (50, 003, 20, 572)","lu":null,"c":"https://ebird.org/checklist/S406888937","gm":"https://www.google.com/maps?q=50.0028583,20.5724033","om":"https://omaps.app/s4H5Goyu1H/Gr%C4%85dy_Jod%C5%82owskie%2C_Wojew%C3%B3dztwo_ma%C5%82opolskie%2C_PL_%2850%2C_003%2C_20%2C_572%29","t":"Lifer","n":1},{"d":"2026-10-31","l":"Jezioro Chechelskie","lu":"https://ebird.org/species/eurlin1/L23468559","c":"https://ebird.org/checklist/S406780209","gm":"https://www.google.com/maps?q=50.1358461,19.4446006","om":"https://omaps.app/s4Htxp_hqg/Jezioro_Chechelskie","t":"Lifer","n":1},{"d":"2026-10-31","l":"Zbiornik Dobczycki (obszar ogólny)","lu":"https://ebird.org/species/eurlin1/L6529661","c":"https://ebird.org/checklist/S406825768","gm":"https://www.google.com/maps?q=49.8667306,20.0475917","om":"https://omaps.app/s4Hy4i-jxH/Zbiornik_Dobczycki_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1},{"d":"2026-10-30","l":"Balin--pola (zachód)","lu":"https://ebird.org/species/eurlin1/L76602033","c":"https://ebird.org/checklist/S406614305","gm":"https://www.google.com/maps?q=50.168545,19.353282","om":"https://omaps.app/s4Htyh6TqM/Balin--pola_%28zach%C3%B3d%29","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"słonka","en":"Eurasian Woodcock","la":"Scolopax rusticola","u":"https://ebird.org/species/eurwoo/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-10-30","l":"Żwirownia Brzegi","lu":"https://ebird.org/species/eurwoo/L8271201","c":"https://ebird.org/checklist/S406479361","gm":"https://www.google.com/maps?q=50.02968,20.07706","om":"https://omaps.app/s4H4YPnREW/%C5%BBwirownia_Brzegi","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"śnieguła","en":"Snow Bunting","la":"Plectrophenax nivalis","u":"https://ebird.org/species/snobun/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-11-04","l":"Żwirownia Brzegi","lu":"https://ebird.org/species/snobun/L8271201","c":"https://ebird.org/checklist/S407858269","gm":"https://www.google.com/maps?q=50.02968,20.07706","om":"https://omaps.app/s4H4YPnREW/%C5%BBwirownia_Brzegi","t":"Lifer","n":1},{"d":"2026-11-02","l":"Wróblówka-Długopole--Żwirownia","lu":"https://ebird.org/species/snobun/L9134446","c":"https://ebird.org/checklist/S407608834","gm":"https://www.google.com/maps?q=49.4709301,19.8845743","om":"https://omaps.app/s4Hwmj_YAu/Wr%C3%B3bl%C3%B3wka-D%C5%82ugopole--%C5%BBwirownia","t":"Lifer","n":1},{"d":"2026-11-01","l":"Charzewice--Żwirownia","lu":"https://ebird.org/species/snobun/L18288540","c":"https://ebird.org/checklist/S407308012","gm":"https://www.google.com/maps?q=49.8603167,20.7513164","om":"https://omaps.app/s4Hz4g8ZpN/Charzewice--%C5%BBwirownia","t":"Lifer","n":1},{"d":"2026-11-01","l":"Wróblówka-Długopole--Żwirownia","lu":"https://ebird.org/species/snobun/L9134446","c":"https://ebird.org/checklist/S407209526","gm":"https://www.google.com/maps?q=49.4709301,19.8845743","om":"https://omaps.app/s4Hwmj_YAu/Wr%C3%B3bl%C3%B3wka-D%C5%82ugopole--%C5%BBwirownia","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"bekasik","en":"Jack Snipe","la":"Lymnocryptes minimus","u":"https://ebird.org/species/jacsni/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-11-01","l":"Charzewice--Żwirownia","lu":"https://ebird.org/species/jacsni/L18288540","c":"https://ebird.org/checklist/S407242159","gm":"https://www.google.com/maps?q=49.8603167,20.7513164","om":"https://omaps.app/s4Hz4g8ZpN/Charzewice--%C5%BBwirownia","t":"Lifer","n":1},{"d":"2026-10-31","l":"Zbiornik Dobczycki (obszar ogólny)","lu":"https://ebird.org/species/jacsni/L6529661","c":"https://ebird.org/checklist/S406825768","gm":"https://www.google.com/maps?q=49.8667306,20.0475917","om":"https://omaps.app/s4Hy4i-jxH/Zbiornik_Dobczycki_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"błotniak zbożowy","en":"Hen Harrier","la":"Circus cyaneus","u":"https://ebird.org/species/norhar1/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-11-01","l":"Charzewice--Żwirownia","lu":"https://ebird.org/species/norhar1/L18288540","c":"https://ebird.org/checklist/S407242159","gm":"https://www.google.com/maps?q=49.8603167,20.7513164","om":"https://omaps.app/s4Hz4g8ZpN/Charzewice--%C5%BBwirownia","t":"Lifer","n":1},{"d":"2026-10-31","l":"Zbiornik Dobczycki (obszar ogólny)","lu":"https://ebird.org/species/norhar1/L6529661","c":"https://ebird.org/checklist/S406825768","gm":"https://www.google.com/maps?q=49.8667306,20.0475917","om":"https://omaps.app/s4Hy4i-jxH/Zbiornik_Dobczycki_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"czubatka","en":"Crested Tit","la":"Lophophanes cristatus","u":"https://ebird.org/species/cretit2/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-11-02","l":"Młoszowa--Góra Bożnowia, Dolina Doły & łąki","lu":"https://ebird.org/species/cretit2/L40054020","c":"https://ebird.org/checklist/S407447631","gm":"https://www.google.com/maps?q=50.166919,19.4880767","om":"https://omaps.app/s4Htzx08up/M%C5%82oszowa--G%C3%B3ra_Bo%C5%BCnowia%2C_Dolina_Do%C5%82y_%26_%C5%82%C4%85ki","t":"Lifer","n":1},{"d":"2026-11-01","l":"Luszowice (wieś)","lu":"https://ebird.org/species/cretit2/L28516747","c":"https://ebird.org/checklist/S407306930","gm":"https://www.google.com/maps?q=50.17405,19.40254","om":"https://omaps.app/s4Hty2qNVf/Luszowice_%28wie%C5%9B%29","t":"Lifer","n":1},{"d":"2026-10-31","l":"Grądy Jodłowskie, Województwo małopolskie, PL (50, 003, 20, 572)","lu":null,"c":"https://ebird.org/checklist/S406888937","gm":"https://www.google.com/maps?q=50.0028583,20.5724033","om":"https://omaps.app/s4H5Goyu1H/Gr%C4%85dy_Jod%C5%82owskie%2C_Wojew%C3%B3dztwo_ma%C5%82opolskie%2C_PL_%2850%2C_003%2C_20%2C_572%29","t":"Lifer","n":1},{"d":"2026-10-30","l":"Zbiornik Dobczycki (obszar ogólny)","lu":"https://ebird.org/species/cretit2/L6529661","c":"https://ebird.org/checklist/S406587384","gm":"https://www.google.com/maps?q=49.8667306,20.0475917","om":"https://omaps.app/s4Hy4i-jxH/Zbiornik_Dobczycki_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1},{"d":"2026-10-29","l":"Tatrzański PN--Dolina Strążyska, Grzybowiec, Giewont","lu":"https://ebird.org/species/cretit2/L6637202","c":"https://ebird.org/checklist/S406361439","gm":"https://www.google.com/maps?q=49.2729009,19.9335766","om":"https://omaps.app/s4HwGWtp6C/Tatrza%C5%84ski_PN--Dolina_Str%C4%85%C5%BCyska%2C_Grzybowiec%2C_Giewont","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"nur czarnoszyi","en":"Arctic Loon","la":"Gavia arctica","u":"https://ebird.org/species/arcloo/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-10-31","l":"Zbiornik Dobczycki (obszar ogólny)","lu":"https://ebird.org/species/arcloo/L6529661","c":"https://ebird.org/checklist/S406825768","gm":"https://www.google.com/maps?q=49.8667306,20.0475917","om":"https://omaps.app/s4Hy4i-jxH/Zbiornik_Dobczycki_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"nur rdzawoszyi","en":"Red-throated Loon","la":"Gavia stellata","u":"https://ebird.org/species/retloo/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-10-31","l":"Zbiornik Dobczycki (obszar ogólny)","lu":"https://ebird.org/species/retloo/L6529661","c":"https://ebird.org/checklist/S406825768","gm":"https://www.google.com/maps?q=49.8667306,20.0475917","om":"https://omaps.app/s4Hy4i-jxH/Zbiornik_Dobczycki_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"sokół wędrowny","en":"Peregrine Falcon","la":"Falco peregrinus","u":"https://ebird.org/species/perfal/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-10-31","l":"Zbiornik Dobczycki (obszar ogólny)","lu":"https://ebird.org/species/perfal/L6529661","c":"https://ebird.org/checklist/S406825768","gm":"https://www.google.com/maps?q=49.8667306,20.0475917","om":"https://omaps.app/s4Hy4i-jxH/Zbiornik_Dobczycki_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"myszołów włochaty","en":"Rough-legged Hawk","la":"Buteo lagopus","u":"https://ebird.org/species/rolhaw/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-11-02","l":"Sułoszowa--pola (południe)","lu":"https://ebird.org/species/rolhaw/L11650172","c":"https://ebird.org/checklist/S407531711","gm":"https://www.google.com/maps?q=50.2545806,19.7095722","om":"https://omaps.app/s4H4qkggYb/Su%C5%82oszowa--pola_%28po%C5%82udnie%29","t":"Lifer","n":1},{"d":"2026-11-01","l":"Charzewice--Żwirownia","lu":"https://ebird.org/species/rolhaw/L18288540","c":"https://ebird.org/checklist/S407242159","gm":"https://www.google.com/maps?q=49.8603167,20.7513164","om":"https://omaps.app/s4Hz4g8ZpN/Charzewice--%C5%BBwirownia","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"czarnogłówka","en":"Willow Tit","la":"Poecile montanus","u":"https://ebird.org/species/wiltit1/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-11-02","l":"Młoszowa--Góra Bożnowia, Dolina Doły & łąki","lu":"https://ebird.org/species/wiltit1/L40054020","c":"https://ebird.org/checklist/S407447631","gm":"https://www.google.com/maps?q=50.166919,19.4880767","om":"https://omaps.app/s4Htzx08up/M%C5%82oszowa--G%C3%B3ra_Bo%C5%BCnowia%2C_Dolina_Do%C5%82y_%26_%C5%82%C4%85ki","t":"Lifer","n":1},{"d":"2026-11-01","l":"Wokowice - tereny wzdłuż A4","lu":null,"c":"https://ebird.org/checklist/S407113473","gm":"https://www.google.com/maps?q=50.0043196,20.6984384","om":"https://omaps.app/s4H5H6ABhL/Wokowice_-_tereny_wzd%C5%82u%C5%BC_A4","t":"Lifer","n":1},{"d":"2026-11-01","l":"Wokowice","lu":null,"c":"https://ebird.org/checklist/S407088230","gm":"https://www.google.com/maps?q=50.0041819,20.7006825","om":"https://omaps.app/s4H5H4r8rx/Wokowice","t":"Lifer","n":1},{"d":"2026-10-31","l":"Luszowice (wieś)","lu":"https://ebird.org/species/wiltit1/L28516747","c":"https://ebird.org/checklist/S406768504","gm":"https://www.google.com/maps?q=50.17405,19.40254","om":"https://omaps.app/s4Hty2qNVf/Luszowice_%28wie%C5%9B%29","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"świergotek rdzawogardły","en":"Red-throated Pipit","la":"Anthus cervinus","u":"https://ebird.org/species/retpip/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-11-02","l":"Wokowice-Bielcza pola","lu":"https://ebird.org/species/retpip/L68719489","c":"https://ebird.org/checklist/S407434565","gm":"https://www.google.com/maps?q=50.01157,20.71839","om":"https://omaps.app/s4H5NRczEX/Wokowice-Bielcza_pola","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"lodówka","en":"Long-tailed Duck","la":"Clangula hyemalis","u":"https://ebird.org/species/lotduc/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-11-01","l":"Wróblówka-Długopole--Żwirownia","lu":"https://ebird.org/species/lotduc/L9134446","c":"https://ebird.org/checklist/S407209526","gm":"https://www.google.com/maps?q=49.4709301,19.8845743","om":"https://omaps.app/s4Hwmj_YAu/Wr%C3%B3bl%C3%B3wka-D%C5%82ugopole--%C5%BBwirownia","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"orzechówka","en":"Northern Nutcracker","la":"Nucifraga caryocatactes","u":"https://ebird.org/species/eurnut3/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-11-01","l":"Ratułów, Małopolskie, PL (49, 353, 19, 912)","lu":null,"c":"https://ebird.org/checklist/S407212716","gm":"https://www.google.com/maps?q=49.3530308,19.9115786","om":"https://omaps.app/s4HwOQPhO8/Ratu%C5%82%C3%B3w%2C_Ma%C5%82opolskie%2C_PL_%2849%2C_353%2C_19%2C_912%29","t":"Lifer","n":1},{"d":"2026-10-29","l":"Sądelska 111A, Murzasichle PL-Malopolské 49.30202, 20.04025","lu":null,"c":"https://ebird.org/checklist/S406336588","gm":"https://www.google.com/maps?q=49.302025,20.040255","om":"https://omaps.app/s4HwSqCcX4/S%C4%85delska_111A%2C_Murzasichle_PL-Malopolsk%C3%A9_49.30202%2C_20.04025","t":"Lifer","n":1},{"d":"2026-10-29","l":"Tatrzański PN--Morskie Oko","lu":"https://ebird.org/species/eurnut3/L57075708","c":"https://ebird.org/checklist/S406347079","gm":"https://www.google.com/maps?q=49.1964668,20.0698053","om":"https://omaps.app/s4Ha6O-lKR/Tatrza%C5%84ski_PN--Morskie_Oko","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"pluszcz","en":"White-throated Dipper","la":"Cinclus cinclus","u":"https://ebird.org/species/whtdip1/PL-MA","v":"Lifer","ny":1,"obs":[{"d":"2026-10-30","l":"Witów--pola","lu":"https://ebird.org/species/whtdip1/L27897731","c":"https://ebird.org/checklist/S406528380","gm":"https://www.google.com/maps?q=49.3247231,19.8192885","om":"https://omaps.app/s4HwJPddze/Wit%C3%B3w--pola","t":"Lifer","n":1},{"d":"2026-10-29","l":"Zakopane--centrum miasta","lu":"https://ebird.org/species/whtdip1/L10248769","c":"https://ebird.org/checklist/S406226840","gm":"https://www.google.com/maps?q=49.2962679,19.9486334","om":"https://omaps.app/s4HwG9UrDT/Zakopane--centrum_miasta","t":"Lifer","n":1}]},{"r":"małopolskie","pl":"śpiewak","en":"Song Thrush","la":"Turdus philomelos","u":"https://ebird.org/species/sonthr1/PL-MA","v":"Rare","ny":0,"obs":[{"d":"2026-11-02","l":"65 Praska, Kraków, Województwo małopolskie, PL (50, 046, 19, 907)","lu":null,"c":"https://ebird.org/checklist/S407416629","gm":"https://www.google.com/maps?q=50.0458887,19.9068782","om":"https://omaps.app/s4H4Mt1x9-/65_Praska%2C_Krak%C3%B3w%2C_Wojew%C3%B3dztwo_ma%C5%82opolskie%2C_PL_%2850%2C_046%2C_19%2C_907%29","t":"Rare","n":1}]},{"r":"małopolskie","pl":"pierwiosnek","en":"Common Chiffchaff","la":"Phylloscopus collybita","u":"https://ebird.org/species/comchi1/PL-MA","v":"Rare","ny":0,"obs":[{"d":"2026-11-01","l":"Kraków--Górka Pychowicka & łąki","lu":"https://ebird.org/species/comchi1/L7155349","c":"https://ebird.org/checklist/S407209213","gm":"https://www.google.com/maps?q=50.0283821,19.8819816","om":"https://omaps.app/s4H4MLbQ_S/Krak%C3%B3w--G%C3%B3rka_Pychowicka_%26_%C5%82%C4%85ki","t":"Rare","n":1}]},{"r":"małopolskie","pl":"kląskawka","en":"European Stonechat","la":"Saxicola rubicola","u":"https://ebird.org/species/stonec4/PL-MA","v":"Rare","ny":0,"obs":[{"d":"2026-11-02","l":"Wróblówka-Długopole--Żwirownia","lu":"https://ebird.org/species/stonec4/L9134446","c":"https://ebird.org/checklist/S407608834","gm":"https://www.google.com/maps?q=49.4709301,19.8845743","om":"https://omaps.app/s4Hwmj_YAu/Wr%C3%B3bl%C3%B3wka-D%C5%82ugopole--%C5%BBwirownia","t":"Rare","n":1}]},{"r":"małopolskie","pl":"droździk","en":"Redwing","la":"Turdus iliacus","u":"https://ebird.org/species/redwin/PL-MA","v":"Year tick","ny":1,"obs":[{"d":"2026-11-03","l":"Luszowice (wieś)","lu":"https://ebird.org/species/redwin/L28516747","c":"https://ebird.org/checklist/S407807262","gm":"https://www.google.com/maps?q=50.17405,19.40254","om":"https://omaps.app/s4Hty2qNVf/Luszowice_%28wie%C5%9B%29","t":"Year tick","n":1},{"d":"2026-11-03","l":"Balin (wieś)","lu":null,"c":"https://ebird.org/checklist/S407806684","gm":"https://www.google.com/maps?q=50.165181,19.390328","om":"https://omaps.app/s4HtywdY28/Balin_%28wie%C5%9B%29","t":"Year tick","n":1},{"d":"2026-11-03","l":"12A Dworcowa, Brzesko, Małopolskie, PL (49, 987, 20, 609)","lu":null,"c":"https://ebird.org/checklist/S407651173","gm":"https://www.google.com/maps?q=49.9866117,20.6085267","om":"https://omaps.app/s4H5GP8ZG_/12A_Dworcowa%2C_Brzesko%2C_Ma%C5%82opolskie%2C_PL_%2849%2C_987%2C_20%2C_609%29","t":"Year tick","n":1},{"d":"2026-11-02","l":"Cmentarz Komunalny w Chrzanowie","lu":null,"c":"https://ebird.org/checklist/S407522556","gm":"https://www.google.com/maps?q=50.149649,19.402486","om":"https://omaps.app/s4HtyWKn5F/Cmentarz_Komunalny_w_Chrzanowie","t":"Year tick","n":1},{"d":"2026-11-02","l":"Balin","lu":null,"c":"https://ebird.org/checklist/S407458477","gm":"https://www.google.com/maps?q=50.1718806,19.3480492","om":"https://omaps.app/s4HtyjgU4H/Balin","t":"Year tick","n":1},{"d":"2026-11-02","l":"Wokowice-Bielcza pola","lu":"https://ebird.org/species/redwin/L68719489","c":"https://ebird.org/checklist/S407434565","gm":"https://www.google.com/maps?q=50.01157,20.71839","om":"https://omaps.app/s4H5NRczEX/Wokowice-Bielcza_pola","t":"Year tick","n":1},{"d":"2026-11-02","l":"65 Praska, Kraków, Województwo małopolskie, PL (50, 046, 19, 907)","lu":null,"c":"https://ebird.org/checklist/S407416629","gm":"https://www.google.com/maps?q=50.0458887,19.9068782","om":"https://omaps.app/s4H4Mt1x9-/65_Praska%2C_Krak%C3%B3w%2C_Wojew%C3%B3dztwo_ma%C5%82opolskie%2C_PL_%2850%2C_046%2C_19%2C_907%29","t":"Year tick","n":1},{"d":"2026-11-01","l":"Ratułów, Małopolskie, PL (49, 353, 19, 912)","lu":null,"c":"https://ebird.org/checklist/S407212716","gm":"https://www.google.com/maps?q=49.3530308,19.9115786","om":"https://omaps.app/s4HwOQPhO8/Ratu%C5%82%C3%B3w%2C_Ma%C5%82opolskie%2C_PL_%2849%2C_353%2C_19%2C_912%29","t":"Year tick","n":1},{"d":"2026-11-01","l":"Żwirownia Brzegi","lu":"https://ebird.org/species/redwin/L8271201","c":"https://ebird.org/checklist/S407188567","gm":"https://www.google.com/maps?q=50.02968,20.07706","om":"https://omaps.app/s4H4YPnREW/%C5%BBwirownia_Brzegi","t":"Year tick","n":1},{"d":"2026-11-01","l":"Kraków--Górka Pychowicka & łąki","lu":"https://ebird.org/species/redwin/L7155349","c":"https://ebird.org/checklist/S407209213","gm":"https://www.google.com/maps?q=50.0283821,19.8819816","om":"https://omaps.app/s4H4MLbQ_S/Krak%C3%B3w--G%C3%B3rka_Pychowicka_%26_%C5%82%C4%85ki","t":"Year tick","n":1},{"d":"2026-11-01","l":"Charzewice--Żwirownia","lu":"https://ebird.org/species/redwin/L18288540","c":"https://ebird.org/checklist/S407242159","gm":"https://www.google.com/maps?q=49.8603167,20.7513164","om":"https://omaps.app/s4Hz4g8ZpN/Charzewice--%C5%BBwirownia","t":"Year tick","n":1},{"d":"2026-11-01","l":"Nowe Brzesko - Podwale","lu":null,"c":"https://ebird.org/checklist/S407129102","gm":"https://www.google.com/maps?q=50.1261216,20.3755483","om":"https://omaps.app/s4H412TKjH/Nowe_Brzesko_-_Podwale","t":"Year tick","n":1},{"d":"2026-11-01","l":"Wokowice","lu":null,"c":"https://ebird.org/checklist/S407088230","gm":"https://www.google.com/maps?q=50.0041819,20.7006825","om":"https://omaps.app/s4H5H4r8rx/Wokowice","t":"Year tick","n":1},{"d":"2026-11-01","l":"Kraków--Azory (obszar ogólny)","lu":"https://ebird.org/species/redwin/L16561182","c":"https://ebird.org/checklist/S407177039","gm":"https://www.google.com/maps?q=50.0882907,19.9096298","om":"https://omaps.app/s4H4O4JcqA/Krak%C3%B3w--Azory_%28obszar_og%C3%B3lny%29","t":"Year tick","n":1},{"d":"2026-10-31","l":"30b Kantego, Kęty, Województwo małopolskie, PL (49.894, 19.225)","lu":null,"c":"https://ebird.org/checklist/S406960392","gm":"https://www.google.com/maps?q=49.8939011,19.2249487","om":"https://omaps.app/s4HnuZ_JFy/30b_Kantego%2C_K%C4%99ty%2C_Wojew%C3%B3dztwo_ma%C5%82opolskie%2C_PL_%2849.894%2C_19.225%29","t":"Year tick","n":1},{"d":"2026-10-31","l":"Grądy Jodłowskie, Województwo małopolskie, PL (50, 003, 20, 572)","lu":null,"c":"https://ebird.org/checklist/S406888937","gm":"https://www.google.com/maps?q=50.0028583,20.5724033","om":"https://omaps.app/s4H5Goyu1H/Gr%C4%85dy_Jod%C5%82owskie%2C_Wojew%C3%B3dztwo_ma%C5%82opolskie%2C_PL_%2850%2C_003%2C_20%2C_572%29","t":"Year tick","n":1},{"d":"2026-10-31","l":"Zbiornik Dobczycki (obszar ogólny)","lu":"https://ebird.org/species/redwin/L6529661","c":"https://ebird.org/checklist/S406825768","gm":"https://www.google.com/maps?q=49.8667306,20.0475917","om":"https://omaps.app/s4Hy4i-jxH/Zbiornik_Dobczycki_%28obszar_og%C3%B3lny%29","t":"Year tick","n":1},{"d":"2026-10-30","l":"Partyzantów, Brzesko, Małopolskie, PL (49, 974, 20, 613)","lu":null,"c":"https://ebird.org/checklist/S406676354","gm":"https://www.google.com/maps?q=49.9741584,20.6132708","om":"https://omaps.app/s4H5GSkDCC/Partyzant%C3%B3w%2C_Brzesko%2C_Ma%C5%82opolskie%2C_PL_%2849%2C_974%2C_20%2C_613%29","t":"Year tick","n":1},{"d":"2026-10-30","l":"Balin--pola (zachód)","lu":"https://ebird.org/species/redwin/L76602033","c":"https://ebird.org/checklist/S406614305","gm":"https://www.google.com/maps?q=50.168545,19.353282","om":"https://omaps.app/s4Htyh6TqM/Balin--pola_%28zach%C3%B3d%29","t":"Year tick","n":1},{"d":"2026-10-30","l":"Raba Wyżna (obszar ogólny)","lu":"https://ebird.org/species/redwin/L28102324","c":"https://ebird.org/checklist/S406553357","gm":"https://www.google.com/maps?q=49.5615965,19.8638792","om":"https://omaps.app/s4HwuoKNP0/Raba_Wy%C5%BCna_%28obszar_og%C3%B3lny%29","t":"Year tick","n":1},{"d":"2026-10-29","l":"Kraków--Kampus 600-lecia Odnowienia UJ","lu":"https://ebird.org/species/redwin/L76849373","c":"https://ebird.org/checklist/S406218533","gm":"https://www.google.com/maps?q=50.0280558,19.9047187","om":"https://omaps.app/s4H4MPcjFp/Krak%C3%B3w--Kampus_600-lecia_Odnowienia_UJ","t":"Year tick","n":1},{"d":"2026-10-29","l":"Trzebinia--Rafineria ORLEN Południe","lu":null,"c":"https://ebird.org/checklist/S406248311","gm":"https://www.google.com/maps?q=50.1594077,19.4489986","om":"https://omaps.app/s4HtzOGubi/Trzebinia--Rafineria_ORLEN_Po%C5%82udnie","t":"Year tick","n":1}]},{"r":"małopolskie","pl":"dzięcioł białoszyi","en":"Syrian Woodpecker","la":"Dendrocopos syriacus","u":"https://ebird.org/species/syrwoo1/PL-MA","v":"Year tick","ny":1,"obs":[{"d":"2026-11-02","l":"Kraków--Azory (obszar ogólny)","lu":"https://ebird.org/species/syrwoo1/L16561182","c":"https://ebird.org/checklist/S407494502","gm":"https://www.google.com/maps?q=50.0882907,19.9096298","om":"https://omaps.app/s4H4O4JcqA/Krak%C3%B3w--Azory_%28obszar_og%C3%B3lny%29","t":"Year tick","n":1}]},{"r":"małopolskie","pl":"mysikrólik","en":"Goldcrest","la":"Regulus regulus","u":"https://ebird.org/species/goldcr1/PL-MA","v":"Year tick","ny":1,"obs":[{"d":"2026-11-02","l":"Młoszowa--Góra Bożnowia, Dolina Doły & łąki","lu":"https://ebird.org/species/goldcr1/L40054020","c":"https://ebird.org/checklist/S407447631","gm":"https://www.google.com/maps?q=50.166919,19.4880767","om":"https://omaps.app/s4Htzx08up/M%C5%82oszowa--G%C3%B3ra_Bo%C5%BCnowia%2C_Dolina_Do%C5%82y_%26_%C5%82%C4%85ki","t":"Year tick","n":1},{"d":"2026-11-01","l":"Kraków--Górka Pychowicka & łąki","lu":"https://ebird.org/species/goldcr1/L7155349","c":"https://ebird.org/checklist/S407209213","gm":"https://www.google.com/maps?q=50.0283821,19.8819816","om":"https://omaps.app/s4H4MLbQ_S/Krak%C3%B3w--G%C3%B3rka_Pychowicka_%26_%C5%82%C4%85ki","t":"Year tick","n":1},{"d":"2026-11-01","l":"Wokowice - tereny wzdłuż A4","lu":null,"c":"https://ebird.org/checklist/S407113636","gm":"https://www.google.com/maps?q=50.0043196,20.6984384","om":"https://omaps.app/s4H5H6ABhL/Wokowice_-_tereny_wzd%C5%82u%C5%BC_A4","t":"Year tick","n":1},{"d":"2026-11-01","l":"Puszcza Niepołomicka--łąki nad Drwinką","lu":"https://ebird.org/species/goldcr1/L10789937","c":"https://ebird.org/checklist/S407270520","gm":"https://www.google.com/maps?q=50.0786935,20.4018465","om":"https://omaps.app/s4H5KhgLE1/Puszcza_Niepo%C5%82omicka--%C5%82%C4%85ki_nad_Drwink%C4%85","t":"Year tick","n":1},{"d":"2026-10-31","l":"Wokowice","lu":null,"c":"https://ebird.org/checklist/S406806647","gm":"https://www.google.com/maps?q=50.0041819,20.7006825","om":"https://omaps.app/s4H5H4r8rx/Wokowice","t":"Year tick","n":1},{"d":"2026-10-31","l":"Jezioro Chechelskie","lu":"https://ebird.org/species/goldcr1/L23468559","c":"https://ebird.org/checklist/S406780209","gm":"https://www.google.com/maps?q=50.1358461,19.4446006","om":"https://omaps.app/s4Htxp_hqg/Jezioro_Chechelskie","t":"Year tick","n":1},{"d":"2026-10-31","l":"Zbiornik Dobczycki (obszar ogólny)","lu":"https://ebird.org/species/goldcr1/L6529661","c":"https://ebird.org/checklist/S406825768","gm":"https://www.google.com/maps?q=49.8667306,20.0475917","om":"https://omaps.app/s4Hy4i-jxH/Zbiornik_Dobczycki_%28obszar_og%C3%B3lny%29","t":"Year tick","n":1},{"d":"2026-10-31","l":"Wisła--Zapora Łączany","lu":"https://ebird.org/species/goldcr1/L8254090","c":"https://ebird.org/checklist/S406757854","gm":"https://www.google.com/maps?q=49.9874979,19.5963058","om":"https://omaps.app/s4HtWf7w0K/Wis%C5%82a--Zapora_%C5%81%C4%85czany","t":"Year tick","n":1},{"d":"2026-10-30","l":"Raba Wyżna (obszar ogólny)","lu":"https://ebird.org/species/goldcr1/L28102324","c":"https://ebird.org/checklist/S406553357","gm":"https://www.google.com/maps?q=49.5615965,19.8638792","om":"https://omaps.app/s4HwuoKNP0/Raba_Wy%C5%BCna_%28obszar_og%C3%B3lny%29","t":"Year tick","n":1},{"d":"2026-10-29","l":"Tatrzański PN--Dolina Strążyska, Grzybowiec, Giewont","lu":"https://ebird.org/species/goldcr1/L6637202","c":"https://ebird.org/checklist/S406361439","gm":"https://www.google.com/maps?q=49.2729009,19.9335766","om":"https://omaps.app/s4HwGWtp6C/Tatrza%C5%84ski_PN--Dolina_Str%C4%85%C5%BCyska%2C_Grzybowiec%2C_Giewont","t":"Year tick","n":1}]},{"r":"małopolskie","pl":"paszkot","en":"Mistle Thrush","la":"Turdus viscivorus","u":"https://ebird.org/species/misthr1/PL-MA","v":"Year tick","ny":1,"obs":[{"d":"2026-11-01","l":"Puszcza Niepołomicka--łąki nad Drwinką","lu":"https://ebird.org/species/misthr1/L10789937","c":"https://ebird.org/checklist/S407270520","gm":"https://www.google.com/maps?q=50.0786935,20.4018465","om":"https://omaps.app/s4H5KhgLE1/Puszcza_Niepo%C5%82omicka--%C5%82%C4%85ki_nad_Drwink%C4%85","t":"Year tick","n":1},{"d":"2026-10-31","l":"Grądy Jodłowskie, Województwo małopolskie, PL (50, 003, 20, 572)","lu":null,"c":"https://ebird.org/checklist/S406888937","gm":"https://www.google.com/maps?q=50.0028583,20.5724033","om":"https://omaps.app/s4H5Goyu1H/Gr%C4%85dy_Jod%C5%82owskie%2C_Wojew%C3%B3dztwo_ma%C5%82opolskie%2C_PL_%2850%2C_003%2C_20%2C_572%29","t":"Year tick","n":1},{"d":"2026-10-31","l":"Jezioro Chechelskie","lu":"https://ebird.org/species/misthr1/L23468559","c":"https://ebird.org/checklist/S406780209","gm":"https://www.google.com/maps?q=50.1358461,19.4446006","om":"https://omaps.app/s4Htxp_hqg/Jezioro_Chechelskie","t":"Year tick","n":1},{"d":"2026-10-31","l":"Zbiornik Dobczycki (obszar ogólny)","lu":"https://ebird.org/species/misthr1/L6529661","c":"https://ebird.org/checklist/S406825768","gm":"https://www.google.com/maps?q=49.8667306,20.0475917","om":"https://omaps.app/s4Hy4i-jxH/Zbiornik_Dobczycki_%28obszar_og%C3%B3lny%29","t":"Year tick","n":1},{"d":"2026-10-30","l":"Balin--pola (zachód)","lu":"https://ebird.org/species/misthr1/L76602033","c":"https://ebird.org/checklist/S406614305","gm":"https://www.google.com/maps?q=50.168545,19.353282","om":"https://omaps.app/s4Htyh6TqM/Balin--pola_%28zach%C3%B3d%29","t":"Year tick","n":1}]},{"r":"małopolskie","pl":"rożeniec","en":"Northern Pintail","la":"Anas acuta","u":"https://ebird.org/species/norpin/PL-MA","v":"Year tick","ny":1,"obs":[{"d":"2026-11-01","l":"Charzewice--Żwirownia","lu":"https://ebird.org/species/norpin/L18288540","c":"https://ebird.org/checklist/S407242159","gm":"https://www.google.com/maps?q=49.8603167,20.7513164","om":"https://omaps.app/s4Hz4g8ZpN/Charzewice--%C5%BBwirownia","t":"Year tick","n":1},{"d":"2026-10-31","l":"Zbiornik Dobczycki (obszar ogólny)","lu":"https://ebird.org/species/norpin/L6529661","c":"https://ebird.org/checklist/S406825768","gm":"https://www.google.com/maps?q=49.8667306,20.0475917","om":"https://omaps.app/s4Hy4i-jxH/Zbiornik_Dobczycki_%28obszar_og%C3%B3lny%29","t":"Year tick","n":1}]},{"r":"małopolskie","pl":"potrzeszcz","en":"Corn Bunting","la":"Emberiza calandra","u":"https://ebird.org/species/corbun1/PL-MA","v":"Year tick","ny":1,"obs":[{"d":"2026-11-02","l":"Sułoszowa--pola (południe)","lu":"https://ebird.org/species/corbun1/L11650172","c":"https://ebird.org/checklist/S407531711","gm":"https://www.google.com/maps?q=50.2545806,19.7095722","om":"https://omaps.app/s4H4qkggYb/Su%C5%82oszowa--pola_%28po%C5%82udnie%29","t":"Year tick","n":1},{"d":"2026-10-31","l":"Wisła--Zapora Łączany","lu":"https://ebird.org/species/corbun1/L8254090","c":"https://ebird.org/checklist/S406757854","gm":"https://www.google.com/maps?q=49.9874979,19.5963058","om":"https://omaps.app/s4HtWf7w0K/Wis%C5%82a--Zapora_%C5%81%C4%85czany","t":"Year tick","n":1}]},{"r":"śląskie","pl":"czubatka","en":"Crested Tit","la":"Lophophanes cristatus","u":"https://ebird.org/species/cretit2/PL-SL","v":"Lifer","ny":1,"obs":[{"d":"2026-11-03","l":"Mysłowice-Brzęczkowice Osiedle, Województwo śląskie, PL (50, 215, 19, 159)","lu":null,"c":"https://ebird.org/checklist/S407751507","gm":"https://www.google.com/maps?q=50.2145973,19.1590021","om":"https://omaps.app/s4Htp3dJOj/Mys%C5%82owice-Brz%C4%99czkowice_Osiedle%2C_Wojew%C3%B3dztwo_%C5%9Bl%C4%85skie%2C_PL_%2850%2C_215%2C_19%2C_159%29","t":"Lifer","n":1},{"d":"2026-11-03","l":"Zbiornik Dziećkowice--część północna","lu":"https://ebird.org/species/cretit2/L58119965","c":"https://ebird.org/checklist/S407685455","gm":"https://www.google.com/maps?q=50.1426386,19.2375315","om":"https://omaps.app/s4HtmVCkR3/Zbiornik_Dzie%C4%87kowice--cz%C4%99%C5%9B%C4%87_p%C3%B3%C5%82nocna","t":"Lifer","n":1},{"d":"2026-11-02","l":"Zbiornik Dziećkowice (obszar ogólny)","lu":"https://ebird.org/species/cretit2/L10859541","c":"https://ebird.org/checklist/S407519440","gm":"https://www.google.com/maps?q=50.1302487,19.2328565","om":"https://omaps.app/s4Htk26fyo/Zbiornik_Dzie%C4%87kowice_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1},{"d":"2026-11-01","l":"Ujsoły [E9A2N4]","lu":null,"c":"https://ebird.org/checklist/S407436470","gm":"https://www.google.com/maps?q=49.529018,19.241461","om":"https://omaps.app/s4HluVPp7A/Ujso%C5%82y_%5BE9A2N4%5D","t":"Lifer","n":1},{"d":"2026-11-01","l":"Ruda Śląska--Halemba (obszar ogólny)","lu":"https://ebird.org/species/cretit2/L20675921","c":"https://ebird.org/checklist/S407448050","gm":"https://www.google.com/maps?q=50.2536366,18.8445159","om":"https://omaps.app/s4Hs-lODMK/Ruda_%C5%9Al%C4%85ska--Halemba_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1},{"d":"2026-10-31","l":"Zbiornik Dzierżno Duże (obszar ogólny)","lu":"https://ebird.org/species/cretit2/L10859913","c":"https://ebird.org/checklist/S406913740","gm":"https://www.google.com/maps?q=50.3673206,18.5669148","om":"https://omaps.app/s4HuNGAio1/Zbiornik_Dzier%C5%BCno_Du%C5%BCe_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1},{"d":"2026-10-31","l":"Bielsko-Biała--Cygański Las","lu":"https://ebird.org/species/cretit2/L22767180","c":"https://ebird.org/checklist/S406849218","gm":"https://www.google.com/maps?q=49.7811992,19.0452085","om":"https://omaps.app/s4Hng5aGFA/Bielsko-Bia%C5%82a--Cyga%C5%84ski_Las","t":"Lifer","n":1},{"d":"2026-10-31","l":"Dolina Trzech Stawów--część południowa & dolina Leśnego Potoku","lu":"https://ebird.org/species/cretit2/L65887987","c":"https://ebird.org/checklist/S406981983","gm":"https://www.google.com/maps?q=50.23555,19.04214","om":"https://omaps.app/s4HtqTEowg/Dolina_Trzech_Staw%C3%B3w--cz%C4%99%C5%9B%C4%87_po%C5%82udniowa_%26_dolina_Le%C5%9Bnego_Potoku","t":"Lifer","n":1},{"d":"2026-10-30","l":"Staw Kokotek I","lu":"https://ebird.org/species/cretit2/L43982457","c":"https://ebird.org/checklist/S406521279","gm":"https://www.google.com/maps?q=50.628322,18.734481","om":"https://omaps.app/s4NERBkomi/Staw_Kokotek_I","t":"Lifer","n":1},{"d":"2026-10-30","l":"Jaworzno--Rezerwat przyrody Dolina Żabnika","lu":"https://ebird.org/species/cretit2/L11977430","c":"https://ebird.org/checklist/S406637375","gm":"https://www.google.com/maps?q=50.2237031,19.3764754","om":"https://omaps.app/s4Ht4t7whL/Jaworzno--Rezerwat_przyrody_Dolina_%C5%BBabnika","t":"Lifer","n":1}]},{"r":"śląskie","pl":"czeczotka","en":"Redpoll","la":"Acanthis flammea","u":"https://ebird.org/species/redpol1/PL-SL","v":"Lifer","ny":1,"obs":[{"d":"2026-11-03","l":"Zbiornik Dziećkowice--część północna","lu":"https://ebird.org/species/redpol1/L58119965","c":"https://ebird.org/checklist/S407702052","gm":"https://www.google.com/maps?q=50.1426386,19.2375315","om":"https://omaps.app/s4HtmVCkR3/Zbiornik_Dzie%C4%87kowice--cz%C4%99%C5%9B%C4%87_p%C3%B3%C5%82nocna","t":"Lifer","n":1},{"d":"2026-11-03","l":"Zbiornik Dziećkowice (obszar ogólny)","lu":"https://ebird.org/species/redpol1/L10859541","c":"https://ebird.org/checklist/S407801041","gm":"https://www.google.com/maps?q=50.1302487,19.2328565","om":"https://omaps.app/s4Htk26fyo/Zbiornik_Dzie%C4%87kowice_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1},{"d":"2026-11-01","l":"Zbiornik Dziećkowice--część południowa","lu":"https://ebird.org/species/redpol1/L58120026","c":"https://ebird.org/checklist/S407113042","gm":"https://www.google.com/maps?q=50.1153255,19.2290657","om":"https://omaps.app/s4HtkeGjtv/Zbiornik_Dzie%C4%87kowice--cz%C4%99%C5%9B%C4%87_po%C5%82udniowa","t":"Lifer","n":1},{"d":"2026-11-01","l":"Katowice--Staw Janów & okolica","lu":"https://ebird.org/species/redpol1/L22774039","c":"https://ebird.org/checklist/S407087079","gm":"https://www.google.com/maps?q=50.248592,19.0954213","om":"https://omaps.app/s4HtrOK81D/Katowice--Staw_Jan%C3%B3w_%26_okolica","t":"Lifer","n":1},{"d":"2026-10-31","l":"Rezerwat przyrody Łężczok","lu":"https://ebird.org/species/redpol1/L6111271","c":"https://ebird.org/checklist/S406846580","gm":"https://www.google.com/maps?q=50.1374965,18.2767431","om":"https://omaps.app/s4Hp1_YRTf/Rezerwat_przyrody_%C5%81%C4%99%C5%BCczok","t":"Lifer","n":1},{"d":"2026-10-29","l":"Bytom--Bagno Bączek & staw Brantka","lu":"https://ebird.org/species/redpol1/L25808496","c":"https://ebird.org/checklist/S406265285","gm":"https://www.google.com/maps?q=50.3629159,18.8654704","om":"https://omaps.app/s4HucRJNO7/Bytom--Bagno_B%C4%85czek_%26_staw_Brantka","t":"Lifer","n":1},{"d":"2026-10-29","l":"Mysłowice-Brzęczkowice Osiedle, Województwo śląskie, PL (50, 215, 19, 159)","lu":null,"c":"https://ebird.org/checklist/S406411155","gm":"https://www.google.com/maps?q=50.2145973,19.1590021","om":"https://omaps.app/s4Htp3dJOj/Mys%C5%82owice-Brz%C4%99czkowice_Osiedle%2C_Wojew%C3%B3dztwo_%C5%9Bl%C4%85skie%2C_PL_%2850%2C_215%2C_19%2C_159%29","t":"Lifer","n":1},{"d":"2026-10-29","l":"Zbiornik Świerklaniec","lu":"https://ebird.org/species/redpol1/L10477000","c":"https://ebird.org/checklist/S406243227","gm":"https://www.google.com/maps?q=50.4281387,18.9741072","om":"https://omaps.app/s4Huf1CYLH/Zbiornik_%C5%9Awierklaniec","t":"Lifer","n":1}]},{"r":"śląskie","pl":"dzięcioł zielonosiwy","en":"Gray-headed Woodpecker","la":"Picus canus","u":"https://ebird.org/species/gyfwoo1/PL-SL","v":"Lifer","ny":1,"obs":[{"d":"2026-11-01","l":"Rokitnica","lu":null,"c":"https://ebird.org/checklist/S407151670","gm":"https://www.google.com/maps?q=50.362222,18.7844676","om":"https://omaps.app/s4HuZRWNPZ/Rokitnica","t":"Lifer","n":1},{"d":"2026-11-01","l":"Katowice--Staw Janów & okolica","lu":"https://ebird.org/species/gyfwoo1/L22774039","c":"https://ebird.org/checklist/S407087079","gm":"https://www.google.com/maps?q=50.248592,19.0954213","om":"https://omaps.app/s4HtrOK81D/Katowice--Staw_Jan%C3%B3w_%26_okolica","t":"Lifer","n":1},{"d":"2026-10-31","l":"Dolina Brynicy--Wymysłów łąki","lu":"https://ebird.org/species/gyfwoo1/L49510015","c":"https://ebird.org/checklist/S407467575","gm":"https://www.google.com/maps?q=50.4055664,18.9753605","om":"https://omaps.app/s4HufVBPPd/Dolina_Brynicy--Wymys%C5%82%C3%B3w_%C5%82%C4%85ki","t":"Lifer","n":1},{"d":"2026-10-30","l":"Świerklaniec Park","lu":"https://ebird.org/species/gyfwoo1/L21735931","c":"https://ebird.org/checklist/S406514991","gm":"https://www.google.com/maps?q=50.4326675,18.9556812","om":"https://omaps.app/s4HufxvqWc/%C5%9Awierklaniec_Park","t":"Lifer","n":1},{"d":"2026-10-30","l":"Staw Posmyk","lu":"https://ebird.org/species/gyfwoo1/L11627791","c":"https://ebird.org/checklist/S406519226","gm":"https://www.google.com/maps?q=50.6130338,18.7098008","om":"https://omaps.app/s4Hu63ogl3/Staw_Posmyk","t":"Lifer","n":1}]},{"r":"śląskie","pl":"pokrzywnica","en":"Dunnock","la":"Prunella modularis","u":"https://ebird.org/species/dunnoc1/PL-SL","v":"Lifer","ny":1,"obs":[{"d":"2026-11-02","l":"Kochłówka--Rozlewisko w Dolinie Kochłówki (Ruda Śląska)","lu":"https://ebird.org/species/dunnoc1/L22768082","c":"https://ebird.org/checklist/S407424993","gm":"https://www.google.com/maps?q=50.261548,18.883684","om":"https://omaps.app/s4Hs-28zPt/Koch%C5%82%C3%B3wka--Rozlewisko_w_Dolinie_Koch%C5%82%C3%B3wki_%28Ruda_%C5%9Al%C4%85ska%29","t":"Lifer","n":1},{"d":"2026-11-01","l":"Zbiornik Dziećkowice--część północna","lu":"https://ebird.org/species/dunnoc1/L58119965","c":"https://ebird.org/checklist/S407092479","gm":"https://www.google.com/maps?q=50.1426386,19.2375315","om":"https://omaps.app/s4HtmVCkR3/Zbiornik_Dzie%C4%87kowice--cz%C4%99%C5%9B%C4%87_p%C3%B3%C5%82nocna","t":"Lifer","n":1},{"d":"2026-10-30","l":"Świerklaniec Park","lu":"https://ebird.org/species/dunnoc1/L21735931","c":"https://ebird.org/checklist/S406514991","gm":"https://www.google.com/maps?q=50.4326675,18.9556812","om":"https://omaps.app/s4HufxvqWc/%C5%9Awierklaniec_Park","t":"Lifer","n":1},{"d":"2026-10-30","l":"Staw Posmyk","lu":"https://ebird.org/species/dunnoc1/L11627791","c":"https://ebird.org/checklist/S406519226","gm":"https://www.google.com/maps?q=50.6130338,18.7098008","om":"https://omaps.app/s4Hu63ogl3/Staw_Posmyk","t":"Lifer","n":1}]},{"r":"śląskie","pl":"jer","en":"Brambling","la":"Fringilla montifringilla","u":"https://ebird.org/species/brambl/PL-SL","v":"Lifer","ny":1,"obs":[{"d":"2026-11-03","l":"Mysłowice-Brzęczkowice Osiedle, Województwo śląskie, PL (50, 215, 19, 159)","lu":null,"c":"https://ebird.org/checklist/S407751507","gm":"https://www.google.com/maps?q=50.2145973,19.1590021","om":"https://omaps.app/s4Htp3dJOj/Mys%C5%82owice-Brz%C4%99czkowice_Osiedle%2C_Wojew%C3%B3dztwo_%C5%9Bl%C4%85skie%2C_PL_%2850%2C_215%2C_19%2C_159%29","t":"Lifer","n":1},{"d":"2026-11-02","l":"Turza Śląska, śląskie, PL (49, 971, 18, 456)","lu":null,"c":"https://ebird.org/checklist/S407459375","gm":"https://www.google.com/maps?q=49.9709629,18.4560143","om":"https://omaps.app/s4HsDV_OqY/Turza_%C5%9Al%C4%85ska%2C_%C5%9Bl%C4%85skie%2C_PL_%2849%2C_971%2C_18%2C_456%29","t":"Lifer","n":1},{"d":"2026-11-01","l":"Zbiornik Kuźnica Warężyńska--część północna","lu":"https://ebird.org/species/brambl/L43547351","c":"https://ebird.org/checklist/S407368327","gm":"https://www.google.com/maps?q=50.3990246,19.2066016","om":"https://omaps.app/s4HvM4p-Sw/Zbiornik_Ku%C5%BAnica_War%C4%99%C5%BCy%C5%84ska--cz%C4%99%C5%9B%C4%87_p%C3%B3%C5%82nocna","t":"Lifer","n":1},{"d":"2026-11-01","l":"Rokitnica","lu":null,"c":"https://ebird.org/checklist/S407151670","gm":"https://www.google.com/maps?q=50.362222,18.7844676","om":"https://omaps.app/s4HuZRWNPZ/Rokitnica","t":"Lifer","n":1},{"d":"2026-10-30","l":"Świerklaniec Park","lu":"https://ebird.org/species/brambl/L21735931","c":"https://ebird.org/checklist/S406514991","gm":"https://www.google.com/maps?q=50.4326675,18.9556812","om":"https://omaps.app/s4HufxvqWc/%C5%9Awierklaniec_Park","t":"Lifer","n":1},{"d":"2026-10-30","l":"Staw Posmyk","lu":"https://ebird.org/species/brambl/L11627791","c":"https://ebird.org/checklist/S406519226","gm":"https://www.google.com/maps?q=50.6130338,18.7098008","om":"https://omaps.app/s4Hu63ogl3/Staw_Posmyk","t":"Lifer","n":1},{"d":"2026-10-30","l":"Zbiornik Świerklaniec","lu":"https://ebird.org/species/brambl/L10477000","c":"https://ebird.org/checklist/S406515070","gm":"https://www.google.com/maps?q=50.4281387,18.9741072","om":"https://omaps.app/s4Huf1CYLH/Zbiornik_%C5%9Awierklaniec","t":"Lifer","n":1}]},{"r":"śląskie","pl":"makolągwa","en":"Eurasian Linnet","la":"Linaria cannabina","u":"https://ebird.org/species/eurlin1/PL-SL","v":"Lifer","ny":1,"obs":[{"d":"2026-11-02","l":"Gierałtowice--zbiornik retencyjny","lu":"https://ebird.org/species/eurlin1/L67166830","c":"https://ebird.org/checklist/S407502715","gm":"https://www.google.com/maps?q=50.2162383,18.7174231","om":"https://omaps.app/s4Hs43xy1j/Giera%C5%82towice--zbiornik_retencyjny","t":"Lifer","n":1},{"d":"2026-11-01","l":"Zbiornik Kuźnica Warężyńska--część północna","lu":"https://ebird.org/species/eurlin1/L43547351","c":"https://ebird.org/checklist/S407368327","gm":"https://www.google.com/maps?q=50.3990246,19.2066016","om":"https://omaps.app/s4HvM4p-Sw/Zbiornik_Ku%C5%BAnica_War%C4%99%C5%BCy%C5%84ska--cz%C4%99%C5%9B%C4%87_p%C3%B3%C5%82nocna","t":"Lifer","n":1},{"d":"2026-11-01","l":"Stolarska 20, Żywiec PL-Silesian (49.6816, 19.1750)","lu":null,"c":"https://ebird.org/checklist/S407181063","gm":"https://www.google.com/maps?q=49.681585,19.175042","om":"https://omaps.app/s4HnMhMUbZ/Stolarska_20%2C_%C5%BBywiec_PL-Silesian_%2849.6816%2C_19.1750%29","t":"Lifer","n":1},{"d":"2026-11-01","l":"Zbiornik Dziećkowice--część północna","lu":"https://ebird.org/species/eurlin1/L58119965","c":"https://ebird.org/checklist/S407092479","gm":"https://www.google.com/maps?q=50.1426386,19.2375315","om":"https://omaps.app/s4HtmVCkR3/Zbiornik_Dzie%C4%87kowice--cz%C4%99%C5%9B%C4%87_p%C3%B3%C5%82nocna","t":"Lifer","n":1},{"d":"2026-10-30","l":"Zbiornik Świerklaniec","lu":"https://ebird.org/species/eurlin1/L10477000","c":"https://ebird.org/checklist/S406515070","gm":"https://www.google.com/maps?q=50.4281387,18.9741072","om":"https://omaps.app/s4Huf1CYLH/Zbiornik_%C5%9Awierklaniec","t":"Lifer","n":1},{"d":"2026-10-29","l":"Bytom--Bagno Bączek & staw Brantka","lu":"https://ebird.org/species/eurlin1/L25808496","c":"https://ebird.org/checklist/S406265285","gm":"https://www.google.com/maps?q=50.3629159,18.8654704","om":"https://omaps.app/s4HucRJNO7/Bytom--Bagno_B%C4%85czek_%26_staw_Brantka","t":"Lifer","n":1}]},{"r":"śląskie","pl":"nur czarnoszyi","en":"Arctic Loon","la":"Gavia arctica","u":"https://ebird.org/species/arcloo/PL-SL","v":"Lifer","ny":1,"obs":[{"d":"2026-11-03","l":"Zbiornik Dziećkowice--część północna","lu":"https://ebird.org/species/arcloo/L58119965","c":"https://ebird.org/checklist/S407702052","gm":"https://www.google.com/maps?q=50.1426386,19.2375315","om":"https://omaps.app/s4HtmVCkR3/Zbiornik_Dzie%C4%87kowice--cz%C4%99%C5%9B%C4%87_p%C3%B3%C5%82nocna","t":"Lifer","n":1},{"d":"2026-11-03","l":"Zbiornik Dziećkowice (obszar ogólny)","lu":"https://ebird.org/species/arcloo/L10859541","c":"https://ebird.org/checklist/S407801041","gm":"https://www.google.com/maps?q=50.1302487,19.2328565","om":"https://omaps.app/s4Htk26fyo/Zbiornik_Dzie%C4%87kowice_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1},{"d":"2026-11-01","l":"Zbiornik Kuźnica Warężyńska--część południowa","lu":"https://ebird.org/species/arcloo/L40308104","c":"https://ebird.org/checklist/S407363032","gm":"https://www.google.com/maps?q=50.371765,19.2024006","om":"https://omaps.app/s4HvMH-Wg5/Zbiornik_Ku%C5%BAnica_War%C4%99%C5%BCy%C5%84ska--cz%C4%99%C5%9B%C4%87_po%C5%82udniowa","t":"Lifer","n":1},{"d":"2026-11-01","l":"Zbiornik Pogoria III","lu":"https://ebird.org/species/arcloo/L11500720","c":"https://ebird.org/checklist/S407334884","gm":"https://www.google.com/maps?q=50.3531401,19.2022277","om":"https://omaps.app/s4HvGt0Rg5/Zbiornik_Pogoria_III","t":"Lifer","n":1}]},{"r":"śląskie","pl":"czarnogłówka","en":"Willow Tit","la":"Poecile montanus","u":"https://ebird.org/species/wiltit1/PL-SL","v":"Lifer","ny":1,"obs":[{"d":"2026-11-03","l":"Zbiornik Dziećkowice (obszar ogólny)","lu":"https://ebird.org/species/wiltit1/L10859541","c":"https://ebird.org/checklist/S407801041","gm":"https://www.google.com/maps?q=50.1302487,19.2328565","om":"https://omaps.app/s4Htk26fyo/Zbiornik_Dzie%C4%87kowice_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1},{"d":"2026-11-03","l":"Zbiornik Dziećkowice--część północna","lu":"https://ebird.org/species/wiltit1/L58119965","c":"https://ebird.org/checklist/S407685455","gm":"https://www.google.com/maps?q=50.1426386,19.2375315","om":"https://omaps.app/s4HtmVCkR3/Zbiornik_Dzie%C4%87kowice--cz%C4%99%C5%9B%C4%87_p%C3%B3%C5%82nocna","t":"Lifer","n":1},{"d":"2026-11-01","l":"Rokitnica","lu":null,"c":"https://ebird.org/checklist/S407151670","gm":"https://www.google.com/maps?q=50.362222,18.7844676","om":"https://omaps.app/s4HuZRWNPZ/Rokitnica","t":"Lifer","n":1},{"d":"2026-11-01","l":"Zbiornik Dziećkowice--część południowa","lu":"https://ebird.org/species/wiltit1/L58120026","c":"https://ebird.org/checklist/S407113042","gm":"https://www.google.com/maps?q=50.1153255,19.2290657","om":"https://omaps.app/s4HtkeGjtv/Zbiornik_Dzie%C4%87kowice--cz%C4%99%C5%9B%C4%87_po%C5%82udniowa","t":"Lifer","n":1},{"d":"2026-10-30","l":"Staw Kokotek I","lu":"https://ebird.org/species/wiltit1/L43982457","c":"https://ebird.org/checklist/S406521279","gm":"https://www.google.com/maps?q=50.628322,18.734481","om":"https://omaps.app/s4NERBkomi/Staw_Kokotek_I","t":"Lifer","n":1},{"d":"2026-10-30","l":"Staw Posmyk","lu":"https://ebird.org/species/wiltit1/L11627791","c":"https://ebird.org/checklist/S406519226","gm":"https://www.google.com/maps?q=50.6130338,18.7098008","om":"https://omaps.app/s4Hu63ogl3/Staw_Posmyk","t":"Lifer","n":1},{"d":"2026-10-30","l":"Zbiornik Świerklaniec","lu":"https://ebird.org/species/wiltit1/L10477000","c":"https://ebird.org/checklist/S406515070","gm":"https://www.google.com/maps?q=50.4281387,18.9741072","om":"https://omaps.app/s4Huf1CYLH/Zbiornik_%C5%9Awierklaniec","t":"Lifer","n":1}]},{"r":"śląskie","pl":"mewa mała","en":"Little Gull","la":"Hydrocoloeus minutus","u":"https://ebird.org/species/litgul/PL-SL","v":"Lifer","ny":1,"obs":[{"d":"2026-10-31","l":"Zbiornik Świerklaniec","lu":"https://ebird.org/species/litgul/L10477000","c":"https://ebird.org/checklist/S406914133","gm":"https://www.google.com/maps?q=50.4281387,18.9741072","om":"https://omaps.app/s4Huf1CYLH/Zbiornik_%C5%9Awierklaniec","t":"Lifer","n":1}]},{"r":"śląskie","pl":"szlachar","en":"Red-breasted Merganser","la":"Mergus serrator","u":"https://ebird.org/species/rebmer/PL-SL","v":"Lifer","ny":1,"obs":[{"d":"2026-10-31","l":"Zbiornik Świerklaniec","lu":"https://ebird.org/species/rebmer/L10477000","c":"https://ebird.org/checklist/S407134258","gm":"https://www.google.com/maps?q=50.4281387,18.9741072","om":"https://omaps.app/s4Huf1CYLH/Zbiornik_%C5%9Awierklaniec","t":"Lifer","n":1},{"d":"2026-10-31","l":"Rezerwat przyrody Łężczok","lu":"https://ebird.org/species/rebmer/L6111271","c":"https://ebird.org/checklist/S406846580","gm":"https://www.google.com/maps?q=50.1374965,18.2767431","om":"https://omaps.app/s4Hp1_YRTf/Rezerwat_przyrody_%C5%81%C4%99%C5%BCczok","t":"Lifer","n":1}]},{"r":"śląskie","pl":"świergotek łąkowy","en":"Meadow Pipit","la":"Anthus pratensis","u":"https://ebird.org/species/meapip1/PL-SL","v":"Lifer","ny":1,"obs":[{"d":"2026-11-03","l":"Zbiornik Dziećkowice--część północna","lu":"https://ebird.org/species/meapip1/L58119965","c":"https://ebird.org/checklist/S407702052","gm":"https://www.google.com/maps?q=50.1426386,19.2375315","om":"https://omaps.app/s4HtmVCkR3/Zbiornik_Dzie%C4%87kowice--cz%C4%99%C5%9B%C4%87_p%C3%B3%C5%82nocna","t":"Lifer","n":1},{"d":"2026-11-03","l":"Zbiornik Dziećkowice (obszar ogólny)","lu":"https://ebird.org/species/meapip1/L10859541","c":"https://ebird.org/checklist/S407801041","gm":"https://www.google.com/maps?q=50.1302487,19.2328565","om":"https://omaps.app/s4Htk26fyo/Zbiornik_Dzie%C4%87kowice_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1},{"d":"2026-10-30","l":"Świerklaniec Park","lu":"https://ebird.org/species/meapip1/L21735931","c":"https://ebird.org/checklist/S406514991","gm":"https://www.google.com/maps?q=50.4326675,18.9556812","om":"https://omaps.app/s4HufxvqWc/%C5%9Awierklaniec_Park","t":"Lifer","n":1},{"d":"2026-10-30","l":"Staw Posmyk","lu":"https://ebird.org/species/meapip1/L11627791","c":"https://ebird.org/checklist/S406519226","gm":"https://www.google.com/maps?q=50.6130338,18.7098008","om":"https://omaps.app/s4Hu63ogl3/Staw_Posmyk","t":"Lifer","n":1},{"d":"2026-10-30","l":"Zbiornik Świerklaniec","lu":"https://ebird.org/species/meapip1/L10477000","c":"https://ebird.org/checklist/S406515070","gm":"https://www.google.com/maps?q=50.4281387,18.9741072","om":"https://omaps.app/s4Huf1CYLH/Zbiornik_%C5%9Awierklaniec","t":"Lifer","n":1}]},{"r":"śląskie","pl":"nur rdzawoszyi","en":"Red-throated Loon","la":"Gavia stellata","u":"https://ebird.org/species/retloo/PL-SL","v":"Lifer","ny":1,"obs":[{"d":"2026-11-01","l":"Zbiornik Kuźnica Warężyńska--część północna","lu":"https://ebird.org/species/retloo/L43547351","c":"https://ebird.org/checklist/S407368327","gm":"https://www.google.com/maps?q=50.3990246,19.2066016","om":"https://omaps.app/s4HvM4p-Sw/Zbiornik_Ku%C5%BAnica_War%C4%99%C5%BCy%C5%84ska--cz%C4%99%C5%9B%C4%87_p%C3%B3%C5%82nocna","t":"Lifer","n":1}]},{"r":"śląskie","pl":"markaczka","en":"Common Scoter","la":"Melanitta nigra","u":"https://ebird.org/species/blksco1/PL-SL","v":"Lifer","ny":1,"obs":[{"d":"2026-11-03","l":"Zbiornik Dziećkowice--część północna","lu":"https://ebird.org/species/blksco1/L58119965","c":"https://ebird.org/checklist/S407702052","gm":"https://www.google.com/maps?q=50.1426386,19.2375315","om":"https://omaps.app/s4HtmVCkR3/Zbiornik_Dzie%C4%87kowice--cz%C4%99%C5%9B%C4%87_p%C3%B3%C5%82nocna","t":"Lifer","n":1},{"d":"2026-11-03","l":"Zbiornik Dziećkowice (obszar ogólny)","lu":"https://ebird.org/species/blksco1/L10859541","c":"https://ebird.org/checklist/S407801041","gm":"https://www.google.com/maps?q=50.1302487,19.2328565","om":"https://omaps.app/s4Htk26fyo/Zbiornik_Dzie%C4%87kowice_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1},{"d":"2026-11-02","l":"Zbiornik Dziećkowice (obszar ogólny)","lu":"https://ebird.org/species/blksco1/L10859541","c":"https://ebird.org/checklist/S407519440","gm":"https://www.google.com/maps?q=50.1302487,19.2328565","om":"https://omaps.app/s4Htk26fyo/Zbiornik_Dzie%C4%87kowice_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1},{"d":"2026-11-01","l":"Zbiornik Dziećkowice--część północna","lu":"https://ebird.org/species/blksco1/L58119965","c":"https://ebird.org/checklist/S407092479","gm":"https://www.google.com/maps?q=50.1426386,19.2375315","om":"https://omaps.app/s4HtmVCkR3/Zbiornik_Dzie%C4%87kowice--cz%C4%99%C5%9B%C4%87_p%C3%B3%C5%82nocna","t":"Lifer","n":1}]},{"r":"śląskie","pl":"uhla","en":"Velvet Scoter","la":"Melanitta fusca","u":"https://ebird.org/species/whwsco3/PL-SL","v":"Lifer","ny":1,"obs":[{"d":"2026-11-01","l":"Zbiornik Dziećkowice--część południowa","lu":"https://ebird.org/species/whwsco3/L58120026","c":"https://ebird.org/checklist/S407113042","gm":"https://www.google.com/maps?q=50.1153255,19.2290657","om":"https://omaps.app/s4HtkeGjtv/Zbiornik_Dzie%C4%87kowice--cz%C4%99%C5%9B%C4%87_po%C5%82udniowa","t":"Lifer","n":1},{"d":"2026-11-01","l":"Zbiornik Dziećkowice--część północna","lu":"https://ebird.org/species/whwsco3/L58119965","c":"https://ebird.org/checklist/S407092479","gm":"https://www.google.com/maps?q=50.1426386,19.2375315","om":"https://omaps.app/s4HtmVCkR3/Zbiornik_Dzie%C4%87kowice--cz%C4%99%C5%9B%C4%87_p%C3%B3%C5%82nocna","t":"Lifer","n":1}]},{"r":"śląskie","pl":"śnieguła","en":"Snow Bunting","la":"Plectrophenax nivalis","u":"https://ebird.org/species/snobun/PL-SL","v":"Lifer","ny":1,"obs":[{"d":"2026-11-03","l":"Zbiornik Dziećkowice--część północna","lu":"https://ebird.org/species/snobun/L58119965","c":"https://ebird.org/checklist/S407702052","gm":"https://www.google.com/maps?q=50.1426386,19.2375315","om":"https://omaps.app/s4HtmVCkR3/Zbiornik_Dzie%C4%87kowice--cz%C4%99%C5%9B%C4%87_p%C3%B3%C5%82nocna","t":"Lifer","n":1},{"d":"2026-11-03","l":"Zbiornik Dziećkowice (obszar ogólny)","lu":"https://ebird.org/species/snobun/L10859541","c":"https://ebird.org/checklist/S407801041","gm":"https://www.google.com/maps?q=50.1302487,19.2328565","om":"https://omaps.app/s4Htk26fyo/Zbiornik_Dzie%C4%87kowice_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1},{"d":"2026-11-02","l":"Zbiornik Dziećkowice (obszar ogólny)","lu":"https://ebird.org/species/snobun/L10859541","c":"https://ebird.org/checklist/S407519440","gm":"https://www.google.com/maps?q=50.1302487,19.2328565","om":"https://omaps.app/s4Htk26fyo/Zbiornik_Dzie%C4%87kowice_%28obszar_og%C3%B3lny%29","t":"Lifer","n":1},{"d":"2026-11-01","l":"Poręba--pola","lu":"https://ebird.org/species/snobun/L18587383","c":"https://ebird.org/checklist/S407191571","gm":"https://www.google.com/maps?q=50.4987448,19.3432927","om":"https://omaps.app/s4HvyCRGUW/Por%C4%99ba--pola","t":"Lifer","n":1}]},{"r":"śląskie","pl":"myszołów włochaty","en":"Rough-legged Hawk","la":"Buteo lagopus","u":"https://ebird.org/species/rolhaw/PL-SL","v":"Lifer","ny":1,"obs":[{"d":"2026-11-01","l":"Zbiornik Słupsko","lu":"https://ebird.org/species/rolhaw/L<script>
+(function () {
+  var TYPES = [["Lifer", "życiówki", "lifer"], ["Rare", "rzadkie", "rare"], ["Year tick", "rokówki", "tick"]];
+  var KIND_PL = {"Lifer": "życiówka", "Rare": "rzadki", "Year tick": "rokówka"};
+  var data = JSON.parse(document.getElementById("rp-data").textContent);
+  // Slider axis: 0 = 6 days ago (left end), 6 = today (right end).
+  // st.a / st.b are the handle positions; they may cross freely — the range is
+  // always [min, max] of their values, so no handle can get stuck on the other.
+  var st = {region: "", types: {"Lifer": true, "Rare": true, "Year tick": true}, grup: "gatunki", a: 0, b: 6};
+  var today = new Date(data.today + "T00:00:00Z");
+  var el = function (id) { return document.getElementById(id); };
+  var DAY = 86400000;
+  var raf = typeof window !== "undefined" && window.requestAnimationFrame ? function (f) { window.requestAnimationFrame(f); } : function (f) { f(); };
+  var rafPending = false;
+
+  function dAgo(d) {
+    var p = (d || "").split("-");
+    if (p.length !== 3) return -1;
+    var t = new Date(Date.UTC(+p[0], +p[1] - 1, +p[2]));
+    return Math.round((today - t) / DAY);
+  }
+  function dateAgo(n) { var t = new Date(today.getTime() - n * DAY); return t.getUTCDate() + "." + (t.getUTCMonth() + 1) + "."; }
+  function fmt(d) { var p = (d || "").split("-"); return p.length === 3 ? p[2] + "." + p[1] : (d || "–"); }
+
+  function load() {
+    try {
+      var v = JSON.parse(localStorage.getItem("rp-filters2") || "null");
+      if (v && v.region !== undefined) {
+        st.region = v.region || "";
+        st.types = v.types || st.types;
+        if (v.grup === "lokalizacje" || v.grup === "gatunki") st.grup = v.grup;
+        if (typeof v.a === "number" && typeof v.b === "number" && v.a >= 0 && v.a <= 6 && v.b >= 0 && v.b <= 6) { st.a = v.a; st.b = v.b; }
+        else if (typeof v.lo === "number" && typeof v.hi === "number" && v.lo >= v.hi && v.hi >= 0 && v.lo <= 6) { st.a = 6 - v.lo; st.b = 6 - v.hi; }
+      }
+    } catch (e) {}
+  }
+  function save() { try { localStorage.setItem("rp-filters2", JSON.stringify({region: st.region, types: st.types, grup: st.grup, a: st.a, b: st.b})); } catch (e) {} }
+  function mk(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+  function safe(u) { return typeof u === "string" && u.indexOf("https://") === 0 ? u : null; }
+  function link(text, url, cls) { var u = safe(url); if (!u) return mk("span", cls, text); var a = mk("a", cls, text); a.href = u; a.target = "_blank"; a.rel = "noopener"; return a; }
+
+  // Map pills: Google Maps / Organic Maps favicons instead of text labels.
+  var FAV = {
+    gm: "https://www.google.com/s2/favicons?sz=32&domain=maps.google.com",
+    om: "https://www.google.com/s2/favicons?sz=32&domain=organicmaps.app"
+  };
+  function mapLink(url, svc) {
+    var u = safe(url);
+    if (!u) return mk("span", "pin");
+    var a = mk("a", "pin");
+    a.href = u; a.target = "_blank"; a.rel = "noopener";
+    a.title = svc === "gm" ? "Google Maps" : "Organic Maps";
+    a.setAttribute("aria-label", a.title);
+    var img = mk("img");
+    img.src = FAV[svc]; img.alt = a.title; img.loading = "lazy"; img.width = 13; img.height = 13;
+    a.appendChild(img);
+    return a;
+  }
+
+  // Days-ago values computed ONCE at startup — dates used to be re-parsed on
+  // every render (region pills × groups × observations).
+  data.groups.forEach(function (g) { g.obs.forEach(function (o) { o._n = dAgo(o.d); }); });
+  function visible(g) {
+    return g.obs.filter(function (o) { return o._n >= st.hi && o._n <= st.lo && st.types[o.t] !== false; });
+  }
+
+  function button(parent, cls, label, count, pressed, fn) {
+    var b = mk("button", cls); b.type = "button"; b.setAttribute("aria-pressed", pressed ? "true" : "false");
+    b.appendChild(document.createTextNode(label));
+    if (count != null) b.appendChild(mk("span", "n", String(count)));
+    b.addEventListener("click", fn); parent.appendChild(b); return b;
+  }
+
+  function rangeLabel() {
+    if (st.hi === 0 && st.lo === 6) return "ostatnie 7 dni";
+    if (st.hi === st.lo) return st.hi === 0 ? "dziś" : dateAgo(st.hi) + " (" + (st.hi === 1 ? "wczoraj" : st.hi + " dni temu") + ")";
+    var n = st.lo - st.hi + 1;
+    return dateAgo(st.lo) + " – " + dateAgo(st.hi) + " (" + n + (n === 1 ? " dzień" : " dni") + ")";
+  }
+
+  function slider() {
+    var rA = el("rA"), rB = el("rB");
+    rA.oninput = function () { st.a = +rA.value; sync(); };
+    rB.oninput = function () { st.b = +rB.value; sync(); };
+    var ticks = el("rticks"); ticks.textContent = "";
+    for (var i = 0; i <= 6; i++) ticks.appendChild(mk("span", null, dateAgo(6 - i)));
+    sync();
+  }
+  function sync() {
+    st.lo = 6 - Math.min(st.a, st.b);   // older range bound (more days ago)
+    st.hi = 6 - Math.max(st.a, st.b);   // newer range bound (closer to today)
+    el("rA").value = st.a; el("rB").value = st.b;
+    var p = function (v) { return v / 6 * 100; };
+    el("rfill").style.left = p(Math.min(st.a, st.b)) + "%";
+    el("rfill").style.width = (p(Math.max(st.a, st.b)) - p(Math.min(st.a, st.b))) + "%";
+    el("rlbl").textContent = rangeLabel();
+    save();
+    // Render once per frame (rAF), not on every input event — smooth slider dragging.
+    if (!rafPending) { rafPending = true; raf(function () { rafPending = false; draw(); }); }
+  }
+
+  function controls(total, perCounts) {
+    var reg = el("regions"); reg.textContent = "";
+    button(reg, "pill", "Wszystkie", total, st.region === "", function () { st.region = ""; save(); draw(); });
+    data.regions.forEach(function (r, i) {
+      var c = perCounts[i];
+      var b = button(reg, "pill" + (c === 0 ? " zero" : ""), r.n, c, st.region === r.n, function () { st.region = r.n; save(); draw(); });
+      if (r.d) b.title = "region dzienny";
+    });
+    var gb = el("groupby"); gb.textContent = "";
+    gb.appendChild(mk("span", "range-cap", "grupowanie"));
+    button(gb, "pill", "wg gatunków", null, st.grup === "gatunki", function () { st.grup = "gatunki"; save(); draw(); });
+    button(gb, "pill", "wg lokalizacji", null, st.grup === "lokalizacje", function () { st.grup = "lokalizacje"; save(); draw(); });
+    var ty = el("types"); ty.textContent = "";
+    TYPES.forEach(function (t) {
+      var b = button(ty, "chip", t[1], null, st.types[t[0]] !== false, function () { st.types[t[0]] = st.types[t[0]] === false; save(); draw(); });
+      b.insertBefore(mk("span", "dot " + t[2]), b.firstChild);
+    });
+  }
+
+  function bestKind(g, obs) {
+    var best = g.v;
+    obs.forEach(function (o) { if ((o.t === "Lifer") || (o.t === "Rare" && best !== "Lifer")) best = o.t; });
+    return best;
+  }
+  function kindSpan(best) {
+    var k = mk("span", "kind " + (best === "Lifer" ? "lifer" : best === "Rare" ? "rare" : "tick"));
+    k.appendChild(mk("span", "dot"));
+    k.appendChild(document.createTextNode(KIND_PL[best] || best || ""));
+    return k;
+  }
+
+  function species(g, obs) {
+    var box = mk("div", "sp");
+    var best = bestKind(g, obs);
+    var kindCls = best === "Lifer" ? "lifer" : best === "Rare" ? "rare" : "tick";
+    var nm = mk("div", "nm");
+    nm.appendChild(link(g.pl || g.en || g.la || "?", g.u));
+    nm.appendChild(mk("span", "la", g.la || ""));
+    var kind = mk("span", "kind " + kindCls);
+    kind.appendChild(mk("span", "dot"));
+    kind.appendChild(document.createTextNode(KIND_PL[best] || best || ""));
+    nm.appendChild(kind);
+    box.appendChild(nm);
+    var places = []; obs.forEach(function (o) { if (places.every(function (p) { return p.l !== o.l; })) places.push(o); });
+    var pl = mk("div", "places");
+    if (places.length > 3) pl.textContent = places.length + " miejsc — pełna lista w szczegółach";
+    else places.forEach(function (o, i) { if (i) pl.appendChild(document.createTextNode(" · ")); pl.appendChild(link(o.l, o.lu || o.gm)); });
+    box.appendChild(pl);
+    var det = mk("details"); var sum = mk("summary", null, obs.length + " obs."); det.appendChild(sum);
+    var ul = mk("ul");
+    obs.forEach(function (o) {
+      var li = mk("li");
+      li.appendChild(link(fmt(o.d), o.c, "d"));
+      li.appendChild(document.createTextNode(" — "));
+      li.appendChild(o.lu ? link(o.l, o.lu) : document.createTextNode(o.l));
+      if (o.gm) li.appendChild(mapLink(o.gm, "gm"));
+      if (o.om) li.appendChild(mapLink(o.om, "om"));
+      li.appendChild(document.createTextNode(" · "));
+      li.appendChild(mk("span", "t", KIND_PL[o.t] || o.t || ""));
+      if (o.n === 1) li.appendChild(mk("span", "new", "nowe"));
+      ul.appendChild(li);
+    });
+    det.appendChild(ul); box.appendChild(det);
+    return box;
+  }
+
+  // Location block ("by locations" mode): header = place name with map links,
+  // below it the list of species observed at this place (date + kind dot).
+  function locationBlock(loc) {
+    var box = mk("div", "sp");
+    var nm = mk("div", "nm");
+    var shown = loc.lu ? link(loc.name, loc.lu) : loc.gm ? link(loc.name, loc.gm) : mk("span", null, loc.name);
+    nm.appendChild(shown);
+    nm.appendChild(mk("span", "cnt", loc.entries.length + " gat."));
+    if (loc.gm) nm.appendChild(mapLink(loc.gm, "gm"));
+    if (loc.om) nm.appendChild(mapLink(loc.om, "om"));
+    box.appendChild(nm);
+    var ul = mk("ul");
+    loc.entries.forEach(function (e) {
+      var g = e[0], obs = e[1];
+      var li = mk("li");
+      li.appendChild(link(g.pl || g.en || g.la || "?", g.u));
+      li.appendChild(kindSpan(bestKind(g, obs)));
+      li.appendChild(document.createTextNode(" — "));
+      obs.forEach(function (o, i) {
+        if (i) li.appendChild(document.createTextNode(" · "));
+        li.appendChild(link(fmt(o.d), o.c, "d"));
+        if (o.n === 1) li.appendChild(mk("span", "new", "nowe"));
+      });
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+    return box;
+  }
+
+  // Regroup visible observations of a region by location.
+  function byLocations(items) {
+    var locs = [], byKey = {};
+    items.forEach(function (x) {
+      var g = x[0], key0 = g.u || (g.la + "|" + g.pl);
+      x[1].forEach(function (o) {
+        var key = o.l || "";
+        var loc = byKey[key];
+        if (!loc) {
+          loc = {name: o.l || "(bez lokalizacji)", lu: null, gm: null, om: null, entries: [], seen: {}};
+          byKey[key] = loc; locs.push(loc);
+        }
+        if (!loc.lu && o.lu) loc.lu = o.lu;
+        if (!loc.gm && o.gm) loc.gm = o.gm;
+        if (!loc.om && o.om) loc.om = o.om;
+        var ent = loc.seen[key0];
+        if (!ent) { ent = [g, []]; loc.seen[key0] = ent; loc.entries.push(ent); }
+        ent[1].push(o);
+      });
+    });
+    locs.sort(function (a, b) {
+      // localeCompare: Polish ordering (ą, ć, ł, ż…), not ASCII codes
+      return b.entries.length - a.entries.length || a.name.localeCompare(b.name, "pl");
+    });
+    return locs;
+  }
+
+  function draw() {
+    // One pass: visible groups per region — species counts for the pills
+    // (controls) and the sections to render come from it; no second data scan.
+    var per = [];
+    var total = 0;
+    data.regions.forEach(function (r) {
+      var items = [];
+      data.groups.forEach(function (g) { if (g.r === r.n) { var v = visible(g); if (v.length) items.push([g, v]); } });
+      per.push([r, items]);
+      total += items.length;
+    });
+    controls(total, per.map(function (row) { return row[1].length; }));
+    var out = el("out"); out.textContent = "";
+    var shown = 0;
+    per.forEach(function (row) {
+      var r = row[0], items = row[1];
+      if (st.region && st.region !== r.n) return;
+      if (!items.length) return;
+      var sec = mk("section");
+      var h = mk("h2", null, r.n);
+      var nObs = items.reduce(function (a, x) { return a + x[1].length; }, 0);
+      h.appendChild(mk("span", "cnt", items.length + " gat. · " + nObs + " obs."));
+      sec.appendChild(h);
+      sec.appendChild(mk("hr", "region-hr"));
+      var list = mk("div", "list");
+      if (st.grup === "lokalizacje") {
+        byLocations(items).forEach(function (loc) { list.appendChild(locationBlock(loc)); shown++; });
+      } else {
+        items.forEach(function (x) { list.appendChild(species(x[0], x[1])); shown++; });
+      }
+      sec.appendChild(list); out.appendChild(sec);
+    });
+    if (!shown) {
+      var emp = mk("div", "empty");
+      emp.insertAdjacentHTML("beforeend", '<svg width="72" height="24" viewBox="0 0 72 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="opacity:0.5;display:block;margin:0 auto 10px"><path d="M8 8 Q17 17 26 8"></path><path d="M42 5 Q52 15 62 5"></path></svg>');
+      emp.appendChild(mk("span", null, "Brak obserwacji w wybranym zakresie."));
+      out.appendChild(emp);
+    }
+  }
+
+  load();
+  slider();
+  var f = (data.from || "").split("-"), t = (data.today || "").split("-");
+  el("meta").textContent = (f.length === 3 ? f[2] + "." + f[1] : "") + " – " + (t.length === 3 ? t[2] + "." + t[1] : "") + " · zaktualizowano " + (data.generated || "");
+  if (data.stale && data.stale.length) {
+    var w = el("stale"); w.hidden = false;
+    w.textContent = "Nie udało się pobrać świeżych danych dla: " + data.stale.join(", ") + ". Pokazuję poprzedni stan.";
+  }
+  el("bar").hidden = false;
+})();
+</script>
+</body>
+</html>
+
