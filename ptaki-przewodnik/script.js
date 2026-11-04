@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alt="${ptak.nazwa} (${ptak.nazwaLacinska})"
             loading="lazy"
             style="object-position:${escapeHtml(ptak.focalPoint || 'center')}"
-            ${ptak.cropRange ? `data-crop-left="${ptak.cropRange[0]}" data-crop-right="${ptak.cropRange[1]}"` : ''}
+            ${ptak.cropRange ? `data-crop-left="${ptak.cropRange[0]}" data-crop-right="${ptak.cropRange[1]}" data-beak-side="${ptak.beakSide || 'left'}"` : ''}
             onerror="this.removeAttribute('onerror');this.src='https://placehold.co/600x400/2a3226/b8d4a0?text=${encodeURIComponent(ptak.nazwa)}';"
           >
           <div class="photo-fade"></div>
@@ -572,6 +572,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function computeSmartPosition(img) {
     const L = parseFloat(img.dataset.cropLeft);
     const R = parseFloat(img.dataset.cropRight);
+    const beakSide = img.dataset.beakSide || 'left';
     if (isNaN(L) || isNaN(R)) return;
 
     const container = img.parentElement;
@@ -583,15 +584,30 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!cW || !cH || !iW || !iH) return;
 
     const scale = Math.max(cW / iW, cH / iH);
-    const visibleW = (cW / (scale * iW)) * 100;
+    const V = (cW / (scale * iW)) * 100;
 
-    if (visibleW >= 100) {
+    if (V >= 100) {
       img.style.objectPosition = 'center';
       return;
     }
 
-    const x = Math.max(0, Math.min(100, ((L + R - visibleW) * 50) / (100 - visibleW)));
-    img.style.objectPosition = `${Math.round(x)}% center`;
+    const birdW = R - L;
+    const MARGIN = 2;
+    let start;
+
+    if (V >= birdW) {
+      start = (L + R - V) / 2;
+    } else {
+      if (beakSide === 'left') {
+        start = Math.max(0, L - MARGIN);
+      } else {
+        start = R + MARGIN - V;
+      }
+    }
+
+    start = Math.max(0, Math.min(100 - V, start));
+    const x = Math.round(start * 100 / (100 - V));
+    img.style.objectPosition = `${x}% center`;
   }
 
   function initSmartCrop() {
