@@ -1,6 +1,6 @@
 # Polish Bird Guide — AI agent instructions
 
-Interactive guide to breeding birds of Poland (65 species). Static site on GitHub Pages, vanilla JS, no frameworks. Owner: Marek (Podkarpacie region). The webpage content is in Polish.
+Interactive guide to breeding birds of Poland (66 species). Static site on GitHub Pages, vanilla JS, no frameworks. Owner: Marek (Podkarpacie region). The webpage content is in Polish.
 
 ## Commands
 
@@ -45,14 +45,14 @@ Each bird must have:
 | `liczebnosc` | string | e.g. `"100–200 tys."` |
 | `trend` | string | `↑` / `→` / `↓` |
 | `migracja` | string | `"Osiadły"` / `"Wędrowny"` |
-| `statusCzerwonejKsiazki` | string | `LC` / `NT` / `VU` / `EN` |
+| `statusCzerwonejKsiazki` | string | `LC` / `NT` / `VU` / `EN` / `CR` / `RE` |
 | `cechy` | array | 5–7 traits with emoji, e.g. `"🔊 Melodyjny śpiew"` |
 | `autor` | string | required, non-empty; photo author from Wikimedia Commons |
 | `licencja` | string | required; one of: `CC0`, `CC BY x.x`, `CC BY-SA x.x`, `Public domain` — no NC |
 | `film.id` | string | 11-character YouTube ID |
 | `film.platforma` | string | `"youtube"` / `"facebook"` |
 | `film.zrodlo` | string | optional; YouTube channel name shown on thumbnail (omit for Leśny Budzik default) |
-| `zrodla` | array | `"MPPL 2025"`, `"Czerwona Księga Ptaków Polski"` |
+| `zrodla` | array | `"MPPL 2025"`, `"Czerwona Księga Ptaków Polski"`, `"Czerwona lista ptaków Polski 2020"` |
 | `peakMonths` | array | 1–12, only for Podkarpacie birds |
 | `focalPoint` | string | optional; CSS `object-position` value, e.g. `"left"`, `"35% center"` — set when `object-fit: cover` would crop the bird's head/beak |
 

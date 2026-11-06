@@ -99,7 +99,7 @@
         "🟤 Samica: brązowawa, mniej kontrastowa",
         "📏 15 cm",
         "🌿 Wilgotne lasy, zarośla rzeczne",
-        "🌰 Nasiona, pąki wierzb i topól",
+        "🌰 Nasiona, pąki wierzb i topoli",
         "🎵 Ciche, miękkie 'du-du-du'"
       ],
       "film": {
@@ -239,7 +239,7 @@
     {
       "id": 7,
       "nazwa": "Kawka",
-      "nazwaLacinska": "Corvus monedula",
+      "nazwaLacinska": "Coloeus monedula",
       "kategorie": [
         "Ogród"
       ],
@@ -433,7 +433,7 @@
     {
       "id": 12,
       "nazwa": "Piegża",
-      "nazwaLacinska": "Sylvia curruca",
+      "nazwaLacinska": "Curruca curruca",
       "kategorie": [
         "Ogród"
       ],
@@ -609,7 +609,7 @@
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
         "🟤 Brązowoszary, niewidoczny na ziemi",
-        "✈️ Śpiewa w locie wznosząc się do 200 m",
+        "✈️ Śpiew w locie na wysokości do 200 m",
         "📏 18 cm",
         "🌾 Pola, łąki, pastwiska",
         "🌰 Nasiona i owady",
@@ -862,9 +862,9 @@
       "autor": "Chrumps",
       "licencja": "CC BY-SA 3.0",
       "liczebnosc": "200–400",
-      "trend": "↓",
+      "trend": "→",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "NT",
+      "statusCzerwonejKsiazki": "VU",
       "peakMonths": [
         3,
         4,
@@ -884,7 +884,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "tIGE37BLGqQ",
@@ -904,9 +904,9 @@
       "autor": "Charles J. Sharp",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "500–700",
-      "trend": "→",
+      "trend": "↓",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "LC",
+      "statusCzerwonejKsiazki": "VU",
       "peakMonths": [
         11
       ],
@@ -920,11 +920,11 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "6Fyjgdi6Vrg",
-        "tytul": "Leśny Budzik – Perkoz Rdzawoszyi",
+        "tytul": "Leśny Budzik – Perkoz rdzawoszyi",
         "platforma": "youtube"
       }
     },
@@ -1001,7 +1001,7 @@
       ],
       "film": {
         "id": "CoQ4jmL7-mg",
-        "tytul": "Leśny Budzik – Pliszka Górska",
+        "tytul": "Leśny Budzik – Pliszka górska",
         "platforma": "youtube"
       }
     },
@@ -1175,9 +1175,9 @@
       "autor": "Stephan Sprinz",
       "licencja": "CC BY 4.0",
       "liczebnosc": "1–2 tys.",
-      "trend": "→",
+      "trend": "↓",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "LC",
+      "statusCzerwonejKsiazki": "VU",
       "peakMonths": [
         8,
         9
@@ -1192,7 +1192,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "wJho1mfO3HY",
@@ -1215,7 +1215,7 @@
       "liczebnosc": "setki os.",
       "trend": "→",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "LC",
+      "statusCzerwonejKsiazki": "RE",
       "peakMonths": [
         11,
         12
@@ -1230,7 +1230,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "l_LHI5VMg5w",
@@ -1342,12 +1342,12 @@
         12
       ],
       "cechy": [
-        "⚫ Czarna czapka matowa, bez połysku",
+        "⚫ Czarna czapka z granatowym połyskiem",
         "🟤 Brązowawe boki, biały policzek i szyja",
         "📏 12–13 cm",
-        "🌲 Wilgotne lasy olszowe i wierzbowe",
+        "🌲 Liściaste lasy grądowe, bukowe i parki; stroni od wilgotnych zarośli",
         "🐛 Owady latem; nasiona i orzeszki zimą",
-        "🎵 Charakterystyczne 'czej-czej' i gwizd 'pii'"
+        "🎵 Wybuchowe 'pitiu' (lub 'pti-di-di'); głos odróżniający od Sikory czarnogłowej"
       ],
       "zrodla": [
         "eBird PL-PK 2025",
@@ -1450,7 +1450,7 @@
       "liczebnosc": "800–1,2 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "LC",
+      "statusCzerwonejKsiazki": "RE",
       "peakMonths": [
         11
       ],
@@ -1464,7 +1464,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "bVjtfhYapjE",
@@ -1487,7 +1487,7 @@
       "liczebnosc": "kilkadziesiąt tys.",
       "trend": "↓",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "LC",
+      "statusCzerwonejKsiazki": "RE",
       "peakMonths": [
         2,
         3
@@ -1502,7 +1502,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "RlmD389XosQ",
@@ -1667,7 +1667,7 @@
       ],
       "film": {
         "id": "8vsWVzZ2PuY",
-        "tytul": "Leśny Budzik – Świergotek Drzewny",
+        "tytul": "Leśny Budzik – Świergotek drzewny",
         "platforma": "youtube"
       }
     },
@@ -1792,7 +1792,7 @@
       ],
       "film": {
         "id": "ZQim_emQek4",
-        "tytul": "Leśny Budzik – Muchołówka Mała",
+        "tytul": "Leśny Budzik – Muchołówka mała",
         "platforma": "youtube"
       }
     },
@@ -1909,7 +1909,7 @@
       ],
       "film": {
         "id": "3BrRKC1Wdco",
-        "tytul": "Leśny Budzik – Myszołów Włochaty",
+        "tytul": "Leśny Budzik – Myszołów włochaty",
         "platforma": "youtube"
       }
     },
@@ -1924,9 +1924,9 @@
       "autor": "Dûrzan Cîrano",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "100–200 tys.",
-      "trend": "→",
+      "trend": "↓",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "LC",
+      "statusCzerwonejKsiazki": "VU",
       "peakMonths": [
         5,
         6,
@@ -1942,7 +1942,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "3fgho8XNLJc",
@@ -2069,7 +2069,7 @@
       ],
       "film": {
         "id": "5ZxNSem9tMI",
-        "tytul": "Leśny Budzik – Bocian Biały",
+        "tytul": "Leśny Budzik – Bocian biały",
         "platforma": "youtube"
       }
     },
@@ -2086,7 +2086,7 @@
       "liczebnosc": "10–20 tys.",
       "trend": "↓",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "NT",
+      "statusCzerwonejKsiazki": "VU",
       "peakMonths": [
         5,
         6,
@@ -2102,7 +2102,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "z9biVFLnJpE",
@@ -2123,7 +2123,7 @@
       "liczebnosc": "10–30",
       "trend": "↓",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "NT",
+      "statusCzerwonejKsiazki": "RE",
       "peakMonths": [
         9
       ],
@@ -2137,7 +2137,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "dhaCumm3qXc",
@@ -2257,7 +2257,7 @@
       ],
       "film": {
         "id": "QTEyH9SMTJM",
-        "tytul": "Leśny Budzik – Muchołówka Białoszyja",
+        "tytul": "Leśny Budzik – Muchołówka białoszyja",
         "platforma": "youtube"
       }
     },
@@ -2320,10 +2320,10 @@
       "focalPoint": "left",
       "autor": "Andreas Trepte",
       "licencja": "CC BY-SA 2.5",
-      "liczebnosc": "kilka tys.",
+      "liczebnosc": "0–kilka",
       "trend": "→",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "LC",
+      "statusCzerwonejKsiazki": "CR",
       "peakMonths": [
         3,
         10,
@@ -2340,7 +2340,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "u4MKmSKVjJ8",
@@ -2423,7 +2423,7 @@
       ],
       "film": {
         "id": "3jcjidW_ImY",
-        "tytul": "Leśny Budzik – Jaskółka Dymówka",
+        "tytul": "Leśny Budzik – Jaskółka dymówka",
         "platforma": "youtube"
       }
     },
@@ -2465,7 +2465,7 @@
       ],
       "film": {
         "id": "qZsRyzEeZEA",
-        "tytul": "Leśny Budzik – Pliszka Siwa",
+        "tytul": "Leśny Budzik – Pliszka siwa",
         "platforma": "youtube"
       }
     },
@@ -2531,12 +2531,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "⚫ Czarna czapka matowa, bez połysku",
-        "🟤 Brązowawe boki, biały policzek i szyja",
-        "📏 12–13 cm",
-        "🌲 Wilgotne lasy olszowe i wierzbowe",
-        "🐛 Owady latem; nasiona i orzeszki zimą",
-        "🎵 Charakterystyczne 'czej-czej' i gwizd 'pii'"
+        "⚫ Czarna czapka matowa (bez połysku), duży czarny śliniaczek pod dziobem",
+        "🤍 Białe policzki i szyja, brązowawe boki",
+        "🦆 Krępa sylwetka i większa głowa ('byczy' kark) niż u Sikory ubogiej",
+        "🪶 Jasne pole na złożonym skrzydle (brzegi lotek II rzędu)",
+        "🌲 Lasy iglaste i mieszane; gniazduje w próchniejącym drewnie",
+        "🌳 Wilgotne lasy olszowe, łęgi i zarośla wierzbowe",
+        "🎵 Nosowe, chrapliwe 'czi-czi-dże-dże-dże'; śpiew: żałosne 'tiu-tiu-tiu'"
       ],
       "film": {
         "id": "luBtm8Fx4VI",

@@ -1,4 +1,6 @@
 {
+"extraKnownMarketplaces": { "gorzko-plugins": { "source": { "source": "github", "repo": "gorzko/claude-plugins" } } },
+"enabledPlugins": { "delivery-pipeline@gorzko-plugins": true },
   "enabledMcpjsonServers": ["wikimedia-image-search", "youtube", "tavily"],
   "hooks": {
     "SessionStart": [

@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           <div class="rbadge ${ptak.statusCzerwonejKsiazki}">
             <div class="rbadge-dot"></div>
-            Czerwona Księga: ${ptak.statusCzerwonejKsiazki} – ${getStatusText(ptak.statusCzerwonejKsiazki)}
+            Czerwona lista: ${ptak.statusCzerwonejKsiazki} – ${getStatusText(ptak.statusCzerwonejKsiazki)}
           </div>
 
           <div class="rule"></div>
@@ -399,7 +399,9 @@ document.addEventListener('DOMContentLoaded', () => {
       'LC': 'gatunek najmniejszej troski',
       'NT': 'bliski zagrożenia',
       'VU': 'narażony',
-      'EN': 'zagrożony'
+      'EN': 'zagrożony',
+      'CR': 'krytycznie zagrożony',
+      'RE': 'wymarły regionalnie'
     }[status] || 'nieznany';
   }
 
