@@ -8,6 +8,8 @@
         "Ogród"
       ],
       "zdjecie": "img/Phasianus_colchicus.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "100–200 tys.",
       "trend": "↓",
       "migracja": "Osiadły",
@@ -40,6 +42,8 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Parus_major.jpg",
+      "autor": "Giles Laurent",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "3–4 mln",
       "trend": "→",
       "migracja": "Osiadły",
@@ -84,6 +88,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Pyrrhula_pyrrhula.jpg",
+      "autor": "Ken Billington",
+      "licencja": "CC BY-SA 3.0",
       "liczebnosc": "800–1200 tys.",
       "trend": "→",
       "migracja": "Osiadły",
@@ -122,6 +128,8 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Columba_palumbus.jpg",
+      "autor": "Trachemys",
+      "licencja": "CC BY-SA 3.0",
       "liczebnosc": "1,5–2 mln",
       "trend": "→",
       "migracja": "Osiadły",
@@ -162,6 +170,8 @@
         "Ogród"
       ],
       "zdjecie": "img/Apus_apus.jpg",
+      "autor": "Alexis Lours",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "100–200 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -195,6 +205,8 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Sylvia_atricapilla.jpg",
+      "autor": "Alexis Lours",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "2–3 mln",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -231,6 +243,8 @@
         "Ogród"
       ],
       "zdjecie": "img/Corvus_monedula.jpg",
+      "autor": "Alexis Lours",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "100–200 tys.",
       "trend": "↑",
       "migracja": "Osiadły",
@@ -264,6 +278,8 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Turdus_merula.jpg",
+      "autor": "Zeynel Cebeci",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "5–6 mln",
       "trend": "→",
       "migracja": "Osiadły",
@@ -307,6 +323,8 @@
         "Ogród"
       ],
       "zdjecie": "img/Cuculus_canorus.jpg",
+      "autor": "Andy Morffew",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "100–200 tys.",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -337,6 +355,8 @@
         "Ogród"
       ],
       "zdjecie": "img/Acrocephalus_palustris.jpg",
+      "autor": "Аимаина хикари",
+      "licencja": "CC0",
       "liczebnosc": "50–100 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -368,6 +388,8 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Cyanistes_caeruleus.jpg",
+      "autor": "Luc Viatour",
+      "licencja": "CC BY-SA 3.0",
       "liczebnosc": "1–2 mln",
       "trend": "→",
       "migracja": "Osiadły",
@@ -412,6 +434,8 @@
         "Ogród"
       ],
       "zdjecie": "img/Sylvia_curruca.jpg",
+      "autor": "gilgit2",
+      "licencja": "CC BY-SA 2.0",
       "liczebnosc": "500–800 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -442,6 +466,8 @@
         "Najliczniejsze"
       ],
       "zdjecie": "img/Erithacus_rubecula.jpg",
+      "autor": "Emmanuel Douzery",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "2–3 mln",
       "trend": "→",
       "migracja": "Osiadły",
@@ -472,6 +498,8 @@
         "Ogród"
       ],
       "zdjecie": "img/Streptopelia_decaocto.jpg",
+      "autor": "Zeynel Cebeci",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "400–600 tys.",
       "trend": "↑",
       "migracja": "Osiadły",
@@ -502,6 +530,8 @@
         "Ogród"
       ],
       "zdjecie": "img/Garrulus_glandarius.jpg",
+      "autor": "Luc Viatour",
+      "licencja": "CC BY-SA 3.0",
       "liczebnosc": "200–300 tys.",
       "trend": "→",
       "migracja": "Osiadły",
@@ -532,6 +562,8 @@
         "Ogród"
       ],
       "zdjecie": "img/Pica_pica.jpg",
+      "autor": "Alexis Lours",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "500–700 tys.",
       "trend": "→",
       "migracja": "Osiadły",
@@ -563,6 +595,8 @@
         "Najpowszechniejsze"
       ],
       "zdjecie": "img/Alauda_arvensis.jpg",
+      "autor": "El Golli Mohamed",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "2–3 mln",
       "trend": "↓",
       "migracja": "Osiadły",
@@ -595,6 +629,8 @@
         "Najpowszechniejsze"
       ],
       "zdjecie": "img/Sturnus_vulgaris.jpg",
+      "autor": "Rhododendrites",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "3–4 mln",
       "trend": "↓",
       "migracja": "Osiadły",
@@ -626,6 +662,8 @@
         "Najpowszechniejsze"
       ],
       "zdjecie": "img/Turdus_philomelos.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "1–2 mln",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -657,6 +695,8 @@
         "Najpowszechniejsze"
       ],
       "zdjecie": "img/Emberiza_citrinella.jpg",
+      "autor": "Andreas Trepte",
+      "licencja": "CC BY-SA 2.5",
       "liczebnosc": "1–2 mln",
       "trend": "↓",
       "migracja": "Osiadły",
@@ -687,6 +727,8 @@
         "Najliczniejsze"
       ],
       "zdjecie": "img/Passer_domesticus.jpg",
+      "autor": "Rhododendrites",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "5–7 mln",
       "trend": "↓",
       "migracja": "Osiadły",
@@ -719,6 +761,8 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Fringilla_coelebs.jpg",
+      "autor": "Andreas Trepte",
+      "licencja": "CC BY-SA 2.5",
       "liczebnosc": "3–4 mln",
       "trend": "→",
       "migracja": "Osiadły",
@@ -764,6 +808,8 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Phylloscopus_collybita.jpg",
+      "autor": "Alexis Lours",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "2,5–3 mln",
       "trend": "↑",
       "migracja": "Wędrowny",
@@ -803,6 +849,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Aythya_nyroca.jpg",
+      "autor": "Chrumps",
+      "licencja": "CC BY-SA 3.0",
       "liczebnosc": "200–400",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -830,18 +878,21 @@
       ],
       "film": {
         "id": "tIGE37BLGqQ",
-        "tytul": "1568. Polák malý / Ferruginous Duck / Podgorzałka zwyczajna",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Podgorzałka",
+        "platforma": "youtube",
+        "zrodlo": "Jarmila Kačírková"
       }
     },
     {
       "id": 25,
-      "nazwa": "Perkoz Rdzawoszyi",
+      "nazwa": "Perkoz rdzawoszyi",
       "nazwaLacinska": "Podiceps grisegena",
       "kategorie": [
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Podiceps_grisegena.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "500–700",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -869,12 +920,14 @@
     },
     {
       "id": 26,
-      "nazwa": "Świergotek Rdzawogardły",
+      "nazwa": "Świergotek rdzawogardły",
       "nazwaLacinska": "Anthus cervinus",
       "kategorie": [
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Anthus_cervinus.jpg",
+      "autor": "Imran Shah",
+      "licencja": "CC BY-SA 2.0",
       "liczebnosc": "setki os.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -897,18 +950,21 @@
       ],
       "film": {
         "id": "Rscdi2LsuB4",
-        "tytul": "Lapinkirvinen - Anthus cervinus - Red-throated Pipit",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Świergotek rdzawogardły",
+        "platforma": "youtube",
+        "zrodlo": "Suomen Linnut"
       }
     },
     {
       "id": 27,
-      "nazwa": "Pliszka Górska",
+      "nazwa": "Pliszka górska",
       "nazwaLacinska": "Motacilla cinerea",
       "kategorie": [
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Motacilla_cinerea.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "15–25 tys.",
       "trend": "↑",
       "migracja": "Wędrowny",
@@ -939,12 +995,14 @@
     },
     {
       "id": 28,
-      "nazwa": "Orlik Krzykliwy",
+      "nazwa": "Orlik krzykliwy",
       "nazwaLacinska": "Clanga pomarina",
       "kategorie": [
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Clanga_pomarina.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "2,5–3,5 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -970,8 +1028,9 @@
       ],
       "film": {
         "id": "Ud8weSBN_3s",
-        "tytul": "Eagle call. Female Lesser Spotted Eagle (Aquila pomarina)",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Orlik krzykliwy",
+        "platforma": "youtube",
+        "zrodlo": "jenteandfriends"
       }
     },
     {
@@ -982,6 +1041,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Bombycilla_garrulus.jpg",
+      "autor": "Cephas",
+      "licencja": "CC BY-SA 3.0",
       "liczebnosc": "kilka tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -1010,12 +1071,14 @@
     },
     {
       "id": 30,
-      "nazwa": "Dzięcioł Zielonosiwy",
+      "nazwa": "Dzięcioł zielonosiwy",
       "nazwaLacinska": "Picus canus",
       "kategorie": [
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Picus_canus.jpg",
+      "autor": "Mildeep",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "5–8 tys.",
       "trend": "→",
       "migracja": "Osiadły",
@@ -1045,8 +1108,9 @@
       ],
       "film": {
         "id": "O2eYVOZ-YTs",
-        "tytul": "Žluna šedá / Grey-headed woodpecker / Dzięcioł zielonosiwy / Pic cendré",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Dzięcioł zielonosiwy",
+        "platforma": "youtube",
+        "zrodlo": "Jarmila Kačírková"
       }
     },
     {
@@ -1057,6 +1121,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Merops_apiaster.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "1–2 tys.",
       "trend": "↑",
       "migracja": "Wędrowny",
@@ -1093,6 +1159,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Podiceps_nigricollis.jpg",
+      "autor": "Stephan Sprinz",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "1–2 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -1115,18 +1183,21 @@
       ],
       "film": {
         "id": "wJho1mfO3HY",
-        "tytul": "Zausznik – śpiew i głosy",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Zausznik",
+        "platforma": "youtube",
+        "zrodlo": "YouTube Birds"
       }
     },
     {
       "id": 33,
-      "nazwa": "Nur Czarnoszyi",
+      "nazwa": "Nur czarnoszyi",
       "nazwaLacinska": "Gavia arctica",
       "kategorie": [
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Gavia_arctica.jpg",
+      "autor": "Jan Ebr & Ivana Ebrová",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "setki os.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -1149,8 +1220,9 @@
       ],
       "film": {
         "id": "l_LHI5VMg5w",
-        "tytul": "Black throated loon (Gavia arctica) sound call and song",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Nur czarnoszyi",
+        "platforma": "youtube",
+        "zrodlo": "YouTube Birds"
       }
     },
     {
@@ -1161,6 +1233,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Nycticorax_nycticorax.jpg",
+      "autor": "Rhododendrites",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "200–400",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -1183,8 +1257,9 @@
       ],
       "film": {
         "id": "TeYdmL7gsR8",
-        "tytul": "Bird sounds – Black-crowned night heron (Nycticorax nycticorax)",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Ślepowron",
+        "platforma": "youtube",
+        "zrodlo": "European Wildlife by Lukáš Pich"
       }
     },
     {
@@ -1195,6 +1270,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Turdus_viscivorus.jpg",
+      "autor": "Alun Williams333",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "30–50 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -1226,12 +1303,14 @@
     },
     {
       "id": 36,
-      "nazwa": "Sikora Uboga",
+      "nazwa": "Sikora uboga",
       "nazwaLacinska": "Poecile palustris",
       "kategorie": [
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Poecile_palustris.jpg",
+      "autor": "TRinaud",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "300–500 tys.",
       "trend": "↓",
       "migracja": "Osiadły",
@@ -1260,8 +1339,9 @@
       ],
       "film": {
         "id": "RBAU0RFygZQ",
-        "tytul": "Sýkora babka - The marsh tit (Parus palustris)",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Sikora uboga",
+        "platforma": "youtube",
+        "zrodlo": "Cesty Přírodou"
       }
     },
     {
@@ -1272,6 +1352,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Pernis_apivorus.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "3–5 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -1296,8 +1378,9 @@
       ],
       "film": {
         "id": "8PEMhQztiF8",
-        "tytul": "Honey Buzzard (Pernis apivorus) male feeds fledgling and makes lure calls",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Trzmielojad",
+        "platforma": "youtube",
+        "zrodlo": "Stef van Rijn"
       }
     },
     {
@@ -1308,6 +1391,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Aythya_marila.jpg",
+      "autor": "Basar",
+      "licencja": "CC BY-SA 3.0",
       "liczebnosc": "50–150",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -1330,8 +1415,9 @@
       ],
       "film": {
         "id": "_bhb9FhoeWM",
-        "tytul": "Lapasotka - Aythya marila - Greater Scaup",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Ogorzałka",
+        "platforma": "youtube",
+        "zrodlo": "Suomen Linnut"
       }
     },
     {
@@ -1342,6 +1428,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Mergus_serrator.jpg",
+      "autor": "Needsmoreritalin",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "800–1,2 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -1363,18 +1451,21 @@
       ],
       "film": {
         "id": "bVjtfhYapjE",
-        "tytul": "Tukkakoskelo (głos szlachara)",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Szlachar",
+        "platforma": "youtube",
+        "zrodlo": "Rantojen laulavat linnut"
       }
     },
     {
       "id": 40,
-      "nazwa": "Siewka Złota",
+      "nazwa": "Siewka złota",
       "nazwaLacinska": "Pluvialis apricaria",
       "kategorie": [
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Pluvialis_apricaria.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "kilkadziesiąt tys.",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -1397,8 +1488,9 @@
       ],
       "film": {
         "id": "RlmD389XosQ",
-        "tytul": "Siewka złota – głosy (Islandia)",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Siewka złota",
+        "platforma": "youtube",
+        "zrodlo": "Birdfun"
       }
     },
     {
@@ -1409,6 +1501,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Columba_oenas.jpg",
+      "autor": "MPF",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "80–120 tys.",
       "trend": "↑",
       "migracja": "Wędrowny",
@@ -1442,12 +1536,14 @@
     },
     {
       "id": 42,
-      "nazwa": "Bocian Czarny",
+      "nazwa": "Bocian czarny",
       "nazwaLacinska": "Ciconia nigra",
       "kategorie": [
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Ciconia_nigra.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "1–1,2 tys.",
       "trend": "↑",
       "migracja": "Wędrowny",
@@ -1473,8 +1569,9 @@
       ],
       "film": {
         "id": "StkccZA8W2M",
-        "tytul": "Bird sounds – Black stork (Ciconia nigra)",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Bocian czarny",
+        "platforma": "youtube",
+        "zrodlo": "European Wildlife by Lukáš Pich"
       }
     },
     {
@@ -1485,6 +1582,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Saxicola_rubicola.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "10–20 tys.",
       "trend": "↑",
       "migracja": "Wędrowny",
@@ -1512,18 +1611,21 @@
       ],
       "film": {
         "id": "gEYQEPboBM8",
-        "tytul": "Stonechat at Hells Mouth, Cornwall - Tarier Pâtre",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Kląskawka",
+        "platforma": "youtube",
+        "zrodlo": "Paul Dinning"
       }
     },
     {
       "id": 44,
-      "nazwa": "Świergotek Drzewny",
+      "nazwa": "Świergotek drzewny",
       "nazwaLacinska": "Anthus trivialis",
       "kategorie": [
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Anthus_trivialis.jpg",
+      "autor": "mvbhaktha",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "200–400 tys.",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -1558,6 +1660,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Lanius_excubitor.jpg",
+      "autor": "Tisha Mukherjee",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "20–40 tys.",
       "trend": "↓",
       "migracja": "Osiadły",
@@ -1586,8 +1690,9 @@
       ],
       "film": {
         "id": "OM98Su48oy8",
-        "tytul": "Great grey shrike Song",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Srokosz",
+        "platforma": "youtube",
+        "zrodlo": "ToToWildlife"
       }
     },
     {
@@ -1598,6 +1703,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Periparus_ater.jpg",
+      "autor": "TRinaud",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "300–500 tys.",
       "trend": "→",
       "migracja": "Osiadły",
@@ -1630,18 +1737,21 @@
       ],
       "film": {
         "id": "IKxcC_bUHuI",
-        "tytul": "Sýkora uhelníček / Coal tit / Tannenmeise / Sosnówka",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Sosnówka",
+        "platforma": "youtube",
+        "zrodlo": "BIRDS"
       }
     },
     {
       "id": 47,
-      "nazwa": "Muchołówka Mała",
+      "nazwa": "Muchołówka mała",
       "nazwaLacinska": "Ficedula parva",
       "kategorie": [
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Ficedula_parva.jpg",
+      "autor": "Lisunkhanbd",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "40–70 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -1675,6 +1785,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Remiz_pendulinus.jpg",
+      "autor": "Иван Везенковић",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "20–40 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -1709,6 +1821,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Aythya_ferina.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "3–5 tys.",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -1743,12 +1857,14 @@
     },
     {
       "id": 50,
-      "nazwa": "Myszołów Włochaty",
+      "nazwa": "Myszołów włochaty",
       "nazwaLacinska": "Buteo lagopus",
       "kategorie": [
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Buteo_lagopus.jpg",
+      "autor": "christoph_moning",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "do 1 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -1784,6 +1900,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Coturnix_coturnix.jpg",
+      "autor": "Dûrzan Cîrano",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "100–200 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -1819,6 +1937,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Linaria_cannabina.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "1–2 mln",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -1860,6 +1980,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Alcedo_atthis.jpg",
+      "autor": "Andreas Trepte",
+      "licencja": "CC BY-SA 2.5",
       "liczebnosc": "8–12 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -1893,12 +2015,14 @@
     },
     {
       "id": 54,
-      "nazwa": "Bocian Biały",
+      "nazwa": "Bocian biały",
       "nazwaLacinska": "Ciconia ciconia",
       "kategorie": [
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Ciconia_ciconia.jpg",
+      "autor": "Stefan Heß",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "52–55 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -1936,6 +2060,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Crex_crex.jpg",
+      "autor": "Ivan Medenica",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "10–20 tys.",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -1971,6 +2097,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Falco_vespertinus.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "10–30",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -1992,8 +2120,9 @@
       ],
       "film": {
         "id": "dhaCumm3qXc",
-        "tytul": "Red-footed falcon sound (falco vespertinus) [Nature sounds]",
-        "platforma": "youtube"
+        "tytul": "Nagranie głosu – Kobczyk",
+        "platforma": "youtube",
+        "zrodlo": "Serhii B."
       }
     },
     {
@@ -2004,6 +2133,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Prunella_modularis.jpg",
+      "autor": "Karsten",
+      "licencja": "CC BY-SA 3.0",
       "liczebnosc": "1,5–2,5 mln",
       "trend": "↑",
       "migracja": "Wędrowny",
@@ -2038,6 +2169,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Tachybaptus_ruficollis.jpg",
+      "autor": "El Golli Mohamed",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "20–30 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -2073,12 +2206,14 @@
     },
     {
       "id": 59,
-      "nazwa": "Muchołówka Białoszyja",
+      "nazwa": "Muchołówka białoszyja",
       "nazwaLacinska": "Ficedula albicollis",
       "kategorie": [
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Ficedula_albicollis.jpg",
+      "autor": "Podaliriy55",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "150–250 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -2107,12 +2242,14 @@
     },
     {
       "id": 60,
-      "nazwa": "Mewa Białogłowa",
+      "nazwa": "Mewa białogłowa",
       "nazwaLacinska": "Larus cachinnans",
       "kategorie": [
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Larus_cachinnans.jpg",
+      "autor": "Yu Moskalenko",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "20–30 tys.",
       "trend": "↑",
       "migracja": "Wędrowny",
@@ -2145,8 +2282,9 @@
       ],
       "film": {
         "id": "-u2omwUgXa0",
-        "tytul": "Caspian Gull (Larus cachinans) feeding on fish",
-        "platforma": "youtube"
+        "tytul": "Mewa białogłowa – żerowanie",
+        "platforma": "youtube",
+        "zrodlo": "Petr Podzemny"
       }
     },
     {
@@ -2157,6 +2295,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Mareca_penelope.jpg",
+      "autor": "Andreas Trepte",
+      "licencja": "CC BY-SA 2.5",
       "liczebnosc": "kilka tys.",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -2193,6 +2333,8 @@
         "Podkarpackie Atrakcje"
       ],
       "zdjecie": "img/Saxicola_rubetra.jpg",
+      "autor": "Stavros Toumanidis",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "100–200 tys.",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -2224,12 +2366,14 @@
     },
     {
       "id": 63,
-      "nazwa": "Jaskółka Dymówka",
+      "nazwa": "Jaskółka dymówka",
       "nazwaLacinska": "Hirundo rustica",
       "kategorie": [
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Hirundo_rustica.jpg",
+      "autor": "Zeynel Cebeci",
+      "licencja": "CC BY-SA 4.0",
       "liczebnosc": "3–5 mln",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -2262,12 +2406,14 @@
     },
     {
       "id": 64,
-      "nazwa": "Pliszka Siwa",
+      "nazwa": "Pliszka siwa",
       "nazwaLacinska": "Motacilla alba",
       "kategorie": [
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Motacilla_alba.jpg",
+      "autor": "Alexis Lours",
+      "licencja": "CC BY 4.0",
       "liczebnosc": "2–3 mln",
       "trend": "→",
       "migracja": "Wędrowny",
@@ -2308,6 +2454,8 @@
         "Top Podkarpacia"
       ],
       "zdjecie": "img/Anas_platyrhynchos.jpg",
+      "autor": "Charles J. Sharp",
+      "licencja": "CC BY-SA 3.0",
       "liczebnosc": "300–500 tys.",
       "trend": "↓",
       "migracja": "Wędrowny",
@@ -2343,6 +2491,48 @@
         "tytul": "Leśny Budzik – Krzyżówka",
         "platforma": "youtube"
       }
+    },
+    {
+      "id": 66,
+      "nazwa": "Sikora czarnogłowa",
+      "nazwaLacinska": "Poecile montanus",
+      "kategorie": [
+        "Podkarpackie Atrakcje"
+      ],
+      "zdjecie": "img/Poecile_montanus.jpg",
+      "autor": "Francis C. Franklin",
+      "licencja": "CC BY-SA 3.0",
+      "liczebnosc": "300–500 tys.",
+      "trend": "↓",
+      "migracja": "Osiadły",
+      "statusCzerwonejKsiazki": "LC",
+      "cechy": [
+        "⚫ Czarna czapka matowa, bez połysku",
+        "🟤 Brązowawe boki, biały policzek i szyja",
+        "📏 12–13 cm",
+        "🌲 Wilgotne lasy olszowe i wierzbowe",
+        "🐛 Owady latem; nasiona i orzeszki zimą",
+        "🎵 Charakterystyczne 'czej-czej' i gwizd 'pii'"
+      ],
+      "film": {
+        "id": "luBtm8Fx4VI",
+        "tytul": "Leśny Budzik – Sikora czarnogłowa",
+        "platforma": "youtube"
+      },
+      "zrodla": [
+        "MPPL 2025",
+        "Czerwona Księga Ptaków Polski"
+      ],
+      "peakMonths": [
+        1,
+        2,
+        3,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
     }
   ]
 }

@@ -92,6 +92,28 @@ describe('Testy walidacji schematu JSON', () => {
     assertAll('Migracja jest poprawna',                bad(birds, p => ['Osiadły', 'Wędrowny'].includes(p.migracja)));
   });
 
+  it('Polskie nazwy gatunków mają poprawną kapitalizację (tylko pierwszy wyraz wielką literą)', () => {
+    // W polskich nazwach gatunków tylko pierwszy wyraz pisze się wielką literą,
+    // np. "Sikora uboga", nie "Sikora Uboga".
+    const violations = bad(birds, p => {
+      const rest = p.nazwa.split(' ').slice(1);
+      return rest.every(w => w === w.toLocaleLowerCase('pl'));
+    });
+    assertAll('Nazwy mają tylko pierwszy wyraz wielką literą', violations);
+  });
+
+  it('Atrybucja zdjęć (autor/licencja) ma poprawny format, jeśli jest obecna', () => {
+    const validLicenses = [
+      'CC0', 'CC BY-SA 4.0', 'CC BY-SA 3.0', 'CC BY-SA 2.5', 'CC BY-SA 2.0',
+      'CC BY-SA 1.0', 'CC BY 4.0', 'CC BY 3.0', 'CC BY 2.5', 'CC BY 2.0',
+      'Public domain'
+    ];
+    assertAll('Pole "autor" (jeśli jest) to niepusty ciąg',
+      bad(birds, p => p.autor === undefined || (typeof p.autor === 'string' && p.autor.trim().length > 0)));
+    assertAll('Pole "licencja" (jeśli jest) jest z dozwolonej listy (bez NC)',
+      bad(birds, p => p.licencja === undefined || validLicenses.includes(p.licencja)));
+  });
+
   it('Ptaki kategorii Podkarpacia mają poprawne peakMonths', () => {
     const pkCats   = new Set(['Top Podkarpacia', 'Podkarpackie Atrakcje']);
     const pkBirds  = birds.filter(p => p.kategorie.some(c => pkCats.has(c)));
