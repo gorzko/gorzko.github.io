@@ -4,6 +4,6 @@
   "assets": {
     "directory": "./",
     "not_found_handling": "none"
-  }
-  "previews": {},
+  },
+  "previews": {}
 }
