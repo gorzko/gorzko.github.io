@@ -1205,10 +1205,14 @@ body {
 .rbadge.NT { background: #fff3d4; border: 1px solid #e0b840; color: #8b6b18; }
 .rbadge.VU { background: #ffe0d4; border: 1px solid #d88c40; color: #8b4513; }
 .rbadge.EN { background: #ffd4d4; border: 1px solid #d85050; color: #8b0000; }
+.rbadge.CR { background: #f0c0c0; border: 1px solid #9b0000; color: #5a0000; }
+.rbadge.RE { background: #d8d8d8; border: 1px solid #888; color: #333; }
 .rbadge-dot { width: 7px; height: 7px; border-radius: 50%; background: #5ca832; flex-shrink: 0; }
 .rbadge.NT .rbadge-dot { background: #e0b840; }
 .rbadge.VU .rbadge-dot { background: #d88c40; }
 .rbadge.EN .rbadge-dot { background: #d85050; }
+.rbadge.CR .rbadge-dot { background: #9b0000; }
+.rbadge.RE .rbadge-dot { background: #888; }
 
 .rule {
   height: 1px;

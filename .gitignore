@@ -22,5 +22,9 @@ node_modules/
 Thumbs.db
 desktop.ini
 
+# Playwright
+test-results/
+playwright-report/
+
 # Vibe (katalog tymczasowy)
 .vibe/tmp/

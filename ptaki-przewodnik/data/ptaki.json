@@ -852,9 +852,9 @@
       "autor": "Chrumps",
       "licencja": "CC BY-SA 3.0",
       "liczebnosc": "200–400",
-      "trend": "↓",
+      "trend": "→",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "NT",
+      "statusCzerwonejKsiazki": "VU",
       "peakMonths": [
         3,
         4,
@@ -874,7 +874,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "tIGE37BLGqQ",
@@ -894,9 +894,9 @@
       "autor": "Charles J. Sharp",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "500–700",
-      "trend": "→",
+      "trend": "↓",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "LC",
+      "statusCzerwonejKsiazki": "VU",
       "peakMonths": [
         11
       ],
@@ -910,7 +910,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "6Fyjgdi6Vrg",
@@ -1162,9 +1162,9 @@
       "autor": "Stephan Sprinz",
       "licencja": "CC BY 4.0",
       "liczebnosc": "1–2 tys.",
-      "trend": "→",
+      "trend": "↓",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "LC",
+      "statusCzerwonejKsiazki": "VU",
       "peakMonths": [
         8,
         9
@@ -1179,7 +1179,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "wJho1mfO3HY",
@@ -1201,7 +1201,7 @@
       "liczebnosc": "setki os.",
       "trend": "→",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "LC",
+      "statusCzerwonejKsiazki": "RE",
       "peakMonths": [
         11,
         12
@@ -1216,7 +1216,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "l_LHI5VMg5w",
@@ -1326,12 +1326,12 @@
         12
       ],
       "cechy": [
-        "⚫ Czarna czapka matowa, bez połysku",
+        "⚫ Czarna czapka z granatowym połyskiem",
         "🟤 Brązowawe boki, biały policzek i szyja",
         "📏 12–13 cm",
-        "🌲 Wilgotne lasy olszowe i wierzbowe",
+        "🌲 Liściaste lasy grądowe, bukowe i parki; stroni od wilgotnych zarośli",
         "🐛 Owady latem; nasiona i orzeszki zimą",
-        "🎵 Charakterystyczne 'czej-czej' i gwizd 'pii'"
+        "🎵 Wybuchowe 'pitiu' (lub 'pti-di-di'); głos odróżniający od Sikory czarnogłowej"
       ],
       "zrodla": [
         "eBird PL-PK 2025",
@@ -1433,7 +1433,7 @@
       "liczebnosc": "800–1,2 tys.",
       "trend": "→",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "LC",
+      "statusCzerwonejKsiazki": "RE",
       "peakMonths": [
         11
       ],
@@ -1447,7 +1447,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "bVjtfhYapjE",
@@ -1469,7 +1469,7 @@
       "liczebnosc": "kilkadziesiąt tys.",
       "trend": "↓",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "LC",
+      "statusCzerwonejKsiazki": "RE",
       "peakMonths": [
         2,
         3
@@ -1484,7 +1484,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "RlmD389XosQ",
@@ -1903,9 +1903,9 @@
       "autor": "Dûrzan Cîrano",
       "licencja": "CC BY-SA 4.0",
       "liczebnosc": "100–200 tys.",
-      "trend": "→",
+      "trend": "↓",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "LC",
+      "statusCzerwonejKsiazki": "VU",
       "peakMonths": [
         5,
         6,
@@ -1921,7 +1921,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "3fgho8XNLJc",
@@ -2065,7 +2065,7 @@
       "liczebnosc": "10–20 tys.",
       "trend": "↓",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "NT",
+      "statusCzerwonejKsiazki": "VU",
       "peakMonths": [
         5,
         6,
@@ -2081,7 +2081,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "z9biVFLnJpE",
@@ -2102,7 +2102,7 @@
       "liczebnosc": "10–30",
       "trend": "↓",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "NT",
+      "statusCzerwonejKsiazki": "RE",
       "peakMonths": [
         9
       ],
@@ -2116,7 +2116,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "dhaCumm3qXc",
@@ -2300,7 +2300,7 @@
       "liczebnosc": "kilka tys.",
       "trend": "→",
       "migracja": "Wędrowny",
-      "statusCzerwonejKsiazki": "LC",
+      "statusCzerwonejKsiazki": "CR",
       "peakMonths": [
         3,
         10,
@@ -2317,7 +2317,7 @@
       ],
       "zrodla": [
         "eBird PL-PK 2025",
-        "Czerwona Księga Ptaków Polski"
+        "Czerwona lista ptaków Polski 2020"
       ],
       "film": {
         "id": "u4MKmSKVjJ8",
@@ -2507,12 +2507,13 @@
       "migracja": "Osiadły",
       "statusCzerwonejKsiazki": "LC",
       "cechy": [
-        "⚫ Czarna czapka matowa, bez połysku",
-        "🟤 Brązowawe boki, biały policzek i szyja",
-        "📏 12–13 cm",
-        "🌲 Wilgotne lasy olszowe i wierzbowe",
-        "🐛 Owady latem; nasiona i orzeszki zimą",
-        "🎵 Charakterystyczne 'czej-czej' i gwizd 'pii'"
+        "⚫ Czarna czapka matowa (bez połysku), duży czarny śliniaczek pod dziobem",
+        "🤍 Białe policzki i szyja, brązowawe boki",
+        "🦆 Krępa sylwetka i większa głowa ('byczy' kark) niż u Sikory ubogiej",
+        "🪶 Jasne pole na złożonym skrzydle (brzegi lotek II rzędu)",
+        "🌲 Lasy iglaste i mieszane; gniazduje w próchniejącym drewnie",
+        "🐛 Owady latem; magazynuje zapasy nasion na zimę",
+        "🎵 Nosowe, chrapliwe 'czi-czi-dże-dże-dże'; śpiew: żałosne 'tiu-tiu-tiu'"
       ],
       "film": {
         "id": "luBtm8Fx4VI",
