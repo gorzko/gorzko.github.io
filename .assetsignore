@@ -1,3 +1,4 @@
+.git
 .claude
 .github
 .mcp.json
@@ -15,3 +16,4 @@ node_modules
 wrangler.jsonc
 .assetsignore
 .gitignore
+.git/
