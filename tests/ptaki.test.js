@@ -147,6 +147,13 @@ describe('Testy integralności danych', () => {
     assertAll('URL zdjęcia jest niepustym ciągiem', bad(birds, p => typeof p.zdjecie === 'string' && p.zdjecie.length > 0));
   });
 
+  it('focalPoint jest poprawną wartością CSS (jeśli podany)', () => {
+    const valid = /^(left|right|center|top|bottom|\d+(\.\d+)?% (center|top|bottom))$/;
+    assertAll('focalPoint jest poprawną wartością CSS', bad(birds, p =>
+      p.focalPoint === undefined || valid.test(p.focalPoint)
+    ));
+  });
+
 });
 
 // ── Podsumowanie ──────────────────────────────────────────────
