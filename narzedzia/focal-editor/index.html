@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edytor focal pointów — Snufkin Ptaki</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <h1>Edytor focal pointów</h1>
+    <input id="search" type="search" placeholder="Szukaj gatunku…" autocomplete="off">
+    <div class="nav-row">
+      <button id="prev" title="Poprzedni gatunek (←)">←</button>
+      <span id="counter"></span>
+      <button id="next" title="Następny gatunek (→)">→</button>
+    </div>
+    <ul id="species-list"></ul>
+  </aside>
+
+  <main class="main">
+    <header class="bird-header">
+      <div>
+        <div id="bird-name" class="bird-name"></div>
+        <div id="bird-latin" class="bird-latin"></div>
+      </div>
+      <div id="save-status" class="save-status"></div>
+    </header>
+
+    <div class="stage-wrap">
+      <div id="stage" class="stage">
+        <img id="photo" alt="">
+        <div id="beak-arrow" class="beak-arrow" hidden></div>
+        <div id="focal-marker" class="focal-marker" hidden title="Przeciągnij, aby ustawić focal point">
+          <span class="cross"></span>
+        </div>
+      </div>
+      <p class="hint">Kliknij na zdjęciu lub przeciągnij znacznik, aby ustawić punkt kluczowy (poziomo).</p>
+    </div>
+
+    <section class="controls">
+      <div class="control-group">
+        <span class="label">Focal point</span>
+        <div class="btn-row">
+          <button data-preset="left">left</button>
+          <button data-preset="center">center</button>
+          <button data-preset="right">right</button>
+          <select id="vertical">
+            <option value="center">środek (Y)</option>
+            <option value="top">góra (Y)</option>
+            <option value="bottom">dół (Y)</option>
+          </select>
+          <button id="remove-focal" class="danger">usuń focalPoint</button>
+        </div>
+        <code id="focal-value" class="value"></code>
+      </div>
+
+      <div class="control-group">
+        <span class="label">Kierunek patrzenia (beakSide)</span>
+        <div class="btn-row">
+          <button id="beak-left" data-side="left">👈 w lewo</button>
+          <button id="beak-right" data-side="right">w prawo 👉</button>
+          <button id="beak-remove" class="danger">usuń beakSide</button>
+        </div>
+        <code id="beak-value" class="value"></code>
+      </div>
+
+      <div class="control-group">
+        <span class="label">cropRange (tylko do odczytu)</span>
+        <code id="crop-value" class="value"></code>
+      </div>
+    </section>
+
+    <section class="preview-wrap">
+      <span class="label">Podgląd kadru 16:9 (object-fit: cover)</span>
+      <div class="preview">
+        <img id="preview-img" alt="">
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

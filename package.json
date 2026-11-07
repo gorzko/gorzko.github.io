@@ -6,7 +6,8 @@
     "test": "node tests/ptaki.test.js && node tests/attribution.test.js",
     "test:watch": "nodemon --watch tests --watch ptaki-przewodnik/data --ext js,json --exec \"npm test\"",
     "test:e2e": "playwright test",
-    "test:all": "npm test && npm run test:e2e"
+    "test:all": "npm test && npm run test:e2e",
+    "focal-editor": "node narzedzia/focal-editor/server.js"
   },
   "keywords": [
     "ptaki",
